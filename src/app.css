@@ -1,0 +1,113 @@
+/* ===== CSS Variables ===== */
+:root {
+  --bg: #f8f9fa;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f7ff;
+  --bg-input: #ffffff;
+  --bg-input-disabled: #f5f5f5;
+  --bg-secondary-btn: #f0f0f0;
+  --bg-secondary-btn-hover: #e0e0e0;
+  --bg-toggle-active: #e8f0fe;
+  --bg-progress-track: #e0e0e0;
+
+  --text: #333;
+  --text-secondary: #555;
+  --text-muted: #666;
+  --text-hint: #aaa;
+  --text-dark: #111;
+  --text-secondary-btn: #444;
+
+  --border: #ddd;
+  --border-focus: #1a73e8;
+
+  --primary: #1a73e8;
+  --primary-dark: #1557b0;
+  --primary-darker: #0d47a1;
+  --primary-text: #1a73e8;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  --correct-bg: #e8f5e9;
+  --correct-border: #4caf50;
+  --correct-text: #2e7d32;
+  --incorrect-bg: #ffebee;
+  --incorrect-border: #f44336;
+  --incorrect-text: #c62828;
+
+  --error-bg: #ffebee;
+  --error-text: #c62828;
+  --disabled-bg: #ccc;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --bg-card: #1e1e1e;
+  --bg-card-hover: #252535;
+  --bg-input: #2c2c2c;
+  --bg-input-disabled: #252525;
+  --bg-secondary-btn: #2c2c2c;
+  --bg-secondary-btn-hover: #383838;
+  --bg-toggle-active: #1a3460;
+  --bg-progress-track: #333;
+
+  --text: #e0e0e0;
+  --text-secondary: #bbb;
+  --text-muted: #999;
+  --text-hint: #666;
+  --text-dark: #f0f0f0;
+  --text-secondary-btn: #ccc;
+
+  --border: #3a3a3a;
+  --border-focus: #5b9cf6;
+
+  --primary: #5b9cf6;
+  --primary-dark: #4a8cf0;
+  --primary-darker: #3a7ce0;
+  --primary-text: #7ab4fa;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+  --correct-bg: #1a3320;
+  --correct-border: #4caf50;
+  --correct-text: #81c784;
+  --incorrect-bg: #3a1515;
+  --incorrect-border: #f44336;
+  --incorrect-text: #ef9a9a;
+
+  --error-bg: #3a1515;
+  --error-text: #ef9a9a;
+  --disabled-bg: #444;
+}
+
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.japanese {
+  font-family: 'Noto Sans JP', 'Yu Gothic', 'Hiragino Sans', 'Meiryo', sans-serif;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+select,
+input {
+  font-family: inherit;
+}

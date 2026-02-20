@@ -1,0 +1,2761 @@
+[
+  {
+    "character": "一",
+    "kun_yomi": [
+      "ひと",
+      "ひとつ"
+    ],
+    "on_yomi": [
+      "イチ",
+      "イツ"
+    ],
+    "meanings": [
+      "one"
+    ],
+    "examples": [
+      "一つ (ひとつ) - one",
+      "一人 (ひとり) - one person"
+    ],
+    "words": [
+      {
+        "word": "一つ",
+        "reading": "ひとつ",
+        "meaning": "one"
+      },
+      {
+        "word": "一人",
+        "reading": "ひとり",
+        "meaning": "one person"
+      }
+    ]
+  },
+  {
+    "character": "二",
+    "kun_yomi": [
+      "ふた",
+      "ふたつ"
+    ],
+    "on_yomi": [
+      "ニ"
+    ],
+    "meanings": [
+      "two"
+    ],
+    "examples": [
+      "二つ (ふたつ) - two",
+      "二人 (ふたり) - two people"
+    ],
+    "words": [
+      {
+        "word": "二つ",
+        "reading": "ふたつ",
+        "meaning": "two"
+      },
+      {
+        "word": "二人",
+        "reading": "ふたり",
+        "meaning": "two people"
+      }
+    ]
+  },
+  {
+    "character": "三",
+    "kun_yomi": [
+      "み",
+      "みつ",
+      "みっつ"
+    ],
+    "on_yomi": [
+      "サン"
+    ],
+    "meanings": [
+      "three"
+    ],
+    "examples": [
+      "三つ (みっつ) - three",
+      "三日 (みっか) - third day"
+    ],
+    "words": [
+      {
+        "word": "三つ",
+        "reading": "みっつ",
+        "meaning": "three"
+      },
+      {
+        "word": "三日",
+        "reading": "みっか",
+        "meaning": "third day"
+      }
+    ]
+  },
+  {
+    "character": "四",
+    "kun_yomi": [
+      "よ",
+      "よつ",
+      "よっつ",
+      "よん"
+    ],
+    "on_yomi": [
+      "シ"
+    ],
+    "meanings": [
+      "four"
+    ],
+    "examples": [
+      "四つ (よっつ) - four",
+      "四月 (しがつ) - April"
+    ],
+    "words": [
+      {
+        "word": "四つ",
+        "reading": "よっつ",
+        "meaning": "four"
+      },
+      {
+        "word": "四月",
+        "reading": "しがつ",
+        "meaning": "April"
+      }
+    ]
+  },
+  {
+    "character": "五",
+    "kun_yomi": [
+      "いつ",
+      "いつつ"
+    ],
+    "on_yomi": [
+      "ゴ"
+    ],
+    "meanings": [
+      "five"
+    ],
+    "examples": [
+      "五つ (いつつ) - five",
+      "五月 (ごがつ) - May"
+    ],
+    "words": [
+      {
+        "word": "五つ",
+        "reading": "いつつ",
+        "meaning": "five"
+      },
+      {
+        "word": "五月",
+        "reading": "ごがつ",
+        "meaning": "May"
+      }
+    ]
+  },
+  {
+    "character": "六",
+    "kun_yomi": [
+      "む",
+      "むつ",
+      "むっつ",
+      "むい"
+    ],
+    "on_yomi": [
+      "ロク"
+    ],
+    "meanings": [
+      "six"
+    ],
+    "examples": [
+      "六つ (むっつ) - six",
+      "六月 (ろくがつ) - June"
+    ],
+    "words": [
+      {
+        "word": "六つ",
+        "reading": "むっつ",
+        "meaning": "six"
+      },
+      {
+        "word": "六月",
+        "reading": "ろくがつ",
+        "meaning": "June"
+      }
+    ]
+  },
+  {
+    "character": "七",
+    "kun_yomi": [
+      "なな",
+      "ななつ",
+      "なの"
+    ],
+    "on_yomi": [
+      "シチ"
+    ],
+    "meanings": [
+      "seven"
+    ],
+    "examples": [
+      "七つ (ななつ) - seven",
+      "七月 (しちがつ) - July"
+    ],
+    "words": [
+      {
+        "word": "七つ",
+        "reading": "ななつ",
+        "meaning": "seven"
+      },
+      {
+        "word": "七月",
+        "reading": "しちがつ",
+        "meaning": "July"
+      }
+    ]
+  },
+  {
+    "character": "八",
+    "kun_yomi": [
+      "や",
+      "やつ",
+      "やっつ",
+      "よう"
+    ],
+    "on_yomi": [
+      "ハチ"
+    ],
+    "meanings": [
+      "eight"
+    ],
+    "examples": [
+      "八つ (やっつ) - eight",
+      "八月 (はちがつ) - August"
+    ],
+    "words": [
+      {
+        "word": "八つ",
+        "reading": "やっつ",
+        "meaning": "eight"
+      },
+      {
+        "word": "八月",
+        "reading": "はちがつ",
+        "meaning": "August"
+      }
+    ]
+  },
+  {
+    "character": "九",
+    "kun_yomi": [
+      "ここの",
+      "ここのつ"
+    ],
+    "on_yomi": [
+      "キュウ",
+      "ク"
+    ],
+    "meanings": [
+      "nine"
+    ],
+    "examples": [
+      "九つ (ここのつ) - nine",
+      "九月 (くがつ) - September"
+    ],
+    "words": [
+      {
+        "word": "九つ",
+        "reading": "ここのつ",
+        "meaning": "nine"
+      },
+      {
+        "word": "九月",
+        "reading": "くがつ",
+        "meaning": "September"
+      }
+    ]
+  },
+  {
+    "character": "十",
+    "kun_yomi": [
+      "とお",
+      "と"
+    ],
+    "on_yomi": [
+      "ジュウ"
+    ],
+    "meanings": [
+      "ten"
+    ],
+    "examples": [
+      "十 (じゅう) - ten",
+      "十月 (じゅうがつ) - October"
+    ],
+    "words": [
+      {
+        "word": "十",
+        "reading": "じゅう",
+        "meaning": "ten"
+      },
+      {
+        "word": "十月",
+        "reading": "じゅうがつ",
+        "meaning": "October"
+      }
+    ]
+  },
+  {
+    "character": "百",
+    "kun_yomi": [],
+    "on_yomi": [
+      "ヒャク"
+    ],
+    "meanings": [
+      "hundred"
+    ],
+    "examples": [
+      "百 (ひゃく) - hundred",
+      "三百 (さんびゃく) - three hundred"
+    ],
+    "words": [
+      {
+        "word": "百",
+        "reading": "ひゃく",
+        "meaning": "hundred"
+      },
+      {
+        "word": "三百",
+        "reading": "さんびゃく",
+        "meaning": "three hundred"
+      }
+    ]
+  },
+  {
+    "character": "千",
+    "kun_yomi": [
+      "ち"
+    ],
+    "on_yomi": [
+      "セン"
+    ],
+    "meanings": [
+      "thousand"
+    ],
+    "examples": [
+      "千 (せん) - thousand",
+      "二千 (にせん) - two thousand"
+    ],
+    "words": [
+      {
+        "word": "千",
+        "reading": "せん",
+        "meaning": "thousand"
+      },
+      {
+        "word": "二千",
+        "reading": "にせん",
+        "meaning": "two thousand"
+      }
+    ]
+  },
+  {
+    "character": "万",
+    "kun_yomi": [],
+    "on_yomi": [
+      "マン",
+      "バン"
+    ],
+    "meanings": [
+      "ten thousand"
+    ],
+    "examples": [
+      "一万 (いちまん) - ten thousand"
+    ],
+    "words": [
+      {
+        "word": "一万",
+        "reading": "いちまん",
+        "meaning": "ten thousand"
+      }
+    ]
+  },
+  {
+    "character": "円",
+    "kun_yomi": [
+      "まる",
+      "まるい"
+    ],
+    "on_yomi": [
+      "エン"
+    ],
+    "meanings": [
+      "yen",
+      "circle"
+    ],
+    "examples": [
+      "百円 (ひゃくえん) - 100 yen",
+      "円い (まるい) - round"
+    ],
+    "words": [
+      {
+        "word": "百円",
+        "reading": "ひゃくえん",
+        "meaning": "100 yen"
+      },
+      {
+        "word": "円い",
+        "reading": "まるい",
+        "meaning": "round"
+      }
+    ]
+  },
+  {
+    "character": "日",
+    "kun_yomi": [
+      "ひ",
+      "び",
+      "か"
+    ],
+    "on_yomi": [
+      "ニチ",
+      "ジツ"
+    ],
+    "meanings": [
+      "day",
+      "sun"
+    ],
+    "examples": [
+      "日本 (にほん) - Japan",
+      "今日 (きょう) - today",
+      "日 (ひ) - sun"
+    ],
+    "words": [
+      {
+        "word": "日本",
+        "reading": "にほん",
+        "meaning": "Japan"
+      },
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning": "today"
+      },
+      {
+        "word": "日",
+        "reading": "ひ",
+        "meaning": "sun"
+      }
+    ]
+  },
+  {
+    "character": "月",
+    "kun_yomi": [
+      "つき"
+    ],
+    "on_yomi": [
+      "ゲツ",
+      "ガツ"
+    ],
+    "meanings": [
+      "month",
+      "moon"
+    ],
+    "examples": [
+      "月 (つき) - moon",
+      "一月 (いちがつ) - January"
+    ],
+    "words": [
+      {
+        "word": "月",
+        "reading": "つき",
+        "meaning": "moon"
+      },
+      {
+        "word": "一月",
+        "reading": "いちがつ",
+        "meaning": "January"
+      }
+    ]
+  },
+  {
+    "character": "火",
+    "kun_yomi": [
+      "ひ"
+    ],
+    "on_yomi": [
+      "カ"
+    ],
+    "meanings": [
+      "fire"
+    ],
+    "examples": [
+      "火 (ひ) - fire",
+      "火曜日 (かようび) - Tuesday"
+    ],
+    "words": [
+      {
+        "word": "火",
+        "reading": "ひ",
+        "meaning": "fire"
+      },
+      {
+        "word": "火曜日",
+        "reading": "かようび",
+        "meaning": "Tuesday"
+      }
+    ]
+  },
+  {
+    "character": "水",
+    "kun_yomi": [
+      "みず"
+    ],
+    "on_yomi": [
+      "スイ"
+    ],
+    "meanings": [
+      "water"
+    ],
+    "examples": [
+      "水 (みず) - water",
+      "水曜日 (すいようび) - Wednesday"
+    ],
+    "words": [
+      {
+        "word": "水",
+        "reading": "みず",
+        "meaning": "water"
+      },
+      {
+        "word": "水曜日",
+        "reading": "すいようび",
+        "meaning": "Wednesday"
+      }
+    ]
+  },
+  {
+    "character": "木",
+    "kun_yomi": [
+      "き",
+      "こ"
+    ],
+    "on_yomi": [
+      "モク",
+      "ボク"
+    ],
+    "meanings": [
+      "tree",
+      "wood"
+    ],
+    "examples": [
+      "木 (き) - tree",
+      "木曜日 (もくようび) - Thursday"
+    ],
+    "words": [
+      {
+        "word": "木",
+        "reading": "き",
+        "meaning": "tree"
+      },
+      {
+        "word": "木曜日",
+        "reading": "もくようび",
+        "meaning": "Thursday"
+      }
+    ]
+  },
+  {
+    "character": "金",
+    "kun_yomi": [
+      "かね",
+      "かな"
+    ],
+    "on_yomi": [
+      "キン",
+      "コン"
+    ],
+    "meanings": [
+      "gold",
+      "money"
+    ],
+    "examples": [
+      "お金 (おかね) - money",
+      "金曜日 (きんようび) - Friday"
+    ],
+    "words": [
+      {
+        "word": "お金",
+        "reading": "おかね",
+        "meaning": "money"
+      },
+      {
+        "word": "金曜日",
+        "reading": "きんようび",
+        "meaning": "Friday"
+      }
+    ]
+  },
+  {
+    "character": "土",
+    "kun_yomi": [
+      "つち"
+    ],
+    "on_yomi": [
+      "ド",
+      "ト"
+    ],
+    "meanings": [
+      "soil",
+      "earth"
+    ],
+    "examples": [
+      "土 (つち) - soil",
+      "土曜日 (どようび) - Saturday"
+    ],
+    "words": [
+      {
+        "word": "土",
+        "reading": "つち",
+        "meaning": "soil"
+      },
+      {
+        "word": "土曜日",
+        "reading": "どようび",
+        "meaning": "Saturday"
+      }
+    ]
+  },
+  {
+    "character": "人",
+    "kun_yomi": [
+      "ひと"
+    ],
+    "on_yomi": [
+      "ジン",
+      "ニン"
+    ],
+    "meanings": [
+      "person"
+    ],
+    "examples": [
+      "人 (ひと) - person",
+      "日本人 (にほんじん) - Japanese person"
+    ],
+    "words": [
+      {
+        "word": "人",
+        "reading": "ひと",
+        "meaning": "person"
+      },
+      {
+        "word": "日本人",
+        "reading": "にほんじん",
+        "meaning": "Japanese person"
+      }
+    ]
+  },
+  {
+    "character": "年",
+    "kun_yomi": [
+      "とし"
+    ],
+    "on_yomi": [
+      "ネン"
+    ],
+    "meanings": [
+      "year"
+    ],
+    "examples": [
+      "年 (とし) - year",
+      "今年 (ことし) - this year"
+    ],
+    "words": [
+      {
+        "word": "年",
+        "reading": "とし",
+        "meaning": "year"
+      },
+      {
+        "word": "今年",
+        "reading": "ことし",
+        "meaning": "this year"
+      }
+    ]
+  },
+  {
+    "character": "時",
+    "kun_yomi": [
+      "とき"
+    ],
+    "on_yomi": [
+      "ジ"
+    ],
+    "meanings": [
+      "time",
+      "hour"
+    ],
+    "examples": [
+      "時 (とき) - time",
+      "一時 (いちじ) - one o'clock"
+    ],
+    "words": [
+      {
+        "word": "時",
+        "reading": "とき",
+        "meaning": "time"
+      },
+      {
+        "word": "一時",
+        "reading": "いちじ",
+        "meaning": "one o'clock"
+      }
+    ]
+  },
+  {
+    "character": "分",
+    "kun_yomi": [
+      "わける",
+      "わかれる",
+      "わかる"
+    ],
+    "on_yomi": [
+      "ブン",
+      "フン",
+      "ブ"
+    ],
+    "meanings": [
+      "minute",
+      "divide"
+    ],
+    "examples": [
+      "三分 (さんぷん) - three minutes",
+      "分かる (わかる) - to understand"
+    ],
+    "words": [
+      {
+        "word": "三分",
+        "reading": "さんぷん",
+        "meaning": "three minutes"
+      },
+      {
+        "word": "分かる",
+        "reading": "わかる",
+        "meaning": "to understand"
+      }
+    ]
+  },
+  {
+    "character": "半",
+    "kun_yomi": [
+      "なかば"
+    ],
+    "on_yomi": [
+      "ハン"
+    ],
+    "meanings": [
+      "half"
+    ],
+    "examples": [
+      "半分 (はんぶん) - half",
+      "一時半 (いちじはん) - 1:30"
+    ],
+    "words": [
+      {
+        "word": "半分",
+        "reading": "はんぶん",
+        "meaning": "half"
+      },
+      {
+        "word": "一時半",
+        "reading": "いちじはん",
+        "meaning": "1:30"
+      }
+    ]
+  },
+  {
+    "character": "前",
+    "kun_yomi": [
+      "まえ"
+    ],
+    "on_yomi": [
+      "ゼン"
+    ],
+    "meanings": [
+      "front",
+      "before"
+    ],
+    "examples": [
+      "前 (まえ) - front",
+      "午前 (ごぜん) - morning"
+    ],
+    "words": [
+      {
+        "word": "前",
+        "reading": "まえ",
+        "meaning": "front"
+      },
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning": "morning"
+      }
+    ]
+  },
+  {
+    "character": "後",
+    "kun_yomi": [
+      "あと",
+      "うしろ",
+      "のち"
+    ],
+    "on_yomi": [
+      "ゴ",
+      "コウ"
+    ],
+    "meanings": [
+      "after",
+      "behind"
+    ],
+    "examples": [
+      "後ろ (うしろ) - behind",
+      "午後 (ごご) - afternoon"
+    ],
+    "words": [
+      {
+        "word": "後ろ",
+        "reading": "うしろ",
+        "meaning": "behind"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning": "afternoon"
+      }
+    ]
+  },
+  {
+    "character": "午",
+    "kun_yomi": [],
+    "on_yomi": [
+      "ゴ"
+    ],
+    "meanings": [
+      "noon"
+    ],
+    "examples": [
+      "午前 (ごぜん) - morning",
+      "午後 (ごご) - afternoon"
+    ],
+    "words": [
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning": "morning"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning": "afternoon"
+      }
+    ]
+  },
+  {
+    "character": "今",
+    "kun_yomi": [
+      "いま"
+    ],
+    "on_yomi": [
+      "コン",
+      "キン"
+    ],
+    "meanings": [
+      "now"
+    ],
+    "examples": [
+      "今 (いま) - now",
+      "今日 (きょう) - today"
+    ],
+    "words": [
+      {
+        "word": "今",
+        "reading": "いま",
+        "meaning": "now"
+      },
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning": "today"
+      }
+    ]
+  },
+  {
+    "character": "毎",
+    "kun_yomi": [],
+    "on_yomi": [
+      "マイ"
+    ],
+    "meanings": [
+      "every"
+    ],
+    "examples": [
+      "毎日 (まいにち) - every day",
+      "毎年 (まいとし) - every year"
+    ],
+    "words": [
+      {
+        "word": "毎日",
+        "reading": "まいにち",
+        "meaning": "every day"
+      },
+      {
+        "word": "毎年",
+        "reading": "まいとし",
+        "meaning": "every year"
+      }
+    ]
+  },
+  {
+    "character": "週",
+    "kun_yomi": [],
+    "on_yomi": [
+      "シュウ"
+    ],
+    "meanings": [
+      "week"
+    ],
+    "examples": [
+      "今週 (こんしゅう) - this week",
+      "毎週 (まいしゅう) - every week"
+    ],
+    "words": [
+      {
+        "word": "今週",
+        "reading": "こんしゅう",
+        "meaning": "this week"
+      },
+      {
+        "word": "毎週",
+        "reading": "まいしゅう",
+        "meaning": "every week"
+      }
+    ]
+  },
+  {
+    "character": "上",
+    "kun_yomi": [
+      "うえ",
+      "うわ",
+      "かみ",
+      "あげる",
+      "あがる",
+      "のぼる"
+    ],
+    "on_yomi": [
+      "ジョウ"
+    ],
+    "meanings": [
+      "above",
+      "up"
+    ],
+    "examples": [
+      "上 (うえ) - above",
+      "上手 (じょうず) - skillful"
+    ],
+    "words": [
+      {
+        "word": "上",
+        "reading": "うえ",
+        "meaning": "above"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning": "skillful"
+      }
+    ]
+  },
+  {
+    "character": "下",
+    "kun_yomi": [
+      "した",
+      "しも",
+      "もと",
+      "さげる",
+      "さがる",
+      "くだる",
+      "おりる"
+    ],
+    "on_yomi": [
+      "カ",
+      "ゲ"
+    ],
+    "meanings": [
+      "below",
+      "down"
+    ],
+    "examples": [
+      "下 (した) - below",
+      "下手 (へた) - unskillful"
+    ],
+    "words": [
+      {
+        "word": "下",
+        "reading": "した",
+        "meaning": "below"
+      },
+      {
+        "word": "下手",
+        "reading": "へた",
+        "meaning": "unskillful"
+      }
+    ]
+  },
+  {
+    "character": "左",
+    "kun_yomi": [
+      "ひだり"
+    ],
+    "on_yomi": [
+      "サ"
+    ],
+    "meanings": [
+      "left"
+    ],
+    "examples": [
+      "左 (ひだり) - left"
+    ],
+    "words": [
+      {
+        "word": "左",
+        "reading": "ひだり",
+        "meaning": "left"
+      }
+    ]
+  },
+  {
+    "character": "右",
+    "kun_yomi": [
+      "みぎ"
+    ],
+    "on_yomi": [
+      "ウ",
+      "ユウ"
+    ],
+    "meanings": [
+      "right"
+    ],
+    "examples": [
+      "右 (みぎ) - right"
+    ],
+    "words": [
+      {
+        "word": "右",
+        "reading": "みぎ",
+        "meaning": "right"
+      }
+    ]
+  },
+  {
+    "character": "中",
+    "kun_yomi": [
+      "なか"
+    ],
+    "on_yomi": [
+      "チュウ"
+    ],
+    "meanings": [
+      "middle",
+      "inside"
+    ],
+    "examples": [
+      "中 (なか) - inside",
+      "中国 (ちゅうごく) - China"
+    ],
+    "words": [
+      {
+        "word": "中",
+        "reading": "なか",
+        "meaning": "inside"
+      },
+      {
+        "word": "中国",
+        "reading": "ちゅうごく",
+        "meaning": "China"
+      }
+    ]
+  },
+  {
+    "character": "外",
+    "kun_yomi": [
+      "そと",
+      "ほか"
+    ],
+    "on_yomi": [
+      "ガイ",
+      "ゲ"
+    ],
+    "meanings": [
+      "outside"
+    ],
+    "examples": [
+      "外 (そと) - outside",
+      "外国 (がいこく) - foreign country"
+    ],
+    "words": [
+      {
+        "word": "外",
+        "reading": "そと",
+        "meaning": "outside"
+      },
+      {
+        "word": "外国",
+        "reading": "がいこく",
+        "meaning": "foreign country"
+      }
+    ]
+  },
+  {
+    "character": "大",
+    "kun_yomi": [
+      "おおきい"
+    ],
+    "on_yomi": [
+      "ダイ",
+      "タイ"
+    ],
+    "meanings": [
+      "big"
+    ],
+    "examples": [
+      "大きい (おおきい) - big",
+      "大学 (だいがく) - university"
+    ],
+    "words": [
+      {
+        "word": "大きい",
+        "reading": "おおきい",
+        "meaning": "big"
+      },
+      {
+        "word": "大学",
+        "reading": "だいがく",
+        "meaning": "university"
+      }
+    ]
+  },
+  {
+    "character": "小",
+    "kun_yomi": [
+      "ちいさい",
+      "こ",
+      "お"
+    ],
+    "on_yomi": [
+      "ショウ"
+    ],
+    "meanings": [
+      "small"
+    ],
+    "examples": [
+      "小さい (ちいさい) - small",
+      "小学校 (しょうがっこう) - elementary school"
+    ],
+    "words": [
+      {
+        "word": "小さい",
+        "reading": "ちいさい",
+        "meaning": "small"
+      },
+      {
+        "word": "小学校",
+        "reading": "しょうがっこう",
+        "meaning": "elementary school"
+      }
+    ]
+  },
+  {
+    "character": "高",
+    "kun_yomi": [
+      "たかい"
+    ],
+    "on_yomi": [
+      "コウ"
+    ],
+    "meanings": [
+      "high",
+      "expensive"
+    ],
+    "examples": [
+      "高い (たかい) - high/expensive",
+      "高校 (こうこう) - high school"
+    ],
+    "words": [
+      {
+        "word": "高い",
+        "reading": "たかい",
+        "meaning": "high/expensive"
+      },
+      {
+        "word": "高校",
+        "reading": "こうこう",
+        "meaning": "high school"
+      }
+    ]
+  },
+  {
+    "character": "安",
+    "kun_yomi": [
+      "やすい"
+    ],
+    "on_yomi": [
+      "アン"
+    ],
+    "meanings": [
+      "cheap",
+      "peaceful"
+    ],
+    "examples": [
+      "安い (やすい) - cheap"
+    ],
+    "words": [
+      {
+        "word": "安い",
+        "reading": "やすい",
+        "meaning": "cheap"
+      }
+    ]
+  },
+  {
+    "character": "新",
+    "kun_yomi": [
+      "あたらしい",
+      "あらた",
+      "にい"
+    ],
+    "on_yomi": [
+      "シン"
+    ],
+    "meanings": [
+      "new"
+    ],
+    "examples": [
+      "新しい (あたらしい) - new",
+      "新聞 (しんぶん) - newspaper"
+    ],
+    "words": [
+      {
+        "word": "新しい",
+        "reading": "あたらしい",
+        "meaning": "new"
+      },
+      {
+        "word": "新聞",
+        "reading": "しんぶん",
+        "meaning": "newspaper"
+      }
+    ]
+  },
+  {
+    "character": "古",
+    "kun_yomi": [
+      "ふるい"
+    ],
+    "on_yomi": [
+      "コ"
+    ],
+    "meanings": [
+      "old"
+    ],
+    "examples": [
+      "古い (ふるい) - old"
+    ],
+    "words": [
+      {
+        "word": "古い",
+        "reading": "ふるい",
+        "meaning": "old"
+      }
+    ]
+  },
+  {
+    "character": "長",
+    "kun_yomi": [
+      "ながい"
+    ],
+    "on_yomi": [
+      "チョウ"
+    ],
+    "meanings": [
+      "long"
+    ],
+    "examples": [
+      "長い (ながい) - long",
+      "社長 (しゃちょう) - company president"
+    ],
+    "words": [
+      {
+        "word": "長い",
+        "reading": "ながい",
+        "meaning": "long"
+      },
+      {
+        "word": "社長",
+        "reading": "しゃちょう",
+        "meaning": "company president"
+      }
+    ]
+  },
+  {
+    "character": "多",
+    "kun_yomi": [
+      "おおい"
+    ],
+    "on_yomi": [
+      "タ"
+    ],
+    "meanings": [
+      "many"
+    ],
+    "examples": [
+      "多い (おおい) - many"
+    ],
+    "words": [
+      {
+        "word": "多い",
+        "reading": "おおい",
+        "meaning": "many"
+      }
+    ]
+  },
+  {
+    "character": "少",
+    "kun_yomi": [
+      "すくない",
+      "すこし"
+    ],
+    "on_yomi": [
+      "ショウ"
+    ],
+    "meanings": [
+      "few",
+      "little"
+    ],
+    "examples": [
+      "少ない (すくない) - few",
+      "少し (すこし) - a little"
+    ],
+    "words": [
+      {
+        "word": "少ない",
+        "reading": "すくない",
+        "meaning": "few"
+      },
+      {
+        "word": "少し",
+        "reading": "すこし",
+        "meaning": "a little"
+      }
+    ]
+  },
+  {
+    "character": "本",
+    "kun_yomi": [
+      "もと"
+    ],
+    "on_yomi": [
+      "ホン"
+    ],
+    "meanings": [
+      "book",
+      "origin"
+    ],
+    "examples": [
+      "本 (ほん) - book",
+      "日本 (にほん) - Japan"
+    ],
+    "words": [
+      {
+        "word": "本",
+        "reading": "ほん",
+        "meaning": "book"
+      },
+      {
+        "word": "日本",
+        "reading": "にほん",
+        "meaning": "Japan"
+      }
+    ]
+  },
+  {
+    "character": "山",
+    "kun_yomi": [
+      "やま"
+    ],
+    "on_yomi": [
+      "サン"
+    ],
+    "meanings": [
+      "mountain"
+    ],
+    "examples": [
+      "山 (やま) - mountain",
+      "富士山 (ふじさん) - Mt. Fuji"
+    ],
+    "words": [
+      {
+        "word": "山",
+        "reading": "やま",
+        "meaning": "mountain"
+      },
+      {
+        "word": "富士山",
+        "reading": "ふじさん",
+        "meaning": "Mt. Fuji"
+      }
+    ]
+  },
+  {
+    "character": "川",
+    "kun_yomi": [
+      "かわ"
+    ],
+    "on_yomi": [
+      "セン"
+    ],
+    "meanings": [
+      "river"
+    ],
+    "examples": [
+      "川 (かわ) - river"
+    ],
+    "words": [
+      {
+        "word": "川",
+        "reading": "かわ",
+        "meaning": "river"
+      }
+    ]
+  },
+  {
+    "character": "天",
+    "kun_yomi": [
+      "あめ",
+      "あま"
+    ],
+    "on_yomi": [
+      "テン"
+    ],
+    "meanings": [
+      "heaven",
+      "sky"
+    ],
+    "examples": [
+      "天気 (てんき) - weather"
+    ],
+    "words": [
+      {
+        "word": "天気",
+        "reading": "てんき",
+        "meaning": "weather"
+      }
+    ]
+  },
+  {
+    "character": "気",
+    "kun_yomi": [],
+    "on_yomi": [
+      "キ",
+      "ケ"
+    ],
+    "meanings": [
+      "spirit",
+      "air"
+    ],
+    "examples": [
+      "天気 (てんき) - weather",
+      "元気 (げんき) - healthy"
+    ],
+    "words": [
+      {
+        "word": "天気",
+        "reading": "てんき",
+        "meaning": "weather"
+      },
+      {
+        "word": "元気",
+        "reading": "げんき",
+        "meaning": "healthy"
+      }
+    ]
+  },
+  {
+    "character": "雨",
+    "kun_yomi": [
+      "あめ",
+      "あま"
+    ],
+    "on_yomi": [
+      "ウ"
+    ],
+    "meanings": [
+      "rain"
+    ],
+    "examples": [
+      "雨 (あめ) - rain"
+    ],
+    "words": [
+      {
+        "word": "雨",
+        "reading": "あめ",
+        "meaning": "rain"
+      }
+    ]
+  },
+  {
+    "character": "電",
+    "kun_yomi": [],
+    "on_yomi": [
+      "デン"
+    ],
+    "meanings": [
+      "electricity"
+    ],
+    "examples": [
+      "電気 (でんき) - electricity",
+      "電車 (でんしゃ) - train"
+    ],
+    "words": [
+      {
+        "word": "電気",
+        "reading": "でんき",
+        "meaning": "electricity"
+      },
+      {
+        "word": "電車",
+        "reading": "でんしゃ",
+        "meaning": "train"
+      }
+    ]
+  },
+  {
+    "character": "車",
+    "kun_yomi": [
+      "くるま"
+    ],
+    "on_yomi": [
+      "シャ"
+    ],
+    "meanings": [
+      "car",
+      "vehicle"
+    ],
+    "examples": [
+      "車 (くるま) - car",
+      "電車 (でんしゃ) - train"
+    ],
+    "words": [
+      {
+        "word": "車",
+        "reading": "くるま",
+        "meaning": "car"
+      },
+      {
+        "word": "電車",
+        "reading": "でんしゃ",
+        "meaning": "train"
+      }
+    ]
+  },
+  {
+    "character": "東",
+    "kun_yomi": [
+      "ひがし"
+    ],
+    "on_yomi": [
+      "トウ"
+    ],
+    "meanings": [
+      "east"
+    ],
+    "examples": [
+      "東 (ひがし) - east",
+      "東京 (とうきょう) - Tokyo"
+    ],
+    "words": [
+      {
+        "word": "東",
+        "reading": "ひがし",
+        "meaning": "east"
+      },
+      {
+        "word": "東京",
+        "reading": "とうきょう",
+        "meaning": "Tokyo"
+      }
+    ]
+  },
+  {
+    "character": "西",
+    "kun_yomi": [
+      "にし"
+    ],
+    "on_yomi": [
+      "セイ",
+      "サイ"
+    ],
+    "meanings": [
+      "west"
+    ],
+    "examples": [
+      "西 (にし) - west"
+    ],
+    "words": [
+      {
+        "word": "西",
+        "reading": "にし",
+        "meaning": "west"
+      }
+    ]
+  },
+  {
+    "character": "南",
+    "kun_yomi": [
+      "みなみ"
+    ],
+    "on_yomi": [
+      "ナン"
+    ],
+    "meanings": [
+      "south"
+    ],
+    "examples": [
+      "南 (みなみ) - south"
+    ],
+    "words": [
+      {
+        "word": "南",
+        "reading": "みなみ",
+        "meaning": "south"
+      }
+    ]
+  },
+  {
+    "character": "北",
+    "kun_yomi": [
+      "きた"
+    ],
+    "on_yomi": [
+      "ホク"
+    ],
+    "meanings": [
+      "north"
+    ],
+    "examples": [
+      "北 (きた) - north"
+    ],
+    "words": [
+      {
+        "word": "北",
+        "reading": "きた",
+        "meaning": "north"
+      }
+    ]
+  },
+  {
+    "character": "口",
+    "kun_yomi": [
+      "くち"
+    ],
+    "on_yomi": [
+      "コウ",
+      "ク"
+    ],
+    "meanings": [
+      "mouth",
+      "entrance"
+    ],
+    "examples": [
+      "口 (くち) - mouth",
+      "入口 (いりぐち) - entrance"
+    ],
+    "words": [
+      {
+        "word": "口",
+        "reading": "くち",
+        "meaning": "mouth"
+      },
+      {
+        "word": "入口",
+        "reading": "いりぐち",
+        "meaning": "entrance"
+      }
+    ]
+  },
+  {
+    "character": "目",
+    "kun_yomi": [
+      "め"
+    ],
+    "on_yomi": [
+      "モク",
+      "ボク"
+    ],
+    "meanings": [
+      "eye"
+    ],
+    "examples": [
+      "目 (め) - eye"
+    ],
+    "words": [
+      {
+        "word": "目",
+        "reading": "め",
+        "meaning": "eye"
+      }
+    ]
+  },
+  {
+    "character": "耳",
+    "kun_yomi": [
+      "みみ"
+    ],
+    "on_yomi": [
+      "ジ"
+    ],
+    "meanings": [
+      "ear"
+    ],
+    "examples": [
+      "耳 (みみ) - ear"
+    ],
+    "words": [
+      {
+        "word": "耳",
+        "reading": "みみ",
+        "meaning": "ear"
+      }
+    ]
+  },
+  {
+    "character": "手",
+    "kun_yomi": [
+      "て"
+    ],
+    "on_yomi": [
+      "シュ"
+    ],
+    "meanings": [
+      "hand"
+    ],
+    "examples": [
+      "手 (て) - hand",
+      "上手 (じょうず) - skillful"
+    ],
+    "words": [
+      {
+        "word": "手",
+        "reading": "て",
+        "meaning": "hand"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning": "skillful"
+      }
+    ]
+  },
+  {
+    "character": "足",
+    "kun_yomi": [
+      "あし",
+      "たりる",
+      "たす"
+    ],
+    "on_yomi": [
+      "ソク"
+    ],
+    "meanings": [
+      "foot",
+      "leg"
+    ],
+    "examples": [
+      "足 (あし) - foot/leg"
+    ],
+    "words": [
+      {
+        "word": "足",
+        "reading": "あし",
+        "meaning": "foot/leg"
+      }
+    ]
+  },
+  {
+    "character": "名",
+    "kun_yomi": [
+      "な"
+    ],
+    "on_yomi": [
+      "メイ",
+      "ミョウ"
+    ],
+    "meanings": [
+      "name"
+    ],
+    "examples": [
+      "名前 (なまえ) - name",
+      "名字 (みょうじ) - surname"
+    ],
+    "words": [
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning": "name"
+      },
+      {
+        "word": "名字",
+        "reading": "みょうじ",
+        "meaning": "surname"
+      }
+    ]
+  },
+  {
+    "character": "女",
+    "kun_yomi": [
+      "おんな",
+      "め"
+    ],
+    "on_yomi": [
+      "ジョ",
+      "ニョ"
+    ],
+    "meanings": [
+      "woman"
+    ],
+    "examples": [
+      "女 (おんな) - woman",
+      "女性 (じょせい) - female"
+    ],
+    "words": [
+      {
+        "word": "女",
+        "reading": "おんな",
+        "meaning": "woman"
+      },
+      {
+        "word": "女性",
+        "reading": "じょせい",
+        "meaning": "female"
+      }
+    ]
+  },
+  {
+    "character": "男",
+    "kun_yomi": [
+      "おとこ"
+    ],
+    "on_yomi": [
+      "ダン",
+      "ナン"
+    ],
+    "meanings": [
+      "man"
+    ],
+    "examples": [
+      "男 (おとこ) - man",
+      "男性 (だんせい) - male"
+    ],
+    "words": [
+      {
+        "word": "男",
+        "reading": "おとこ",
+        "meaning": "man"
+      },
+      {
+        "word": "男性",
+        "reading": "だんせい",
+        "meaning": "male"
+      }
+    ]
+  },
+  {
+    "character": "子",
+    "kun_yomi": [
+      "こ"
+    ],
+    "on_yomi": [
+      "シ",
+      "ス"
+    ],
+    "meanings": [
+      "child"
+    ],
+    "examples": [
+      "子供 (こども) - child",
+      "女子 (じょし) - girl"
+    ],
+    "words": [
+      {
+        "word": "子供",
+        "reading": "こども",
+        "meaning": "child"
+      },
+      {
+        "word": "女子",
+        "reading": "じょし",
+        "meaning": "girl"
+      }
+    ]
+  },
+  {
+    "character": "学",
+    "kun_yomi": [
+      "まなぶ"
+    ],
+    "on_yomi": [
+      "ガク"
+    ],
+    "meanings": [
+      "study",
+      "learning"
+    ],
+    "examples": [
+      "学生 (がくせい) - student",
+      "大学 (だいがく) - university"
+    ],
+    "words": [
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning": "student"
+      },
+      {
+        "word": "大学",
+        "reading": "だいがく",
+        "meaning": "university"
+      }
+    ]
+  },
+  {
+    "character": "生",
+    "kun_yomi": [
+      "いきる",
+      "いかす",
+      "うまれる",
+      "うむ",
+      "なま",
+      "き"
+    ],
+    "on_yomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "meanings": [
+      "life",
+      "birth"
+    ],
+    "examples": [
+      "学生 (がくせい) - student",
+      "先生 (せんせい) - teacher"
+    ],
+    "words": [
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning": "student"
+      },
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning": "teacher"
+      }
+    ]
+  },
+  {
+    "character": "先",
+    "kun_yomi": [
+      "さき"
+    ],
+    "on_yomi": [
+      "セン"
+    ],
+    "meanings": [
+      "previous",
+      "ahead"
+    ],
+    "examples": [
+      "先生 (せんせい) - teacher",
+      "先 (さき) - ahead"
+    ],
+    "words": [
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning": "teacher"
+      },
+      {
+        "word": "先",
+        "reading": "さき",
+        "meaning": "ahead"
+      }
+    ]
+  },
+  {
+    "character": "校",
+    "kun_yomi": [],
+    "on_yomi": [
+      "コウ"
+    ],
+    "meanings": [
+      "school"
+    ],
+    "examples": [
+      "学校 (がっこう) - school",
+      "高校 (こうこう) - high school"
+    ],
+    "words": [
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning": "school"
+      },
+      {
+        "word": "高校",
+        "reading": "こうこう",
+        "meaning": "high school"
+      }
+    ]
+  },
+  {
+    "character": "母",
+    "kun_yomi": [
+      "はは"
+    ],
+    "on_yomi": [
+      "ボ"
+    ],
+    "meanings": [
+      "mother"
+    ],
+    "examples": [
+      "母 (はは) - mother",
+      "お母さん (おかあさん) - mother (polite)"
+    ],
+    "words": [
+      {
+        "word": "母",
+        "reading": "はは",
+        "meaning": "mother"
+      },
+      {
+        "word": "お母さん",
+        "reading": "おかあさん",
+        "meaning": "mother (polite)"
+      }
+    ]
+  },
+  {
+    "character": "父",
+    "kun_yomi": [
+      "ちち"
+    ],
+    "on_yomi": [
+      "フ"
+    ],
+    "meanings": [
+      "father"
+    ],
+    "examples": [
+      "父 (ちち) - father",
+      "お父さん (おとうさん) - father (polite)"
+    ],
+    "words": [
+      {
+        "word": "父",
+        "reading": "ちち",
+        "meaning": "father"
+      },
+      {
+        "word": "お父さん",
+        "reading": "おとうさん",
+        "meaning": "father (polite)"
+      }
+    ]
+  },
+  {
+    "character": "友",
+    "kun_yomi": [
+      "とも"
+    ],
+    "on_yomi": [
+      "ユウ"
+    ],
+    "meanings": [
+      "friend"
+    ],
+    "examples": [
+      "友達 (ともだち) - friend"
+    ],
+    "words": [
+      {
+        "word": "友達",
+        "reading": "ともだち",
+        "meaning": "friend"
+      }
+    ]
+  },
+  {
+    "character": "語",
+    "kun_yomi": [
+      "かたる"
+    ],
+    "on_yomi": [
+      "ゴ"
+    ],
+    "meanings": [
+      "language",
+      "word"
+    ],
+    "examples": [
+      "日本語 (にほんご) - Japanese language",
+      "英語 (えいご) - English"
+    ],
+    "words": [
+      {
+        "word": "日本語",
+        "reading": "にほんご",
+        "meaning": "Japanese language"
+      },
+      {
+        "word": "英語",
+        "reading": "えいご",
+        "meaning": "English"
+      }
+    ]
+  },
+  {
+    "character": "何",
+    "kun_yomi": [
+      "なに",
+      "なん"
+    ],
+    "on_yomi": [
+      "カ"
+    ],
+    "meanings": [
+      "what"
+    ],
+    "examples": [
+      "何 (なに) - what"
+    ],
+    "words": [
+      {
+        "word": "何",
+        "reading": "なに",
+        "meaning": "what"
+      }
+    ]
+  },
+  {
+    "character": "食",
+    "kun_yomi": [
+      "たべる",
+      "くう"
+    ],
+    "on_yomi": [
+      "ショク",
+      "ジキ"
+    ],
+    "meanings": [
+      "eat",
+      "food"
+    ],
+    "examples": [
+      "食べる (たべる) - to eat",
+      "食事 (しょくじ) - meal"
+    ],
+    "words": [
+      {
+        "word": "食べる",
+        "reading": "たべる",
+        "meaning": "to eat"
+      },
+      {
+        "word": "食事",
+        "reading": "しょくじ",
+        "meaning": "meal"
+      }
+    ]
+  },
+  {
+    "character": "飲",
+    "kun_yomi": [
+      "のむ"
+    ],
+    "on_yomi": [
+      "イン"
+    ],
+    "meanings": [
+      "drink"
+    ],
+    "examples": [
+      "飲む (のむ) - to drink",
+      "飲み物 (のみもの) - beverage"
+    ],
+    "words": [
+      {
+        "word": "飲む",
+        "reading": "のむ",
+        "meaning": "to drink"
+      },
+      {
+        "word": "飲み物",
+        "reading": "のみもの",
+        "meaning": "beverage"
+      }
+    ]
+  },
+  {
+    "character": "見",
+    "kun_yomi": [
+      "みる",
+      "みえる",
+      "みせる"
+    ],
+    "on_yomi": [
+      "ケン"
+    ],
+    "meanings": [
+      "see",
+      "look"
+    ],
+    "examples": [
+      "見る (みる) - to see",
+      "見せる (みせる) - to show"
+    ],
+    "words": [
+      {
+        "word": "見る",
+        "reading": "みる",
+        "meaning": "to see"
+      },
+      {
+        "word": "見せる",
+        "reading": "みせる",
+        "meaning": "to show"
+      }
+    ]
+  },
+  {
+    "character": "聞",
+    "kun_yomi": [
+      "きく",
+      "きこえる"
+    ],
+    "on_yomi": [
+      "ブン",
+      "モン"
+    ],
+    "meanings": [
+      "hear",
+      "ask"
+    ],
+    "examples": [
+      "聞く (きく) - to hear/ask",
+      "新聞 (しんぶん) - newspaper"
+    ],
+    "words": [
+      {
+        "word": "聞く",
+        "reading": "きく",
+        "meaning": "to hear/ask"
+      },
+      {
+        "word": "新聞",
+        "reading": "しんぶん",
+        "meaning": "newspaper"
+      }
+    ]
+  },
+  {
+    "character": "読",
+    "kun_yomi": [
+      "よむ"
+    ],
+    "on_yomi": [
+      "ドク",
+      "トク"
+    ],
+    "meanings": [
+      "read"
+    ],
+    "examples": [
+      "読む (よむ) - to read"
+    ],
+    "words": [
+      {
+        "word": "読む",
+        "reading": "よむ",
+        "meaning": "to read"
+      }
+    ]
+  },
+  {
+    "character": "書",
+    "kun_yomi": [
+      "かく"
+    ],
+    "on_yomi": [
+      "ショ"
+    ],
+    "meanings": [
+      "write"
+    ],
+    "examples": [
+      "書く (かく) - to write",
+      "辞書 (じしょ) - dictionary"
+    ],
+    "words": [
+      {
+        "word": "書く",
+        "reading": "かく",
+        "meaning": "to write"
+      },
+      {
+        "word": "辞書",
+        "reading": "じしょ",
+        "meaning": "dictionary"
+      }
+    ]
+  },
+  {
+    "character": "話",
+    "kun_yomi": [
+      "はなす",
+      "はなし"
+    ],
+    "on_yomi": [
+      "ワ"
+    ],
+    "meanings": [
+      "talk",
+      "story"
+    ],
+    "examples": [
+      "話す (はなす) - to talk",
+      "電話 (でんわ) - telephone"
+    ],
+    "words": [
+      {
+        "word": "話す",
+        "reading": "はなす",
+        "meaning": "to talk"
+      },
+      {
+        "word": "電話",
+        "reading": "でんわ",
+        "meaning": "telephone"
+      }
+    ]
+  },
+  {
+    "character": "出",
+    "kun_yomi": [
+      "でる",
+      "だす"
+    ],
+    "on_yomi": [
+      "シュツ",
+      "スイ"
+    ],
+    "meanings": [
+      "exit",
+      "put out"
+    ],
+    "examples": [
+      "出る (でる) - to go out",
+      "出口 (でぐち) - exit"
+    ],
+    "words": [
+      {
+        "word": "出る",
+        "reading": "でる",
+        "meaning": "to go out"
+      },
+      {
+        "word": "出口",
+        "reading": "でぐち",
+        "meaning": "exit"
+      }
+    ]
+  },
+  {
+    "character": "入",
+    "kun_yomi": [
+      "いる",
+      "はいる",
+      "いれる"
+    ],
+    "on_yomi": [
+      "ニュウ"
+    ],
+    "meanings": [
+      "enter",
+      "put in"
+    ],
+    "examples": [
+      "入る (はいる) - to enter",
+      "入口 (いりぐち) - entrance"
+    ],
+    "words": [
+      {
+        "word": "入る",
+        "reading": "はいる",
+        "meaning": "to enter"
+      },
+      {
+        "word": "入口",
+        "reading": "いりぐち",
+        "meaning": "entrance"
+      }
+    ]
+  },
+  {
+    "character": "来",
+    "kun_yomi": [
+      "くる",
+      "きたる",
+      "きたす"
+    ],
+    "on_yomi": [
+      "ライ"
+    ],
+    "meanings": [
+      "come"
+    ],
+    "examples": [
+      "来る (くる) - to come",
+      "来年 (らいねん) - next year"
+    ],
+    "words": [
+      {
+        "word": "来る",
+        "reading": "くる",
+        "meaning": "to come"
+      },
+      {
+        "word": "来年",
+        "reading": "らいねん",
+        "meaning": "next year"
+      }
+    ]
+  },
+  {
+    "character": "行",
+    "kun_yomi": [
+      "いく",
+      "ゆく",
+      "おこなう"
+    ],
+    "on_yomi": [
+      "コウ",
+      "ギョウ",
+      "アン"
+    ],
+    "meanings": [
+      "go",
+      "conduct"
+    ],
+    "examples": [
+      "行く (いく) - to go",
+      "銀行 (ぎんこう) - bank"
+    ],
+    "words": [
+      {
+        "word": "行く",
+        "reading": "いく",
+        "meaning": "to go"
+      },
+      {
+        "word": "銀行",
+        "reading": "ぎんこう",
+        "meaning": "bank"
+      }
+    ]
+  },
+  {
+    "character": "帰",
+    "kun_yomi": [
+      "かえる",
+      "かえす"
+    ],
+    "on_yomi": [
+      "キ"
+    ],
+    "meanings": [
+      "return"
+    ],
+    "examples": [
+      "帰る (かえる) - to return home"
+    ],
+    "words": [
+      {
+        "word": "帰る",
+        "reading": "かえる",
+        "meaning": "to return home"
+      }
+    ]
+  },
+  {
+    "character": "立",
+    "kun_yomi": [
+      "たつ",
+      "たてる"
+    ],
+    "on_yomi": [
+      "リツ",
+      "リュウ"
+    ],
+    "meanings": [
+      "stand"
+    ],
+    "examples": [
+      "立つ (たつ) - to stand"
+    ],
+    "words": [
+      {
+        "word": "立つ",
+        "reading": "たつ",
+        "meaning": "to stand"
+      }
+    ]
+  },
+  {
+    "character": "買",
+    "kun_yomi": [
+      "かう"
+    ],
+    "on_yomi": [
+      "バイ"
+    ],
+    "meanings": [
+      "buy"
+    ],
+    "examples": [
+      "買う (かう) - to buy"
+    ],
+    "words": [
+      {
+        "word": "買う",
+        "reading": "かう",
+        "meaning": "to buy"
+      }
+    ]
+  },
+  {
+    "character": "売",
+    "kun_yomi": [
+      "うる",
+      "うれる"
+    ],
+    "on_yomi": [
+      "バイ"
+    ],
+    "meanings": [
+      "sell"
+    ],
+    "examples": [
+      "売る (うる) - to sell"
+    ],
+    "words": [
+      {
+        "word": "売る",
+        "reading": "うる",
+        "meaning": "to sell"
+      }
+    ]
+  },
+  {
+    "character": "休",
+    "kun_yomi": [
+      "やすむ",
+      "やすまる",
+      "やすめる"
+    ],
+    "on_yomi": [
+      "キュウ"
+    ],
+    "meanings": [
+      "rest"
+    ],
+    "examples": [
+      "休む (やすむ) - to rest",
+      "休日 (きゅうじつ) - holiday"
+    ],
+    "words": [
+      {
+        "word": "休む",
+        "reading": "やすむ",
+        "meaning": "to rest"
+      },
+      {
+        "word": "休日",
+        "reading": "きゅうじつ",
+        "meaning": "holiday"
+      }
+    ]
+  },
+  {
+    "character": "会",
+    "kun_yomi": [
+      "あう"
+    ],
+    "on_yomi": [
+      "カイ",
+      "エ"
+    ],
+    "meanings": [
+      "meet"
+    ],
+    "examples": [
+      "会う (あう) - to meet",
+      "会社 (かいしゃ) - company"
+    ],
+    "words": [
+      {
+        "word": "会う",
+        "reading": "あう",
+        "meaning": "to meet"
+      },
+      {
+        "word": "会社",
+        "reading": "かいしゃ",
+        "meaning": "company"
+      }
+    ]
+  },
+  {
+    "character": "社",
+    "kun_yomi": [
+      "やしろ"
+    ],
+    "on_yomi": [
+      "シャ"
+    ],
+    "meanings": [
+      "company",
+      "shrine"
+    ],
+    "examples": [
+      "会社 (かいしゃ) - company",
+      "神社 (じんじゃ) - shrine"
+    ],
+    "words": [
+      {
+        "word": "会社",
+        "reading": "かいしゃ",
+        "meaning": "company"
+      },
+      {
+        "word": "神社",
+        "reading": "じんじゃ",
+        "meaning": "shrine"
+      }
+    ]
+  },
+  {
+    "character": "店",
+    "kun_yomi": [
+      "みせ"
+    ],
+    "on_yomi": [
+      "テン"
+    ],
+    "meanings": [
+      "store"
+    ],
+    "examples": [
+      "店 (みせ) - store"
+    ],
+    "words": [
+      {
+        "word": "店",
+        "reading": "みせ",
+        "meaning": "store"
+      }
+    ]
+  },
+  {
+    "character": "国",
+    "kun_yomi": [
+      "くに"
+    ],
+    "on_yomi": [
+      "コク"
+    ],
+    "meanings": [
+      "country"
+    ],
+    "examples": [
+      "国 (くに) - country",
+      "外国 (がいこく) - foreign country"
+    ],
+    "words": [
+      {
+        "word": "国",
+        "reading": "くに",
+        "meaning": "country"
+      },
+      {
+        "word": "外国",
+        "reading": "がいこく",
+        "meaning": "foreign country"
+      }
+    ]
+  },
+  {
+    "character": "白",
+    "kun_yomi": [
+      "しろ",
+      "しろい"
+    ],
+    "on_yomi": [
+      "ハク",
+      "ビャク"
+    ],
+    "meanings": [
+      "white"
+    ],
+    "examples": [
+      "白い (しろい) - white"
+    ],
+    "words": [
+      {
+        "word": "白い",
+        "reading": "しろい",
+        "meaning": "white"
+      }
+    ]
+  },
+  {
+    "character": "英",
+    "kun_yomi": [],
+    "on_yomi": [
+      "エイ"
+    ],
+    "meanings": [
+      "England",
+      "excellent"
+    ],
+    "examples": [
+      "英語 (えいご) - English language",
+      "英国 (えいこく) - England"
+    ],
+    "words": [
+      {
+        "word": "英語",
+        "reading": "えいご",
+        "meaning": "English language"
+      },
+      {
+        "word": "英国",
+        "reading": "えいこく",
+        "meaning": "England"
+      }
+    ]
+  }
+]
