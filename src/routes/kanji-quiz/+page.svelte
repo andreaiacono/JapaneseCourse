@@ -227,32 +227,6 @@
       {/if}
 
       <div class="setup-section">
-        <span class="section-label">Quiz type</span>
-        <div class="type-toggles">
-          {#each QUIZ_TYPES as { value, label }}
-            <button
-              class="toggle-btn"
-              class:active={selectedQuizTypes.has(value)}
-              on:click={() => toggleQuizType(value)}
-            >{label}</button>
-          {/each}
-        </div>
-      </div>
-
-      <div class="setup-section">
-        <span class="section-label">Interaction mode</span>
-        <div class="type-toggles">
-          {#each INTERACTION_MODES as { value, label }}
-            <button
-              class="toggle-btn"
-              class:active={selectedInteractionModes.has(value)}
-              on:click={() => toggleInteractionMode(value)}
-            >{label}</button>
-          {/each}
-        </div>
-      </div>
-
-      <div class="setup-section">
         <span class="section-label">JLPT level</span>
         <div class="type-toggles">
           {#each JLPT_LEVELS as level}
@@ -274,6 +248,32 @@
           Select at least one JLPT level
         {/if}
       </p>
+
+      <div class="setup-section">
+        <span class="section-label">Question type</span>
+        <div class="type-toggles">
+          {#each QUIZ_TYPES as { value, label }}
+            <button
+              class="toggle-btn"
+              class:active={selectedQuizTypes.has(value)}
+              on:click={() => toggleQuizType(value)}
+            >{label}</button>
+          {/each}
+        </div>
+      </div>
+
+      <div class="setup-section">
+        <span class="section-label">Answer type</span>
+        <div class="type-toggles">
+          {#each INTERACTION_MODES as { value, label }}
+            <button
+              class="toggle-btn"
+              class:active={selectedInteractionModes.has(value)}
+              on:click={() => toggleInteractionMode(value)}
+            >{label}</button>
+          {/each}
+        </div>
+      </div>
 
       <button
         class="start-btn"

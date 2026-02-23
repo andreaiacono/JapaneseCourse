@@ -9,6 +9,11 @@ export type QuestionType =
 
 export type InteractionMode = 'selection' | 'typing';
 
+// How the question is presented to the user
+export type QuestionPresentation = 'written' | 'audio';
+// How the user answers
+export type AnswerMode = 'selection' | 'typing';
+
 export interface QuizQuestion {
   type: QuestionType;
   interactionMode: InteractionMode;
@@ -56,7 +61,8 @@ export class QuizEngine {
 
   startQuiz(
     characters: Character[],
-    interactionModes: InteractionMode[] = ['selection']
+    questionTypes: QuestionPresentation[] = ['written'],
+    answerModes: AnswerMode[] = ['selection']
   ): void {
     this.questions = [];
     this.currentIndex = 0;
@@ -66,7 +72,7 @@ export class QuizEngine {
     if (characters.length === 0) return;
 
     for (const char of shuffleArray(characters)) {
-      const question = this.generateQuestion(char, characters, interactionModes);
+      const question = this.generateQuestion(char, characters, questionTypes, answerModes);
       if (question) this.questions.push(question);
     }
   }
@@ -74,25 +80,24 @@ export class QuizEngine {
   private generateQuestion(
     char: Character,
     allChars: Character[],
-    interactionModes: InteractionMode[]
+    questionTypes: QuestionPresentation[],
+    answerModes: AnswerMode[]
   ): QuizQuestion | null {
     const isKana = char.characterType === 'hiragana' || char.characterType === 'katakana';
-    const mode = interactionModes[Math.floor(Math.random() * interactionModes.length)];
 
     if (isKana) {
-      let q: QuizQuestion | null;
-      if (mode === 'typing') {
-        q = this.makeCharToReadingQuestion(char, allChars);
+      const questionType = questionTypes[Math.floor(Math.random() * questionTypes.length)];
+      const answerMode = answerModes[Math.floor(Math.random() * answerModes.length)];
+      // If audio is picked but character has no audio, fall back to written
+      const effectiveType = (questionType === 'audio' && char.readings.length === 0) ? 'written' : questionType;
+
+      if (effectiveType === 'audio') {
+        return this.makeAudioQuestion(char, allChars, answerMode);
       } else {
-        const hasAudio = char.readings.length > 0;
-        if (hasAudio && Math.random() < 0.5) {
-          q = this.makeAudioQuestion(char, allChars);
-        } else {
-          q = this.makeCharToReadingQuestion(char, allChars);
-        }
+        const q = this.makeCharToReadingQuestion(char, allChars);
+        if (q) q.interactionMode = answerMode;
+        return q;
       }
-      if (q) q.interactionMode = mode;
-      return q;
     }
 
     // Non-kana always uses selection mode
@@ -216,11 +221,27 @@ export class QuizEngine {
     };
   }
 
-  private makeAudioQuestion(char: Character, allChars: Character[]): QuizQuestion | null {
+  private makeAudioQuestion(char: Character, allChars: Character[], answerMode: AnswerMode = 'selection'): QuizQuestion | null {
     if (char.readings.length === 0) return null;
     const reading = char.readings[Math.floor(Math.random() * char.readings.length)];
 
     const isKana = char.characterType === 'hiragana' || char.characterType === 'katakana';
+
+    // Kana + typing: hear the audio, type the romaji
+    if (isKana && answerMode === 'typing') {
+      const romaji = char.romaji ?? '';
+      if (!romaji) return null;
+      return {
+        type: 'audio',
+        interactionMode: 'typing',
+        prompt: 'What is the romaji for this character?',
+        options: [],
+        correctAnswer: romaji,
+        character: char,
+        audioPath: reading.audioPath
+      };
+    }
+
     const correct = isKana ? char.character : reading.text;
     const prompt = isKana ? 'Which character is this?' : 'What is this pronunciation?';
 
