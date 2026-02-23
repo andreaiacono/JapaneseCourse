@@ -26,7 +26,7 @@
       <span class="feature-cta">Open reference →</span>
     </a>
 
-    <a href="{base}/quiz" class="feature-card">
+    <a href="{base}/kana-quiz" class="feature-card">
       <div class="feature-icon">✏️</div>
       <div class="feature-body">
         <h2>Kana Quiz</h2>

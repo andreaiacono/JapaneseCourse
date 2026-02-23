@@ -49,6 +49,7 @@
   let noWordsError = false;
 
   // Toast state
+  let toastQuestion = '';
   let toastAnswer = '';
   let toastType: 'correct' | 'wrong' = 'correct';
   let toastVisible = false;
@@ -136,9 +137,10 @@
     }
   }
 
-  function showToast(type: 'correct' | 'wrong', answer: string, duration: number) {
+  function showToast(type: 'correct' | 'wrong', question: string, answer: string, duration: number) {
     if (toastTimer) clearTimeout(toastTimer);
     toastType = type;
+    toastQuestion = question;
     toastAnswer = answer;
     toastVisible = true;
     toastTimer = setTimeout(() => { toastVisible = false; }, duration);
@@ -150,10 +152,10 @@
     isCorrect = quizEngine.checkSelectedAnswer(word);
     if (isCorrect) {
       correctCount++;
-      showToast('correct', '', 1000);
+      showToast('correct', '', '', 1000);
     } else {
       wrongCount++;
-      showToast('wrong', currentQuestion?.correctAnswer ?? '', 3000);
+      showToast('wrong', currentQuestion?.word.word ?? '', currentQuestion?.correctAnswer ?? '', 3000);
     }
     totalAnswered++;
     loadNextQuestion();
@@ -164,10 +166,10 @@
     isCorrect = quizEngine.checkTypedAnswer(typedAnswer);
     if (isCorrect) {
       correctCount++;
-      showToast('correct', '', 1000);
+      showToast('correct', '', '', 1000);
     } else {
       wrongCount++;
-      showToast('wrong', currentQuestion?.correctAnswer ?? '', 3000);
+      showToast('wrong', currentQuestion?.word.word ?? '', currentQuestion?.correctAnswer ?? '', 3000);
     }
     totalAnswered++;
     loadNextQuestion();
@@ -209,7 +211,7 @@
     {#if toastType === 'correct'}
       ✓ Correct!
     {:else}
-      ✗ Correct answer: <strong>{toastAnswer}</strong>
+      ✗ Wrong: <strong class="japanese">{toastQuestion}</strong> = <strong>{toastAnswer}</strong>
     {/if}
   </div>
 {/if}

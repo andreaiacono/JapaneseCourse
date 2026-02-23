@@ -17,7 +17,7 @@
       <a href="{base}/" class="app-title">Japanese Study</a>
       <nav>
         <a href="{base}/study" class:active={$page.route.id === '/study'}>Study</a>
-        <a href="{base}/quiz" class:active={$page.route.id === '/quiz'}>Kana Quiz</a>
+        <a href="{base}/kana-quiz" class:active={$page.route.id === '/kana-quiz'}>Kana Quiz</a>
         <a href="{base}/kanji-quiz" class:active={$page.route.id === '/kanji-quiz'}>Kanji Quiz</a>
       </nav>
       <button
