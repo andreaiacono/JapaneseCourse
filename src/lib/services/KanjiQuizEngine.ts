@@ -45,20 +45,15 @@ export class KanjiQuizEngine {
   private currentIndex = 0;
   private correctCount = 0;
   private answeredCount = 0;
-  private quizType: KanjiQuizType = 'reading';
-  private interactionMode: InteractionMode = 'selection';
   private similarityMap = new KanjiSimilarityMap();
 
   constructor(private dataLoader: DataLoader) {}
 
   startQuiz(
-    quizType: KanjiQuizType,
-    interactionMode: InteractionMode,
-    jlptLevels: ('N5' | 'N4')[],
-    numQuestions: number
+    quizTypes: KanjiQuizType[],
+    interactionModes: InteractionMode[],
+    jlptLevels: ('N5' | 'N4')[]
   ): boolean {
-    this.quizType = quizType;
-    this.interactionMode = interactionMode;
     this.questions = [];
     this.currentIndex = 0;
     this.correctCount = 0;
@@ -67,20 +62,27 @@ export class KanjiQuizEngine {
     let allWords = this.dataLoader.getWordsByLevels(jlptLevels);
     if (allWords.length === 0) return false;
 
-    if (quizType === 'listening') {
+    // If listening-only, restrict to words that have audio
+    if (quizTypes.length === 1 && quizTypes[0] === 'listening') {
       allWords = allWords.filter((w) => w.audioPath);
     }
     if (allWords.length === 0) return false;
 
-    const count = Math.min(numQuestions, allWords.length);
-    const selected = shuffleArray(allWords).slice(0, count);
+    const shuffled = shuffleArray(allWords);
 
-    for (const word of selected) {
+    for (const word of shuffled) {
+      // For words without audio, fall back to reading if available
+      let availableTypes = [...quizTypes];
+      if (!word.audioPath) availableTypes = availableTypes.filter((t) => t !== 'listening');
+      if (availableTypes.length === 0) continue;
+
+      const quizType = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+      const interactionMode = interactionModes[Math.floor(Math.random() * interactionModes.length)];
+
       const question = this.generateQuestion(word, quizType, interactionMode, allWords);
       if (question) this.questions.push(question);
     }
 
-    this.questions = shuffleArray(this.questions);
     return this.questions.length > 0;
   }
 
