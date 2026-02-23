@@ -1,160 +1,325 @@
 <script lang="ts">
-  import CharacterDisplay from '$lib/components/CharacterDisplay.svelte';
+  import { onMount, onDestroy } from 'svelte';
+  import { audioManager } from '$lib/services/AudioManager';
   import {
-    currentType,
-    currentIndex,
-    currentCharacter,
-    currentCharacters
-  } from '$lib/stores/characterStore';
+    HIRAGANA_DAKUTEN,
+    HIRAGANA_YOUON,
+    KATAKANA_DAKUTEN,
+    KATAKANA_YOUON
+  } from '$lib/data/kanaData';
+  import type { Character } from '$lib/models/Character';
 
-  const CHARACTER_TYPES = [
-    { value: 'hiragana', label: 'Hiragana' },
-    { value: 'katakana', label: 'Katakana' },
-    { value: 'kanji_n5', label: 'Kanji N5' },
-    { value: 'kanji_n4', label: 'Kanji N4' }
+  // Traditional gojuuon grid — null = empty cell
+  const BASIC_H: (string | null)[][] = [
+    ['あ', 'い', 'う', 'え', 'お'],
+    ['か', 'き', 'く', 'け', 'こ'],
+    ['さ', 'し', 'す', 'せ', 'そ'],
+    ['た', 'ち', 'つ', 'て', 'と'],
+    ['な', 'に', 'ぬ', 'ね', 'の'],
+    ['は', 'ひ', 'ふ', 'へ', 'ほ'],
+    ['ま', 'み', 'む', 'め', 'も'],
+    ['や', null, 'ゆ', null, 'よ'],
+    ['ら', 'り', 'る', 'れ', 'ろ'],
+    ['わ', null, null, null, 'を'],
+    ['ん', null, null, null, null]
   ];
 
-  function handleTypeChange(event: Event) {
-    const target = event.target as HTMLSelectElement;
-    currentType.set(target.value);
-    currentIndex.set(0);
+  const BASIC_K: (string | null)[][] = [
+    ['ア', 'イ', 'ウ', 'エ', 'オ'],
+    ['カ', 'キ', 'ク', 'ケ', 'コ'],
+    ['サ', 'シ', 'ス', 'セ', 'ソ'],
+    ['タ', 'チ', 'ツ', 'テ', 'ト'],
+    ['ナ', 'ニ', 'ヌ', 'ネ', 'ノ'],
+    ['ハ', 'ヒ', 'フ', 'ヘ', 'ホ'],
+    ['マ', 'ミ', 'ム', 'メ', 'モ'],
+    ['ヤ', null, 'ユ', null, 'ヨ'],
+    ['ラ', 'リ', 'ル', 'レ', 'ロ'],
+    ['ワ', null, null, null, 'ヲ'],
+    ['ン', null, null, null, null]
+  ];
+
+  const DAKUTEN_H: string[][] = [
+    ['が', 'ぎ', 'ぐ', 'げ', 'ご'],
+    ['ざ', 'じ', 'ず', 'ぜ', 'ぞ'],
+    ['だ', 'ぢ', 'づ', 'で', 'ど'],
+    ['ば', 'び', 'ぶ', 'べ', 'ぼ'],
+    ['ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ']
+  ];
+
+  const DAKUTEN_K: string[][] = [
+    ['ガ', 'ギ', 'グ', 'ゲ', 'ゴ'],
+    ['ザ', 'ジ', 'ズ', 'ゼ', 'ゾ'],
+    ['ダ', 'ヂ', 'ヅ', 'デ', 'ド'],
+    ['バ', 'ビ', 'ブ', 'ベ', 'ボ'],
+    ['パ', 'ピ', 'プ', 'ペ', 'ポ']
+  ];
+
+  function toGrid3(chars: Character[]): Character[][] {
+    const rows: Character[][] = [];
+    for (let i = 0; i < chars.length; i += 3) rows.push(chars.slice(i, i + 3));
+    return rows;
   }
 
-  function handlePrevious() {
-    currentIndex.update((i) => Math.max(0, i - 1));
+  const YOUON_H = toGrid3(HIRAGANA_YOUON);
+  const YOUON_K = toGrid3(KATAKANA_YOUON);
+
+  interface ScriptDef {
+    label: string;
+    jp: string;
+    basic: (string | null)[][];
+    dakuten: string[][];
+    youon: Character[][];
   }
 
-  function handleNext() {
-    currentIndex.update((i) => Math.min($currentCharacters.length - 1, i + 1));
+  const SCRIPTS: ScriptDef[] = [
+    { label: 'Hiragana', jp: '平仮名', basic: BASIC_H, dakuten: DAKUTEN_H, youon: YOUON_H },
+    { label: 'Katakana', jp: '片仮名', basic: BASIC_K, dakuten: DAKUTEN_K, youon: YOUON_K }
+  ];
+
+  type CharInfo = { romaji: string; audioPath?: string };
+
+  // Pre-populate map with static romaji from kanaData (available before mount)
+  function buildInitialMap(): Map<string, CharInfo> {
+    const map = new Map<string, CharInfo>();
+    for (const c of [
+      ...HIRAGANA_DAKUTEN,
+      ...HIRAGANA_YOUON,
+      ...KATAKANA_DAKUTEN,
+      ...KATAKANA_YOUON
+    ]) {
+      map.set(c.character, { romaji: c.romaji ?? '' });
+    }
+    return map;
   }
 
-  function handleKeydown(event: KeyboardEvent) {
-    if (event.key === 'ArrowLeft') handlePrevious();
-    else if (event.key === 'ArrowRight') handleNext();
+  let charMap = buildInitialMap();
+
+  onMount(async () => {
+    const { dataLoader } = await import('$lib/services/loader');
+    for (const c of [
+      ...dataLoader.getCharacters('hiragana'),
+      ...dataLoader.getCharacters('katakana')
+    ]) {
+      charMap.set(c.character, {
+        romaji: c.romaji ?? '',
+        audioPath: c.readings[0]?.audioPath
+      });
+    }
+    charMap = charMap; // trigger reactivity
+  });
+
+  onDestroy(() => {
+    audioManager.stop();
+  });
+
+  function playHover(ch: string) {
+    const info = charMap.get(ch);
+    if (info?.audioPath) audioManager.play(info.audioPath);
   }
 </script>
 
-<svelte:window on:keydown={handleKeydown} />
-
-<div class="study-view">
-  <div class="controls">
-    <select value={$currentType} on:change={handleTypeChange} class="type-select">
-      {#each CHARACTER_TYPES as { value, label }}
-        <option {value}>{label}</option>
-      {/each}
-    </select>
-
-    <span class="progress-info">
-      {$currentIndex + 1} / {$currentCharacters.length}
-    </span>
+<div class="page">
+  <div class="page-header">
+    <h2>Kana Reference</h2>
+    <p class="subtitle">Hover over a basic character to hear its pronunciation</p>
   </div>
 
-  <div class="card">
-    {#if $currentCharacter}
-      <CharacterDisplay character={$currentCharacter} />
-    {:else}
-      <div class="empty">No characters available</div>
-    {/if}
-  </div>
+  <div class="scripts-grid">
+    {#each SCRIPTS as script}
+      <div class="script-col">
+        <h3 class="script-title">
+          {script.label}
+          <span class="jp-title">{script.jp}</span>
+        </h3>
 
-  <div class="navigation">
-    <button on:click={handlePrevious} disabled={$currentIndex === 0} class="nav-btn">
-      Previous
-    </button>
-    <button
-      on:click={handleNext}
-      disabled={$currentIndex >= $currentCharacters.length - 1}
-      class="nav-btn"
-    >
-      Next
-    </button>
-  </div>
+        <section class="kana-section">
+          <span class="section-label">Basic (五十音)</span>
+          <div class="grid-5">
+            {#each script.basic as row}
+              {#each row as ch}
+                {#if ch !== null}
+                  {@const hasAudio = !!charMap.get(ch)?.audioPath}
+                  <button
+                    class="cell"
+                    class:has-audio={hasAudio}
+                    on:mouseenter={() => playHover(ch)}
+                    tabindex="-1"
+                  >
+                    <span class="char japanese">{ch}</span>
+                    <span class="romaji">{charMap.get(ch)?.romaji ?? ''}</span>
+                  </button>
+                {:else}
+                  <div class="cell empty" />
+                {/if}
+              {/each}
+            {/each}
+          </div>
+        </section>
 
-  <p class="keyboard-hint">Use arrow keys to navigate</p>
+        <section class="kana-section">
+          <span class="section-label">Voiced / dakuten (濁音)</span>
+          <div class="grid-5">
+            {#each script.dakuten as row}
+              {#each row as ch}
+                <button
+                  class="cell"
+                  on:mouseenter={() => playHover(ch)}
+                  tabindex="-1"
+                >
+                  <span class="char japanese">{ch}</span>
+                  <span class="romaji">{charMap.get(ch)?.romaji ?? ''}</span>
+                </button>
+              {/each}
+            {/each}
+          </div>
+        </section>
+
+        <section class="kana-section">
+          <span class="section-label">Combinations / yōon (拗音)</span>
+          <div class="grid-3">
+            {#each script.youon as row}
+              {#each row as c}
+                <button
+                  class="cell wide"
+                  on:mouseenter={() => playHover(c.character)}
+                  tabindex="-1"
+                >
+                  <span class="char japanese">{c.character}</span>
+                  <span class="romaji">{c.romaji}</span>
+                </button>
+              {/each}
+            {/each}
+          </div>
+        </section>
+      </div>
+    {/each}
+  </div>
 </div>
 
 <style>
-  .study-view {
-    max-width: 700px;
+  .page {
+    max-width: 960px;
     margin: 0 auto;
   }
 
-  .controls {
+  .page-header {
+    margin-bottom: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .scripts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .scripts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .script-col {
     display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .script-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .jp-title {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  .kana-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .section-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-secondary-btn);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .cell {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    gap: 1rem;
+    justify-content: center;
+    padding: 0.35rem 0.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: default;
+    transition: background 0.1s, border-color 0.1s;
+    min-height: 64px;
+    box-shadow: var(--shadow-card);
   }
 
-  .type-select {
-    padding: 0.55rem 1rem;
-    font-size: 1rem;
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    background: var(--bg-input);
-    color: var(--text);
+  .cell.empty {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .cell.has-audio {
     cursor: pointer;
-    transition: border-color 0.15s;
   }
 
-  .type-select:focus {
-    outline: none;
+  .cell.has-audio:hover {
+    background: var(--bg-toggle-active);
     border-color: var(--border-focus);
   }
 
-  .progress-info {
-    font-size: 1rem;
+  .char {
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--text-dark);
+  }
+
+  .cell.wide .char {
+    font-size: 1.4rem;
+  }
+
+  .romaji {
+    font-size: 0.9rem;
     color: var(--text-muted);
-  }
-
-  .card {
-    background: var(--bg-card);
-    border-radius: 12px;
-    box-shadow: var(--shadow-card);
-    min-height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navigation {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .nav-btn {
-    padding: 0.7rem 2rem;
-    font-size: 1rem;
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.15s;
-  }
-
-  .nav-btn:hover:not(:disabled) {
-    background: var(--primary-dark);
-  }
-
-  .nav-btn:disabled {
-    background: var(--disabled-bg);
-    cursor: not-allowed;
-  }
-
-  .empty {
-    padding: 4rem;
-    text-align: center;
-    color: var(--text-hint);
-  }
-
-  .keyboard-hint {
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--text-hint);
-    margin-top: 0.75rem;
+    margin-top: 3px;
+    line-height: 1;
   }
 </style>
