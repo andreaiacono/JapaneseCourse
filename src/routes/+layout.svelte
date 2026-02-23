@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
   import { initData, isLoading, loadError } from '$lib/stores/characterStore';
   import { theme, toggleTheme } from '$lib/stores/themeStore';
   import '../app.css';
@@ -15,9 +16,9 @@
     <div class="header-content">
       <span class="app-title">Japanese Study</span>
       <nav>
-        <a href="/" class:active={$page.url.pathname === '/'}>Study</a>
-        <a href="/quiz" class:active={$page.url.pathname === '/quiz'}>Kana Quiz</a>
-        <a href="/kanji-quiz" class:active={$page.url.pathname === '/kanji-quiz'}>Kanji Quiz</a>
+        <a href="{base}/" class:active={$page.route.id === '/'}>Study</a>
+        <a href="{base}/quiz" class:active={$page.route.id === '/quiz'}>Kana Quiz</a>
+        <a href="{base}/kanji-quiz" class:active={$page.route.id === '/kanji-quiz'}>Kanji Quiz</a>
       </nav>
       <button
         class="theme-toggle"
