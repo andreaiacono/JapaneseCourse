@@ -298,7 +298,14 @@
         <p class="prompt">{currentQuestion.prompt}</p>
 
         {#if currentQuestion.displayText}
-          <div class="word-display japanese">{currentQuestion.displayText}</div>
+          <div class="word-display">
+            {#if /[\u4e00-\u9faf\u3400-\u4dbf\uf900-\ufaff]/.test(currentQuestion.word.word)}
+              <span class="kanji-large japanese">{currentQuestion.word.word}</span>
+              <span class="word-reading japanese"> ({currentQuestion.word.reading})</span>
+            {:else}
+              <span class="japanese">{currentQuestion.displayText}</span>
+            {/if}
+          </div>
         {/if}
 
         {#if currentQuestion.audioPath}
@@ -552,9 +559,14 @@
   }
 
   .word-display {
-    font-size: 2.2rem;
     font-weight: 700;
     color: var(--text-dark);
+    line-height: 1.3;
+    font-size: 2.2rem;
+  }
+
+  .kanji-large {
+    font-size: 3.5rem;
   }
 
   .audio-row {
