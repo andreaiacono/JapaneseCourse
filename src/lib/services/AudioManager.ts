@@ -6,7 +6,7 @@ class AudioManager {
     this.stop();
 
     if (!this.audioCache.has(audioPath)) {
-      const audio = new Audio(`/${audioPath}`);
+      const audio = new Audio(`${import.meta.env.BASE_URL}${audioPath}`);
       audio.preload = 'auto';
       this.audioCache.set(audioPath, audio);
     }
@@ -31,7 +31,7 @@ class AudioManager {
   preload(audioPaths: string[]): void {
     for (const p of audioPaths) {
       if (!this.audioCache.has(p)) {
-        const audio = new Audio(`/${p}`);
+        const audio = new Audio(`${import.meta.env.BASE_URL}${p}`);
         audio.preload = 'auto';
         this.audioCache.set(p, audio);
       }
