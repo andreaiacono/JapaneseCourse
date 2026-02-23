@@ -14,9 +14,9 @@
 <div class="app">
   <header>
     <div class="header-content">
-      <span class="app-title">Japanese Study</span>
+      <a href="{base}/" class="app-title">Japanese Study</a>
       <nav>
-        <a href="{base}/" class:active={$page.route.id === '/'}>Study</a>
+        <a href="{base}/study" class:active={$page.route.id === '/study'}>Study</a>
         <a href="{base}/quiz" class:active={$page.route.id === '/quiz'}>Kana Quiz</a>
         <a href="{base}/kanji-quiz" class:active={$page.route.id === '/kanji-quiz'}>Kanji Quiz</a>
       </nav>
@@ -50,7 +50,9 @@
   </header>
 
   <main>
-    {#if $isLoading}
+    {#if $page.route.id === '/'}
+      <slot />
+    {:else if $isLoading}
       <div class="loading">
         <div class="spinner"></div>
         <p>Loading characters...</p>
@@ -96,6 +98,12 @@
     font-weight: 700;
     white-space: nowrap;
     font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+
+  .app-title:hover {
+    opacity: 0.85;
   }
 
   nav {
