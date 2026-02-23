@@ -156,6 +156,7 @@
       showToast('wrong', currentQuestion?.correctAnswer ?? '', 3000);
     }
     totalAnswered++;
+    loadNextQuestion();
   }
 
   function submitTypedAnswer() {
@@ -169,14 +170,11 @@
       showToast('wrong', currentQuestion?.correctAnswer ?? '', 3000);
     }
     totalAnswered++;
+    loadNextQuestion();
   }
 
   function handleTypingKeydown(event: KeyboardEvent) {
     if (event.key === 'Enter') submitTypedAnswer();
-  }
-
-  function nextQuestion() {
-    loadNextQuestion();
   }
 
   function quitQuiz() {
@@ -349,18 +347,9 @@
         </div>
       {/if}
 
-      {#if isAnswered}
-        <div class="quiz-actions">
-          <button class="action-btn secondary" on:click={quitQuiz}>Quit</button>
-          <button class="action-btn primary" on:click={nextQuestion}>
-            {totalAnswered >= totalQuestions ? 'See Results' : 'Next'}
-          </button>
-        </div>
-      {:else}
-        <div class="quiz-actions">
-          <button class="action-btn secondary" on:click={quitQuiz}>Quit</button>
-        </div>
-      {/if}
+      <div class="quiz-actions">
+        <button class="action-btn secondary" on:click={quitQuiz}>Quit</button>
+      </div>
     </div>
 
   {:else if phase === 'results' && results}

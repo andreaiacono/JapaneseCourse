@@ -59,7 +59,12 @@ export class KanjiQuizEngine {
     this.correctCount = 0;
     this.answeredCount = 0;
 
-    let allWords = this.dataLoader.getWordsByLevels(jlptLevels);
+    const seenWords = new Set<string>();
+    let allWords = this.dataLoader.getWordsByLevels(jlptLevels).filter((w) => {
+      if (seenWords.has(w.word)) return false;
+      seenWords.add(w.word);
+      return true;
+    });
     if (allWords.length === 0) return false;
 
     // If listening-only, restrict to words that have audio
