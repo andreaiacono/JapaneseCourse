@@ -16,9 +16,11 @@
     <div class="header-content">
       <a href="{base}/" class="app-title">Japanese Study</a>
       <nav>
-        <a href="{base}/study" class:active={$page.route.id === '/study'}>Study</a>
+        <a href="{base}/kana" class:active={$page.route.id === '/kana'}>Kana Reference</a>
         <a href="{base}/kana-quiz" class:active={$page.route.id === '/kana-quiz'}>Kana Quiz</a>
+        <a href="{base}/kanji" class:active={$page.route.id === '/kanji'}>Kanji Reference</a>
         <a href="{base}/kanji-quiz" class:active={$page.route.id === '/kanji-quiz'}>Kanji Quiz</a>
+        <a href="{base}/course" class:active={$page.route.id?.startsWith('/course')}>Course</a>
       </nav>
       <button
         class="theme-toggle"

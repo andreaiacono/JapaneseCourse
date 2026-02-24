@@ -14,7 +14,7 @@
   </section>
 
   <section class="features">
-    <a href="{base}/study" class="feature-card">
+    <a href="{base}/kana" class="feature-card">
       <div class="feature-icon">📖</div>
       <div class="feature-body">
         <h2>Kana Reference</h2>
@@ -39,6 +39,18 @@
       <span class="feature-cta">Start quiz →</span>
     </a>
 
+    <a href="{base}/kanji" class="feature-card">
+      <div class="feature-icon">字</div>
+      <div class="feature-body">
+        <h2>Kanji Reference</h2>
+        <p>
+          Browse all JLPT N5 and N4 kanji in one place. Each entry shows the character,
+          its English meaning, and kun/on readings. Hover to hear the pronunciation.
+        </p>
+      </div>
+      <span class="feature-cta">Open reference →</span>
+    </a>
+
     <a href="{base}/kanji-quiz" class="feature-card">
       <div class="feature-icon">漢</div>
       <div class="feature-body">
@@ -50,6 +62,19 @@
         </p>
       </div>
       <span class="feature-cta">Start quiz →</span>
+    </a>
+
+    <a href="{base}/course" class="feature-card feature-card--course">
+      <div class="feature-icon">🎓</div>
+      <div class="feature-body">
+        <h2>Structured Course</h2>
+        <p>
+          Follow a step-by-step N5 curriculum: writing systems, basic grammar, verbs,
+          adjectives, and more. Each lesson has explanations, practice exercises, and a
+          short quiz. Track your XP and daily streak.
+        </p>
+      </div>
+      <span class="feature-cta">Start learning →</span>
     </a>
   </section>
 
@@ -198,6 +223,21 @@
     color: var(--text-secondary);
     margin: 0;
     line-height: 1.55;
+  }
+
+  .feature-card--course {
+    border-color: #7c3aed33;
+  }
+
+  .feature-card--course:hover {
+    border-color: #7c3aed;
+    background: #f5f3ff;
+    box-shadow: 0 4px 18px rgba(124, 58, 237, 0.12);
+  }
+
+  :global([data-theme='dark']) .feature-card--course:hover {
+    background: #1e1a2e;
+    box-shadow: 0 4px 18px rgba(124, 58, 237, 0.25);
   }
 
   /* Responsive */

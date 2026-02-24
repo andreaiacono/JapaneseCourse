@@ -343,7 +343,7 @@ const sampleGrammarPoint: GrammarPoint = {
 
 The distinction depends on the **Aktionsart** (inherent aspect) of the verb.
 Verbs of activity (食べる, 走る) → in-progress.
-Verbs of change of state (結婚する, 死ぬ) → resultant state.
+Verbs of change of state (結婚する, 死ぬ) → resultant state.2
   `.trim(),
     usageNotes: [
         "In casual speech, いる contracts to る: 食べてる.",
