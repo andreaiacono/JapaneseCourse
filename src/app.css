@@ -38,6 +38,8 @@
   --error-bg: #ffebee;
   --error-text: #c62828;
   --disabled-bg: #ccc;
+
+  --japanese-font: 'Noto Sans JP', 'Yu Gothic', 'Hiragino Sans', 'Meiryo', sans-serif;
 }
 
 [data-theme='dark'] {
@@ -99,7 +101,7 @@ body {
 }
 
 .japanese {
-  font-family: 'Noto Sans JP', 'Yu Gothic', 'Hiragino Sans', 'Meiryo', sans-serif;
+  font-family: var(--japanese-font);
 }
 
 button {

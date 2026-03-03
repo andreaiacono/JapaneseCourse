@@ -9,15 +9,29 @@
     <meta name="theme-color" content="#1a73e8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <script>
       (function () {
         var t = localStorage.getItem('theme');
         if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', t);
+        try {
+          var s = JSON.parse(localStorage.getItem('japanesestudy_settings') || '{}');
+          var fontId = s.japaneseFont || 'noto-sans';
+          var fonts = {
+            'noto-sans': { stack: "'Noto Sans JP','Yu Gothic','Hiragino Sans','Meiryo',sans-serif", gf: 'Noto+Sans+JP:wght@400;700' },
+            'noto-serif': { stack: "'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif", gf: 'Noto+Serif+JP:wght@400;700' },
+            'biz-udgothic': { stack: "'BIZ UDPGothic','Noto Sans JP',sans-serif", gf: 'BIZ+UDPGothic:wght@400;700' },
+            'zen-kaku': { stack: "'Zen Kaku Gothic New','Noto Sans JP',sans-serif", gf: 'Zen+Kaku+Gothic+New:wght@400;700' },
+            'sawarabi-mincho': { stack: "'Sawarabi Mincho','Yu Mincho','Hiragino Mincho ProN',serif", gf: 'Sawarabi+Mincho' }
+          };
+          var font = fonts[fontId] || fonts['noto-sans'];
+          document.documentElement.style.setProperty('--japanese-font', font.stack);
+          var link = document.createElement('link');
+          link.id = 'japanese-font-link';
+          link.rel = 'stylesheet';
+          link.href = 'https://fonts.googleapis.com/css2?family=' + font.gf + '&display=swap';
+          document.head.appendChild(link);
+        } catch (e) {}
       })();
     </script>
     %sveltekit.head%

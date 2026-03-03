@@ -4,11 +4,34 @@
   import { base } from '$app/paths';
   import { initData, isLoading, loadError } from '$lib/stores/characterStore';
   import { theme, toggleTheme } from '$lib/stores/themeStore';
+  import { settings, JAPANESE_FONTS } from '$lib/stores/settingsStore';
   import '../app.css';
 
   onMount(() => {
     initData();
+
+    // Find the font link element injected by the inline script, or create one
+    let linkEl = document.getElementById('japanese-font-link') as HTMLLinkElement | null;
+    if (!linkEl) {
+      linkEl = document.createElement('link');
+      linkEl.id = 'japanese-font-link';
+      linkEl.rel = 'stylesheet';
+      document.head.appendChild(linkEl);
+    }
+
+    // Keep font in sync with settings
+    const unsubscribe = settings.subscribe((s) => {
+      const font = JAPANESE_FONTS.find((f) => f.id === s.japaneseFont) ?? JAPANESE_FONTS[0];
+      document.documentElement.style.setProperty('--japanese-font', font.stack);
+      linkEl!.href = `https://fonts.googleapis.com/css2?family=${font.googleFont}&display=swap`;
+    });
+
+    return unsubscribe;
   });
+
+  function setFont(id: string) {
+    settings.update((s) => ({ ...s, japaneseFont: id as (typeof JAPANESE_FONTS)[number]['id'] }));
+  }
 </script>
 
 <div class="app">
@@ -22,6 +45,18 @@
         <a href="{base}/kanji-quiz" class:active={$page.route.id === '/kanji-quiz'}>Kanji Quiz</a>
         <a href="{base}/course" class:active={$page.route.id?.startsWith('/course')}>Course</a>
       </nav>
+      <select
+        class="font-picker"
+        value={$settings.japaneseFont}
+        on:change={(e) => setFont(e.currentTarget.value)}
+        aria-label="Japanese font"
+        title="Choose Japanese font"
+      >
+        {#each JAPANESE_FONTS as font}
+          <option value={font.id}>{font.label}</option>
+        {/each}
+      </select>
+
       <button
         class="theme-toggle"
         on:click={toggleTheme}
@@ -134,6 +169,37 @@
     background: rgba(255, 255, 255, 0.25);
     color: white;
     font-weight: 600;
+  }
+
+  .font-picker {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 8px;
+    padding: 0 0.6rem;
+    height: 36px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='white' opacity='.7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 1.6rem;
+  }
+
+  .font-picker:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='white' opacity='.7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+  }
+
+  .font-picker option {
+    background: #1a73e8;
+    color: white;
   }
 
   .theme-toggle {
