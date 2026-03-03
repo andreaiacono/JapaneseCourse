@@ -247,7 +247,7 @@
     font-size: 0.9rem;
     color: var(--text-muted);
     font-weight: 400;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--japanese-font);
   }
 
   .kana-section {

@@ -128,6 +128,17 @@ export const n5Chapters: Record<string, Chapter> = {
     ],
     color: '#5c6bc0',
   },
+
+  'chapter-reading': {
+    id: 'chapter-reading',
+    slug: 'reading-practice',
+    title: 'Reading Practice',
+    description: 'Read short tales written entirely in kana and N5 kanji you already know.',
+    jlptLevel: 'N5',
+    order: 9,
+    lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
+    color: '#7c4dff',
+  },
 };
 
 export const n5Unit: Unit = {
@@ -145,5 +156,6 @@ export const n5Unit: Unit = {
     'chapter-adjectives',
     'chapter-verbs-past-te',
     'chapter-want-ability',
+    'chapter-reading',
   ],
 };

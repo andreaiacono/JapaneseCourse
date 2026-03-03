@@ -35,7 +35,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-hiragana-2', slug: 'hiragana-2',
     title: 'Hiragana: か〜こ & さ〜そ Rows',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-hiragana-1'], tags: ['hiragana','N5'],
+    introduces: [], prerequisites: [], tags: ['hiragana','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The **k-row** adds a "k" sound to each vowel: **か (ka)、き (ki)、く (ku)、け (ke)、こ (ko)**.\nThe **s-row** adds an "s" sound: **さ (sa)、し (shi)、す (su)、せ (se)、そ (so)**. Note that し is "shi", not "si".' },
       { type: 'table', headers: ['Char','Read','Char','Read'], rows: [['か','ka','さ','sa'],['き','ki','し','shi'],['く','ku','す','su'],['け','ke','せ','se'],['こ','ko','そ','so']] },
@@ -58,7 +58,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-hiragana-3', slug: 'hiragana-3',
     title: 'Hiragana: た〜と & な〜の Rows',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-hiragana-2'], tags: ['hiragana','N5'],
+    introduces: [], prerequisites: [], tags: ['hiragana','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The **t-row**: **た (ta)、ち (chi)、つ (tsu)、て (te)、と (to)**. Note ち = chi and つ = tsu.\nThe **n-row**: **な (na)、に (ni)、ぬ (nu)、ね (ne)、の (no)**.' },
       { type: 'table', headers: ['Char','Read','Char','Read'], rows: [['た','ta','な','na'],['ち','chi','に','ni'],['つ','tsu','ぬ','nu'],['て','te','ね','ne'],['と','to','の','no']] },
@@ -80,7 +80,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-hiragana-4', slug: 'hiragana-4',
     title: 'Hiragana: は〜ほ through ら〜ろ Rows',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-hiragana-3'], tags: ['hiragana','N5'],
+    introduces: [], prerequisites: [], tags: ['hiragana','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Learn three more rows:\n**h-row**: は (ha)、ひ (hi)、ふ (fu)、へ (he)、ほ (ho) — note ふ = fu.\n**m-row**: ま (ma)、み (mi)、む (mu)、め (me)、も (mo).\n**r-row**: ら (ra)、り (ri)、る (ru)、れ (re)、ろ (ro) — the Japanese "r" is between r, l, and d.' },
       { type: 'table', headers: ['Char','Read','Char','Read','Char','Read'], rows: [['は','ha','ま','ma','ら','ra'],['ひ','hi','み','mi','り','ri'],['ふ','fu','む','mu','る','ru'],['へ','he','め','me','れ','re'],['ほ','ho','も','mo','ろ','ro']] },
@@ -102,7 +102,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-hiragana-5', slug: 'hiragana-5',
     title: 'Hiragana: わ・を・ん & Review',
     jlptLevel: 'N5', estimatedMinutes: 10,
-    introduces: [], prerequisites: ['lesson-hiragana-4'], tags: ['hiragana','N5'],
+    introduces: [], prerequisites: [], tags: ['hiragana','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The final hiragana characters:\n**わ (wa)** — used as a pronoun and in words.\n**を (wo/o)** — used only as the direct object particle, pronounced "o".\n**ん (n)** — a nasal consonant, stands alone without a vowel.' },
       { type: 'table', headers: ['Char','Read','Usage'], rows: [['わ','wa','words and w-row'],['を','o/wo','object particle only'],['ん','n','nasal, word-final or before b/m/p']] },
@@ -124,7 +124,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-katakana-1', slug: 'katakana-1',
     title: 'Katakana: ア〜オ & カ〜コ Rows',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-hiragana-5'], tags: ['katakana','N5'],
+    introduces: [], prerequisites: [], tags: ['katakana','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Katakana is used for foreign loanwords, onomatopoeia, and emphasis. Each character represents the same sounds as hiragana but has a different, more angular shape.' },
       { type: 'table', headers: ['Katakana','Hiragana','Read'], rows: [['ア','あ','a'],['イ','い','i'],['ウ','う','u'],['エ','え','e'],['オ','お','o'],['カ','か','ka'],['キ','き','ki'],['ク','く','ku'],['ケ','け','ke'],['コ','こ','ko']] },
@@ -146,7 +146,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-katakana-2', slug: 'katakana-2',
     title: 'Katakana: サ〜ソ through ナ〜ノ Rows',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-katakana-1'], tags: ['katakana','N5'],
+    introduces: [], prerequisites: [], tags: ['katakana','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'More katakana rows:\n**s-row**: サ(sa)、シ(shi)、ス(su)、セ(se)、ソ(so)\n**t-row**: タ(ta)、チ(chi)、ツ(tsu)、テ(te)、ト(to)\n**n-row**: ナ(na)、ニ(ni)、ヌ(nu)、ネ(ne)、ノ(no)' },
       { type: 'table', headers: ['Katakana','Read','Katakana','Read','Katakana','Read'], rows: [['サ','sa','タ','ta','ナ','na'],['シ','shi','チ','chi','ニ','ni'],['ス','su','ツ','tsu','ヌ','nu'],['セ','se','テ','te','ネ','ne'],['ソ','so','ト','to','ノ','no']] },
@@ -168,7 +168,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-dakuten-youon', slug: 'dakuten-youon',
     title: 'Dakuten & Yōon', subtitle: 'Voiced sounds & combinations',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: [], prerequisites: ['lesson-hiragana-5'], tags: ['hiragana','katakana','N5'],
+    introduces: [], prerequisites: [], tags: ['hiragana','katakana','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**Dakuten (゛)** adds two strokes to a character, voicing the consonant: か→が (ka→ga), さ→ざ (sa→za), た→だ (ta→da), は→ば (ha→ba). **Handakuten (゜)** turns h-row into p-row: は→ぱ (ha→pa).' },
       { type: 'table', headers: ['Base','Dakuten','Change'], rows: [['か (ka)','が (ga)','k→g'],['さ (sa)','ざ (za)','s→z'],['た (ta)','だ (da)','t→d'],['は (ha)','ば (ba)','h→b'],['は (ha)','ぱ (pa)','h→p (handakuten)']] },
@@ -195,7 +195,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-wa-desu', slug: 'wa-desu',
     title: 'は〜です: Basic Identification',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-wa-desu'], prerequisites: ['lesson-hiragana-5'], tags: ['grammar','N5'],
+    introduces: ['grammar-wa-desu'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The most basic Japanese sentence pattern is **X は Y です** (X is Y). The particle **は** (read "wa") marks the topic. **です** means "is/am/are" in polite speech.' },
       { type: 'example', sentence: { ja: '私は学生です。', furigana: 'わたしはがくせいです。', romaji: 'Watashi wa gakusei desu.', en: 'I am a student.' } },
@@ -219,7 +219,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-kore-sore-are', slug: 'kore-sore-are',
     title: 'これ・それ・あれ: This and That',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-kore-sore-are'], prerequisites: ['lesson-wa-desu'], tags: ['grammar','N5'],
+    introduces: ['grammar-kore-sore-are'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Japanese has a three-way distance system for demonstratives:\n- **これ** — this (near speaker)\n- **それ** — that (near listener)\n- **あれ** — that over there (far from both)\n- **どれ** — which one? (question)' },
       { type: 'comparison', items: [{label:'これ (kore)', markdown:'Near the **speaker**\n「これは何ですか。」\n(What is this?)'},{label:'それ (sore)', markdown:'Near the **listener**\n「それはペンです。」\n(That is a pen.)'},{label:'あれ (are)', markdown:'Far from **both**\n「あれは山です。」\n(That is a mountain.)'},{label:'どれ (dore)', markdown:'**Question**\n「どれがあなたのですか。」\n(Which one is yours?)'} ] },
@@ -241,7 +241,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-no-possessive', slug: 'no-possessive',
     title: 'の: The Possessive Particle',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-no-possessive'], prerequisites: ['lesson-kore-sore-are'], tags: ['grammar','N5'],
+    introduces: ['grammar-no-possessive'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The particle **の** connects two nouns to show possession or a descriptive relationship: **Noun A の Noun B** = "B of A" or "A\'s B".' },
       { type: 'example', sentence: { ja: 'これは私の本です。', furigana: 'これはわたしのほんです。', romaji: 'Kore wa watashi no hon desu.', en: 'This is my book.' } },
@@ -263,7 +263,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-ka-question', slug: 'ka-question',
     title: 'か: Asking Questions',
     jlptLevel: 'N5', estimatedMinutes: 10,
-    introduces: ['grammar-ka-question'], prerequisites: ['lesson-wa-desu'], tags: ['grammar','N5'],
+    introduces: ['grammar-ka-question'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'In Japanese, you make a question simply by adding **か** to the end of a sentence. No word order change is needed!' },
       { type: 'comparison', items: [{label:'Statement', markdown:'彼は先生です。\n(He is a teacher.)'},{label:'Question', markdown:'彼は先生ですか。\n(Is he a teacher?)'}] },
@@ -289,7 +289,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-numbers', slug: 'numbers',
     title: 'Numbers 1–100',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: [], prerequisites: ['lesson-wa-desu'], tags: ['numbers','N5'],
+    introduces: [], prerequisites: [], tags: ['numbers','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Japanese uses the same number system for 1–99. Learn the base numbers, then combine them: **十 (juu) = 10**, so 11 = 十一 (juuichi), 20 = 二十 (nijuu), 99 = 九十九 (kyuujuukyuu).' },
       { type: 'table', headers: ['Number','Kanji','Reading'], rows: [['1','一','ichi'],['2','二','ni'],['3','三','san'],['4','四','shi/yon'],['5','五','go'],['6','六','roku'],['7','七','shichi/nana'],['8','八','hachi'],['9','九','ku/kyuu'],['10','十','juu'],['100','百','hyaku']] },
@@ -310,7 +310,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-time', slug: 'time',
     title: 'Telling the Time',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-numbers'], tags: ['time','N5'],
+    introduces: [], prerequisites: [], tags: ['time','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'To say the time: **Number + 時 (ji) = o\'clock**, **Number + 分 (fun/pun) = minutes**. Ask the time with **今何時ですか (Ima nanji desu ka)** = "What time is it now?"' },
       { type: 'table', headers: ['Time','Japanese','Reading'], rows: [['1:00','一時','ichiji'],['3:30','三時半','sanji han'],['7:15','七時十五分','shichiji juugofun'],['12:00','十二時','juuniji']] },
@@ -331,7 +331,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-dates', slug: 'dates',
     title: 'Days & Dates',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: [], prerequisites: ['lesson-time'], tags: ['time','N5'],
+    introduces: [], prerequisites: [], tags: ['time','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Days of the week end in **曜日 (youbi)**. Months use **Number + 月 (gatsu)**. Dates use **Number + 日 (nichi/ka)** — many dates have irregular readings.' },
       { type: 'table', headers: ['Day','Reading'], rows: [['月曜日','getsuyoubi (Monday)'],['火曜日','kayoubi (Tuesday)'],['水曜日','suiyoubi (Wednesday)'],['木曜日','mokuyoubi (Thursday)'],['金曜日','kinyoubi (Friday)'],['土曜日','doyoubi (Saturday)'],['日曜日','nichiyoubi (Sunday)']] },
@@ -356,7 +356,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-arimasu-imasu', slug: 'arimasu-imasu',
     title: 'あります vs います', subtitle: 'Existence in Japanese',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-arimasu-imasu'], prerequisites: ['lesson-wa-desu'], tags: ['grammar','N5'],
+    introduces: ['grammar-arimasu-imasu'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Japanese has two "existence" verbs:\n- **あります** — for inanimate things (objects, plants, abstract concepts)\n- **います** — for animate beings (people, animals)' },
       { type: 'comparison', items: [{label:'あります (inanimate)', markdown:'机の上に本**があります**。\n(There is a book on the desk.)'},{label:'います (animate)', markdown:'公園に犬**がいます**。\n(There is a dog in the park.)'}] },
@@ -378,7 +378,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-ni-de-location', slug: 'ni-de-location',
     title: 'に vs で: Location Particles',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-ni-location','grammar-de-location'], prerequisites: ['lesson-arimasu-imasu'], tags: ['grammar','N5'],
+    introduces: ['grammar-ni-location','grammar-de-location'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Two particles express location, but they work differently:\n- **に** — where something *exists* or the *destination* of movement\n- **で** — where an *action takes place*, or the *means* of doing something' },
       { type: 'comparison', items: [{label:'に (existence/destination)', markdown:'本は机の上**に**あります。\n(The book is on the desk.)\n\n学校**に**行きます。\n(I go to school.)'},{label:'で (action location/means)', markdown:'図書館**で**勉強します。\n(I study at the library.)\n\nバス**で**来ました。\n(I came by bus.)'}] },
@@ -399,7 +399,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-kosoado-place', slug: 'kosoado-place',
     title: 'こそあど Place Words',
     jlptLevel: 'N5', estimatedMinutes: 10,
-    introduces: ['grammar-koso-ado'], prerequisites: ['lesson-ni-de-location'], tags: ['grammar','N5'],
+    introduces: ['grammar-koso-ado'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Place demonstratives follow the same **ko-so-a-do** pattern:\n- **ここ** — here (near speaker)\n- **そこ** — there (near listener)\n- **あそこ** — over there (far from both)\n- **どこ** — where (question)' },
       { type: 'table', headers: ['Word','Meaning','Example'], rows: [['ここ','here','ここに座ってください。(Please sit here.)'],['そこ','there','そこは危ないです。(That place is dangerous.)'],['あそこ','over there','あそこに駅があります。(There is a station over there.)'],['どこ','where','トイレはどこですか。(Where is the restroom?)']] },
@@ -424,7 +424,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-verb-groups', slug: 'verb-groups',
     title: 'Verb Groups: う・る・Irregular',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-verb-groups'], prerequisites: ['lesson-wa-desu'], tags: ['grammar','N5'],
+    introduces: ['grammar-verb-groups'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Japanese verbs fall into three groups that determine how they conjugate:\n- **Group 1 (う-verbs / godan)**: end in -u, -ku, -gu, -su, -tsu, -nu, -bu, -mu, or -ru (when vowel before -ru is NOT い/え)\n- **Group 2 (る-verbs / ichidan)**: end in -る with い or え sound before it\n- **Group 3 (irregular)**: only する (suru) and くる (kuru)' },
       { type: 'table', headers: ['Group','Example','Dictionary form ends in'], rows: [['Group 1','飲む、書く、話す、帰る','various u-sounds'],['Group 2','食べる、見る、起きる','-る (after い/え sound)'],['Group 3','する、くる','irregular']] },
@@ -445,7 +445,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-masu-form', slug: 'masu-form',
     title: 'Polite Present: 〜ます',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-masu-form'], prerequisites: ['lesson-verb-groups'], tags: ['grammar','N5'],
+    introduces: ['grammar-masu-form'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '〜ます is the polite non-past form. It expresses both **present habits** and **future intentions**.' },
       { type: 'table', headers: ['Group','Dictionary','ます form','Rule'], rows: [['G1','飲む','飲みます','change -u to -i, add ます'],['G1','書く','書きます','change -ku to -ki, add ます'],['G2','食べる','食べます','drop -る, add ます'],['G3','する','します','irregular'],['G3','くる','きます','irregular']] },
@@ -467,7 +467,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-masen-form', slug: 'masen-form',
     title: 'Polite Negative: 〜ません',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-masen-form'], prerequisites: ['lesson-masu-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-masen-form'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'To negate a polite verb, replace **ます → ません**. The stem stays the same.' },
       { type: 'table', headers: ['Positive','Negative','Meaning'], rows: [['飲みます','飲みません','drink / don\'t drink'],['食べます','食べません','eat / don\'t eat'],['します','しません','do / don\'t do'],['きます','きません','come / don\'t come']] },
@@ -489,7 +489,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-wo-object', slug: 'wo-object',
     title: 'を: The Object Particle',
     jlptLevel: 'N5', estimatedMinutes: 10,
-    introduces: ['grammar-wo-object'], prerequisites: ['lesson-masu-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-wo-object'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**を** (pronounced "o") marks the **direct object** of a transitive verb — the thing the action is performed on.' },
       { type: 'example', sentence: { ja: '毎朝、新聞を読みます。', romaji: 'Maiasa, shinbun wo yomimasu.', en: 'I read the newspaper every morning.' } },
@@ -515,7 +515,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-i-adjectives', slug: 'i-adjectives',
     title: 'い-Adjectives',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-i-adjective'], prerequisites: ['lesson-wa-desu'], tags: ['grammar','N5'],
+    introduces: ['grammar-i-adjective'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'い-adjectives end in **-い** and conjugate on their own. In the negative, drop -い and add **-くない**.' },
       { type: 'table', headers: ['Form','Rule','Example'], rows: [['Present positive','Adj-い + です','大きいです (is big)'],['Present negative','root + くない + です','大きくないです (is not big)'],['Pre-noun','Adj-い + Noun','大きい犬 (big dog)']] },
@@ -537,7 +537,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-na-adjectives', slug: 'na-adjectives',
     title: 'な-Adjectives',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-na-adjective'], prerequisites: ['lesson-i-adjectives'], tags: ['grammar','N5'],
+    introduces: ['grammar-na-adjective'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'な-adjectives behave like nouns. In predicate position, use **です** directly. When modifying a noun, add **な** between the adjective and noun.' },
       { type: 'comparison', items: [{label:'Predicate (no な)', markdown:'ここは静かです。\n(This place is quiet.)'},{label:'Pre-noun (add な)', markdown:'静かな部屋\n(a quiet room)'}] },
@@ -559,7 +559,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-adj-past', slug: 'adj-past',
     title: 'Adjective Past Tense',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-adj-past'], prerequisites: ['lesson-na-adjectives'], tags: ['grammar','N5'],
+    introduces: ['grammar-adj-past'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'い-adjectives: drop -い → add **-かった** (positive past) or **-くなかった** (negative past).\nな-adjectives: use **でした** (positive past) or **じゃありませんでした** (negative past).' },
       { type: 'table', headers: ['Type','Past +','Past −'], rows: [['い-adj (大きい)','大きかった','大きくなかった'],['い-adj (いい)','よかった','よくなかった'],['な-adj (好き)','好きでした','好きじゃありませんでした']] },
@@ -584,7 +584,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-ta-form', slug: 'ta-form',
     title: 'Past Tense: 〜た/〜ました',
     jlptLevel: 'N5', estimatedMinutes: 15,
-    introduces: ['grammar-ta-form'], prerequisites: ['lesson-masu-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-ta-form'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The polite past is simple: **ます → ました**. The plain past (た-form) requires sound changes for Group 1 verbs.' },
       { type: 'table', headers: ['Verb','Group','ました','た-form'], rows: [['飲む','G1','飲みました','飲んだ'],['書く','G1','書きました','書いた'],['話す','G1','話しました','話した'],['食べる','G2','食べました','食べた'],['する','G3','しました','した'],['くる','G3','きました','きた'],['行く','G1','行きました','行った (exception)']] },
@@ -605,7 +605,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-te-form', slug: 'te-form',
     title: 'て-Form Construction',
     jlptLevel: 'N5', estimatedMinutes: 18,
-    introduces: ['grammar-te-form'], prerequisites: ['lesson-ta-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-te-form'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'The て-form connects actions or builds compound grammar. Its construction mirrors the た-form: **-た → -て** and **-だ → -で**.' },
       { type: 'table', headers: ['Verb','た-form','て-form'], rows: [['飲む','飲んだ','飲んで'],['書く','書いた','書いて'],['話す','話した','話して'],['食べる','食べた','食べて'],['する','した','して'],['くる','きた','きて'],['行く','行った','行って']] },
@@ -627,7 +627,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-te-iru', slug: 'te-iru',
     title: '〜ている: Actions in Progress',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-te-iru'], prerequisites: ['lesson-te-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-te-iru'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**て-form + いる/います** has two meanings depending on the verb type:\n1. **Activity verbs** (食べる, 走る) → ongoing action: 食べています = "is eating"\n2. **Change-of-state verbs** (結婚する, 着る) → resultant state: 結婚しています = "is married"' },
       { type: 'example', sentence: { ja: '今、雨が降っています。', romaji: 'Ima, ame ga futte imasu.', en: 'It is raining now.' } },
@@ -653,7 +653,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-tai', slug: 'tai',
     title: '〜たい: Expressing Wants',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-tai'], prerequisites: ['lesson-masu-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-tai'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Attach **〜たい** to the ます-stem to express your desire to do something. 〜たい conjugates like an い-adjective.' },
       { type: 'table', headers: ['Form','Example','Meaning'], rows: [['〜たいです','行きたいです','I want to go'],['〜たくないです','行きたくないです','I don\'t want to go'],['〜たかったです','行きたかったです','I wanted to go'],['〜たくなかったです','行きたくなかったです','I didn\'t want to go']] },
@@ -675,7 +675,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-te-kudasai', slug: 'te-kudasai',
     title: '〜てください: Polite Requests',
     jlptLevel: 'N5', estimatedMinutes: 10,
-    introduces: ['grammar-te-kudasai'], prerequisites: ['lesson-te-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-te-kudasai'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Attach **ください** to the て-form to make a polite request: "Please do ~".' },
       { type: 'example', sentence: { ja: 'ここに名前を書いてください。', romaji: 'Koko ni namae wo kaite kudasai.', en: 'Please write your name here.' } },
@@ -697,7 +697,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-koto-ga-dekiru', slug: 'koto-ga-dekiru',
     title: '〜ことができる: Ability',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-koto-ga-dekiru'], prerequisites: ['lesson-te-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-koto-ga-dekiru'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**Verb (dictionary form) + ことができる/できます** = "can do ~", expressing ability or possibility.' },
       { type: 'example', sentence: { ja: '私は自転車に乗ることができます。', romaji: 'Watashi wa jitensha ni noru koto ga dekimasu.', en: 'I can ride a bicycle.' } },
@@ -719,7 +719,7 @@ export const n5Lessons: Record<string, Lesson> = {
     id: 'lesson-ta-koto-ga-aru', slug: 'ta-koto-ga-aru',
     title: '〜たことがある: Past Experience',
     jlptLevel: 'N5', estimatedMinutes: 12,
-    introduces: ['grammar-ta-koto-ga-aru'], prerequisites: ['lesson-ta-form'], tags: ['grammar','N5'],
+    introduces: ['grammar-ta-koto-ga-aru'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**Verb (た-form) + ことがある/あります** = "have done ~ before". This expresses life experience — whether something has happened at least once.' },
       { type: 'comparison', items: [{label:'ことがある (experience)', markdown:'富士山に登ったことがあります。\n(I have climbed Mt. Fuji.)\n→ Describes having done it'},{label:'ました (specific past event)', markdown:'昨日富士山に登りました。\n(I climbed Mt. Fuji yesterday.)\n→ Specific occasion'}] },

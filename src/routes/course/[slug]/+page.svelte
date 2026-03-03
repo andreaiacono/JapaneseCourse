@@ -231,7 +231,7 @@
     {#if phase === 'lesson'}
       <div class="lesson-view">
         <div class="lesson-header">
-          <h1>{lesson.title}</h1>
+          <h1 class="japanese">{lesson.title}</h1>
           {#if lesson.subtitle}<p class="lesson-subtitle">{lesson.subtitle}</p>{/if}
           <div class="lesson-meta-row">
             <span class="meta-tag">{lesson.jlptLevel}</span>
@@ -306,6 +306,38 @@
                   </div>
                 {/each}
               </div>
+
+            {:else if block.type === 'reading'}
+              <div class="block-reading">
+                <h3 class="reading-title">
+                  <span class="japanese">{block.title}</span>
+                  {#if showTranslation}
+                    <span class="reading-title-en">{block.titleEn}</span>
+                  {/if}
+                </h3>
+                <div class="reading-passage">
+                  {#each block.sentences as sentence}
+                    <p class="reading-sentence">
+                      <span class="reading-ja japanese">
+                        {#each sentence.segments as seg}
+                          {#if Array.isArray(seg)}
+                            {#if showRomaji}
+                              <ruby>{seg[0]}<rt>{seg[1]}</rt></ruby>
+                            {:else}
+                              {seg[0]}
+                            {/if}
+                          {:else}
+                            {seg}
+                          {/if}
+                        {/each}
+                      </span>
+                      {#if showTranslation}
+                        <span class="reading-en">{sentence.en}</span>
+                      {/if}
+                    </p>
+                  {/each}
+                </div>
+              </div>
             {/if}
           {/each}
         </div>
@@ -313,7 +345,11 @@
         <!-- Example display toggles -->
         <div class="display-toggles">
           <button class="toggle-btn" class:active={showRomaji} on:click={() => showRomaji = !showRomaji}>
-            {showRomaji ? 'Hide Romaji' : 'Show Romaji'}
+            {#if lesson.tags.includes('reading')}
+              {showRomaji ? 'Hide Furigana' : 'Show Furigana'}
+            {:else}
+              {showRomaji ? 'Hide Romaji' : 'Show Romaji'}
+            {/if}
           </button>
           <button class="toggle-btn" class:active={showTranslation} on:click={() => showTranslation = !showTranslation}>
             {showTranslation ? 'Hide Translations' : 'Show Translations'}
@@ -697,10 +733,10 @@
     padding: 0.1em 0.35em;
     border-radius: 4px;
     font-size: 0.9em;
-    font-family: 'Noto Sans JP', monospace;
+    font-family: var(--japanese-font);
   }
   :global(.grammar-pattern) {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--japanese-font);
     font-weight: 600;
     color: var(--primary-text);
   }
@@ -745,8 +781,7 @@
   }
 
   .hidden {
-    opacity: 0.2;
-    user-select: none;
+    display: none;
   }
 
   .block-tip {
@@ -995,7 +1030,7 @@
     color: var(--text);
     cursor: pointer;
     font-size: 0.95rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--japanese-font);
     transition: border-color 0.12s;
   }
 
@@ -1054,7 +1089,7 @@
     padding: 0.4rem 0.75rem;
     border-radius: 8px;
     font-size: 0.95rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--japanese-font);
     cursor: pointer;
     transition: background 0.12s, border-color 0.12s;
   }
@@ -1238,5 +1273,64 @@
     .block-comparison {
       grid-template-columns: 1fr;
     }
+  }
+
+  /* Reading block */
+  .block-reading {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid #7c4dff;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .reading-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .reading-title-en {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .reading-passage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .reading-sentence {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin: 0;
+  }
+
+  .reading-ja {
+    font-size: 1.2rem;
+    line-height: 2.2;
+    color: var(--text-dark);
+  }
+
+  .reading-en {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding-left: 0.5rem;
+    border-left: 2px solid var(--border);
+  }
+
+  :global(.reading-ja ruby rt) {
+    font-size: 0.55em;
+    color: var(--text-muted);
   }
 </style>

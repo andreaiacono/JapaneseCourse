@@ -134,7 +134,6 @@
     font-size: 1.2rem;
     font-weight: 700;
     white-space: nowrap;
-    font-family: 'Noto Sans JP', sans-serif;
     color: white;
     text-decoration: none;
   }

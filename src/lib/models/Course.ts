@@ -108,6 +108,14 @@ export interface ConjugationRow {
   negative: AnnotatedText;
 }
 
+/** A segment in a reading tale: plain kana/text OR a [kanji, reading] tuple for furigana */
+export type TaleSegment = string | [kanji: string, reading: string];
+
+export interface TaleSentence {
+  segments: TaleSegment[];
+  en: string;
+}
+
 export type ContentBlock =
   | { type: 'text'; markdown: string }
   | { type: 'example'; sentence: ExampleSentence }
@@ -115,7 +123,8 @@ export type ContentBlock =
   | { type: 'tip'; markdown: string }
   | { type: 'warning'; markdown: string }
   | { type: 'conjugation-table'; verbId: string; forms: ConjugationRow[] }
-  | { type: 'comparison'; items: { label: string; markdown: string }[] };
+  | { type: 'comparison'; items: { label: string; markdown: string }[] }
+  | { type: 'reading'; title: string; titleEn: string; sentences: TaleSentence[] };
 
 export interface Lesson {
   id: string;

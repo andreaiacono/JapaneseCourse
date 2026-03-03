@@ -117,9 +117,9 @@
               </div>
 
               <div class="lesson-info">
-                <span class="lesson-title">{lesson.title}</span>
+                <span class="lesson-title japanese">{lesson.title}</span>
                 {#if lesson.subtitle}
-                  <span class="lesson-subtitle">{lesson.subtitle}</span>
+                  <span class="lesson-subtitle japanese">{lesson.subtitle}</span>
                 {/if}
               </div>
 

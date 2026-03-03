@@ -126,7 +126,7 @@
   }
 
   .hero-chars span {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--japanese-font);
     font-size: 2.8rem;
     color: var(--primary);
     opacity: 0.8;
@@ -170,7 +170,7 @@
     font-size: 1.9rem;
     line-height: 1;
     padding-top: 0.1rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--japanese-font);
   }
 
   .feature-body {
