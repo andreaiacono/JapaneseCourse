@@ -3,6 +3,7 @@
   import { n5Vocab } from '$lib/data/course/n5-vocab.js';
   import type { VocabEntry, WordClass } from '$lib/models/Course.js';
   import SpeakButton from '$lib/components/SpeakButton.svelte';
+  import AudioControls from '$lib/components/AudioControls.svelte';
 
   const vocabList: VocabEntry[] = Object.values(n5Vocab);
 
@@ -111,6 +112,8 @@
         {showRomaji ? 'Hide Romaji' : 'Show Romaji'}
       </button>
     </div>
+
+    <AudioControls />
 
     <input
       class="search"
@@ -362,9 +365,10 @@
   }
 
   .filter-pill.active {
-    background: var(--primary);
-    color: var(--primary-text);
+    background: var(--bg-toggle-active);
+    color: var(--primary);
     border-color: var(--primary);
+    font-weight: 700;
   }
 
   .result-row {

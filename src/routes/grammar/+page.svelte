@@ -3,6 +3,7 @@
   import { n5Grammar } from '$lib/data/course/n5-grammar.js';
   import type { GrammarPoint } from '$lib/models/Course.js';
   import SpeakButton from '$lib/components/SpeakButton.svelte';
+  import AudioControls from '$lib/components/AudioControls.svelte';
 
   const grammarList: GrammarPoint[] = Object.values(n5Grammar);
 
@@ -83,6 +84,8 @@
         {showRomaji ? 'Hide Romaji' : 'Show Romaji'}
       </button>
     </div>
+
+    <AudioControls />
 
     <input
       class="search"
@@ -342,9 +345,10 @@
   }
 
   .tag-pill.active {
-    background: var(--primary);
-    color: var(--primary-text);
+    background: var(--bg-toggle-active);
+    color: var(--primary);
     border-color: var(--primary);
+    font-weight: 700;
   }
 
   .result-row {

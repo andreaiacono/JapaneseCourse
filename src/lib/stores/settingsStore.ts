@@ -36,9 +36,13 @@ export const JAPANESE_FONTS = [
 
 export type JapaneseFontId = (typeof JAPANESE_FONTS)[number]['id'];
 
+export type TtsVoice = 'nanami' | 'keita';
+
 export interface Settings {
   autoPlayAudio: boolean;
   japaneseFont: JapaneseFontId;
+  ttsVoice: TtsVoice;
+  ttsRate: number;
   quizSettings: {
     defaultQuestionCount: number;
     selectedTypes: string[];
@@ -54,6 +58,8 @@ export interface Settings {
 const defaultSettings: Settings = {
   autoPlayAudio: true,
   japaneseFont: 'noto-sans',
+  ttsVoice: 'nanami',
+  ttsRate: 0.9,
   quizSettings: {
     defaultQuestionCount: 10,
     selectedTypes: ['hiragana']
