@@ -2,6 +2,7 @@
   import { tick } from 'svelte';
   import { n5Vocab } from '$lib/data/course/n5-vocab.js';
   import type { VocabEntry, WordClass } from '$lib/models/Course.js';
+  import SpeakButton from '$lib/components/SpeakButton.svelte';
 
   const vocabList: VocabEntry[] = Object.values(n5Vocab);
 
@@ -155,33 +156,44 @@
   <div class="vocab-grid">
     {#each filtered as v (v.id)}
       <div class="vocab-card" id={v.id} class:open={expanded[v.id]}>
-        <button class="card-main" on:click={() => toggle(v.id)} aria-expanded={expanded[v.id]}>
-          <div class="word-block">
-            <div class="word-line">
-              <span class="word-ja japanese">{v.word.ja}</span>
-              <span class="class-badge class-{classGroup(v.wordClass)}">{CLASS_LABEL[v.wordClass]}</span>
+        <div class="card-main">
+          <button class="word-toggle" on:click={() => toggle(v.id)} aria-expanded={expanded[v.id]}>
+            <div class="word-block">
+              <div class="word-line">
+                <span class="word-ja japanese">{v.word.ja}</span>
+                <span class="class-badge class-{classGroup(v.wordClass)}">{CLASS_LABEL[v.wordClass]}</span>
+              </div>
+              {#if v.word.reading && v.word.reading !== v.word.ja}
+                <span class="word-reading japanese">{v.word.reading}</span>
+              {/if}
+              {#if v.word.romaji && showRomaji}
+                <span class="word-romaji">{v.word.romaji}</span>
+              {/if}
+              <span class="word-en">{v.word.en}</span>
             </div>
-            {#if v.word.reading && v.word.reading !== v.word.ja}
-              <span class="word-reading japanese">{v.word.reading}</span>
-            {/if}
-            {#if v.word.romaji && showRomaji}
-              <span class="word-romaji">{v.word.romaji}</span>
-            {/if}
-            <span class="word-en">{v.word.en}</span>
+          </button>
+          <div class="card-actions">
+            <SpeakButton text={v.word.ja} label="Play {v.word.ja}" />
+            <button
+              class="chevron-btn"
+              on:click={() => toggle(v.id)}
+              aria-label={expanded[v.id] ? 'Collapse' : 'Expand'}
+            >
+              <svg
+                class="chevron"
+                class:rotated={expanded[v.id]}
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="6,9 12,15 18,9" />
+              </svg>
+            </button>
           </div>
-          <svg
-            class="chevron"
-            class:rotated={expanded[v.id]}
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <polyline points="6,9 12,15 18,9" />
-          </svg>
-        </button>
+        </div>
 
         {#if expanded[v.id]}
           <div class="card-details">
@@ -196,7 +208,10 @@
               <div class="examples">
                 {#each v.exampleSentences as ex}
                   <div class="example">
-                    <p class="example-ja japanese">{ex.ja}</p>
+                    <div class="example-head">
+                      <p class="example-ja japanese">{ex.ja}</p>
+                      <SpeakButton text={ex.ja} label="Play sentence" />
+                    </div>
                     {#if ex.furigana}
                       <p class="example-furigana japanese">{ex.furigana}</p>
                     {/if}
@@ -415,20 +430,48 @@
   }
 
   .card-main {
-    width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     gap: 0.5rem;
-    padding: 0.9rem 1rem;
+  }
+
+  .word-toggle {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    padding: 0.9rem 0 0.9rem 1rem;
     background: none;
     border: none;
     cursor: pointer;
     text-align: left;
+    border-radius: 12px 0 0 0;
   }
 
-  .card-main:hover {
+  .word-toggle:hover {
     background: var(--bg-card-hover);
+  }
+
+  .card-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.9rem 0.85rem 0 0.25rem;
+  }
+
+  .chevron-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.15rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    border-radius: 6px;
+  }
+
+  .chevron-btn:hover {
+    background: var(--bg-secondary-btn-hover);
   }
 
   .word-block {
@@ -550,6 +593,13 @@
     border-left: 3px solid var(--primary);
     border-radius: 6px;
     padding: 0.55rem 0.75rem;
+  }
+
+  .example-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
 
   .example-ja {

@@ -2,6 +2,7 @@
   import { tick } from 'svelte';
   import { n5Grammar } from '$lib/data/course/n5-grammar.js';
   import type { GrammarPoint } from '$lib/models/Course.js';
+  import SpeakButton from '$lib/components/SpeakButton.svelte';
 
   const grammarList: GrammarPoint[] = Object.values(n5Grammar);
 
@@ -173,7 +174,10 @@
                 <div class="examples">
                   {#each g.examples as ex}
                     <div class="example">
-                      <p class="example-ja japanese">{ex.ja}</p>
+                      <div class="example-head">
+                        <p class="example-ja japanese">{ex.ja}</p>
+                        <SpeakButton text={ex.ja} label="Play sentence" />
+                      </div>
                       {#if ex.furigana}
                         <p class="example-furigana japanese">{ex.furigana}</p>
                       {/if}
@@ -521,6 +525,13 @@
     border-left: 3px solid var(--primary);
     border-radius: 6px;
     padding: 0.6rem 0.85rem;
+  }
+
+  .example-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
 
   .example-ja {
