@@ -76,19 +76,6 @@
       </div>
       <span class="feature-cta">Start learning →</span>
     </a>
-
-    <a href="{base}/review" class="feature-card feature-card--review">
-      <div class="feature-icon">🔁</div>
-      <div class="feature-body">
-        <h2>Flashcard Review</h2>
-        <p>
-          Lock in vocabulary and kanji (N5 &amp; N4) with spaced repetition. A daily flashcard
-          session schedules each item with the SM-2 algorithm, bringing it back right before
-          you'd forget it. Grade yourself Again / Hard / Good / Easy.
-        </p>
-      </div>
-      <span class="feature-cta">Review now →</span>
-    </a>
   </section>
 
   <section class="about">
@@ -251,21 +238,6 @@
   :global([data-theme='dark']) .feature-card--course:hover {
     background: #1e1a2e;
     box-shadow: 0 4px 18px rgba(124, 58, 237, 0.25);
-  }
-
-  .feature-card--review {
-    border-color: #0f9d5833;
-  }
-
-  .feature-card--review:hover {
-    border-color: #0f9d58;
-    background: #f0faf4;
-    box-shadow: 0 4px 18px rgba(15, 157, 88, 0.12);
-  }
-
-  :global([data-theme='dark']) .feature-card--review:hover {
-    background: #14231a;
-    box-shadow: 0 4px 18px rgba(15, 157, 88, 0.25);
   }
 
   /* Responsive */
