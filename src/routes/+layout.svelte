@@ -44,6 +44,9 @@
         <a href="{base}/kanji" class:active={$page.route.id === '/kanji'}>Kanji Reference</a>
         <a href="{base}/kanji-quiz" class:active={$page.route.id === '/kanji-quiz'}>Kanji Quiz</a>
         <a href="{base}/course" class:active={$page.route.id?.startsWith('/course')}>Course</a>
+        <a href="{base}/grammar" class:active={$page.route.id === '/grammar'}>Grammar</a>
+        <a href="{base}/vocab" class:active={$page.route.id === '/vocab'}>Vocab</a>
+        <a href="{base}/review" class:active={$page.route.id === '/review'}>Review</a>
       </nav>
       <select
         class="font-picker"
