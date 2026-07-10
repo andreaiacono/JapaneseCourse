@@ -22,6 +22,9 @@ export const speechSupported = browser && 'speechSynthesis' in window;
 export const speaking = writable<string | null>(null);
 
 let jaVoice: SpeechSynthesisVoice | null = null;
+// Hold a reference to the active utterance: Chrome can garbage-collect it
+// mid-speech otherwise, which stops playback with no error.
+let active: SpeechSynthesisUtterance | null = null;
 
 function refreshVoice(): void {
   if (!speechSupported) return;
@@ -38,6 +41,11 @@ if (speechSupported) {
   window.speechSynthesis.onvoiceschanged = refreshVoice;
 }
 
+/** Whether a Japanese voice is currently available (may be false until voices load). */
+export function hasJapaneseVoice(): boolean {
+  return !!jaVoice;
+}
+
 /** Speak a Japanese string. Cancels anything currently playing. */
 export function speak(text: string): void {
   if (!speechSupported) return;
@@ -45,17 +53,30 @@ export function speak(text: string): void {
   if (!clean) return;
 
   const synth = window.speechSynthesis;
-  synth.cancel();
+  // Only cancel when something is actually queued — an immediate cancel()→speak()
+  // on an idle engine can swallow the new utterance in some Chrome builds.
+  if (synth.speaking || synth.pending) synth.cancel();
+  // Voices may have loaded since module init; make sure we have the best one.
+  if (!jaVoice) refreshVoice();
 
   const utterance = new SpeechSynthesisUtterance(clean);
   utterance.lang = 'ja-JP';
   if (jaVoice) utterance.voice = jaVoice;
   utterance.rate = 0.9; // a touch slower, easier for learners
   utterance.onstart = () => speaking.set(clean);
-  utterance.onend = () => speaking.set(null);
-  utterance.onerror = () => speaking.set(null);
+  utterance.onend = () => {
+    speaking.set(null);
+    active = null;
+  };
+  utterance.onerror = () => {
+    speaking.set(null);
+    active = null;
+  };
 
+  active = utterance;
   synth.speak(utterance);
+  // Chrome can get stuck in a paused state after prior interactions.
+  if (synth.paused) synth.resume();
 }
 
 /** Stop any in-progress speech. */
@@ -63,4 +84,5 @@ export function stopSpeaking(): void {
   if (!speechSupported) return;
   window.speechSynthesis.cancel();
   speaking.set(null);
+  active = null;
 }
