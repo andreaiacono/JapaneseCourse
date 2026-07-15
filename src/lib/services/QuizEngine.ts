@@ -1,4 +1,5 @@
 import type { Character } from '$lib/models/Character';
+import { record } from '$lib/stores/masteryStore';
 import { getAllReadingTexts } from '$lib/models/Character';
 
 export type QuestionType =
@@ -293,6 +294,7 @@ export class QuizEngine {
     const isCorrect = answer === question.correctAnswer;
     if (isCorrect) this.correctCount++;
     this.answeredCount++;
+    this.recordMastery(question, isCorrect);
     return isCorrect;
   }
 
@@ -302,7 +304,15 @@ export class QuizEngine {
     const isCorrect = answer.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase();
     if (isCorrect) this.correctCount++;
     this.answeredCount++;
+    this.recordMastery(question, isCorrect);
     return isCorrect;
+  }
+
+  /** Credit the character the question was about, whichever way it was asked. */
+  private recordMastery(question: QuizQuestion, isCorrect: boolean): void {
+    const char = question.character;
+    const isKana = char.characterType === 'hiragana' || char.characterType === 'katakana';
+    record(isKana ? 'kana' : 'kanji', char.character, isCorrect);
   }
 
   getProgress(): QuizProgress {

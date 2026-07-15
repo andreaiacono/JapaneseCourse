@@ -1,4 +1,5 @@
 import type { Word } from '$lib/models/Word';
+import { recordWord } from '$lib/stores/masteryStore';
 import { matchesMeaning } from '$lib/models/Word';
 import type { DataLoader } from './DataLoader';
 import { KanjiSimilarityMap, findSimilarMeanings } from '$lib/data/kanjiSimilarity';
@@ -214,6 +215,7 @@ export class KanjiQuizEngine {
     const isCorrect = matchesMeaning(question.word, answer);
     if (isCorrect) this.correctCount++;
     this.answeredCount++;
+    recordWord(question.word, isCorrect);
     return isCorrect;
   }
 
@@ -224,6 +226,7 @@ export class KanjiQuizEngine {
       selectedWord.meaning.toLowerCase() === question.word.meaning.toLowerCase();
     if (isCorrect) this.correctCount++;
     this.answeredCount++;
+    recordWord(question.word, isCorrect);
     return isCorrect;
   }
 

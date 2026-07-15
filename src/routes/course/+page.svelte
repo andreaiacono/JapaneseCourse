@@ -45,27 +45,11 @@
         <h1>N5 Beginner</h1>
         <p class="course-subtitle">Complete Japanese for Absolute Beginners</p>
       </div>
-      <div class="xp-badge">
-        <span class="xp-value">{$courseProgress.stats.totalXP}</span>
-        <span class="xp-label">XP</span>
-      </div>
+      <!-- XP, streak and overall progress live on /progress so they have one home. -->
+      <a class="progress-link" href="{base}/progress">
+        {completedTotal} / {totalLessons} lessons →
+      </a>
     </div>
-
-    <div class="overall-progress">
-      <div class="progress-label">
-        <span>Overall Progress</span>
-        <span>{completedTotal} / {totalLessons} lessons</span>
-      </div>
-      <div class="progress-track" role="progressbar" aria-valuenow={completedTotal} aria-valuemin={0} aria-valuemax={totalLessons}>
-        <div class="progress-fill" style="width: {totalLessons > 0 ? (completedTotal / totalLessons) * 100 : 0}%"></div>
-      </div>
-    </div>
-
-    {#if $courseProgress.stats.currentStreak > 0}
-      <div class="streak-badge">
-        🔥 {$courseProgress.stats.currentStreak}-day streak
-      </div>
-    {/if}
   </div>
 
   <div class="chapters">
@@ -158,6 +142,25 @@
     gap: 1rem;
   }
 
+  .progress-link {
+    background: var(--bg-secondary-btn);
+    border: 1px solid var(--border);
+    color: var(--text-secondary-btn);
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .progress-link:hover {
+    background: var(--bg-toggle-active);
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
   .course-title-row {
     display: flex;
     align-items: flex-start;
@@ -176,64 +179,6 @@
     font-size: 0.9rem;
     color: var(--text-muted);
     margin: 0;
-  }
-
-  .xp-badge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(135deg, #f4b400, #f57c00);
-    color: white;
-    border-radius: 10px;
-    padding: 0.5rem 0.9rem;
-    min-width: 56px;
-    flex-shrink: 0;
-  }
-
-  .xp-value {
-    font-size: 1.2rem;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .xp-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    opacity: 0.9;
-  }
-
-  .overall-progress {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .progress-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-  }
-
-  .progress-track {
-    height: 8px;
-    background: var(--bg-progress-track);
-    border-radius: 4px;
-    overflow: hidden;
-  }
-
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary), #0f9d58);
-    border-radius: 4px;
-    transition: width 0.4s ease;
-    min-width: 0;
-  }
-
-  .streak-badge {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    font-weight: 500;
   }
 
   /* Chapter cards */

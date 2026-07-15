@@ -42,6 +42,7 @@
         <a href="{base}/course" class:active={$page.route.id?.startsWith('/course')}>Course</a>
         <a href="{base}/grammar" class:active={$page.route.id === '/grammar'}>Grammar</a>
         <a href="{base}/vocab" class:active={$page.route.id === '/vocab'}>Vocab</a>
+        <a href="{base}/progress" class:active={$page.route.id === '/progress'}>Progress</a>
       </nav>
       <a
         href="{base}/settings"
