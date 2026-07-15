@@ -13,7 +13,8 @@ export interface KanjiQuizQuestion {
   correctAnswer: string;
   displayText: string;
   prompt: string;
-  audioPath?: string;
+  /** Japanese text to voice for listening questions (see ttsAudio). */
+  audioText?: string;
   options?: Word[];
 }
 
@@ -67,21 +68,11 @@ export class KanjiQuizEngine {
     });
     if (allWords.length === 0) return false;
 
-    // If listening-only, restrict to words that have audio
-    if (quizTypes.length === 1 && quizTypes[0] === 'listening') {
-      allWords = allWords.filter((w) => w.audioPath);
-    }
-    if (allWords.length === 0) return false;
-
     const shuffled = shuffleArray(allWords);
 
     for (const word of shuffled) {
-      // For words without audio, fall back to reading if available
-      let availableTypes = [...quizTypes];
-      if (!word.audioPath) availableTypes = availableTypes.filter((t) => t !== 'listening');
-      if (availableTypes.length === 0) continue;
-
-      const quizType = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+      // Every word has a TTS clip, so any quiz type is available for any word.
+      const quizType = quizTypes[Math.floor(Math.random() * quizTypes.length)];
       const interactionMode = interactionModes[Math.floor(Math.random() * interactionModes.length)];
 
       const question = this.generateQuestion(word, quizType, interactionMode, allWords);
@@ -114,7 +105,7 @@ export class KanjiQuizEngine {
         correctAnswer: word.meaning,
         displayText,
         prompt,
-        audioPath: word.audioPath,
+        audioText: word.word,
         options
       };
     }
@@ -126,7 +117,7 @@ export class KanjiQuizEngine {
       correctAnswer: word.meaning,
       displayText,
       prompt,
-      audioPath: word.audioPath
+      audioText: word.word
     };
   }
 
@@ -176,7 +167,7 @@ export class KanjiQuizEngine {
       const sameKanjiWords = this.dataLoader.getWordsByKanji(correctWord.kanji);
       for (const w of sameKanjiWords) {
         if (selected.length >= 6) break;
-        if (!usedMeanings.has(w.meaning.toLowerCase()) && w.audioPath) {
+        if (!usedMeanings.has(w.meaning.toLowerCase())) {
           selected.push(w);
           usedMeanings.add(w.meaning.toLowerCase());
         }
@@ -189,7 +180,7 @@ export class KanjiQuizEngine {
           if (selected.length >= 9) break;
           const kanjiWords = this.dataLoader.getWordsByKanji(kanji);
           for (const w of kanjiWords) {
-            if (!usedMeanings.has(w.meaning.toLowerCase()) && w.audioPath) {
+            if (!usedMeanings.has(w.meaning.toLowerCase())) {
               selected.push(w);
               usedMeanings.add(w.meaning.toLowerCase());
               if (selected.length >= 9) break;

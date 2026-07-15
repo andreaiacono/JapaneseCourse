@@ -3,7 +3,6 @@
   import { n5Grammar } from '$lib/data/course/n5-grammar.js';
   import type { GrammarPoint } from '$lib/models/Course.js';
   import SpeakButton from '$lib/components/SpeakButton.svelte';
-  import AudioControls from '$lib/components/AudioControls.svelte';
 
   const grammarList: GrammarPoint[] = Object.values(n5Grammar);
 
@@ -84,8 +83,6 @@
         {showRomaji ? 'Hide Romaji' : 'Show Romaji'}
       </button>
     </div>
-
-    <AudioControls />
 
     <input
       class="search"

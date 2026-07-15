@@ -1,23 +1,39 @@
 // ============================================================
-// Pre-generate neural TTS audio for grammar + vocab Japanese text
+// Pre-generate neural TTS audio for every Japanese string in the app
 // ============================================================
 //
-// Synthesizes an MP3 per unique Japanese string (vocab words + all
-// example sentences in grammar & vocab) for each voice, using Microsoft
-// edge-tts (free, no API key). Files are committed as static assets and
-// played by the app at runtime — so end users need no TTS voice of their
+// Synthesizes an MP3 per unique Japanese string for each voice, using
+// Microsoft edge-tts (free, no API key). Files are committed as static assets
+// and played by the app at runtime — so end users need no TTS voice of their
 // own, and playback speed is controlled live via <audio>.playbackRate.
+//
+// Covers every surface that speaks Japanese:
+//   - kana        — each character (basic, dakuten, youon)
+//   - kanji       — each kun/on reading, and each example word
+//   - vocab       — each word and example sentence
+//   - grammar     — each example sentence
+// Kana and kanji used to play recorded MP3s instead; those recordings were the
+// app's only data source (the filenames were the schema), which is why the
+// character data now lives in kanaData.ts and data/kanji/*.json.
 //
 // Run:  npx tsx scripts/generate-tts.mjs
 // Needs the `edge-tts` CLI on PATH, or set EDGE_TTS=/path/to/edge-tts.
 // Idempotent: existing files are skipped, so re-running only fills gaps.
 
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { n5Vocab } from '../src/lib/data/course/n5-vocab.ts';
 import { n5Grammar } from '../src/lib/data/course/n5-grammar.ts';
+import {
+  HIRAGANA_BASIC,
+  HIRAGANA_DAKUTEN,
+  HIRAGANA_YOUON,
+  KATAKANA_BASIC,
+  KATAKANA_DAKUTEN,
+  KATAKANA_YOUON
+} from '../src/lib/data/kanaData.ts';
 
 const pExecFile = promisify(execFile);
 
@@ -27,8 +43,32 @@ const OUT_DIR = 'static/audio/tts';
 const MANIFEST = 'src/lib/data/tts-manifest.json';
 const CONCURRENCY = 8;
 
+const readJson = (p) => JSON.parse(readFileSync(p, 'utf8'));
+
 // ── Collect the unique Japanese strings to voice ────────────────────────────
 const texts = new Set();
+
+// Kana: the character itself is what gets spoken.
+for (const c of [
+  ...HIRAGANA_BASIC,
+  ...HIRAGANA_DAKUTEN,
+  ...HIRAGANA_YOUON,
+  ...KATAKANA_BASIC,
+  ...KATAKANA_DAKUTEN,
+  ...KATAKANA_YOUON
+]) {
+  texts.add(c.character);
+}
+
+// Kanji: each reading, plus each example word. A bare kanji is never spoken —
+// it has no single pronunciation.
+for (const file of ['src/lib/data/kanji/n5-kanji.json', 'src/lib/data/kanji/n4-kanji.json']) {
+  for (const entry of readJson(file)) {
+    for (const r of [...(entry.kun_yomi ?? []), ...(entry.on_yomi ?? [])]) texts.add(r);
+    for (const w of entry.words ?? []) if (w.word) texts.add(w.word);
+  }
+}
+
 for (const v of Object.values(n5Vocab)) {
   if (v.word?.ja) texts.add(v.word.ja);
   for (const ex of v.exampleSentences ?? []) if (ex.ja) texts.add(ex.ja);

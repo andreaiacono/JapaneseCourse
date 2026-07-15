@@ -27,7 +27,7 @@
           {#each kunReadings as reading}
             <div class="reading-row">
               <span class="japanese reading-text">{reading.text}</span>
-              <AudioButton audioPath={reading.audioPath} />
+              <AudioButton text={reading.text} />
             </div>
           {/each}
         </div>
@@ -39,18 +39,17 @@
           {#each onReadings as reading}
             <div class="reading-row">
               <span class="japanese reading-text">{reading.text}</span>
-              <AudioButton audioPath={reading.audioPath} />
+              <AudioButton text={reading.text} />
             </div>
           {/each}
         </div>
       {/if}
     {:else}
-      {#each character.readings as reading}
-        <div class="reading-row">
-          <span class="reading-text">{reading.text}</span>
-          <AudioButton audioPath={reading.audioPath} />
-        </div>
-      {/each}
+      <!-- Kana carry no readings; the character itself is what gets voiced. -->
+      <div class="reading-row">
+        <span class="reading-text">{character.romaji ?? ''}</span>
+        <AudioButton text={character.character} />
+      </div>
     {/if}
   </div>
 </div>

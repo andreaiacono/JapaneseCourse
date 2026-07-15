@@ -1,20 +1,15 @@
 <script lang="ts">
-  import { audioManager } from '$lib/services/AudioManager';
+  import { playText, nowPlaying } from '$lib/services/ttsAudio';
 
-  export let audioPath: string;
+  /** The Japanese text to voice — a kana character, a kanji reading, or a word. */
+  export let text: string;
   export let label = '';
 
-  let isPlaying = false;
-
-  async function handleClick() {
-    isPlaying = true;
-    await audioManager.play(audioPath);
-    isPlaying = false;
-  }
+  $: isPlaying = $nowPlaying === text?.trim();
 </script>
 
 <button
-  on:click={handleClick}
+  on:click={() => playText(text)}
   class="audio-btn"
   class:has-label={!!label}
   class:playing={isPlaying}

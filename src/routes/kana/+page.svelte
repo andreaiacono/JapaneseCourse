@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
-  import { audioManager } from '$lib/services/AudioManager';
+  import { playText, stopPlayback } from '$lib/services/ttsAudio';
   import {
     HIRAGANA_DAKUTEN,
     HIRAGANA_YOUON,
@@ -76,18 +76,16 @@
     { label: 'Katakana', jp: '片仮名', basic: BASIC_K, dakuten: DAKUTEN_K, youon: YOUON_K }
   ];
 
-  type CharInfo = { romaji: string; audioPath?: string };
-
-  // Pre-populate map with static romaji from kanaData (available before mount)
-  function buildInitialMap(): Map<string, CharInfo> {
-    const map = new Map<string, CharInfo>();
+  // Pre-populate romaji from kanaData (available before mount)
+  function buildInitialMap(): Map<string, string> {
+    const map = new Map<string, string>();
     for (const c of [
       ...HIRAGANA_DAKUTEN,
       ...HIRAGANA_YOUON,
       ...KATAKANA_DAKUTEN,
       ...KATAKANA_YOUON
     ]) {
-      map.set(c.character, { romaji: c.romaji ?? '' });
+      map.set(c.character, c.romaji ?? '');
     }
     return map;
   }
@@ -100,28 +98,20 @@
       ...dataLoader.getCharacters('hiragana'),
       ...dataLoader.getCharacters('katakana')
     ]) {
-      charMap.set(c.character, {
-        romaji: c.romaji ?? '',
-        audioPath: c.readings[0]?.audioPath
-      });
+      charMap.set(c.character, c.romaji ?? '');
     }
     charMap = charMap; // trigger reactivity
   });
 
   onDestroy(() => {
-    audioManager.stop();
+    stopPlayback();
   });
-
-  function playHover(ch: string) {
-    const info = charMap.get(ch);
-    if (info?.audioPath) audioManager.play(info.audioPath);
-  }
 </script>
 
 <div class="page">
   <div class="page-header">
     <h2>Kana Reference</h2>
-    <p class="subtitle">Hover over a basic character to hear its pronunciation</p>
+    <p class="subtitle">Hover over any character to hear its pronunciation</p>
   </div>
 
   <div class="scripts-grid">
@@ -138,15 +128,13 @@
             {#each script.basic as row}
               {#each row as ch}
                 {#if ch !== null}
-                  {@const hasAudio = !!charMap.get(ch)?.audioPath}
                   <button
-                    class="cell"
-                    class:has-audio={hasAudio}
-                    on:mouseenter={() => playHover(ch)}
+                    class="cell has-audio"
+                    on:mouseenter={() => playText(ch)}
                     tabindex="-1"
                   >
                     <span class="char japanese">{ch}</span>
-                    <span class="romaji">{charMap.get(ch)?.romaji ?? ''}</span>
+                    <span class="romaji">{charMap.get(ch) ?? ''}</span>
                   </button>
                 {:else}
                   <div class="cell empty" />
@@ -162,12 +150,12 @@
             {#each script.dakuten as row}
               {#each row as ch}
                 <button
-                  class="cell"
-                  on:mouseenter={() => playHover(ch)}
+                  class="cell has-audio"
+                  on:mouseenter={() => playText(ch)}
                   tabindex="-1"
                 >
                   <span class="char japanese">{ch}</span>
-                  <span class="romaji">{charMap.get(ch)?.romaji ?? ''}</span>
+                  <span class="romaji">{charMap.get(ch) ?? ''}</span>
                 </button>
               {/each}
             {/each}
@@ -180,8 +168,8 @@
             {#each script.youon as row}
               {#each row as c}
                 <button
-                  class="cell wide"
-                  on:mouseenter={() => playHover(c.character)}
+                  class="cell wide has-audio"
+                  on:mouseenter={() => playText(c.character)}
                   tabindex="-1"
                 >
                   <span class="char japanese">{c.character}</span>

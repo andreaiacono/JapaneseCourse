@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
-  import { audioManager } from '$lib/services/AudioManager';
+  import { playText, stopPlayback } from '$lib/services/ttsAudio';
   import type { Character } from '$lib/models/Character';
   import { getKunReadings, getOnReadings } from '$lib/models/Character';
 
@@ -17,13 +17,14 @@
     };
   });
 
-  onDestroy(() => audioManager.stop());
+  onDestroy(() => stopPlayback());
 
   $: kanji = kanjiByLevel[selectedLevel];
 
+  // Voice the kanji's first reading — the character alone is ambiguous.
   function playHover(char: Character) {
-    const audio = char.readings[0]?.audioPath;
-    if (audio) audioManager.play(audio);
+    const reading = char.readings[0]?.text;
+    if (reading) playText(reading);
   }
 </script>
 

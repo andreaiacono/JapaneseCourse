@@ -3,7 +3,6 @@ export interface Word {
   reading: string;
   meaning: string;
   kanji: string;
-  audioPath?: string;
   jlptLevel: 'N5' | 'N4';
 }
 

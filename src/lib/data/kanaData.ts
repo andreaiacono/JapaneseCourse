@@ -1,7 +1,128 @@
 import type { Character } from '$lib/models/Character';
 
-// Dakuten (voiced) and youon (compound) kana defined without audio.
-// Audio-type quiz questions are skipped for these; only character_to_reading is used.
+// Every kana in the app: the 46 basic gojuuon per script, plus dakuten (voiced)
+// and youon (compound). This module is the source of truth for kana — the
+// character/romaji pairs used to be parsed out of the audio filenames.
+// Pronunciation is synthesized from the character itself (see ttsAudio).
+
+export const HIRAGANA_BASIC: Character[] = [
+  // A row
+  { character: 'あ', characterType: 'hiragana', romaji: 'a', readings: [] },
+  { character: 'い', characterType: 'hiragana', romaji: 'i', readings: [] },
+  { character: 'う', characterType: 'hiragana', romaji: 'u', readings: [] },
+  { character: 'え', characterType: 'hiragana', romaji: 'e', readings: [] },
+  { character: 'お', characterType: 'hiragana', romaji: 'o', readings: [] },
+  // K row
+  { character: 'か', characterType: 'hiragana', romaji: 'ka', readings: [] },
+  { character: 'き', characterType: 'hiragana', romaji: 'ki', readings: [] },
+  { character: 'く', characterType: 'hiragana', romaji: 'ku', readings: [] },
+  { character: 'け', characterType: 'hiragana', romaji: 'ke', readings: [] },
+  { character: 'こ', characterType: 'hiragana', romaji: 'ko', readings: [] },
+  // S row
+  { character: 'さ', characterType: 'hiragana', romaji: 'sa', readings: [] },
+  { character: 'し', characterType: 'hiragana', romaji: 'shi', readings: [] },
+  { character: 'す', characterType: 'hiragana', romaji: 'su', readings: [] },
+  { character: 'せ', characterType: 'hiragana', romaji: 'se', readings: [] },
+  { character: 'そ', characterType: 'hiragana', romaji: 'so', readings: [] },
+  // T row
+  { character: 'た', characterType: 'hiragana', romaji: 'ta', readings: [] },
+  { character: 'ち', characterType: 'hiragana', romaji: 'chi', readings: [] },
+  { character: 'つ', characterType: 'hiragana', romaji: 'tsu', readings: [] },
+  { character: 'て', characterType: 'hiragana', romaji: 'te', readings: [] },
+  { character: 'と', characterType: 'hiragana', romaji: 'to', readings: [] },
+  // N row
+  { character: 'な', characterType: 'hiragana', romaji: 'na', readings: [] },
+  { character: 'に', characterType: 'hiragana', romaji: 'ni', readings: [] },
+  { character: 'ぬ', characterType: 'hiragana', romaji: 'nu', readings: [] },
+  { character: 'ね', characterType: 'hiragana', romaji: 'ne', readings: [] },
+  { character: 'の', characterType: 'hiragana', romaji: 'no', readings: [] },
+  // H row
+  { character: 'は', characterType: 'hiragana', romaji: 'ha', readings: [] },
+  { character: 'ひ', characterType: 'hiragana', romaji: 'hi', readings: [] },
+  { character: 'ふ', characterType: 'hiragana', romaji: 'fu', readings: [] },
+  { character: 'へ', characterType: 'hiragana', romaji: 'he', readings: [] },
+  { character: 'ほ', characterType: 'hiragana', romaji: 'ho', readings: [] },
+  // M row
+  { character: 'ま', characterType: 'hiragana', romaji: 'ma', readings: [] },
+  { character: 'み', characterType: 'hiragana', romaji: 'mi', readings: [] },
+  { character: 'む', characterType: 'hiragana', romaji: 'mu', readings: [] },
+  { character: 'め', characterType: 'hiragana', romaji: 'me', readings: [] },
+  { character: 'も', characterType: 'hiragana', romaji: 'mo', readings: [] },
+  // Y row
+  { character: 'や', characterType: 'hiragana', romaji: 'ya', readings: [] },
+  { character: 'ゆ', characterType: 'hiragana', romaji: 'yu', readings: [] },
+  { character: 'よ', characterType: 'hiragana', romaji: 'yo', readings: [] },
+  // R row
+  { character: 'ら', characterType: 'hiragana', romaji: 'ra', readings: [] },
+  { character: 'り', characterType: 'hiragana', romaji: 'ri', readings: [] },
+  { character: 'る', characterType: 'hiragana', romaji: 'ru', readings: [] },
+  { character: 'れ', characterType: 'hiragana', romaji: 're', readings: [] },
+  { character: 'ろ', characterType: 'hiragana', romaji: 'ro', readings: [] },
+  // W row + N
+  { character: 'わ', characterType: 'hiragana', romaji: 'wa', readings: [] },
+  { character: 'を', characterType: 'hiragana', romaji: 'wo', readings: [] },
+  { character: 'ん', characterType: 'hiragana', romaji: 'n', readings: [] },
+];
+
+export const KATAKANA_BASIC: Character[] = [
+  // A row
+  { character: 'ア', characterType: 'katakana', romaji: 'a', readings: [] },
+  { character: 'イ', characterType: 'katakana', romaji: 'i', readings: [] },
+  { character: 'ウ', characterType: 'katakana', romaji: 'u', readings: [] },
+  { character: 'エ', characterType: 'katakana', romaji: 'e', readings: [] },
+  { character: 'オ', characterType: 'katakana', romaji: 'o', readings: [] },
+  // K row
+  { character: 'カ', characterType: 'katakana', romaji: 'ka', readings: [] },
+  { character: 'キ', characterType: 'katakana', romaji: 'ki', readings: [] },
+  { character: 'ク', characterType: 'katakana', romaji: 'ku', readings: [] },
+  { character: 'ケ', characterType: 'katakana', romaji: 'ke', readings: [] },
+  { character: 'コ', characterType: 'katakana', romaji: 'ko', readings: [] },
+  // S row
+  { character: 'サ', characterType: 'katakana', romaji: 'sa', readings: [] },
+  { character: 'シ', characterType: 'katakana', romaji: 'shi', readings: [] },
+  { character: 'ス', characterType: 'katakana', romaji: 'su', readings: [] },
+  { character: 'セ', characterType: 'katakana', romaji: 'se', readings: [] },
+  { character: 'ソ', characterType: 'katakana', romaji: 'so', readings: [] },
+  // T row
+  { character: 'タ', characterType: 'katakana', romaji: 'ta', readings: [] },
+  { character: 'チ', characterType: 'katakana', romaji: 'chi', readings: [] },
+  { character: 'ツ', characterType: 'katakana', romaji: 'tsu', readings: [] },
+  { character: 'テ', characterType: 'katakana', romaji: 'te', readings: [] },
+  { character: 'ト', characterType: 'katakana', romaji: 'to', readings: [] },
+  // N row
+  { character: 'ナ', characterType: 'katakana', romaji: 'na', readings: [] },
+  { character: 'ニ', characterType: 'katakana', romaji: 'ni', readings: [] },
+  { character: 'ヌ', characterType: 'katakana', romaji: 'nu', readings: [] },
+  { character: 'ネ', characterType: 'katakana', romaji: 'ne', readings: [] },
+  { character: 'ノ', characterType: 'katakana', romaji: 'no', readings: [] },
+  // H row
+  { character: 'ハ', characterType: 'katakana', romaji: 'ha', readings: [] },
+  { character: 'ヒ', characterType: 'katakana', romaji: 'hi', readings: [] },
+  { character: 'フ', characterType: 'katakana', romaji: 'fu', readings: [] },
+  { character: 'ヘ', characterType: 'katakana', romaji: 'he', readings: [] },
+  { character: 'ホ', characterType: 'katakana', romaji: 'ho', readings: [] },
+  // M row
+  { character: 'マ', characterType: 'katakana', romaji: 'ma', readings: [] },
+  { character: 'ミ', characterType: 'katakana', romaji: 'mi', readings: [] },
+  { character: 'ム', characterType: 'katakana', romaji: 'mu', readings: [] },
+  { character: 'メ', characterType: 'katakana', romaji: 'me', readings: [] },
+  { character: 'モ', characterType: 'katakana', romaji: 'mo', readings: [] },
+  // Y row
+  { character: 'ヤ', characterType: 'katakana', romaji: 'ya', readings: [] },
+  { character: 'ユ', characterType: 'katakana', romaji: 'yu', readings: [] },
+  { character: 'ヨ', characterType: 'katakana', romaji: 'yo', readings: [] },
+  // R row
+  { character: 'ラ', characterType: 'katakana', romaji: 'ra', readings: [] },
+  { character: 'リ', characterType: 'katakana', romaji: 'ri', readings: [] },
+  { character: 'ル', characterType: 'katakana', romaji: 'ru', readings: [] },
+  { character: 'レ', characterType: 'katakana', romaji: 're', readings: [] },
+  { character: 'ロ', characterType: 'katakana', romaji: 'ro', readings: [] },
+  // W row + N
+  { character: 'ワ', characterType: 'katakana', romaji: 'wa', readings: [] },
+  { character: 'ヲ', characterType: 'katakana', romaji: 'wo', readings: [] },
+  { character: 'ン', characterType: 'katakana', romaji: 'n', readings: [] },
+];
+
 
 export const HIRAGANA_DAKUTEN: Character[] = [
   // G row (voiced K)

@@ -28,10 +28,6 @@
 
     return unsubscribe;
   });
-
-  function setFont(id: string) {
-    settings.update((s) => ({ ...s, japaneseFont: id as (typeof JAPANESE_FONTS)[number]['id'] }));
-  }
 </script>
 
 <div class="app">
@@ -47,17 +43,20 @@
         <a href="{base}/grammar" class:active={$page.route.id === '/grammar'}>Grammar</a>
         <a href="{base}/vocab" class:active={$page.route.id === '/vocab'}>Vocab</a>
       </nav>
-      <select
-        class="font-picker"
-        value={$settings.japaneseFont}
-        on:change={(e) => setFont(e.currentTarget.value)}
-        aria-label="Japanese font"
-        title="Choose Japanese font"
+      <a
+        href="{base}/settings"
+        class="icon-btn"
+        class:active={$page.route.id === '/settings'}
+        title="Settings"
+        aria-label="Settings"
       >
-        {#each JAPANESE_FONTS as font}
-          <option value={font.id}>{font.label}</option>
-        {/each}
-      </select>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+          />
+        </svg>
+      </a>
 
       <button
         class="theme-toggle"
@@ -172,37 +171,7 @@
     font-weight: 600;
   }
 
-  .font-picker {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    border-radius: 8px;
-    padding: 0 0.6rem;
-    height: 36px;
-    font-size: 0.85rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background 0.15s;
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='white' opacity='.7'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
-    padding-right: 1.6rem;
-  }
-
-  .font-picker:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='white' opacity='.7'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
-  }
-
-  .font-picker option {
-    background: #1a73e8;
-    color: white;
-  }
-
+  .icon-btn,
   .theme-toggle {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -218,8 +187,13 @@
     flex-shrink: 0;
   }
 
+  .icon-btn:hover,
   .theme-toggle:hover {
     background: rgba(255, 255, 255, 0.25);
+  }
+
+  .icon-btn.active {
+    background: rgba(255, 255, 255, 0.3);
   }
 
   main {

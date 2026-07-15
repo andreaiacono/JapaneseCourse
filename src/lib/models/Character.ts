@@ -1,6 +1,5 @@
 export interface Reading {
   text: string;
-  audioPath: string;
   readingType?: 'kun' | 'on';
 }
 

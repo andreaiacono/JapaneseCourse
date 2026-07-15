@@ -22,7 +22,8 @@ export interface QuizQuestion {
   options: string[];
   correctAnswer: string;
   character: Character;
-  audioPath?: string;
+  /** Japanese text to voice for audio questions (see ttsAudio). */
+  audioText?: string;
 }
 
 export interface QuizProgress {
@@ -88,10 +89,10 @@ export class QuizEngine {
     if (isKana) {
       const questionType = questionTypes[Math.floor(Math.random() * questionTypes.length)];
       const answerMode = answerModes[Math.floor(Math.random() * answerModes.length)];
-      // If audio is picked but character has no audio, fall back to written
-      const effectiveType = (questionType === 'audio' && char.readings.length === 0) ? 'written' : questionType;
 
-      if (effectiveType === 'audio') {
+      // Every kana is voiced by TTS now — including dakuten and youon, which
+      // used to fall back to a written question for lack of a recording.
+      if (questionType === 'audio') {
         return this.makeAudioQuestion(char, allChars, answerMode);
       } else {
         const q = this.makeCharToReadingQuestion(char, allChars);
@@ -222,10 +223,17 @@ export class QuizEngine {
   }
 
   private makeAudioQuestion(char: Character, allChars: Character[], answerMode: AnswerMode = 'selection'): QuizQuestion | null {
-    if (char.readings.length === 0) return null;
-    const reading = char.readings[Math.floor(Math.random() * char.readings.length)];
-
     const isKana = char.characterType === 'hiragana' || char.characterType === 'katakana';
+
+    // A kana is voiced as itself; a kanji has no single pronunciation, so one of
+    // its readings is picked and that is what gets voiced and answered.
+    let audioText: string;
+    if (isKana) {
+      audioText = char.character;
+    } else {
+      if (char.readings.length === 0) return null;
+      audioText = char.readings[Math.floor(Math.random() * char.readings.length)].text;
+    }
 
     // Kana + typing: hear the audio, type the romaji
     if (isKana && answerMode === 'typing') {
@@ -238,11 +246,11 @@ export class QuizEngine {
         options: [],
         correctAnswer: romaji,
         character: char,
-        audioPath: reading.audioPath
+        audioText
       };
     }
 
-    const correct = isKana ? char.character : reading.text;
+    const correct = isKana ? char.character : audioText;
     const prompt = isKana ? 'Which character is this?' : 'What is this pronunciation?';
 
     const sameType = allChars.filter(
@@ -270,7 +278,7 @@ export class QuizEngine {
       options: shuffleArray(options),
       correctAnswer: correct,
       character: char,
-      audioPath: reading.audioPath
+      audioText
     };
   }
 

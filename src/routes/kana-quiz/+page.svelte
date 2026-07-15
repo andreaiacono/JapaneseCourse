@@ -4,7 +4,7 @@
   import ProgressBar from '$lib/components/ProgressBar.svelte';
   import AudioButton from '$lib/components/AudioButton.svelte';
   import { QuizEngine, type QuizQuestion, type QuizResults, type QuestionPresentation, type AnswerMode } from '$lib/services/QuizEngine';
-  import { audioManager } from '$lib/services/AudioManager';
+  import { playText, stopPlayback } from '$lib/services/ttsAudio';
   import type { DataLoader } from '$lib/services/DataLoader';
   import type { Character } from '$lib/models/Character';
   import {
@@ -72,7 +72,7 @@
 
   onDestroy(() => {
     clearToast();
-    audioManager.stop();
+    stopPlayback();
   });
 
   function clearToast() {
@@ -133,7 +133,7 @@
 
   async function loadNextQuestion() {
     if (!quizEngine) return;
-    audioManager.stop();
+    stopPlayback();
     selectedAnswer = null;
     typedAnswer = '';
     isCorrect = null;
@@ -145,9 +145,9 @@
       return;
     }
 
-    if (currentQuestion.type === 'audio' && currentQuestion.audioPath) {
+    if (currentQuestion.type === 'audio' && currentQuestion.audioText) {
       setTimeout(() => {
-        if (currentQuestion?.audioPath) audioManager.play(currentQuestion.audioPath);
+        if (currentQuestion?.audioText) playText(currentQuestion.audioText);
       }, 300);
     }
 
@@ -198,7 +198,7 @@
 
   function quitQuiz() {
     clearToast();
-    audioManager.stop();
+    stopPlayback();
     phase = 'setup';
     currentQuestion = null;
     selectedAnswer = null;
@@ -327,7 +327,7 @@
         <p class="prompt">{currentQuestion.prompt}</p>
         {#if currentQuestion.type === 'audio'}
           <div class="audio-question">
-            <AudioButton audioPath={currentQuestion.audioPath ?? ''} label="Play Audio" />
+            <AudioButton text={currentQuestion.audioText ?? ''} label="Play Audio" />
           </div>
         {:else}
           <div class="question-text japanese">{currentQuestion.question}</div>

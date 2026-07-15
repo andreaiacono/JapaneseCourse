@@ -12,7 +12,7 @@
   } from '$lib/services/KanjiQuizEngine';
   import type { Word } from '$lib/models/Word';
   import type { DataLoader } from '$lib/services/DataLoader';
-  import { audioManager } from '$lib/services/AudioManager';
+  import { playText, stopPlayback } from '$lib/services/ttsAudio';
 
   let quizEngine: KanjiQuizEngine | null = null;
   let loader: DataLoader | null = null;
@@ -64,7 +64,7 @@
   onDestroy(() => {
     if (autoPlayTimer) clearTimeout(autoPlayTimer);
     clearToast();
-    audioManager.stop();
+    stopPlayback();
   });
 
   function clearToast() {
@@ -130,9 +130,9 @@
       return;
     }
 
-    if (currentQuestion.audioPath) {
+    if (currentQuestion.audioText) {
       autoPlayTimer = setTimeout(() => {
-        if (currentQuestion?.audioPath) audioManager.play(currentQuestion.audioPath);
+        if (currentQuestion?.audioText) playText(currentQuestion.audioText);
       }, 400);
     }
   }
@@ -182,7 +182,7 @@
   function quitQuiz() {
     if (autoPlayTimer) clearTimeout(autoPlayTimer);
     clearToast();
-    audioManager.stop();
+    stopPlayback();
     phase = 'setup';
     currentQuestion = null;
     selectedWord = null;
@@ -308,9 +308,9 @@
           </div>
         {/if}
 
-        {#if currentQuestion.audioPath}
+        {#if currentQuestion.audioText}
           <div class="audio-row">
-            <AudioButton audioPath={currentQuestion.audioPath} label="Play Audio" />
+            <AudioButton text={currentQuestion.audioText} label="Play Audio" />
           </div>
         {/if}
       </div>
