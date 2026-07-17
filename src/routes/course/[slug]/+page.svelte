@@ -5,6 +5,14 @@
   import { tick } from 'svelte';
   import { n5Course } from '$lib/data/course/index.js';
   import { markLessonComplete, startLesson, getLessonStatus } from '$lib/stores/courseStore.js';
+  import SpeakButton from '$lib/components/SpeakButton.svelte';
+  import type { TaleSegment } from '$lib/models/Course.js';
+
+  // Rebuild a reading-tale sentence into its written form for TTS. Must match
+  // the reconstruction in scripts/generate-tts.mjs so the clip lookup hits.
+  function reconstructReading(segments: TaleSegment[]): string {
+    return segments.map((s) => (Array.isArray(s) ? s[0] : s)).join('');
+  }
   import type {
     Lesson, ContentBlock, Exercise,
     MultipleChoiceExercise, FillInBlankExercise, SentenceConstructionExercise
@@ -246,7 +254,10 @@
 
             {:else if block.type === 'example'}
               <div class="block-example">
-                <p class="example-ja japanese">{block.sentence.ja}</p>
+                <div class="example-ja-row">
+                  <p class="example-ja japanese">{block.sentence.ja}</p>
+                  <SpeakButton text={block.sentence.ja} label="Play sentence" />
+                </div>
                 {#if block.sentence.furigana}
                   <p class="example-furigana japanese" class:hidden={!showRomaji && !block.sentence.romaji}>{block.sentence.furigana}</p>
                 {/if}
@@ -318,18 +329,21 @@
                 <div class="reading-passage">
                   {#each block.sentences as sentence}
                     <p class="reading-sentence">
-                      <span class="reading-ja japanese">
-                        {#each sentence.segments as seg}
-                          {#if Array.isArray(seg)}
-                            {#if showRomaji}
-                              <ruby>{seg[0]}<rt>{seg[1]}</rt></ruby>
+                      <span class="reading-ja-row">
+                        <span class="reading-ja japanese">
+                          {#each sentence.segments as seg}
+                            {#if Array.isArray(seg)}
+                              {#if showRomaji}
+                                <ruby>{seg[0]}<rt>{seg[1]}</rt></ruby>
+                              {:else}
+                                {seg[0]}
+                              {/if}
                             {:else}
-                              {seg[0]}
+                              {seg}
                             {/if}
-                          {:else}
-                            {seg}
-                          {/if}
-                        {/each}
+                          {/each}
+                        </span>
+                        <SpeakButton text={reconstructReading(sentence.segments)} label="Play sentence" />
                       </span>
                       {#if showTranslation}
                         <span class="reading-en">{sentence.en}</span>
@@ -750,6 +764,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+  }
+
+  .example-ja-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
   }
 
   .example-ja {
@@ -1313,6 +1333,12 @@
     flex-direction: column;
     gap: 0.15rem;
     margin: 0;
+  }
+
+  .reading-ja-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .reading-ja {

@@ -12,6 +12,7 @@
 //   - kanji       — each kun/on reading, and each example word
 //   - vocab       — each word and example sentence
 //   - grammar     — each example sentence
+//   - lessons     — example-block sentences + reading-tale sentences
 // Kana and kanji used to play recorded MP3s instead; those recordings were the
 // app's only data source (the filenames were the schema), which is why the
 // character data now lives in kanaData.ts and data/kanji/*.json.
@@ -26,6 +27,8 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { n5Vocab } from '../src/lib/data/course/n5-vocab.ts';
 import { n5Grammar } from '../src/lib/data/course/n5-grammar.ts';
+import { n5Lessons } from '../src/lib/data/course/n5-lessons.ts';
+import { n5ReadingLessons } from '../src/lib/data/course/n5-readings.ts';
 import {
   HIRAGANA_BASIC,
   HIRAGANA_DAKUTEN,
@@ -76,6 +79,30 @@ for (const v of Object.values(n5Vocab)) {
 for (const g of Object.values(n5Grammar)) {
   for (const ex of g.examples ?? []) if (ex.ja) texts.add(ex.ja);
 }
+
+// Course lessons: example-block sentences, and reading-tale sentences rebuilt
+// from their furigana segments into the written form. The lesson player voices
+// the same reconstruction, so this join must match it exactly (see
+// reconstructReading in course/[slug]/+page.svelte).
+const reconstructReading = (segments) =>
+  segments.map((s) => (Array.isArray(s) ? s[0] : s)).join('');
+
+const collectLessonAudio = (lessons) => {
+  for (const lesson of Object.values(lessons)) {
+    for (const block of lesson.contentBlocks ?? []) {
+      if (block.type === 'example' && block.sentence?.ja) texts.add(block.sentence.ja);
+      if (block.type === 'reading') {
+        for (const sentence of block.sentences ?? []) {
+          const ja = reconstructReading(sentence.segments);
+          if (ja) texts.add(ja);
+        }
+      }
+    }
+  }
+};
+collectLessonAudio(n5Lessons);
+collectLessonAudio(n5ReadingLessons);
+
 const list = [...texts];
 
 const hash = (t) => createHash('sha256').update(t).digest('hex').slice(0, 16);
