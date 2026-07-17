@@ -178,13 +178,13 @@ export const n5Vocab: Record<string, VocabEntry> = {
 
   'vocab-kaban': {
     id: 'vocab-kaban',
-    word: { ja: '鞄', reading: 'かばん', romaji: 'kaban', en: 'bag / briefcase' },
-    alternateWritings: ['カバン'],
+    word: { ja: 'かばん', reading: 'かばん', romaji: 'kaban', en: 'bag / briefcase' },
+    alternateWritings: ['鞄', 'カバン'],
     wordClass: 'noun',
     jlptLevel: 'N5',
     tags: ['object', 'N5'],
     exampleSentences: [
-      { ja: '鞄の中に本があります。', furigana: 'かばんのなかにほんがあります。', romaji: 'Kaban no naka ni hon ga arimasu.', en: 'There is a book inside the bag.' },
+      { ja: 'かばんの中に本があります。', furigana: 'かばんのなかにほんがあります。', romaji: 'Kaban no naka ni hon ga arimasu.', en: 'There is a book inside the bag.' },
     ],
   },
 
@@ -700,8 +700,8 @@ export const n5Vocab: Record<string, VocabEntry> = {
 
   'vocab-ii': {
     id: 'vocab-ii',
-    word: { ja: '良い', reading: 'いい', romaji: 'ii', en: 'good / fine / okay' },
-    alternateWritings: ['いい', 'よい'],
+    word: { ja: 'いい', reading: 'いい', romaji: 'ii', en: 'good / fine / okay' },
+    alternateWritings: ['良い', 'よい'],
     wordClass: 'i-adjective',
     jlptLevel: 'N5',
     tags: ['adjective', 'N5'],
@@ -1112,7 +1112,7 @@ export const n5Vocab: Record<string, VocabEntry> = {
     jlptLevel: 'N5',
     tags: ['position', 'N5'],
     exampleSentences: [
-      { ja: '鞄の中に本があります。', furigana: 'かばんのなかにほんがあります。', romaji: 'Kaban no naka ni hon ga arimasu.', en: 'There is a book inside the bag.' },
+      { ja: 'かばんの中に本があります。', furigana: 'かばんのなかにほんがあります。', romaji: 'Kaban no naka ni hon ga arimasu.', en: 'There is a book inside the bag.' },
     ],
   },
 

@@ -360,7 +360,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: 'Japanese has two "existence" verbs:\n- **あります** — for inanimate things (objects, plants, abstract concepts)\n- **います** — for animate beings (people, animals)' },
       { type: 'comparison', items: [{label:'あります (inanimate)', markdown:'机の上に本**があります**。\n(There is a book on the desk.)'},{label:'います (animate)', markdown:'公園に犬**がいます**。\n(There is a dog in the park.)'}] },
-      { type: 'example', sentence: { ja: '冷蔵庫の中にビールがあります。', romaji: 'Reizōko no naka ni bīru ga arimasu.', en: 'There is beer in the refrigerator.' } },
+      { type: 'example', sentence: { ja: '冷蔵庫の中にビールがあります。', furigana: 'れいぞうこのなかにビールがあります。', romaji: 'Reizōko no naka ni bīru ga arimasu.', en: 'There is beer in the refrigerator.' } },
       { type: 'tip', markdown: 'For possession: お金がありますか = "Do you have money?". Use あります even for abstract things like time and plans.' },
     ],
     practiceExercises: [
@@ -449,7 +449,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: '〜ます is the polite non-past form. It expresses both **present habits** and **future intentions**.' },
       { type: 'table', headers: ['Group','Dictionary','ます form','Rule'], rows: [['G1','飲む','飲みます','change -u to -i, add ます'],['G1','書く','書きます','change -ku to -ki, add ます'],['G2','食べる','食べます','drop -る, add ます'],['G3','する','します','irregular'],['G3','くる','きます','irregular']] },
-      { type: 'example', sentence: { ja: '私は毎朝コーヒーを飲みます。', romaji: 'Watashi wa maiasa koohii wo nomimasu.', en: 'I drink coffee every morning.' } },
+      { type: 'example', sentence: { ja: '私は毎朝コーヒーを飲みます。', furigana: 'わたしはまいあさコーヒーをのみます。', romaji: 'Watashi wa maiasa koohii wo nomimasu.', en: 'I drink coffee every morning.' } },
       { type: 'tip', markdown: 'ます-form covers both "I drink" (habit) and "I will drink" (future). Use time words for clarity.' },
     ],
     practiceExercises: [
@@ -471,7 +471,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: 'To negate a polite verb, replace **ます → ません**. The stem stays the same.' },
       { type: 'table', headers: ['Positive','Negative','Meaning'], rows: [['飲みます','飲みません','drink / don\'t drink'],['食べます','食べません','eat / don\'t eat'],['します','しません','do / don\'t do'],['きます','きません','come / don\'t come']] },
-      { type: 'example', sentence: { ja: '私はお酒を飲みません。', romaji: 'Watashi wa osake wo nomimasen.', en: "I don't drink alcohol." } },
+      { type: 'example', sentence: { ja: '私はお酒を飲みません。', furigana: 'わたしはおさけをのみません。', romaji: 'Watashi wa osake wo nomimasen.', en: "I don't drink alcohol." } },
       { type: 'tip', markdown: 'ませんか (with rising intonation) is an **invitation**: 一緒に食べませんか = "Shall we eat together?"' },
     ],
     practiceExercises: [
@@ -492,8 +492,8 @@ export const n5Lessons: Record<string, Lesson> = {
     introduces: ['grammar-wo-object'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**を** (pronounced "o") marks the **direct object** of a transitive verb — the thing the action is performed on.' },
-      { type: 'example', sentence: { ja: '毎朝、新聞を読みます。', romaji: 'Maiasa, shinbun wo yomimasu.', en: 'I read the newspaper every morning.' } },
-      { type: 'table', headers: ['Object','Verb','Sentence'], rows: [['本を','読む','本を読みます (read a book)'],['コーヒーを','飲む','コーヒーを飲みます (drink coffee)'],['音楽を','聴く','音楽を聴きます (listen to music)']] },
+      { type: 'example', sentence: { ja: '毎朝、新聞を読みます。', furigana: 'まいあさ、しんぶんをよみます。', romaji: 'Maiasa, shinbun wo yomimasu.', en: 'I read the newspaper every morning.' } },
+      { type: 'table', headers: ['Object','Verb','Sentence'], rows: [['本を','読む','本を読みます (read a book)'],['コーヒーを','飲む','コーヒーを飲みます (drink coffee)'],['音楽を','聞く','音楽を聞きます (listen to music)']] },
       { type: 'warning', markdown: 'を is only used with **transitive verbs**. Never use を with あります/います.' },
     ],
     practiceExercises: [
@@ -502,7 +502,7 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
     quiz: [
       { id: 'qz-wo-1', type: 'multiple-choice', prompt: 'Which particle marks the direct object?', question: 'Choose.', choices: [{id:'a',text:'は'},{id:'b',text:'が'},{id:'c',text:'を'},{id:'d',text:'に'}], correctChoiceId: 'c', targets: ['grammar-wo-object'], difficulty: 1 },
-      { id: 'qz-wo-2', type: 'multiple-choice', prompt: '"Listen to music" — correct particle?', question: '音楽___聴きます。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'を'},{id:'d',text:'が'}], correctChoiceId: 'c', targets: ['grammar-wo-object'], difficulty: 1 },
+      { id: 'qz-wo-2', type: 'multiple-choice', prompt: '"Listen to music" — correct particle?', question: '音楽___聞きます。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'を'},{id:'d',text:'が'}], correctChoiceId: 'c', targets: ['grammar-wo-object'], difficulty: 1 },
       { id: 'qz-wo-3', type: 'fill-in-blank', prompt: 'Complete: テレビ___見ます。', sentenceTemplate: 'テレビ{{blank}}見ます。', acceptedAnswers: ['を'], wordBankOptions: ['を','は','に','で'], targets: ['grammar-wo-object'], difficulty: 1 },
     ],
   },
@@ -519,7 +519,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: 'い-adjectives end in **-い** and conjugate on their own. In the negative, drop -い and add **-くない**.' },
       { type: 'table', headers: ['Form','Rule','Example'], rows: [['Present positive','Adj-い + です','大きいです (is big)'],['Present negative','root + くない + です','大きくないです (is not big)'],['Pre-noun','Adj-い + Noun','大きい犬 (big dog)']] },
-      { type: 'example', sentence: { ja: 'この映画は面白いです。', romaji: 'Kono eiga wa omoshiroi desu.', en: 'This movie is interesting.' } },
+      { type: 'example', sentence: { ja: 'この映画は面白いです。', furigana: 'このえいがはおもしろいです。', romaji: 'Kono eiga wa omoshiroi desu.', en: 'This movie is interesting.' } },
       { type: 'warning', markdown: 'The adjective **いい** (good) is irregular: its conjugated base is **よ-**: よくない (not good), よかった (was good).' },
     ],
     practiceExercises: [
@@ -563,7 +563,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: 'い-adjectives: drop -い → add **-かった** (positive past) or **-くなかった** (negative past).\nな-adjectives: use **でした** (positive past) or **じゃありませんでした** (negative past).' },
       { type: 'table', headers: ['Type','Past +','Past −'], rows: [['い-adj (大きい)','大きかった','大きくなかった'],['い-adj (いい)','よかった','よくなかった'],['な-adj (好き)','好きでした','好きじゃありませんでした']] },
-      { type: 'example', sentence: { ja: '昨日のパーティーは楽しかったです。', romaji: "Kinō no pātī wa tanoshikatta desu.", en: "Yesterday's party was fun." } },
+      { type: 'example', sentence: { ja: '昨日のパーティーは楽しかったです。', furigana: 'きのうのパーティーはたのしかったです。', romaji: "Kinō no pātī wa tanoshikatta desu.", en: "Yesterday's party was fun." } },
     ],
     practiceExercises: [
       { id: 'ex-ap-1', type: 'multiple-choice', prompt: 'Past tense of 寒いです?', question: 'Choose.', choices: [{id:'a',text:'寒いでした'},{id:'b',text:'寒かったです'},{id:'c',text:'寒くでした'},{id:'d',text:'さむかったです'}], correctChoiceId: 'b', targets: ['grammar-adj-past'], difficulty: 1 },
@@ -572,7 +572,7 @@ export const n5Lessons: Record<string, Lesson> = {
     quiz: [
       { id: 'qz-ap-1', type: 'multiple-choice', prompt: 'Past positive of 好きです?', question: 'Choose.', choices: [{id:'a',text:'好きかったです'},{id:'b',text:'好きでした'},{id:'c',text:'好かったです'},{id:'d',text:'好きいでした'}], correctChoiceId: 'b', targets: ['grammar-adj-past'], difficulty: 1 },
       { id: 'qz-ap-2', type: 'multiple-choice', prompt: 'Past of いい (good)?', question: 'Choose.', choices: [{id:'a',text:'いかった'},{id:'b',text:'よかった'},{id:'c',text:'よいかった'},{id:'d',text:'いいかった'}], correctChoiceId: 'b', explanation: 'いい is irregular: よかった', targets: ['grammar-adj-past'], difficulty: 1 },
-      { id: 'qz-ap-3', type: 'fill-in-blank', prompt: 'Complete: 子供の頃、野菜が嫌い___。(I disliked vegetables as a child.)', sentenceTemplate: '子供の頃、野菜が嫌い{{blank}}。', acceptedAnswers: ['でした'], wordBankOptions: ['でした','かった','なかった','でしたか'], targets: ['grammar-adj-past'], difficulty: 1 },
+      { id: 'qz-ap-3', type: 'fill-in-blank', prompt: 'Complete: 子供のころ、野菜が嫌い___。(I disliked vegetables as a child.)', sentenceTemplate: '子供のころ、野菜が嫌い{{blank}}。', acceptedAnswers: ['でした'], wordBankOptions: ['でした','かった','なかった','でしたか'], targets: ['grammar-adj-past'], difficulty: 1 },
     ],
   },
 
@@ -630,8 +630,8 @@ export const n5Lessons: Record<string, Lesson> = {
     introduces: ['grammar-te-iru'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**て-form + いる/います** has two meanings depending on the verb type:\n1. **Activity verbs** (食べる, 走る) → ongoing action: 食べています = "is eating"\n2. **Change-of-state verbs** (結婚する, 着る) → resultant state: 結婚しています = "is married"' },
-      { type: 'example', sentence: { ja: '今、雨が降っています。', romaji: 'Ima, ame ga futte imasu.', en: 'It is raining now.' } },
-      { type: 'example', sentence: { ja: '兄はもう結婚しています。', romaji: 'Ani wa mō kekkon shite imasu.', en: 'My brother is already married.' } },
+      { type: 'example', sentence: { ja: '今、雨が降っています。', furigana: 'いま、あめがふっています。', romaji: 'Ima, ame ga futte imasu.', en: 'It is raining now.' } },
+      { type: 'example', sentence: { ja: '兄はもう結婚しています。', furigana: 'あにはもうけっこんしています。', romaji: 'Ani wa mō kekkon shite imasu.', en: 'My brother is already married.' } },
       { type: 'tip', markdown: 'In casual speech, いる contracts to る: 食べてる, 見てる, 知ってる.' },
     ],
     practiceExercises: [
@@ -641,7 +641,7 @@ export const n5Lessons: Record<string, Lesson> = {
     quiz: [
       { id: 'qz-tei-1', type: 'multiple-choice', prompt: '"He is married" — which is correct?', question: 'Choose.', choices: [{id:'a',text:'彼は結婚する。'},{id:'b',text:'彼は結婚した。'},{id:'c',text:'彼は結婚している。'},{id:'d',text:'彼は結婚します。'}], correctChoiceId: 'c', targets: ['grammar-te-iru'], difficulty: 1 },
       { id: 'qz-tei-2', type: 'multiple-choice', prompt: 'Casual form of 食べています?', question: 'Choose.', choices: [{id:'a',text:'食べてる'},{id:'b',text:'食べる'},{id:'c',text:'食べて'},{id:'d',text:'食べた'}], correctChoiceId: 'a', targets: ['grammar-te-iru'], difficulty: 1 },
-      { id: 'qz-tei-3', type: 'fill-in-blank', prompt: 'Complete: 今、音楽を___います。', sentenceTemplate: '今、音楽を{{blank}}います。', acceptedAnswers: ['聴いて','きいて'], wordBankOptions: ['聴いて','聴いた','聴く','聴い'], targets: ['grammar-te-iru'], difficulty: 1 },
+      { id: 'qz-tei-3', type: 'fill-in-blank', prompt: 'Complete: 今、音楽を___います。', sentenceTemplate: '今、音楽を{{blank}}います。', acceptedAnswers: ['聞いて','きいて'], wordBankOptions: ['聞いて','聞いた','聞く','聞い'], targets: ['grammar-te-iru'], difficulty: 1 },
     ],
   },
 
@@ -657,7 +657,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: 'Attach **〜たい** to the ます-stem to express your desire to do something. 〜たい conjugates like an い-adjective.' },
       { type: 'table', headers: ['Form','Example','Meaning'], rows: [['〜たいです','行きたいです','I want to go'],['〜たくないです','行きたくないです','I don\'t want to go'],['〜たかったです','行きたかったです','I wanted to go'],['〜たくなかったです','行きたくなかったです','I didn\'t want to go']] },
-      { type: 'example', sentence: { ja: '夏休みに海へ行きたいです。', romaji: 'Natsuyasumi ni umi e ikitai desu.', en: 'I want to go to the sea during summer vacation.' } },
+      { type: 'example', sentence: { ja: '夏休みに海へ行きたいです。', furigana: 'なつやすみにうみへいきたいです。', romaji: 'Natsuyasumi ni umi e ikitai desu.', en: 'I want to go to the sea during summer vacation.' } },
       { type: 'warning', markdown: '〜たい only expresses **your own** desire in declarative sentences. For a third person\'s desire, use 〜たがっている.' },
     ],
     practiceExercises: [
@@ -678,7 +678,7 @@ export const n5Lessons: Record<string, Lesson> = {
     introduces: ['grammar-te-kudasai'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: 'Attach **ください** to the て-form to make a polite request: "Please do ~".' },
-      { type: 'example', sentence: { ja: 'ここに名前を書いてください。', romaji: 'Koko ni namae wo kaite kudasai.', en: 'Please write your name here.' } },
+      { type: 'example', sentence: { ja: 'ここに名前を書いてください。', furigana: 'ここになまえをかいてください。', romaji: 'Koko ni namae wo kaite kudasai.', en: 'Please write your name here.' } },
       { type: 'table', headers: ['Verb','て-form','Request'], rows: [['食べる','食べて','食べてください (Please eat)'],['座る','座って','座ってください (Please sit)'],['見る','見て','見てください (Please look)'],['聞く','聞いて','聞いてください (Please listen)']] },
       { type: 'tip', markdown: 'Negative request: **〜ないでください** = "Please don\'t ~": タバコを吸わないでください (Please don\'t smoke).' },
     ],
@@ -700,7 +700,7 @@ export const n5Lessons: Record<string, Lesson> = {
     introduces: ['grammar-koto-ga-dekiru'], prerequisites: [], tags: ['grammar','N5'],
     contentBlocks: [
       { type: 'text', markdown: '**Verb (dictionary form) + ことができる/できます** = "can do ~", expressing ability or possibility.' },
-      { type: 'example', sentence: { ja: '私は自転車に乗ることができます。', romaji: 'Watashi wa jitensha ni noru koto ga dekimasu.', en: 'I can ride a bicycle.' } },
+      { type: 'example', sentence: { ja: '私は自転車に乗ることができます。', furigana: 'わたしはじてんしゃにのることができます。', romaji: 'Watashi wa jitensha ni noru koto ga dekimasu.', en: 'I can ride a bicycle.' } },
       { type: 'comparison', items: [{label:'ことができる (formal)', markdown:'日本語を話すことができます。\n(I can speak Japanese.)'},{label:'Potential form (casual)', markdown:'日本語が話せます。\n(Same meaning, more natural)'}] },
       { type: 'tip', markdown: 'できる alone (without こと) expresses general ability: 料理ができる (can cook / is good at cooking).' },
     ],
@@ -723,7 +723,7 @@ export const n5Lessons: Record<string, Lesson> = {
     contentBlocks: [
       { type: 'text', markdown: '**Verb (た-form) + ことがある/あります** = "have done ~ before". This expresses life experience — whether something has happened at least once.' },
       { type: 'comparison', items: [{label:'ことがある (experience)', markdown:'富士山に登ったことがあります。\n(I have climbed Mt. Fuji.)\n→ Describes having done it'},{label:'ました (specific past event)', markdown:'昨日富士山に登りました。\n(I climbed Mt. Fuji yesterday.)\n→ Specific occasion'}] },
-      { type: 'example', sentence: { ja: 'まだ沖縄に行ったことがありません。', romaji: 'Mada Okinawa ni itta koto ga arimasen.', en: 'I have never been to Okinawa yet.' } },
+      { type: 'example', sentence: { ja: 'まだ沖縄に行ったことがありません。', furigana: 'まだおきなわにいったことがありません。', romaji: 'Mada Okinawa ni itta koto ga arimasen.', en: 'I have never been to Okinawa yet.' } },
       { type: 'tip', markdown: '一度も〜たことがない = "have never done even once". 何度も〜たことがある = "have done many times".' },
     ],
     practiceExercises: [

@@ -107,7 +107,7 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     summary: 'Adding か to the end of a statement turns it into a yes/no question without changing word order.',
     formation: 'Statement + か',
     explanation:
-      'In polite speech, か is appended to the end of a sentence to form a question. No inversion of subject and verb is needed. When combined with question words like 何、どこ、誰、いつ、どう, the sentence is a wh-question rather than yes/no.',
+      'In polite speech, か is appended to the end of a sentence to form a question. No inversion of subject and verb is needed. When combined with question words like 何、どこ、だれ、いつ、どう, the sentence is a wh-question rather than yes/no.',
     usageNotes: [
       'In polite style, always end questions with ですか or ますか.',
       'In casual speech, か alone can sound blunt. A rising intonation is softer.',
@@ -476,7 +476,7 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     ],
     examples: [
       {
-        ja: '子供の頃、野菜が嫌いでした。',
+        ja: '子供のころ、野菜が嫌いでした。',
         furigana: 'こどものころ、やさいがきらいでした。',
         romaji: 'Kodomo no koro, yasai ga kirai deshita.',
         en: 'When I was a child, I disliked vegetables.',
@@ -598,7 +598,7 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     usageNotes: [
       'たい only expresses the speaker\'s desire. For third-person desire use 〜たがっている.',
       'Object particle を can change to が to emphasize the desired thing.',
-      'Past たかった: 子供の頃、パイロットになりたかった.',
+      'Past たかった: 子供のころ、パイロットになりたかった.',
     ],
     examples: [
       {
@@ -732,7 +732,7 @@ export const n5Grammar: Record<string, GrammarPoint> = {
         en: 'I love chocolate.',
       },
       {
-        ja: '音楽を聴くのが好きです。',
+        ja: '音楽を聞くのが好きです。',
         furigana: 'おんがくをきくのがすきです。',
         romaji: 'Ongaku o kiku no ga suki desu.',
         en: 'I like listening to music.',
@@ -758,7 +758,7 @@ export const n5Grammar: Record<string, GrammarPoint> = {
       "も means 'also / too / even'. In affirmative sentences: 私も行きます (I will go too). In negative: 私も行きません (I won't go either). With question words plus negative: 何も食べませんでした (didn't eat anything).",
     usageNotes: [
       'も replaces は、が、を. It does NOT replace に、で、から — it follows them: にも、でも.',
-      'Negative + も + question word: 誰も来なかった (Nobody came).',
+      'Negative + も + question word: だれも来なかった (Nobody came).',
       'も on a quantity expresses surprise: 三時間も待った (waited a whole three hours!).',
     ],
     examples: [
