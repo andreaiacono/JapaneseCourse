@@ -7,7 +7,11 @@
   import { markLessonComplete, startLesson, getLessonStatus } from '$lib/stores/courseStore.js';
   import SpeakButton from '$lib/components/SpeakButton.svelte';
   import { recordAll, type MasteryRef } from '$lib/stores/masteryStore';
-  import type { TaleSegment } from '$lib/models/Course.js';
+  import { renderRuby } from '$lib/utils/ruby';
+  import type {
+    Lesson, ContentBlock, Exercise, TaleSegment,
+    MultipleChoiceExercise, FillInBlankExercise, SentenceConstructionExercise
+  } from '$lib/models/Course.js';
 
   // Rebuild a reading-tale sentence into its written form for TTS. Must match
   // the reconstruction in scripts/generate-tts.mjs so the clip lookup hits.
@@ -41,10 +45,6 @@
       .filter((r): r is MasteryRef => r !== null);
     recordAll(refs, correct);
   }
-  import type {
-    Lesson, ContentBlock, Exercise,
-    MultipleChoiceExercise, FillInBlankExercise, SentenceConstructionExercise
-  } from '$lib/models/Course.js';
 
   // ─── Routing ──────────────────────────────────────────────────────────────
 
@@ -219,7 +219,8 @@
   // ─── Inline markdown renderer ─────────────────────────────────────────────
 
   function renderMarkdown(md: string): string {
-    return md
+    // renderRuby escapes HTML, so it must run before the tags below are added.
+    return renderRuby(md)
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>')
       .replace(/`(.+?)`/g, '<code>$1</code>')
@@ -314,7 +315,7 @@
                   </thead>
                   <tbody>
                     {#each block.rows as row}
-                      <tr>{#each row as cell}<td class="japanese">{cell}</td>{/each}</tr>
+                      <tr>{#each row as cell}<td class="japanese">{@html renderRuby(cell)}</td>{/each}</tr>
                     {/each}
                   </tbody>
                 </table>
@@ -417,11 +418,11 @@
           </div>
 
           <div class="exercise-card">
-            <p class="exercise-prompt">{practiceExercise.prompt}</p>
+            <p class="exercise-prompt">{@html renderRuby(practiceExercise.prompt)}</p>
 
             {#if practiceExercise.type === 'multiple-choice'}
               {@const mc = practiceExercise}
-              <p class="exercise-question">{mc.question}</p>
+              <p class="exercise-question">{@html renderRuby(mc.question)}</p>
               <div class="choices-grid">
                 {#each mc.choices as choice}
                   <button
@@ -432,7 +433,7 @@
                     disabled={practiceResult !== null}
                     on:click={() => practiceSelected = choice.id}
                   >
-                    <span class="japanese">{choice.text}</span>
+                    <span class="japanese">{@html renderRuby(choice.text)}</span>
                   </button>
                 {/each}
               </div>
@@ -440,7 +441,7 @@
             {:else if practiceExercise.type === 'fill-in-blank'}
               {@const fib = practiceExercise}
               <p class="sentence-template japanese">
-                {fib.sentenceTemplate.replace('{{blank}}', '______')}
+                {@html renderRuby(fib.sentenceTemplate).replace('{{blank}}', '______')}
               </p>
               {#if fib.wordBankOptions}
                 <div class="word-bank">
@@ -506,7 +507,7 @@
                   ✗ Incorrect — Correct answer: <strong class="japanese">{getCorrectText(practiceExercise)}</strong>
                 {/if}
                 {#if practiceExercise.explanation}
-                  <p class="result-explanation">{practiceExercise.explanation}</p>
+                  <p class="result-explanation">{@html renderRuby(practiceExercise.explanation)}</p>
                 {/if}
               </div>
             {/if}
@@ -546,11 +547,11 @@
           </div>
 
           <div class="exercise-card">
-            <p class="exercise-prompt">{quizExercise.prompt}</p>
+            <p class="exercise-prompt">{@html renderRuby(quizExercise.prompt)}</p>
 
             {#if quizExercise.type === 'multiple-choice'}
               {@const mc = quizExercise}
-              <p class="exercise-question">{mc.question}</p>
+              <p class="exercise-question">{@html renderRuby(mc.question)}</p>
               <div class="choices-grid">
                 {#each mc.choices as choice}
                   <button
@@ -561,7 +562,7 @@
                     disabled={quizResult !== null}
                     on:click={() => quizSelected = choice.id}
                   >
-                    <span class="japanese">{choice.text}</span>
+                    <span class="japanese">{@html renderRuby(choice.text)}</span>
                   </button>
                 {/each}
               </div>
@@ -569,7 +570,7 @@
             {:else if quizExercise.type === 'fill-in-blank'}
               {@const fib = quizExercise}
               <p class="sentence-template japanese">
-                {fib.sentenceTemplate.replace('{{blank}}', '______')}
+                {@html renderRuby(fib.sentenceTemplate).replace('{{blank}}', '______')}
               </p>
               {#if fib.wordBankOptions}
                 <div class="word-bank">
@@ -635,7 +636,7 @@
                   ✗ Incorrect — Correct answer: <strong class="japanese">{getCorrectText(quizExercise)}</strong>
                 {/if}
                 {#if quizExercise.explanation}
-                  <p class="result-explanation">{quizExercise.explanation}</p>
+                  <p class="result-explanation">{@html renderRuby(quizExercise.explanation)}</p>
                 {/if}
               </div>
             {/if}
