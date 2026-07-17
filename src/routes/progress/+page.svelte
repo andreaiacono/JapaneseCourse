@@ -5,6 +5,7 @@
   import { mastery, summarise, weakest, levelOf, resetMastery, KNOWN_STREAK } from '$lib/stores/masteryStore';
   import type { MasteryLevel } from '$lib/stores/masteryStore';
   import { n5Course } from '$lib/data/course';
+  import { n5Grammar } from '$lib/data/course/n5-grammar';
   import {
     HIRAGANA_BASIC,
     HIRAGANA_DAKUTEN,
@@ -37,9 +38,15 @@
   const chapters = (n5Course.units[0]?.chapters ?? []).map((id) => n5Course.chapters[id]);
   const allLessonIds = Object.keys(n5Course.lessons);
 
+  // Grammar is only ever exercised by the course, so it sits with the course
+  // rung rather than beside kana/kanji.
+  const GRAMMAR = Object.values(n5Grammar);
+  const GRAMMAR_IDS = GRAMMAR.map((g) => g.id);
+
   // ── Summaries ────────────────────────────────────────────────────────────
   $: kana = summarise($mastery, 'kana', KANA_IDS);
   $: kanji = summarise($mastery, 'kanji', kanjiIds);
+  $: grammar = summarise($mastery, 'grammar', GRAMMAR_IDS);
   $: lessonsDone = allLessonIds.filter(
     (id) => $courseProgress.lessons[id]?.status === 'completed'
   ).length;
@@ -148,7 +155,8 @@
         <div class="fill known" style="width:{pct(lessonsDone, allLessonIds.length)}%"></div>
       </div>
       <div class="rung-sub">
-        <a href="{base}/vocab">Vocab</a> and <a href="{base}/grammar">Grammar</a> are references — dip in whenever you need them.
+        grammar points {grammar.known}/{grammar.total}
+        · <a href="{base}/vocab">Vocab</a> and <a href="{base}/grammar">Grammar</a> are references — dip in whenever you need them.
       </div>
     </div>
 
@@ -202,6 +210,27 @@
     <p class="section-note">
       The Kanji Quiz asks about words, so a kanji counts as known once you recognise it inside its
       words — not by reciting its readings.
+    </p>
+  </section>
+
+  <!-- ── Grammar ────────────────────────────────────────────────────────── -->
+  <section class="card">
+    <div class="card-head">
+      <h3 class="section-title">Grammar</h3>
+      <span class="head-count">{grammar.known} / {grammar.total} known</span>
+      <a class="btn" href="{base}/grammar">Grammar Reference →</a>
+    </div>
+    <div class="grammar-list">
+      {#each GRAMMAR as g}
+        {@const level = levelOf($mastery.grammar[g.id])}
+        <a class="grammar-chip {level}" href="{base}/grammar" title="{g.summary ?? g.title} — {level}">
+          <span class="japanese">{g.title}</span>
+        </a>
+      {/each}
+    </div>
+    <p class="section-note">
+      Grammar is exercised by the course lessons, not the kana/kanji quizzes — these fill in as you
+      work through the chapters.
     </p>
   </section>
 
@@ -499,6 +528,49 @@
   .dot.known {
     background: var(--primary);
     color: var(--primary-text);
+  }
+
+  /* ── Grammar ── */
+  .head-count {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .grammar-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .grammar-chip {
+    padding: 0.28rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+
+  .grammar-chip.unseen {
+    background: var(--bg-progress-track);
+    color: var(--text-muted);
+    border-color: var(--border);
+  }
+  .grammar-chip.learning {
+    background: #9ec5f5;
+    color: #14345c;
+  }
+  .grammar-chip.shaky {
+    background: #e8a33d;
+    color: #4a2f06;
+  }
+  .grammar-chip.known {
+    background: var(--primary);
+    color: var(--primary-text);
+  }
+
+  .grammar-chip:hover {
+    border-color: var(--primary);
   }
 
   /* ── Needs work ── */

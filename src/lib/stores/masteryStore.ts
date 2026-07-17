@@ -20,7 +20,12 @@ const STORAGE_KEY = 'japanesestudy_mastery';
 /** Consecutive correct answers needed before an item counts as known. */
 export const KNOWN_STREAK = 3;
 
-export type MasteryKind = 'kana' | 'kanji' | 'word';
+/**
+ * 'grammar' is keyed by grammar point id (grammar-wa-desu); the others by the
+ * character or word itself. Grammar is fed only by course lessons — the kana
+ * and kanji quizzes don't test it.
+ */
+export type MasteryKind = 'kana' | 'kanji' | 'word' | 'grammar';
 export type MasteryLevel = 'unseen' | 'learning' | 'known' | 'shaky';
 
 export interface ItemStat {
@@ -43,11 +48,12 @@ export interface MasteryData {
   kana: Record<string, ItemStat>;
   kanji: Record<string, ItemStat>;
   word: Record<string, ItemStat>;
+  grammar: Record<string, ItemStat>;
   history: Record<string, DayActivity>;
 }
 
 function emptyData(): MasteryData {
-  return { kana: {}, kanji: {}, word: {}, history: {} };
+  return { kana: {}, kanji: {}, word: {}, grammar: {}, history: {} };
 }
 
 function todayISO(): string {
@@ -85,16 +91,41 @@ function bump(bucket: Record<string, ItemStat>, id: string, correct: boolean, to
   bucket[id] = s;
 }
 
+function bumpHistory(d: MasteryData, correct: boolean, today: string): void {
+  const day = d.history[today] ?? { answered: 0, correct: 0 };
+  day.answered += 1;
+  if (correct) day.correct += 1;
+  d.history[today] = day;
+}
+
 /** Record one answer. `id` is the character for kana/kanji, the word for words. */
 export function record(kind: MasteryKind, id: string, correct: boolean): void {
   if (!id) return;
   const today = todayISO();
   mastery.update((d) => {
     bump(d[kind], id, correct, today);
-    const day = d.history[today] ?? { answered: 0, correct: 0 };
-    day.answered += 1;
-    if (correct) day.correct += 1;
-    d.history[today] = day;
+    bumpHistory(d, correct, today);
+    return d;
+  });
+}
+
+export interface MasteryRef {
+  kind: MasteryKind;
+  id: string;
+}
+
+/**
+ * Record one answer that exercised several items at once — a course exercise
+ * can drill three kana ("write あおい") or two grammar points. Each item is
+ * credited, but the answer counts once in the activity history.
+ */
+export function recordAll(refs: MasteryRef[], correct: boolean): void {
+  const seen = refs.filter((r) => r.id);
+  if (seen.length === 0) return;
+  const today = todayISO();
+  mastery.update((d) => {
+    for (const r of seen) bump(d[r.kind], r.id, correct, today);
+    bumpHistory(d, correct, today);
     return d;
   });
 }
@@ -109,10 +140,7 @@ export function recordWord(word: Word, correct: boolean): void {
   mastery.update((d) => {
     bump(d.word, word.word, correct, today);
     if (word.kanji) bump(d.kanji, word.kanji, correct, today);
-    const day = d.history[today] ?? { answered: 0, correct: 0 };
-    day.answered += 1;
-    if (correct) day.correct += 1;
-    d.history[today] = day;
+    bumpHistory(d, correct, today);
     return d;
   });
 }

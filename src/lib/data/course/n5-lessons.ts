@@ -20,13 +20,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'いえ', romaji: 'ie', en: 'house' } },
     ],
     practiceExercises: [
-      { id: 'ex-h1-1', type: 'multiple-choice', prompt: 'Which hiragana is "u"?', question: 'Choose the correct character.', choices: [{id:'a',text:'あ'},{id:'b',text:'い'},{id:'c',text:'う'},{id:'d',text:'え'}], correctChoiceId: 'c', explanation: 'う = u', targets: [], difficulty: 1 },
-      { id: 'ex-h1-2', type: 'fill-in-blank', prompt: 'What does いえ mean?', sentenceTemplate: 'いえ means {{blank}}.', acceptedAnswers: ['house'], wordBankOptions: ['house','blue','cat','school'], explanation: 'いえ = ie = house', targets: [], difficulty: 1 },
-      { id: 'ex-h1-3', type: 'multiple-choice', prompt: 'Which hiragana is "e"?', question: 'Choose correctly.', choices: [{id:'a',text:'い'},{id:'b',text:'う'},{id:'c',text:'え'},{id:'d',text:'お'}], correctChoiceId: 'c', explanation: 'え = e', targets: [], difficulty: 1 },
+      { id: 'ex-h1-1', type: 'multiple-choice', prompt: 'Which hiragana is "u"?', question: 'Choose the correct character.', choices: [{id:'a',text:'あ'},{id:'b',text:'い'},{id:'c',text:'う'},{id:'d',text:'え'}], correctChoiceId: 'c', explanation: 'う = u', targets: ['う'], difficulty: 1 },
+      { id: 'ex-h1-2', type: 'fill-in-blank', prompt: 'What does いえ mean?', sentenceTemplate: 'いえ means {{blank}}.', acceptedAnswers: ['house'], wordBankOptions: ['house','blue','cat','school'], explanation: 'いえ = ie = house', targets: ['い', 'え'], difficulty: 1 },
+      { id: 'ex-h1-3', type: 'multiple-choice', prompt: 'Which hiragana is "e"?', question: 'Choose correctly.', choices: [{id:'a',text:'い'},{id:'b',text:'う'},{id:'c',text:'え'},{id:'d',text:'お'}], correctChoiceId: 'c', explanation: 'え = e', targets: ['え'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-h1-1', type: 'multiple-choice', prompt: 'Which character is "o"?', question: 'Choose.', choices: [{id:'a',text:'あ'},{id:'b',text:'う'},{id:'c',text:'え'},{id:'d',text:'お'}], correctChoiceId: 'd', explanation: 'お = o', targets: [], difficulty: 1 },
-      { id: 'qz-h1-2', type: 'fill-in-blank', prompt: 'How do you write "aoi" (blue) in hiragana?', sentenceTemplate: 'Blue is {{blank}} in hiragana.', acceptedAnswers: ['あおい'], explanation: 'a=あ, o=お, i=い', targets: [], difficulty: 1 },
+      { id: 'qz-h1-1', type: 'multiple-choice', prompt: 'Which character is "o"?', question: 'Choose.', choices: [{id:'a',text:'あ'},{id:'b',text:'う'},{id:'c',text:'え'},{id:'d',text:'お'}], correctChoiceId: 'd', explanation: 'お = o', targets: ['お'], difficulty: 1 },
+      { id: 'qz-h1-2', type: 'fill-in-blank', prompt: 'How do you write "aoi" (blue) in hiragana?', sentenceTemplate: 'Blue is {{blank}} in hiragana.', acceptedAnswers: ['あおい'], explanation: 'a=あ, o=お, i=い', targets: ['あ', 'お', 'い'], difficulty: 1 },
       { id: 'qz-h1-3', type: 'multiple-choice', prompt: 'How many vowels does Japanese have?', question: 'Choose.', choices: [{id:'a',text:'3'},{id:'b',text:'4'},{id:'c',text:'5'},{id:'d',text:'6'}], correctChoiceId: 'c', explanation: 'a, i, u, e, o', targets: [], difficulty: 1 },
     ],
   },
@@ -44,13 +44,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'すし', romaji: 'sushi', en: 'sushi' } },
     ],
     practiceExercises: [
-      { id: 'ex-h2-1', type: 'multiple-choice', prompt: 'Which hiragana is "ki"?', question: 'Choose.', choices: [{id:'a',text:'か'},{id:'b',text:'き'},{id:'c',text:'く'},{id:'d',text:'け'}], correctChoiceId: 'b', explanation: 'き = ki', targets: [], difficulty: 1 },
-      { id: 'ex-h2-2', type: 'fill-in-blank', prompt: 'How is し romanized?', sentenceTemplate: 'し is pronounced {{blank}}.', acceptedAnswers: ['shi'], wordBankOptions: ['si','shi','chi','ji'], explanation: 'し = shi (special exception)', targets: [], difficulty: 1 },
+      { id: 'ex-h2-1', type: 'multiple-choice', prompt: 'Which hiragana is "ki"?', question: 'Choose.', choices: [{id:'a',text:'か'},{id:'b',text:'き'},{id:'c',text:'く'},{id:'d',text:'け'}], correctChoiceId: 'b', explanation: 'き = ki', targets: ['き'], difficulty: 1 },
+      { id: 'ex-h2-2', type: 'fill-in-blank', prompt: 'How is し romanized?', sentenceTemplate: 'し is pronounced {{blank}}.', acceptedAnswers: ['shi'], wordBankOptions: ['si','shi','chi','ji'], explanation: 'し = shi (special exception)', targets: ['し'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-h2-1', type: 'multiple-choice', prompt: 'Which is "so"?', question: 'Choose.', choices: [{id:'a',text:'さ'},{id:'b',text:'す'},{id:'c',text:'せ'},{id:'d',text:'そ'}], correctChoiceId: 'd', targets: [], difficulty: 1 },
-      { id: 'qz-h2-2', type: 'multiple-choice', prompt: 'What does すし (sushi) mean?', question: 'Choose.', choices: [{id:'a',text:'ramen'},{id:'b',text:'sushi'},{id:'c',text:'sake'},{id:'d',text:'rice'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-h2-3', type: 'fill-in-blank', prompt: 'Write "kiku" in hiragana.', sentenceTemplate: 'kiku = {{blank}}', acceptedAnswers: ['きく'], explanation: 'ki=き, ku=く', targets: [], difficulty: 1 },
+      { id: 'qz-h2-1', type: 'multiple-choice', prompt: 'Which is "so"?', question: 'Choose.', choices: [{id:'a',text:'さ'},{id:'b',text:'す'},{id:'c',text:'せ'},{id:'d',text:'そ'}], correctChoiceId: 'd', targets: ['そ'], difficulty: 1 },
+      { id: 'qz-h2-2', type: 'multiple-choice', prompt: 'What does すし (sushi) mean?', question: 'Choose.', choices: [{id:'a',text:'ramen'},{id:'b',text:'sushi'},{id:'c',text:'sake'},{id:'d',text:'rice'}], correctChoiceId: 'b', targets: ['vocab-sushi'], difficulty: 1 },
+      { id: 'qz-h2-3', type: 'fill-in-blank', prompt: 'Write "kiku" in hiragana.', sentenceTemplate: 'kiku = {{blank}}', acceptedAnswers: ['きく'], explanation: 'ki=き, ku=く', targets: ['き', 'く'], difficulty: 1 },
     ],
   },
 
@@ -66,13 +66,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'ねこ', romaji: 'neko', en: 'cat' } },
     ],
     practiceExercises: [
-      { id: 'ex-h3-1', type: 'multiple-choice', prompt: 'How is ち romanized?', question: 'Choose.', choices: [{id:'a',text:'ti'},{id:'b',text:'chi'},{id:'c',text:'tchi'},{id:'d',text:'ci'}], correctChoiceId: 'b', explanation: 'ち = chi', targets: [], difficulty: 1 },
-      { id: 'ex-h3-2', type: 'fill-in-blank', prompt: 'How do you write "neko" (cat) in hiragana?', sentenceTemplate: 'cat = {{blank}}', acceptedAnswers: ['ねこ'], explanation: 'ne=ね, ko=こ', targets: [], difficulty: 1 },
+      { id: 'ex-h3-1', type: 'multiple-choice', prompt: 'How is ち romanized?', question: 'Choose.', choices: [{id:'a',text:'ti'},{id:'b',text:'chi'},{id:'c',text:'tchi'},{id:'d',text:'ci'}], correctChoiceId: 'b', explanation: 'ち = chi', targets: ['ち'], difficulty: 1 },
+      { id: 'ex-h3-2', type: 'fill-in-blank', prompt: 'How do you write "neko" (cat) in hiragana?', sentenceTemplate: 'cat = {{blank}}', acceptedAnswers: ['ねこ'], explanation: 'ne=ね, ko=こ', targets: ['ね', 'こ'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-h3-1', type: 'multiple-choice', prompt: 'Which is "tsu"?', question: 'Choose.', choices: [{id:'a',text:'た'},{id:'b',text:'ち'},{id:'c',text:'つ'},{id:'d',text:'て'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-h3-2', type: 'multiple-choice', prompt: 'Which hiragana is "ni"?', question: 'Choose.', choices: [{id:'a',text:'な'},{id:'b',text:'に'},{id:'c',text:'ぬ'},{id:'d',text:'ね'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-h3-3', type: 'fill-in-blank', prompt: 'Write "to" in hiragana.', sentenceTemplate: 'to = {{blank}}', acceptedAnswers: ['と'], targets: [], difficulty: 1 },
+      { id: 'qz-h3-1', type: 'multiple-choice', prompt: 'Which is "tsu"?', question: 'Choose.', choices: [{id:'a',text:'た'},{id:'b',text:'ち'},{id:'c',text:'つ'},{id:'d',text:'て'}], correctChoiceId: 'c', targets: ['つ'], difficulty: 1 },
+      { id: 'qz-h3-2', type: 'multiple-choice', prompt: 'Which hiragana is "ni"?', question: 'Choose.', choices: [{id:'a',text:'な'},{id:'b',text:'に'},{id:'c',text:'ぬ'},{id:'d',text:'ね'}], correctChoiceId: 'b', targets: ['に'], difficulty: 1 },
+      { id: 'qz-h3-3', type: 'fill-in-blank', prompt: 'Write "to" in hiragana.', sentenceTemplate: 'to = {{blank}}', acceptedAnswers: ['と'], targets: ['と'], difficulty: 1 },
     ],
   },
 
@@ -88,13 +88,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'はな', romaji: 'hana', en: 'flower / nose' } },
     ],
     practiceExercises: [
-      { id: 'ex-h4-1', type: 'multiple-choice', prompt: 'How is ふ romanized?', question: 'Choose.', choices: [{id:'a',text:'hu'},{id:'b',text:'fu'},{id:'c',text:'vu'},{id:'d',text:'bu'}], correctChoiceId: 'b', explanation: 'ふ = fu', targets: [], difficulty: 1 },
-      { id: 'ex-h4-2', type: 'fill-in-blank', prompt: 'Write "hana" (flower) in hiragana.', sentenceTemplate: 'flower = {{blank}}', acceptedAnswers: ['はな'], targets: [], difficulty: 1 },
+      { id: 'ex-h4-1', type: 'multiple-choice', prompt: 'How is ふ romanized?', question: 'Choose.', choices: [{id:'a',text:'hu'},{id:'b',text:'fu'},{id:'c',text:'vu'},{id:'d',text:'bu'}], correctChoiceId: 'b', explanation: 'ふ = fu', targets: ['ふ'], difficulty: 1 },
+      { id: 'ex-h4-2', type: 'fill-in-blank', prompt: 'Write "hana" (flower) in hiragana.', sentenceTemplate: 'flower = {{blank}}', acceptedAnswers: ['はな'], targets: ['は', 'な'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-h4-1', type: 'multiple-choice', prompt: 'Which is "mo"?', question: 'Choose.', choices: [{id:'a',text:'ま'},{id:'b',text:'み'},{id:'c',text:'む'},{id:'d',text:'も'}], correctChoiceId: 'd', targets: [], difficulty: 1 },
-      { id: 'qz-h4-2', type: 'multiple-choice', prompt: 'Which is "ri"?', question: 'Choose.', choices: [{id:'a',text:'ら'},{id:'b',text:'り'},{id:'c',text:'る'},{id:'d',text:'れ'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-h4-3', type: 'fill-in-blank', prompt: 'Write "mimi" (ear) in hiragana.', sentenceTemplate: 'ear = {{blank}}', acceptedAnswers: ['みみ'], explanation: 'mi=み, mi=み', targets: [], difficulty: 1 },
+      { id: 'qz-h4-1', type: 'multiple-choice', prompt: 'Which is "mo"?', question: 'Choose.', choices: [{id:'a',text:'ま'},{id:'b',text:'み'},{id:'c',text:'む'},{id:'d',text:'も'}], correctChoiceId: 'd', targets: ['も'], difficulty: 1 },
+      { id: 'qz-h4-2', type: 'multiple-choice', prompt: 'Which is "ri"?', question: 'Choose.', choices: [{id:'a',text:'ら'},{id:'b',text:'り'},{id:'c',text:'る'},{id:'d',text:'れ'}], correctChoiceId: 'b', targets: ['り'], difficulty: 1 },
+      { id: 'qz-h4-3', type: 'fill-in-blank', prompt: 'Write "mimi" (ear) in hiragana.', sentenceTemplate: 'ear = {{blank}}', acceptedAnswers: ['みみ'], explanation: 'mi=み, mi=み', targets: ['み'], difficulty: 1 },
     ],
   },
 
@@ -110,13 +110,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'わたし', romaji: 'watashi', en: 'I / me' } },
     ],
     practiceExercises: [
-      { id: 'ex-h5-1', type: 'multiple-choice', prompt: 'What is を primarily used for?', question: 'Choose.', choices: [{id:'a',text:'Topic particle'},{id:'b',text:'Object particle'},{id:'c',text:'Subject particle'},{id:'d',text:'Location particle'}], correctChoiceId: 'b', explanation: 'を marks the direct object.', targets: [], difficulty: 1 },
-      { id: 'ex-h5-2', type: 'fill-in-blank', prompt: 'Write "pan" (bread) in hiragana.', sentenceTemplate: 'bread in hiragana = {{blank}}', acceptedAnswers: ['パン','ぱん'], wordBankOptions: ['パン','ぱん','はん','まん'], targets: [], difficulty: 2 },
+      { id: 'ex-h5-1', type: 'multiple-choice', prompt: 'What is を primarily used for?', question: 'Choose.', choices: [{id:'a',text:'Topic particle'},{id:'b',text:'Object particle'},{id:'c',text:'Subject particle'},{id:'d',text:'Location particle'}], correctChoiceId: 'b', explanation: 'を marks the direct object.', targets: ['を'], difficulty: 1 },
+      { id: 'ex-h5-2', type: 'fill-in-blank', prompt: 'Write "pan" (bread) in hiragana.', sentenceTemplate: 'bread in hiragana = {{blank}}', acceptedAnswers: ['パン','ぱん'], wordBankOptions: ['パン','ぱん','はん','まん'], targets: ['パ', 'ン'], difficulty: 2 },
     ],
     quiz: [
-      { id: 'qz-h5-1', type: 'multiple-choice', prompt: 'Which character is the nasal "n"?', question: 'Choose.', choices: [{id:'a',text:'な'},{id:'b',text:'に'},{id:'c',text:'ん'},{id:'d',text:'の'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-h5-2', type: 'multiple-choice', prompt: 'How is を pronounced as a particle?', question: 'Choose.', choices: [{id:'a',text:'wo'},{id:'b',text:'o'},{id:'c',text:'wa'},{id:'d',text:'u'}], correctChoiceId: 'b', explanation: 'を is read "o" as a particle.', targets: [], difficulty: 1 },
-      { id: 'qz-h5-3', type: 'fill-in-blank', prompt: 'Write "watashi" in hiragana.', sentenceTemplate: 'I / me = {{blank}}', acceptedAnswers: ['わたし'], targets: [], difficulty: 1 },
+      { id: 'qz-h5-1', type: 'multiple-choice', prompt: 'Which character is the nasal "n"?', question: 'Choose.', choices: [{id:'a',text:'な'},{id:'b',text:'に'},{id:'c',text:'ん'},{id:'d',text:'の'}], correctChoiceId: 'c', targets: ['ん'], difficulty: 1 },
+      { id: 'qz-h5-2', type: 'multiple-choice', prompt: 'How is を pronounced as a particle?', question: 'Choose.', choices: [{id:'a',text:'wo'},{id:'b',text:'o'},{id:'c',text:'wa'},{id:'d',text:'u'}], correctChoiceId: 'b', explanation: 'を is read "o" as a particle.', targets: ['を'], difficulty: 1 },
+      { id: 'qz-h5-3', type: 'fill-in-blank', prompt: 'Write "watashi" in hiragana.', sentenceTemplate: 'I / me = {{blank}}', acceptedAnswers: ['わたし'], targets: ['わ', 'た', 'し'], difficulty: 1 },
     ],
   },
 
@@ -132,13 +132,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'コーヒー', romaji: 'koohii', en: 'coffee' } },
     ],
     practiceExercises: [
-      { id: 'ex-k1-1', type: 'multiple-choice', prompt: 'Which katakana is "u"?', question: 'Choose.', choices: [{id:'a',text:'ア'},{id:'b',text:'イ'},{id:'c',text:'ウ'},{id:'d',text:'エ'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'ex-k1-2', type: 'fill-in-blank', prompt: 'Write "ko" in katakana.', sentenceTemplate: 'ko in katakana = {{blank}}', acceptedAnswers: ['コ'], wordBankOptions: ['カ','キ','ク','ケ','コ'], targets: [], difficulty: 1 },
+      { id: 'ex-k1-1', type: 'multiple-choice', prompt: 'Which katakana is "u"?', question: 'Choose.', choices: [{id:'a',text:'ア'},{id:'b',text:'イ'},{id:'c',text:'ウ'},{id:'d',text:'エ'}], correctChoiceId: 'c', targets: ['ウ'], difficulty: 1 },
+      { id: 'ex-k1-2', type: 'fill-in-blank', prompt: 'Write "ko" in katakana.', sentenceTemplate: 'ko in katakana = {{blank}}', acceptedAnswers: ['コ'], wordBankOptions: ['カ','キ','ク','ケ','コ'], targets: ['コ'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-k1-1', type: 'multiple-choice', prompt: 'Which katakana is "ka"?', question: 'Choose.', choices: [{id:'a',text:'ア'},{id:'b',text:'カ'},{id:'c',text:'サ'},{id:'d',text:'タ'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-k1-2', type: 'multiple-choice', prompt: 'What does コーヒー mean?', question: 'Choose.', choices: [{id:'a',text:'tea'},{id:'b',text:'water'},{id:'c',text:'coffee'},{id:'d',text:'juice'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-k1-3', type: 'fill-in-blank', prompt: 'Write "a" in katakana.', sentenceTemplate: 'a = {{blank}}', acceptedAnswers: ['ア'], targets: [], difficulty: 1 },
+      { id: 'qz-k1-1', type: 'multiple-choice', prompt: 'Which katakana is "ka"?', question: 'Choose.', choices: [{id:'a',text:'ア'},{id:'b',text:'カ'},{id:'c',text:'サ'},{id:'d',text:'タ'}], correctChoiceId: 'b', targets: ['カ'], difficulty: 1 },
+      { id: 'qz-k1-2', type: 'multiple-choice', prompt: 'What does コーヒー mean?', question: 'Choose.', choices: [{id:'a',text:'tea'},{id:'b',text:'water'},{id:'c',text:'coffee'},{id:'d',text:'juice'}], correctChoiceId: 'c', targets: ['vocab-koohii'], difficulty: 1 },
+      { id: 'qz-k1-3', type: 'fill-in-blank', prompt: 'Write "a" in katakana.', sentenceTemplate: 'a = {{blank}}', acceptedAnswers: ['ア'], targets: ['ア'], difficulty: 1 },
     ],
   },
 
@@ -154,13 +154,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'ソ (so) and ン (n) look similar — watch for the stroke direction. ツ (tsu) and シ (shi) are also easy to confuse.' },
     ],
     practiceExercises: [
-      { id: 'ex-k2-1', type: 'multiple-choice', prompt: 'What does テスト mean?', question: 'Choose.', choices: [{id:'a',text:'desk'},{id:'b',text:'test'},{id:'c',text:'text'},{id:'d',text:'taste'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-k2-2', type: 'fill-in-blank', prompt: 'Write "shi" in katakana.', sentenceTemplate: 'shi = {{blank}}', acceptedAnswers: ['シ'], wordBankOptions: ['サ','シ','ス','セ'], targets: [], difficulty: 1 },
+      { id: 'ex-k2-1', type: 'multiple-choice', prompt: 'What does テスト mean?', question: 'Choose.', choices: [{id:'a',text:'desk'},{id:'b',text:'test'},{id:'c',text:'text'},{id:'d',text:'taste'}], correctChoiceId: 'b', targets: ['vocab-tesuto'], difficulty: 1 },
+      { id: 'ex-k2-2', type: 'fill-in-blank', prompt: 'Write "shi" in katakana.', sentenceTemplate: 'shi = {{blank}}', acceptedAnswers: ['シ'], wordBankOptions: ['サ','シ','ス','セ'], targets: ['シ'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-k2-1', type: 'multiple-choice', prompt: 'Which katakana is "tsu"?', question: 'Choose.', choices: [{id:'a',text:'チ'},{id:'b',text:'ツ'},{id:'c',text:'テ'},{id:'d',text:'ト'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-k2-2', type: 'multiple-choice', prompt: 'Which is "no"?', question: 'Choose.', choices: [{id:'a',text:'ナ'},{id:'b',text:'ニ'},{id:'c',text:'ヌ'},{id:'d',text:'ノ'}], correctChoiceId: 'd', targets: [], difficulty: 1 },
-      { id: 'qz-k2-3', type: 'fill-in-blank', prompt: 'Write "nani" (what) in katakana.', sentenceTemplate: 'nani = {{blank}}', acceptedAnswers: ['ナニ'], targets: [], difficulty: 2 },
+      { id: 'qz-k2-1', type: 'multiple-choice', prompt: 'Which katakana is "tsu"?', question: 'Choose.', choices: [{id:'a',text:'チ'},{id:'b',text:'ツ'},{id:'c',text:'テ'},{id:'d',text:'ト'}], correctChoiceId: 'b', targets: ['ツ'], difficulty: 1 },
+      { id: 'qz-k2-2', type: 'multiple-choice', prompt: 'Which is "no"?', question: 'Choose.', choices: [{id:'a',text:'ナ'},{id:'b',text:'ニ'},{id:'c',text:'ヌ'},{id:'d',text:'ノ'}], correctChoiceId: 'd', targets: ['ノ'], difficulty: 1 },
+      { id: 'qz-k2-3', type: 'fill-in-blank', prompt: 'Write "nani" (what) in katakana.', sentenceTemplate: 'nani = {{blank}}', acceptedAnswers: ['ナニ'], targets: ['ナ', 'ニ'], difficulty: 2 },
     ],
   },
 
@@ -177,13 +177,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: 'びょういん', romaji: 'byouin', en: 'hospital' } },
     ],
     practiceExercises: [
-      { id: 'ex-dy-1', type: 'multiple-choice', prompt: 'What does dakuten do to か?', question: 'Choose.', choices: [{id:'a',text:'Makes it pa'},{id:'b',text:'Makes it ga'},{id:'c',text:'Makes it ba'},{id:'d',text:'Makes it da'}], correctChoiceId: 'b', explanation: 'か + ゛= が (ga)', targets: [], difficulty: 1 },
-      { id: 'ex-dy-2', type: 'multiple-choice', prompt: 'What sound is きゃ?', question: 'Choose.', choices: [{id:'a',text:'ki-a'},{id:'b',text:'kya'},{id:'c',text:'kia'},{id:'d',text:'kiya'}], correctChoiceId: 'b', explanation: 'きゃ = kya (one sound)', targets: [], difficulty: 1 },
+      { id: 'ex-dy-1', type: 'multiple-choice', prompt: 'What does dakuten do to か?', question: 'Choose.', choices: [{id:'a',text:'Makes it pa'},{id:'b',text:'Makes it ga'},{id:'c',text:'Makes it ba'},{id:'d',text:'Makes it da'}], correctChoiceId: 'b', explanation: 'か + ゛= が (ga)', targets: ['か'], difficulty: 1 },
+      { id: 'ex-dy-2', type: 'multiple-choice', prompt: 'What sound is きゃ?', question: 'Choose.', choices: [{id:'a',text:'ki-a'},{id:'b',text:'kya'},{id:'c',text:'kia'},{id:'d',text:'kiya'}], correctChoiceId: 'b', explanation: 'きゃ = kya (one sound)', targets: ['きゃ'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-dy-1', type: 'multiple-choice', prompt: 'Which is the dakuten version of さ?', question: 'Choose.', choices: [{id:'a',text:'ざ'},{id:'b',text:'だ'},{id:'c',text:'ば'},{id:'d',text:'が'}], correctChoiceId: 'a', explanation: 'さ→ざ (sa→za)', targets: [], difficulty: 1 },
-      { id: 'qz-dy-2', type: 'multiple-choice', prompt: 'Handakuten (゜) turns は into which sound?', question: 'Choose.', choices: [{id:'a',text:'ba'},{id:'b',text:'da'},{id:'c',text:'pa'},{id:'d',text:'ga'}], correctChoiceId: 'c', explanation: 'は + ゜= ぱ (pa)', targets: [], difficulty: 1 },
-      { id: 'qz-dy-3', type: 'fill-in-blank', prompt: 'びょういん means what?', sentenceTemplate: 'びょういん = {{blank}}', acceptedAnswers: ['hospital'], wordBankOptions: ['hospital','school','library','station'], targets: [], difficulty: 1 },
+      { id: 'qz-dy-1', type: 'multiple-choice', prompt: 'Which is the dakuten version of さ?', question: 'Choose.', choices: [{id:'a',text:'ざ'},{id:'b',text:'だ'},{id:'c',text:'ば'},{id:'d',text:'が'}], correctChoiceId: 'a', explanation: 'さ→ざ (sa→za)', targets: ['ざ'], difficulty: 1 },
+      { id: 'qz-dy-2', type: 'multiple-choice', prompt: 'Handakuten (゜) turns は into which sound?', question: 'Choose.', choices: [{id:'a',text:'ba'},{id:'b',text:'da'},{id:'c',text:'pa'},{id:'d',text:'ga'}], correctChoiceId: 'c', explanation: 'は + ゜= ぱ (pa)', targets: ['は'], difficulty: 1 },
+      { id: 'qz-dy-3', type: 'fill-in-blank', prompt: 'びょういん means what?', sentenceTemplate: 'びょういん = {{blank}}', acceptedAnswers: ['hospital'], wordBankOptions: ['hospital','school','library','station'], targets: ['vocab-byouin'], difficulty: 1 },
     ],
   },
 
@@ -228,12 +228,12 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
     practiceExercises: [
       { id: 'ex-ksa-1', type: 'multiple-choice', prompt: 'Which word refers to something near the listener?', question: 'Choose.', choices: [{id:'a',text:'これ'},{id:'b',text:'それ'},{id:'c',text:'あれ'},{id:'d',text:'どれ'}], correctChoiceId: 'b', explanation: 'それ = near listener', targets: ['grammar-kore-sore-are'], difficulty: 1 },
-      { id: 'ex-ksa-2', type: 'fill-in-blank', prompt: 'Use ___ to say "that book over there".', sentenceTemplate: '{{blank}}本は古いです。', acceptedAnswers: ['あの'], wordBankOptions: ['この','その','あの','どの'], targets: [], difficulty: 1 },
+      { id: 'ex-ksa-2', type: 'fill-in-blank', prompt: 'Use ___ to say "that book over there".', sentenceTemplate: '{{blank}}本は古いです。', acceptedAnswers: ['あの'], wordBankOptions: ['この','その','あの','どの'], targets: ['grammar-kore-sore-are'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-ksa-1', type: 'multiple-choice', prompt: 'Which is correct for "this is a pen"?', question: 'Choose.', choices: [{id:'a',text:'それはペンです。'},{id:'b',text:'あれはペンです。'},{id:'c',text:'これはペンです。'},{id:'d',text:'どれはペンです。'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-ksa-2', type: 'multiple-choice', prompt: 'How do you say "that book" (modifying a noun, near listener)?', question: 'Choose.', choices: [{id:'a',text:'この本'},{id:'b',text:'その本'},{id:'c',text:'あの本'},{id:'d',text:'どの本'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-ksa-3', type: 'fill-in-blank', prompt: 'Fill in: ___ wa nan desu ka (What is that over there?)', sentenceTemplate: '{{blank}}は何ですか。', acceptedAnswers: ['あれ'], wordBankOptions: ['これ','それ','あれ','どれ'], targets: [], difficulty: 1 },
+      { id: 'qz-ksa-1', type: 'multiple-choice', prompt: 'Which is correct for "this is a pen"?', question: 'Choose.', choices: [{id:'a',text:'それはペンです。'},{id:'b',text:'あれはペンです。'},{id:'c',text:'これはペンです。'},{id:'d',text:'どれはペンです。'}], correctChoiceId: 'c', targets: ['grammar-kore-sore-are'], difficulty: 1 },
+      { id: 'qz-ksa-2', type: 'multiple-choice', prompt: 'How do you say "that book" (modifying a noun, near listener)?', question: 'Choose.', choices: [{id:'a',text:'この本'},{id:'b',text:'その本'},{id:'c',text:'あの本'},{id:'d',text:'どの本'}], correctChoiceId: 'b', targets: ['grammar-kore-sore-are'], difficulty: 1 },
+      { id: 'qz-ksa-3', type: 'fill-in-blank', prompt: 'Fill in: ___ wa nan desu ka (What is that over there?)', sentenceTemplate: '{{blank}}は何ですか。', acceptedAnswers: ['あれ'], wordBankOptions: ['これ','それ','あれ','どれ'], targets: ['grammar-kore-sore-are'], difficulty: 1 },
     ],
   },
 
@@ -250,12 +250,12 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
     practiceExercises: [
       { id: 'ex-no-1', type: 'multiple-choice', prompt: 'How do you say "my name"?', question: 'Choose.', choices: [{id:'a',text:'名前私'},{id:'b',text:'私の名前'},{id:'c',text:'名前は私'},{id:'d',text:'私は名前'}], correctChoiceId: 'b', explanation: '私の名前 = my name', targets: ['grammar-no-possessive'], difficulty: 1 },
-      { id: 'ex-no-2', type: 'sentence-construction', prompt: 'Say "This is Tanaka-san\'s umbrella."', targetSentence: 'これは田中さんの傘です。', scrambledTokens: ['これは','田中さんの','傘','です。'], targets: [], difficulty: 1 },
+      { id: 'ex-no-2', type: 'sentence-construction', prompt: 'Say "This is Tanaka-san\'s umbrella."', targetSentence: 'これは田中さんの傘です。', scrambledTokens: ['これは','田中さんの','傘','です。'], targets: ['grammar-no-possessive'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-no-1', type: 'multiple-choice', prompt: 'What does 日本語の先生 mean?', question: 'Choose.', choices: [{id:'a',text:'I am a Japanese teacher'},{id:'b',text:'Japanese language teacher'},{id:'c',text:'Teacher of Japan'},{id:'d',text:'My Japanese teacher'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-no-2', type: 'fill-in-blank', prompt: 'Fill in: あなた___ 名前は何ですか。', sentenceTemplate: 'あなた{{blank}}名前は何ですか。', acceptedAnswers: ['の'], wordBankOptions: ['の','は','が','を'], targets: [], difficulty: 1 },
-      { id: 'qz-no-3', type: 'multiple-choice', prompt: 'Which is "map of Tokyo"?', question: 'Choose.', choices: [{id:'a',text:'東京は地図'},{id:'b',text:'東京に地図'},{id:'c',text:'東京の地図'},{id:'d',text:'東京を地図'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
+      { id: 'qz-no-1', type: 'multiple-choice', prompt: 'What does 日本語の先生 mean?', question: 'Choose.', choices: [{id:'a',text:'I am a Japanese teacher'},{id:'b',text:'Japanese language teacher'},{id:'c',text:'Teacher of Japan'},{id:'d',text:'My Japanese teacher'}], correctChoiceId: 'b', targets: ['grammar-no-possessive'], difficulty: 1 },
+      { id: 'qz-no-2', type: 'fill-in-blank', prompt: 'Fill in: あなた___ 名前は何ですか。', sentenceTemplate: 'あなた{{blank}}名前は何ですか。', acceptedAnswers: ['の'], wordBankOptions: ['の','は','が','を'], targets: ['grammar-no-possessive'], difficulty: 1 },
+      { id: 'qz-no-3', type: 'multiple-choice', prompt: 'Which is "map of Tokyo"?', question: 'Choose.', choices: [{id:'a',text:'東京は地図'},{id:'b',text:'東京に地図'},{id:'c',text:'東京の地図'},{id:'d',text:'東京を地図'}], correctChoiceId: 'c', targets: ['grammar-no-possessive'], difficulty: 1 },
     ],
   },
 
@@ -272,12 +272,12 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
     practiceExercises: [
       { id: 'ex-kq-1', type: 'multiple-choice', prompt: 'How do you turn a statement into a question?', question: 'Choose.', choices: [{id:'a',text:'Change the word order'},{id:'b',text:'Add か at the end'},{id:'c',text:'Add は at the start'},{id:'d',text:'Add です at the end'}], correctChoiceId: 'b', targets: ['grammar-ka-question'], difficulty: 1 },
-      { id: 'ex-kq-2', type: 'fill-in-blank', prompt: 'Complete: "___ is this?" using か.', sentenceTemplate: 'これは何{{blank}}。', acceptedAnswers: ['ですか'], wordBankOptions: ['です','ですか','でした','じゃない'], targets: [], difficulty: 1 },
+      { id: 'ex-kq-2', type: 'fill-in-blank', prompt: 'Complete: "___ is this?" using か.', sentenceTemplate: 'これは何{{blank}}。', acceptedAnswers: ['ですか'], wordBankOptions: ['です','ですか','でした','じゃない'], targets: ['grammar-ka-question'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-kq-1', type: 'multiple-choice', prompt: 'Which question word means "where"?', question: 'Choose.', choices: [{id:'a',text:'何'},{id:'b',text:'だれ'},{id:'c',text:'どこ'},{id:'d',text:'いつ'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-kq-2', type: 'multiple-choice', prompt: 'Which is "Who is she?"', question: 'Choose.', choices: [{id:'a',text:'彼女はどこですか。'},{id:'b',text:'彼女はだれですか。'},{id:'c',text:'彼女は何ですか。'},{id:'d',text:'彼女はいつですか。'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-kq-3', type: 'fill-in-blank', prompt: 'Complete: 明日___ 暇ですか。(Are you free tomorrow?)', sentenceTemplate: '明日{{blank}}暇ですか。', acceptedAnswers: ['は','、'], wordBankOptions: ['は','が','を','に'], targets: [], difficulty: 2 },
+      { id: 'qz-kq-1', type: 'multiple-choice', prompt: 'Which question word means "where"?', question: 'Choose.', choices: [{id:'a',text:'何'},{id:'b',text:'だれ'},{id:'c',text:'どこ'},{id:'d',text:'いつ'}], correctChoiceId: 'c', targets: ['grammar-ka-question'], difficulty: 1 },
+      { id: 'qz-kq-2', type: 'multiple-choice', prompt: 'Which is "Who is she?"', question: 'Choose.', choices: [{id:'a',text:'彼女はどこですか。'},{id:'b',text:'彼女はだれですか。'},{id:'c',text:'彼女は何ですか。'},{id:'d',text:'彼女はいつですか。'}], correctChoiceId: 'b', targets: ['grammar-ka-question'], difficulty: 1 },
+      { id: 'qz-kq-3', type: 'fill-in-blank', prompt: 'Complete: 明日___ 暇ですか。(Are you free tomorrow?)', sentenceTemplate: '明日{{blank}}暇ですか。', acceptedAnswers: ['は','、'], wordBankOptions: ['は','が','を','に'], targets: ['grammar-ka-question'], difficulty: 2 },
     ],
   },
 
@@ -296,13 +296,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: '4 has two readings: し and よん. In many contexts よん is preferred to avoid confusion with 死 (shi = death).' },
     ],
     practiceExercises: [
-      { id: 'ex-num-1', type: 'multiple-choice', prompt: 'What is 七 in romaji?', question: 'Choose.', choices: [{id:'a',text:'roku'},{id:'b',text:'shichi or nana'},{id:'c',text:'hachi'},{id:'d',text:'ku'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-num-2', type: 'fill-in-blank', prompt: 'How do you say 25 in Japanese?', sentenceTemplate: '25 = 二十{{blank}}', acceptedAnswers: ['五','ご'], wordBankOptions: ['三','四','五','六'], targets: [], difficulty: 1 },
+      { id: 'ex-num-1', type: 'multiple-choice', prompt: 'What is 七 in romaji?', question: 'Choose.', choices: [{id:'a',text:'roku'},{id:'b',text:'shichi or nana'},{id:'c',text:'hachi'},{id:'d',text:'ku'}], correctChoiceId: 'b', targets: ['vocab-nana'], difficulty: 1 },
+      { id: 'ex-num-2', type: 'fill-in-blank', prompt: 'How do you say 25 in Japanese?', sentenceTemplate: '25 = 二十{{blank}}', acceptedAnswers: ['五','ご'], wordBankOptions: ['三','四','五','六'], targets: ['二', '十'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-num-1', type: 'multiple-choice', prompt: 'How do you say 47 in Japanese?', question: 'Choose.', choices: [{id:'a',text:'四十七'},{id:'b',text:'七十四'},{id:'c',text:'四七'},{id:'d',text:'十四七'}], correctChoiceId: 'a', explanation: '四十七 = yonjuunana', targets: [], difficulty: 1 },
-      { id: 'qz-num-2', type: 'multiple-choice', prompt: 'What is 三十 (sanjuu)?', question: 'Choose.', choices: [{id:'a',text:'13'},{id:'b',text:'30'},{id:'c',text:'3'},{id:'d',text:'33'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-num-3', type: 'fill-in-blank', prompt: 'Write 8 in kanji.', sentenceTemplate: '8 in kanji = {{blank}}', acceptedAnswers: ['八'], targets: [], difficulty: 1 },
+      { id: 'qz-num-1', type: 'multiple-choice', prompt: 'How do you say 47 in Japanese?', question: 'Choose.', choices: [{id:'a',text:'四十七'},{id:'b',text:'七十四'},{id:'c',text:'四七'},{id:'d',text:'十四七'}], correctChoiceId: 'a', explanation: '四十七 = yonjuunana', targets: ['四', '十', '七'], difficulty: 1 },
+      { id: 'qz-num-2', type: 'multiple-choice', prompt: 'What is 三十 (sanjuu)?', question: 'Choose.', choices: [{id:'a',text:'13'},{id:'b',text:'30'},{id:'c',text:'3'},{id:'d',text:'33'}], correctChoiceId: 'b', targets: ['三', '十'], difficulty: 1 },
+      { id: 'qz-num-3', type: 'fill-in-blank', prompt: 'Write 8 in kanji.', sentenceTemplate: '8 in kanji = {{blank}}', acceptedAnswers: ['八'], targets: ['八'], difficulty: 1 },
     ],
   },
 
@@ -317,13 +317,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: '半 (han) means "half past". 三時半 = 3:30. Some minutes have irregular readings: 1分=いっぷん, 3分=さんぷん, 6分=ろっぷん.' },
     ],
     practiceExercises: [
-      { id: 'ex-tm-1', type: 'multiple-choice', prompt: 'How do you say "3 o\'clock"?', question: 'Choose.', choices: [{id:'a',text:'三分'},{id:'b',text:'三時'},{id:'c',text:'三日'},{id:'d',text:'三半'}], correctChoiceId: 'b', explanation: '三時 = sanji = 3 o\'clock', targets: [], difficulty: 1 },
-      { id: 'ex-tm-2', type: 'fill-in-blank', prompt: 'What does 半 mean in time?', sentenceTemplate: '半 means {{blank}} past.', acceptedAnswers: ['half','30 minutes'], wordBankOptions: ['half','quarter','full','double'], targets: [], difficulty: 1 },
+      { id: 'ex-tm-1', type: 'multiple-choice', prompt: 'How do you say "3 o\'clock"?', question: 'Choose.', choices: [{id:'a',text:'三分'},{id:'b',text:'三時'},{id:'c',text:'三日'},{id:'d',text:'三半'}], correctChoiceId: 'b', explanation: '三時 = sanji = 3 o\'clock', targets: ['三', '時'], difficulty: 1 },
+      { id: 'ex-tm-2', type: 'fill-in-blank', prompt: 'What does 半 mean in time?', sentenceTemplate: '半 means {{blank}} past.', acceptedAnswers: ['half','30 minutes'], wordBankOptions: ['half','quarter','full','double'], targets: ['半'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-tm-1', type: 'multiple-choice', prompt: 'How do you say "7:30"?', question: 'Choose.', choices: [{id:'a',text:'七時三十'},{id:'b',text:'七時半'},{id:'c',text:'七半時'},{id:'d',text:'半七時'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-tm-2', type: 'multiple-choice', prompt: 'What does 今何時ですか mean?', question: 'Choose.', choices: [{id:'a',text:'What day is it?'},{id:'b',text:'What time is it now?'},{id:'c',text:'How old are you?'},{id:'d',text:'When is it?'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-tm-3', type: 'fill-in-blank', prompt: 'How do you say "2 o\'clock" in Japanese?', sentenceTemplate: '2 o\'clock = {{blank}}時', acceptedAnswers: ['二','に'], targets: [], difficulty: 1 },
+      { id: 'qz-tm-1', type: 'multiple-choice', prompt: 'How do you say "7:30"?', question: 'Choose.', choices: [{id:'a',text:'七時三十'},{id:'b',text:'七時半'},{id:'c',text:'七半時'},{id:'d',text:'半七時'}], correctChoiceId: 'b', targets: ['七', '時', '半'], difficulty: 1 },
+      { id: 'qz-tm-2', type: 'multiple-choice', prompt: 'What does 今何時ですか mean?', question: 'Choose.', choices: [{id:'a',text:'What day is it?'},{id:'b',text:'What time is it now?'},{id:'c',text:'How old are you?'},{id:'d',text:'When is it?'}], correctChoiceId: 'b', targets: ['今', '何', '時'], difficulty: 1 },
+      { id: 'qz-tm-3', type: 'fill-in-blank', prompt: 'How do you say "2 o\'clock" in Japanese?', sentenceTemplate: '2 o\'clock = {{blank}}時', acceptedAnswers: ['二','に'], targets: ['vocab-ni-num'], difficulty: 1 },
     ],
   },
 
@@ -338,13 +338,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'The day names contain kanji for moon (月), fire (火), water (水), tree (木), gold (金), earth (土), and sun (日).' },
     ],
     practiceExercises: [
-      { id: 'ex-dt-1', type: 'multiple-choice', prompt: 'What is 金曜日 (kinyoubi)?', question: 'Choose.', choices: [{id:'a',text:'Thursday'},{id:'b',text:'Friday'},{id:'c',text:'Saturday'},{id:'d',text:'Sunday'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-dt-2', type: 'fill-in-blank', prompt: 'How do you say "March" in Japanese?', sentenceTemplate: 'March = {{blank}}月', acceptedAnswers: ['三','さん'], wordBankOptions: ['一','二','三','四'], targets: [], difficulty: 1 },
+      { id: 'ex-dt-1', type: 'multiple-choice', prompt: 'What is 金曜日 (kinyoubi)?', question: 'Choose.', choices: [{id:'a',text:'Thursday'},{id:'b',text:'Friday'},{id:'c',text:'Saturday'},{id:'d',text:'Sunday'}], correctChoiceId: 'b', targets: ['金', '曜', '日'], difficulty: 1 },
+      { id: 'ex-dt-2', type: 'fill-in-blank', prompt: 'How do you say "March" in Japanese?', sentenceTemplate: 'March = {{blank}}月', acceptedAnswers: ['三','さん'], wordBankOptions: ['一','二','三','四'], targets: ['vocab-san-num'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-dt-1', type: 'multiple-choice', prompt: 'Which day is 水曜日 (suiyoubi)?', question: 'Choose.', choices: [{id:'a',text:'Monday'},{id:'b',text:'Tuesday'},{id:'c',text:'Wednesday'},{id:'d',text:'Thursday'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-dt-2', type: 'multiple-choice', prompt: 'How do you ask "What day is today?"', question: 'Choose.', choices: [{id:'a',text:'今日は何時ですか。'},{id:'b',text:'今日は何曜日ですか。'},{id:'c',text:'今日は何月ですか。'},{id:'d',text:'今日は何日ですか。'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-dt-3', type: 'fill-in-blank', prompt: 'What kanji is in Sunday (日曜日)?', sentenceTemplate: 'Sunday contains the kanji for {{blank}}.', acceptedAnswers: ['sun','day','Sunday'], wordBankOptions: ['sun','moon','fire','water'], targets: [], difficulty: 1 },
+      { id: 'qz-dt-1', type: 'multiple-choice', prompt: 'Which day is 水曜日 (suiyoubi)?', question: 'Choose.', choices: [{id:'a',text:'Monday'},{id:'b',text:'Tuesday'},{id:'c',text:'Wednesday'},{id:'d',text:'Thursday'}], correctChoiceId: 'c', targets: ['水', '曜', '日'], difficulty: 1 },
+      { id: 'qz-dt-2', type: 'multiple-choice', prompt: 'How do you ask "What day is today?"', question: 'Choose.', choices: [{id:'a',text:'今日は何時ですか。'},{id:'b',text:'今日は何曜日ですか。'},{id:'c',text:'今日は何月ですか。'},{id:'d',text:'今日は何日ですか。'}], correctChoiceId: 'b', targets: ['今', '日', '何', '曜'], difficulty: 1 },
+      { id: 'qz-dt-3', type: 'fill-in-blank', prompt: 'What kanji is in Sunday (日曜日)?', sentenceTemplate: 'Sunday contains the kanji for {{blank}}.', acceptedAnswers: ['sun','day','Sunday'], wordBankOptions: ['sun','moon','fire','water'], targets: ['日', '曜'], difficulty: 1 },
     ],
   },
 
@@ -365,12 +365,12 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
     practiceExercises: [
       { id: 'ex-ai-1', type: 'multiple-choice', prompt: 'Which verb do you use for "there is a cat"?', question: 'Choose.', choices: [{id:'a',text:'あります'},{id:'b',text:'います'},{id:'c',text:'です'},{id:'d',text:'します'}], correctChoiceId: 'b', explanation: '猫は animate → います', targets: ['grammar-arimasu-imasu'], difficulty: 1 },
-      { id: 'ex-ai-2', type: 'fill-in-blank', prompt: 'Complete: 机の上に本が___。', sentenceTemplate: '机の上に本が{{blank}}。', acceptedAnswers: ['あります'], wordBankOptions: ['あります','います','です','します'], targets: [], difficulty: 1 },
+      { id: 'ex-ai-2', type: 'fill-in-blank', prompt: 'Complete: 机の上に本が___。', sentenceTemplate: '机の上に本が{{blank}}。', acceptedAnswers: ['あります'], wordBankOptions: ['あります','います','です','します'], targets: ['grammar-arimasu-imasu'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-ai-1', type: 'multiple-choice', prompt: 'Which verb for "there are students in the classroom"?', question: 'Choose.', choices: [{id:'a',text:'あります'},{id:'b',text:'います'},{id:'c',text:'です'},{id:'d',text:'する'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-ai-2', type: 'multiple-choice', prompt: 'Which verb for "there is a plan"?', question: 'Choose.', choices: [{id:'a',text:'あります'},{id:'b',text:'います'},{id:'c',text:'です'},{id:'d',text:'なります'}], correctChoiceId: 'a', explanation: 'Plans are inanimate → あります', targets: [], difficulty: 2 },
-      { id: 'qz-ai-3', type: 'fill-in-blank', prompt: 'Complete: 公園に子供が___。', sentenceTemplate: '公園に子供が{{blank}}。', acceptedAnswers: ['います'], wordBankOptions: ['あります','います','です','ます'], targets: [], difficulty: 1 },
+      { id: 'qz-ai-1', type: 'multiple-choice', prompt: 'Which verb for "there are students in the classroom"?', question: 'Choose.', choices: [{id:'a',text:'あります'},{id:'b',text:'います'},{id:'c',text:'です'},{id:'d',text:'する'}], correctChoiceId: 'b', targets: ['grammar-arimasu-imasu'], difficulty: 1 },
+      { id: 'qz-ai-2', type: 'multiple-choice', prompt: 'Which verb for "there is a plan"?', question: 'Choose.', choices: [{id:'a',text:'あります'},{id:'b',text:'います'},{id:'c',text:'です'},{id:'d',text:'なります'}], correctChoiceId: 'a', explanation: 'Plans are inanimate → あります', targets: ['grammar-arimasu-imasu'], difficulty: 2 },
+      { id: 'qz-ai-3', type: 'fill-in-blank', prompt: 'Complete: 公園に子供が___。', sentenceTemplate: '公園に子供が{{blank}}。', acceptedAnswers: ['います'], wordBankOptions: ['あります','います','です','ます'], targets: ['grammar-arimasu-imasu'], difficulty: 1 },
     ],
   },
 
@@ -385,13 +385,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'Easy test: if the verb is あります/います, use に. If you\'re doing an action, use で.' },
     ],
     practiceExercises: [
-      { id: 'ex-nd-1', type: 'multiple-choice', prompt: 'I study at the library — which particle?', question: 'Choose: 図書館___勉強します。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'は'},{id:'d',text:'が'}], correctChoiceId: 'b', explanation: 'Action (勉強する) → で', targets: [], difficulty: 1 },
-      { id: 'ex-nd-2', type: 'fill-in-blank', prompt: 'Complete: 鍵は机の上___あります。', sentenceTemplate: '鍵は机の上{{blank}}あります。', acceptedAnswers: ['に'], wordBankOptions: ['に','で','は','が'], targets: [], difficulty: 1 },
+      { id: 'ex-nd-1', type: 'multiple-choice', prompt: 'I study at the library — which particle?', question: 'Choose: 図書館___勉強します。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'は'},{id:'d',text:'が'}], correctChoiceId: 'b', explanation: 'Action (勉強する) → で', targets: ['grammar-ni-location', 'grammar-de-location'], difficulty: 1 },
+      { id: 'ex-nd-2', type: 'fill-in-blank', prompt: 'Complete: 鍵は机の上___あります。', sentenceTemplate: '鍵は机の上{{blank}}あります。', acceptedAnswers: ['に'], wordBankOptions: ['に','で','は','が'], targets: ['grammar-ni-location', 'grammar-de-location'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-nd-1', type: 'multiple-choice', prompt: 'I go to school — correct particle?', question: 'Choose: 学校___行きます。', choices: [{id:'a',text:'で'},{id:'b',text:'を'},{id:'c',text:'に'},{id:'d',text:'は'}], correctChoiceId: 'c', explanation: 'Destination → に', targets: [], difficulty: 1 },
-      { id: 'qz-nd-2', type: 'multiple-choice', prompt: 'She came by bicycle — correct particle?', question: 'Choose: 彼女は自転車___来ました。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'を'},{id:'d',text:'が'}], correctChoiceId: 'b', explanation: 'Means → で', targets: [], difficulty: 1 },
-      { id: 'qz-nd-3', type: 'fill-in-blank', prompt: 'Complete: 公園___犬がいます。(There is a dog in the park.)', sentenceTemplate: '公園{{blank}}犬がいます。', acceptedAnswers: ['に'], wordBankOptions: ['に','で','は','を'], targets: [], difficulty: 1 },
+      { id: 'qz-nd-1', type: 'multiple-choice', prompt: 'I go to school — correct particle?', question: 'Choose: 学校___行きます。', choices: [{id:'a',text:'で'},{id:'b',text:'を'},{id:'c',text:'に'},{id:'d',text:'は'}], correctChoiceId: 'c', explanation: 'Destination → に', targets: ['grammar-ni-location', 'grammar-de-location'], difficulty: 1 },
+      { id: 'qz-nd-2', type: 'multiple-choice', prompt: 'She came by bicycle — correct particle?', question: 'Choose: 彼女は自転車___来ました。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'を'},{id:'d',text:'が'}], correctChoiceId: 'b', explanation: 'Means → で', targets: ['grammar-ni-location', 'grammar-de-location'], difficulty: 1 },
+      { id: 'qz-nd-3', type: 'fill-in-blank', prompt: 'Complete: 公園___犬がいます。(There is a dog in the park.)', sentenceTemplate: '公園{{blank}}犬がいます。', acceptedAnswers: ['に'], wordBankOptions: ['に','で','は','を'], targets: ['grammar-ni-location', 'grammar-de-location'], difficulty: 1 },
     ],
   },
 
@@ -406,13 +406,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'こちら/そちら/あちら/どちら are the polite/formal equivalents, also used for directions and people.' },
     ],
     practiceExercises: [
-      { id: 'ex-kap-1', type: 'multiple-choice', prompt: '"Where is the station?" — which word?', question: 'Choose.', choices: [{id:'a',text:'ここ'},{id:'b',text:'そこ'},{id:'c',text:'あそこ'},{id:'d',text:'どこ'}], correctChoiceId: 'd', targets: [], difficulty: 1 },
-      { id: 'ex-kap-2', type: 'fill-in-blank', prompt: '"Please sit here" — use the correct word.', sentenceTemplate: '{{blank}}に座ってください。', acceptedAnswers: ['ここ'], wordBankOptions: ['ここ','そこ','あそこ','どこ'], targets: [], difficulty: 1 },
+      { id: 'ex-kap-1', type: 'multiple-choice', prompt: '"Where is the station?" — which word?', question: 'Choose.', choices: [{id:'a',text:'ここ'},{id:'b',text:'そこ'},{id:'c',text:'あそこ'},{id:'d',text:'どこ'}], correctChoiceId: 'd', targets: ['grammar-koso-ado'], difficulty: 1 },
+      { id: 'ex-kap-2', type: 'fill-in-blank', prompt: '"Please sit here" — use the correct word.', sentenceTemplate: '{{blank}}に座ってください。', acceptedAnswers: ['ここ'], wordBankOptions: ['ここ','そこ','あそこ','どこ'], targets: ['grammar-koso-ado'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-kap-1', type: 'multiple-choice', prompt: 'Which word means "there" (near the listener)?', question: 'Choose.', choices: [{id:'a',text:'ここ'},{id:'b',text:'そこ'},{id:'c',text:'あそこ'},{id:'d',text:'どこ'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-kap-2', type: 'multiple-choice', prompt: 'You see Mt. Fuji in the distance. Which do you use?', question: 'Choose.', choices: [{id:'a',text:'ここに'},{id:'b',text:'そこに'},{id:'c',text:'あそこに'},{id:'d',text:'どこに'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-kap-3', type: 'fill-in-blank', prompt: 'Complete: トイレは___ですか。', sentenceTemplate: 'トイレは{{blank}}ですか。', acceptedAnswers: ['どこ'], wordBankOptions: ['ここ','そこ','あそこ','どこ'], targets: [], difficulty: 1 },
+      { id: 'qz-kap-1', type: 'multiple-choice', prompt: 'Which word means "there" (near the listener)?', question: 'Choose.', choices: [{id:'a',text:'ここ'},{id:'b',text:'そこ'},{id:'c',text:'あそこ'},{id:'d',text:'どこ'}], correctChoiceId: 'b', targets: ['grammar-koso-ado'], difficulty: 1 },
+      { id: 'qz-kap-2', type: 'multiple-choice', prompt: 'You see Mt. Fuji in the distance. Which do you use?', question: 'Choose.', choices: [{id:'a',text:'ここに'},{id:'b',text:'そこに'},{id:'c',text:'あそこに'},{id:'d',text:'どこに'}], correctChoiceId: 'c', targets: ['grammar-koso-ado'], difficulty: 1 },
+      { id: 'qz-kap-3', type: 'fill-in-blank', prompt: 'Complete: トイレは___ですか。', sentenceTemplate: 'トイレは{{blank}}ですか。', acceptedAnswers: ['どこ'], wordBankOptions: ['ここ','そこ','あそこ','どこ'], targets: ['grammar-koso-ado'], difficulty: 1 },
     ],
   },
 
@@ -431,13 +431,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: 'Some verbs end in -る but are Group 1: **帰る (kaeru)** = to return, **走る (hashiru)** = to run. When in doubt, look it up!' },
     ],
     practiceExercises: [
-      { id: 'ex-vg-1', type: 'multiple-choice', prompt: '食べる belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1 (u-verb)'},{id:'b',text:'Group 2 (ru-verb)'},{id:'c',text:'Group 3 (irregular)'},{id:'d',text:'None'}], correctChoiceId: 'b', explanation: '食べる: be-ru → い sound before る → Group 2', targets: [], difficulty: 1 },
-      { id: 'ex-vg-2', type: 'multiple-choice', prompt: 'Which verb is irregular (Group 3)?', question: 'Choose.', choices: [{id:'a',text:'飲む'},{id:'b',text:'食べる'},{id:'c',text:'する'},{id:'d',text:'書く'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
+      { id: 'ex-vg-1', type: 'multiple-choice', prompt: '食べる belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1 (u-verb)'},{id:'b',text:'Group 2 (ru-verb)'},{id:'c',text:'Group 3 (irregular)'},{id:'d',text:'None'}], correctChoiceId: 'b', explanation: '食べる: be-ru → い sound before る → Group 2', targets: ['grammar-verb-groups'], difficulty: 1 },
+      { id: 'ex-vg-2', type: 'multiple-choice', prompt: 'Which verb is irregular (Group 3)?', question: 'Choose.', choices: [{id:'a',text:'飲む'},{id:'b',text:'食べる'},{id:'c',text:'する'},{id:'d',text:'書く'}], correctChoiceId: 'c', targets: ['grammar-verb-groups'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-vg-1', type: 'multiple-choice', prompt: '書く belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1'},{id:'b',text:'Group 2'},{id:'c',text:'Group 3'},{id:'d',text:'None'}], correctChoiceId: 'a', explanation: '書く ends in -ku (u-verb)', targets: [], difficulty: 1 },
-      { id: 'qz-vg-2', type: 'multiple-choice', prompt: '見る belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1'},{id:'b',text:'Group 2'},{id:'c',text:'Group 3'},{id:'d',text:'None'}], correctChoiceId: 'b', explanation: '見る: mi-ru → い sound before る → Group 2', targets: [], difficulty: 1 },
-      { id: 'qz-vg-3', type: 'multiple-choice', prompt: 'くる (come) belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1'},{id:'b',text:'Group 2'},{id:'c',text:'Group 3'},{id:'d',text:'None'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
+      { id: 'qz-vg-1', type: 'multiple-choice', prompt: '書く belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1'},{id:'b',text:'Group 2'},{id:'c',text:'Group 3'},{id:'d',text:'None'}], correctChoiceId: 'a', explanation: '書く ends in -ku (u-verb)', targets: ['grammar-verb-groups'], difficulty: 1 },
+      { id: 'qz-vg-2', type: 'multiple-choice', prompt: '見る belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1'},{id:'b',text:'Group 2'},{id:'c',text:'Group 3'},{id:'d',text:'None'}], correctChoiceId: 'b', explanation: '見る: mi-ru → い sound before る → Group 2', targets: ['grammar-verb-groups'], difficulty: 1 },
+      { id: 'qz-vg-3', type: 'multiple-choice', prompt: 'くる (come) belongs to which group?', question: 'Choose.', choices: [{id:'a',text:'Group 1'},{id:'b',text:'Group 2'},{id:'c',text:'Group 3'},{id:'d',text:'None'}], correctChoiceId: 'c', targets: ['grammar-verb-groups'], difficulty: 1 },
     ],
   },
 
@@ -453,13 +453,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'ます-form covers both "I drink" (habit) and "I will drink" (future). Use time words for clarity.' },
     ],
     practiceExercises: [
-      { id: 'ex-mf-1', type: 'multiple-choice', prompt: 'What is the ます form of 食べる?', question: 'Choose.', choices: [{id:'a',text:'食べます'},{id:'b',text:'食べる'},{id:'c',text:'食べます'},{id:'d',text:'食べます'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-mf-2', type: 'fill-in-blank', prompt: 'Complete: 来週、京都に___。(I will go to Kyoto.)', sentenceTemplate: '来週、京都に{{blank}}。', acceptedAnswers: ['行きます'], wordBankOptions: ['行きます','行く','行った','行って'], targets: [], difficulty: 1 },
+      { id: 'ex-mf-1', type: 'multiple-choice', prompt: 'What is the ます form of 食べる?', question: 'Choose.', choices: [{id:'a',text:'食べます'},{id:'b',text:'食べる'},{id:'c',text:'食べます'},{id:'d',text:'食べます'}], correctChoiceId: 'a', targets: ['grammar-masu-form'], difficulty: 1 },
+      { id: 'ex-mf-2', type: 'fill-in-blank', prompt: 'Complete: 来週、京都に___。(I will go to Kyoto.)', sentenceTemplate: '来週、京都に{{blank}}。', acceptedAnswers: ['行きます'], wordBankOptions: ['行きます','行く','行った','行って'], targets: ['grammar-masu-form'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-mf-1', type: 'multiple-choice', prompt: 'ます form of 飲む?', question: 'Choose.', choices: [{id:'a',text:'飲みます'},{id:'b',text:'飲ます'},{id:'c',text:'のみます'},{id:'d',text:'飲ります'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-mf-2', type: 'multiple-choice', prompt: 'ます form of する?', question: 'Choose.', choices: [{id:'a',text:'するます'},{id:'b',text:'します'},{id:'c',text:'せます'},{id:'d',text:'さます'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-mf-3', type: 'fill-in-blank', prompt: 'ます form of くる?', sentenceTemplate: 'くる → {{blank}}', acceptedAnswers: ['きます'], wordBankOptions: ['きます','くます','こます','かます'], targets: [], difficulty: 1 },
+      { id: 'qz-mf-1', type: 'multiple-choice', prompt: 'ます form of 飲む?', question: 'Choose.', choices: [{id:'a',text:'飲みます'},{id:'b',text:'飲ます'},{id:'c',text:'のみます'},{id:'d',text:'飲ります'}], correctChoiceId: 'a', targets: ['grammar-masu-form'], difficulty: 1 },
+      { id: 'qz-mf-2', type: 'multiple-choice', prompt: 'ます form of する?', question: 'Choose.', choices: [{id:'a',text:'するます'},{id:'b',text:'します'},{id:'c',text:'せます'},{id:'d',text:'さます'}], correctChoiceId: 'b', targets: ['grammar-masu-form'], difficulty: 1 },
+      { id: 'qz-mf-3', type: 'fill-in-blank', prompt: 'ます form of くる?', sentenceTemplate: 'くる → {{blank}}', acceptedAnswers: ['きます'], wordBankOptions: ['きます','くます','こます','かます'], targets: ['grammar-masu-form'], difficulty: 1 },
     ],
   },
 
@@ -475,13 +475,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'ませんか (with rising intonation) is an **invitation**: 一緒に食べませんか = "Shall we eat together?"' },
     ],
     practiceExercises: [
-      { id: 'ex-mn-1', type: 'multiple-choice', prompt: 'Negate 食べます.', question: 'Choose.', choices: [{id:'a',text:'食べません'},{id:'b',text:'食べない'},{id:'c',text:'食べませんか'},{id:'d',text:'食べません'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-mn-2', type: 'fill-in-blank', prompt: 'Complete: 今日は学校に___。(I won\'t come to school today.)', sentenceTemplate: '今日は学校に{{blank}}。', acceptedAnswers: ['きません'], wordBankOptions: ['きます','きません','きた','くる'], targets: [], difficulty: 1 },
+      { id: 'ex-mn-1', type: 'multiple-choice', prompt: 'Negate 食べます.', question: 'Choose.', choices: [{id:'a',text:'食べません'},{id:'b',text:'食べない'},{id:'c',text:'食べませんか'},{id:'d',text:'食べません'}], correctChoiceId: 'a', targets: ['grammar-masen-form'], difficulty: 1 },
+      { id: 'ex-mn-2', type: 'fill-in-blank', prompt: 'Complete: 今日は学校に___。(I won\'t come to school today.)', sentenceTemplate: '今日は学校に{{blank}}。', acceptedAnswers: ['きません'], wordBankOptions: ['きます','きません','きた','くる'], targets: ['grammar-masen-form'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-mn-1', type: 'multiple-choice', prompt: 'Negate します.', question: 'Choose.', choices: [{id:'a',text:'しません'},{id:'b',text:'するません'},{id:'c',text:'しない'},{id:'d',text:'しますか'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-mn-2', type: 'multiple-choice', prompt: 'What does 食べませんか mean as an invitation?', question: 'Choose.', choices: [{id:'a',text:'Do you eat?'},{id:'b',text:'I don\'t eat.'},{id:'c',text:'Shall we eat?'},{id:'d',text:'I ate.'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-mn-3', type: 'fill-in-blank', prompt: 'Negate 飲みます.', sentenceTemplate: '飲み{{blank}}', acceptedAnswers: ['ません'], wordBankOptions: ['ます','ません','した','ない'], targets: [], difficulty: 1 },
+      { id: 'qz-mn-1', type: 'multiple-choice', prompt: 'Negate します.', question: 'Choose.', choices: [{id:'a',text:'しません'},{id:'b',text:'するません'},{id:'c',text:'しない'},{id:'d',text:'しますか'}], correctChoiceId: 'a', targets: ['grammar-masen-form'], difficulty: 1 },
+      { id: 'qz-mn-2', type: 'multiple-choice', prompt: 'What does 食べませんか mean as an invitation?', question: 'Choose.', choices: [{id:'a',text:'Do you eat?'},{id:'b',text:'I don\'t eat.'},{id:'c',text:'Shall we eat?'},{id:'d',text:'I ate.'}], correctChoiceId: 'c', targets: ['grammar-masen-form'], difficulty: 1 },
+      { id: 'qz-mn-3', type: 'fill-in-blank', prompt: 'Negate 飲みます.', sentenceTemplate: '飲み{{blank}}', acceptedAnswers: ['ません'], wordBankOptions: ['ます','ません','した','ない'], targets: ['grammar-masen-form'], difficulty: 1 },
     ],
   },
 
@@ -497,13 +497,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: 'を is only used with **transitive verbs**. Never use を with あります/います.' },
     ],
     practiceExercises: [
-      { id: 'ex-wo-1', type: 'fill-in-blank', prompt: 'Complete: 本___読みます。', sentenceTemplate: '本{{blank}}読みます。', acceptedAnswers: ['を'], wordBankOptions: ['を','は','が','に'], targets: [], difficulty: 1 },
-      { id: 'ex-wo-2', type: 'multiple-choice', prompt: '"Drink water" — correct particle?', question: '水___飲みます。', choices: [{id:'a',text:'は'},{id:'b',text:'を'},{id:'c',text:'が'},{id:'d',text:'に'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
+      { id: 'ex-wo-1', type: 'fill-in-blank', prompt: 'Complete: 本___読みます。', sentenceTemplate: '本{{blank}}読みます。', acceptedAnswers: ['を'], wordBankOptions: ['を','は','が','に'], targets: ['grammar-wo-object'], difficulty: 1 },
+      { id: 'ex-wo-2', type: 'multiple-choice', prompt: '"Drink water" — correct particle?', question: '水___飲みます。', choices: [{id:'a',text:'は'},{id:'b',text:'を'},{id:'c',text:'が'},{id:'d',text:'に'}], correctChoiceId: 'b', targets: ['grammar-wo-object'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-wo-1', type: 'multiple-choice', prompt: 'Which particle marks the direct object?', question: 'Choose.', choices: [{id:'a',text:'は'},{id:'b',text:'が'},{id:'c',text:'を'},{id:'d',text:'に'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-wo-2', type: 'multiple-choice', prompt: '"Listen to music" — correct particle?', question: '音楽___聴きます。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'を'},{id:'d',text:'が'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-wo-3', type: 'fill-in-blank', prompt: 'Complete: テレビ___見ます。', sentenceTemplate: 'テレビ{{blank}}見ます。', acceptedAnswers: ['を'], wordBankOptions: ['を','は','に','で'], targets: [], difficulty: 1 },
+      { id: 'qz-wo-1', type: 'multiple-choice', prompt: 'Which particle marks the direct object?', question: 'Choose.', choices: [{id:'a',text:'は'},{id:'b',text:'が'},{id:'c',text:'を'},{id:'d',text:'に'}], correctChoiceId: 'c', targets: ['grammar-wo-object'], difficulty: 1 },
+      { id: 'qz-wo-2', type: 'multiple-choice', prompt: '"Listen to music" — correct particle?', question: '音楽___聴きます。', choices: [{id:'a',text:'に'},{id:'b',text:'で'},{id:'c',text:'を'},{id:'d',text:'が'}], correctChoiceId: 'c', targets: ['grammar-wo-object'], difficulty: 1 },
+      { id: 'qz-wo-3', type: 'fill-in-blank', prompt: 'Complete: テレビ___見ます。', sentenceTemplate: 'テレビ{{blank}}見ます。', acceptedAnswers: ['を'], wordBankOptions: ['を','は','に','で'], targets: ['grammar-wo-object'], difficulty: 1 },
     ],
   },
 
@@ -523,13 +523,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: 'The adjective **いい** (good) is irregular: its conjugated base is **よ-**: よくない (not good), よかった (was good).' },
     ],
     practiceExercises: [
-      { id: 'ex-ia-1', type: 'multiple-choice', prompt: 'Negate 大きいです.', question: 'Choose.', choices: [{id:'a',text:'大きいないです'},{id:'b',text:'大きくないです'},{id:'c',text:'大きじゃないです'},{id:'d',text:'大きではないです'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-ia-2', type: 'fill-in-blank', prompt: 'Negate いいです (good).', sentenceTemplate: 'いい → {{blank}}です', acceptedAnswers: ['よくない'], wordBankOptions: ['いくない','よくない','いじゃない','よじゃない'], targets: [], difficulty: 2 },
+      { id: 'ex-ia-1', type: 'multiple-choice', prompt: 'Negate 大きいです.', question: 'Choose.', choices: [{id:'a',text:'大きいないです'},{id:'b',text:'大きくないです'},{id:'c',text:'大きじゃないです'},{id:'d',text:'大きではないです'}], correctChoiceId: 'b', targets: ['grammar-i-adjective'], difficulty: 1 },
+      { id: 'ex-ia-2', type: 'fill-in-blank', prompt: 'Negate いいです (good).', sentenceTemplate: 'いい → {{blank}}です', acceptedAnswers: ['よくない'], wordBankOptions: ['いくない','よくない','いじゃない','よじゃない'], targets: ['grammar-i-adjective'], difficulty: 2 },
     ],
     quiz: [
-      { id: 'qz-ia-1', type: 'multiple-choice', prompt: 'Negate 面白いです.', question: 'Choose.', choices: [{id:'a',text:'面白くないです'},{id:'b',text:'面白いじゃないです'},{id:'c',text:'面白いないです'},{id:'d',text:'面白ではない'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-ia-2', type: 'multiple-choice', prompt: 'Which form modifies a noun?', question: '大きい___犬 or 大きい + の + 犬?', choices: [{id:'a',text:'大きい犬 (adj directly)'},{id:'b',text:'大きいな犬'},{id:'c',text:'大きの犬'},{id:'d',text:'大きく犬'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-ia-3', type: 'fill-in-blank', prompt: 'Negate 寒いです (cold).', sentenceTemplate: '寒い → {{blank}}です', acceptedAnswers: ['寒くない'], wordBankOptions: ['寒くない','寒いくない','寒じゃない','さむくない'], targets: [], difficulty: 1 },
+      { id: 'qz-ia-1', type: 'multiple-choice', prompt: 'Negate 面白いです.', question: 'Choose.', choices: [{id:'a',text:'面白くないです'},{id:'b',text:'面白いじゃないです'},{id:'c',text:'面白いないです'},{id:'d',text:'面白ではない'}], correctChoiceId: 'a', targets: ['grammar-i-adjective'], difficulty: 1 },
+      { id: 'qz-ia-2', type: 'multiple-choice', prompt: 'Which form modifies a noun?', question: '大きい___犬 or 大きい + の + 犬?', choices: [{id:'a',text:'大きい犬 (adj directly)'},{id:'b',text:'大きいな犬'},{id:'c',text:'大きの犬'},{id:'d',text:'大きく犬'}], correctChoiceId: 'a', targets: ['grammar-i-adjective'], difficulty: 1 },
+      { id: 'qz-ia-3', type: 'fill-in-blank', prompt: 'Negate 寒いです (cold).', sentenceTemplate: '寒い → {{blank}}です', acceptedAnswers: ['寒くない'], wordBankOptions: ['寒くない','寒いくない','寒じゃない','さむくない'], targets: ['grammar-i-adjective'], difficulty: 1 },
     ],
   },
 
@@ -545,13 +545,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: 'きれい and 嫌い end in -い but are **な-adjectives**, not い-adjectives. They use な before nouns and don\'t drop -い in negation.' },
     ],
     practiceExercises: [
-      { id: 'ex-na-1', type: 'multiple-choice', prompt: '"A quiet room" — which is correct?', question: 'Choose.', choices: [{id:'a',text:'静かい部屋'},{id:'b',text:'静かな部屋'},{id:'c',text:'静か部屋'},{id:'d',text:'静くな部屋'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-na-2', type: 'fill-in-blank', prompt: 'Negate 好きです.', sentenceTemplate: '好き{{blank}}です', acceptedAnswers: ['じゃありません','ではありません'], wordBankOptions: ['くないです','じゃありません','じゃないです','ません'], targets: [], difficulty: 1 },
+      { id: 'ex-na-1', type: 'multiple-choice', prompt: '"A quiet room" — which is correct?', question: 'Choose.', choices: [{id:'a',text:'静かい部屋'},{id:'b',text:'静かな部屋'},{id:'c',text:'静か部屋'},{id:'d',text:'静くな部屋'}], correctChoiceId: 'b', targets: ['grammar-na-adjective'], difficulty: 1 },
+      { id: 'ex-na-2', type: 'fill-in-blank', prompt: 'Negate 好きです.', sentenceTemplate: '好き{{blank}}です', acceptedAnswers: ['じゃありません','ではありません'], wordBankOptions: ['くないです','じゃありません','じゃないです','ません'], targets: ['grammar-na-adjective'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-na-1', type: 'multiple-choice', prompt: 'きれい is which type of adjective?', question: 'Choose.', choices: [{id:'a',text:'い-adjective'},{id:'b',text:'な-adjective'},{id:'c',text:'adverb'},{id:'d',text:'noun'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-na-2', type: 'multiple-choice', prompt: 'How do you say "a famous person"?', question: 'Choose.', choices: [{id:'a',text:'有名い人'},{id:'b',text:'有名の人'},{id:'c',text:'有名な人'},{id:'d',text:'有名く人'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-na-3', type: 'fill-in-blank', prompt: 'Complete: 彼女は料理が___です。(She is good at cooking.)', sentenceTemplate: '彼女は料理が{{blank}}です。', acceptedAnswers: ['上手'], wordBankOptions: ['上手','下手','好き','嫌い'], targets: [], difficulty: 1 },
+      { id: 'qz-na-1', type: 'multiple-choice', prompt: 'きれい is which type of adjective?', question: 'Choose.', choices: [{id:'a',text:'い-adjective'},{id:'b',text:'な-adjective'},{id:'c',text:'adverb'},{id:'d',text:'noun'}], correctChoiceId: 'b', targets: ['grammar-na-adjective'], difficulty: 1 },
+      { id: 'qz-na-2', type: 'multiple-choice', prompt: 'How do you say "a famous person"?', question: 'Choose.', choices: [{id:'a',text:'有名い人'},{id:'b',text:'有名の人'},{id:'c',text:'有名な人'},{id:'d',text:'有名く人'}], correctChoiceId: 'c', targets: ['grammar-na-adjective'], difficulty: 1 },
+      { id: 'qz-na-3', type: 'fill-in-blank', prompt: 'Complete: 彼女は料理が___です。(She is good at cooking.)', sentenceTemplate: '彼女は料理が{{blank}}です。', acceptedAnswers: ['上手'], wordBankOptions: ['上手','下手','好き','嫌い'], targets: ['grammar-na-adjective'], difficulty: 1 },
     ],
   },
 
@@ -566,13 +566,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'example', sentence: { ja: '昨日のパーティーは楽しかったです。', romaji: "Kinō no pātī wa tanoshikatta desu.", en: "Yesterday's party was fun." } },
     ],
     practiceExercises: [
-      { id: 'ex-ap-1', type: 'multiple-choice', prompt: 'Past tense of 寒いです?', question: 'Choose.', choices: [{id:'a',text:'寒いでした'},{id:'b',text:'寒かったです'},{id:'c',text:'寒くでした'},{id:'d',text:'さむかったです'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-ap-2', type: 'fill-in-blank', prompt: 'Past negative of いい?', sentenceTemplate: 'いい → {{blank}}', acceptedAnswers: ['よくなかった','よくなかったです'], wordBankOptions: ['いくなかった','よくなかった','いじゃなかった','よかった'], targets: [], difficulty: 2 },
+      { id: 'ex-ap-1', type: 'multiple-choice', prompt: 'Past tense of 寒いです?', question: 'Choose.', choices: [{id:'a',text:'寒いでした'},{id:'b',text:'寒かったです'},{id:'c',text:'寒くでした'},{id:'d',text:'さむかったです'}], correctChoiceId: 'b', targets: ['grammar-adj-past'], difficulty: 1 },
+      { id: 'ex-ap-2', type: 'fill-in-blank', prompt: 'Past negative of いい?', sentenceTemplate: 'いい → {{blank}}', acceptedAnswers: ['よくなかった','よくなかったです'], wordBankOptions: ['いくなかった','よくなかった','いじゃなかった','よかった'], targets: ['grammar-adj-past'], difficulty: 2 },
     ],
     quiz: [
-      { id: 'qz-ap-1', type: 'multiple-choice', prompt: 'Past positive of 好きです?', question: 'Choose.', choices: [{id:'a',text:'好きかったです'},{id:'b',text:'好きでした'},{id:'c',text:'好かったです'},{id:'d',text:'好きいでした'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-ap-2', type: 'multiple-choice', prompt: 'Past of いい (good)?', question: 'Choose.', choices: [{id:'a',text:'いかった'},{id:'b',text:'よかった'},{id:'c',text:'よいかった'},{id:'d',text:'いいかった'}], correctChoiceId: 'b', explanation: 'いい is irregular: よかった', targets: [], difficulty: 1 },
-      { id: 'qz-ap-3', type: 'fill-in-blank', prompt: 'Complete: 子供の頃、野菜が嫌い___。(I disliked vegetables as a child.)', sentenceTemplate: '子供の頃、野菜が嫌い{{blank}}。', acceptedAnswers: ['でした'], wordBankOptions: ['でした','かった','なかった','でしたか'], targets: [], difficulty: 1 },
+      { id: 'qz-ap-1', type: 'multiple-choice', prompt: 'Past positive of 好きです?', question: 'Choose.', choices: [{id:'a',text:'好きかったです'},{id:'b',text:'好きでした'},{id:'c',text:'好かったです'},{id:'d',text:'好きいでした'}], correctChoiceId: 'b', targets: ['grammar-adj-past'], difficulty: 1 },
+      { id: 'qz-ap-2', type: 'multiple-choice', prompt: 'Past of いい (good)?', question: 'Choose.', choices: [{id:'a',text:'いかった'},{id:'b',text:'よかった'},{id:'c',text:'よいかった'},{id:'d',text:'いいかった'}], correctChoiceId: 'b', explanation: 'いい is irregular: よかった', targets: ['grammar-adj-past'], difficulty: 1 },
+      { id: 'qz-ap-3', type: 'fill-in-blank', prompt: 'Complete: 子供の頃、野菜が嫌い___。(I disliked vegetables as a child.)', sentenceTemplate: '子供の頃、野菜が嫌い{{blank}}。', acceptedAnswers: ['でした'], wordBankOptions: ['でした','かった','なかった','でしたか'], targets: ['grammar-adj-past'], difficulty: 1 },
     ],
   },
 
@@ -591,13 +591,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: '行く (iku) → 行った (itta), NOT 行いた. This is an exception to the normal Group 1 rule.' },
     ],
     practiceExercises: [
-      { id: 'ex-tf-1', type: 'multiple-choice', prompt: 'Polite past of 食べる?', question: 'Choose.', choices: [{id:'a',text:'食べました'},{id:'b',text:'食べた'},{id:'c',text:'食べます'},{id:'d',text:'食べたです'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-tf-2', type: 'fill-in-blank', prompt: 'Plain past of 行く?', sentenceTemplate: '行く → {{blank}}', acceptedAnswers: ['行った'], wordBankOptions: ['行いた','行った','行きた','行くた'], targets: [], difficulty: 2 },
+      { id: 'ex-tf-1', type: 'multiple-choice', prompt: 'Polite past of 食べる?', question: 'Choose.', choices: [{id:'a',text:'食べました'},{id:'b',text:'食べた'},{id:'c',text:'食べます'},{id:'d',text:'食べたです'}], correctChoiceId: 'a', targets: ['grammar-ta-form'], difficulty: 1 },
+      { id: 'ex-tf-2', type: 'fill-in-blank', prompt: 'Plain past of 行く?', sentenceTemplate: '行く → {{blank}}', acceptedAnswers: ['行った'], wordBankOptions: ['行いた','行った','行きた','行くた'], targets: ['grammar-ta-form'], difficulty: 2 },
     ],
     quiz: [
-      { id: 'qz-tf-1', type: 'multiple-choice', prompt: 'Polite past of する?', question: 'Choose.', choices: [{id:'a',text:'するました'},{id:'b',text:'しました'},{id:'c',text:'せました'},{id:'d',text:'さました'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-tf-2', type: 'multiple-choice', prompt: 'Plain past of 飲む?', question: 'Choose.', choices: [{id:'a',text:'飲んだ'},{id:'b',text:'飲いた'},{id:'c',text:'飲みた'},{id:'d',text:'飲うた'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-tf-3', type: 'fill-in-blank', prompt: 'Complete: 昨日、友達と映画を___。(I watched a movie with a friend.)', sentenceTemplate: '昨日、友達と映画を{{blank}}。', acceptedAnswers: ['見ました'], wordBankOptions: ['見ます','見ました','見た','見て'], targets: [], difficulty: 1 },
+      { id: 'qz-tf-1', type: 'multiple-choice', prompt: 'Polite past of する?', question: 'Choose.', choices: [{id:'a',text:'するました'},{id:'b',text:'しました'},{id:'c',text:'せました'},{id:'d',text:'さました'}], correctChoiceId: 'b', targets: ['grammar-ta-form'], difficulty: 1 },
+      { id: 'qz-tf-2', type: 'multiple-choice', prompt: 'Plain past of 飲む?', question: 'Choose.', choices: [{id:'a',text:'飲んだ'},{id:'b',text:'飲いた'},{id:'c',text:'飲みた'},{id:'d',text:'飲うた'}], correctChoiceId: 'a', targets: ['grammar-ta-form'], difficulty: 1 },
+      { id: 'qz-tf-3', type: 'fill-in-blank', prompt: 'Complete: 昨日、友達と映画を___。(I watched a movie with a friend.)', sentenceTemplate: '昨日、友達と映画を{{blank}}。', acceptedAnswers: ['見ました'], wordBankOptions: ['見ます','見ました','見た','見て'], targets: ['grammar-ta-form'], difficulty: 1 },
     ],
   },
 
@@ -613,13 +613,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: '行く → **行って** (NOT 行いて). Same exception as with た-form.' },
     ],
     practiceExercises: [
-      { id: 'ex-tef-1', type: 'multiple-choice', prompt: 'て-form of 食べる?', question: 'Choose.', choices: [{id:'a',text:'食べて'},{id:'b',text:'食べいて'},{id:'c',text:'食べた'},{id:'d',text:'食べって'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-tef-2', type: 'fill-in-blank', prompt: 'て-form of 飲む?', sentenceTemplate: '飲む → {{blank}}', acceptedAnswers: ['飲んで'], wordBankOptions: ['飲んで','飲いで','飲んだ','飲いた'], targets: [], difficulty: 1 },
+      { id: 'ex-tef-1', type: 'multiple-choice', prompt: 'て-form of 食べる?', question: 'Choose.', choices: [{id:'a',text:'食べて'},{id:'b',text:'食べいて'},{id:'c',text:'食べた'},{id:'d',text:'食べって'}], correctChoiceId: 'a', targets: ['grammar-te-form'], difficulty: 1 },
+      { id: 'ex-tef-2', type: 'fill-in-blank', prompt: 'て-form of 飲む?', sentenceTemplate: '飲む → {{blank}}', acceptedAnswers: ['飲んで'], wordBankOptions: ['飲んで','飲いで','飲んだ','飲いた'], targets: ['grammar-te-form'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-tef-1', type: 'multiple-choice', prompt: 'て-form of 行く?', question: 'Choose.', choices: [{id:'a',text:'行いて'},{id:'b',text:'行いた'},{id:'c',text:'行って'},{id:'d',text:'行くて'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-tef-2', type: 'multiple-choice', prompt: 'て-form of する?', question: 'Choose.', choices: [{id:'a',text:'して'},{id:'b',text:'すて'},{id:'c',text:'せて'},{id:'d',text:'するて'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-tef-3', type: 'sentence-construction', prompt: 'Make a sequential sentence: "I wash my hands and then eat."', targetSentence: '手を洗って、ご飯を食べます。', scrambledTokens: ['手を','洗って、','ご飯を','食べます。'], targets: [], difficulty: 1 },
+      { id: 'qz-tef-1', type: 'multiple-choice', prompt: 'て-form of 行く?', question: 'Choose.', choices: [{id:'a',text:'行いて'},{id:'b',text:'行いた'},{id:'c',text:'行って'},{id:'d',text:'行くて'}], correctChoiceId: 'c', targets: ['grammar-te-form'], difficulty: 1 },
+      { id: 'qz-tef-2', type: 'multiple-choice', prompt: 'て-form of する?', question: 'Choose.', choices: [{id:'a',text:'して'},{id:'b',text:'すて'},{id:'c',text:'せて'},{id:'d',text:'するて'}], correctChoiceId: 'a', targets: ['grammar-te-form'], difficulty: 1 },
+      { id: 'qz-tef-3', type: 'sentence-construction', prompt: 'Make a sequential sentence: "I wash my hands and then eat."', targetSentence: '手を洗って、ご飯を食べます。', scrambledTokens: ['手を','洗って、','ご飯を','食べます。'], targets: ['grammar-te-form'], difficulty: 1 },
     ],
   },
 
@@ -635,13 +635,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'In casual speech, いる contracts to る: 食べてる, 見てる, 知ってる.' },
     ],
     practiceExercises: [
-      { id: 'ex-tei-1', type: 'multiple-choice', prompt: '"She is studying" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'彼女は勉強した。'},{id:'b',text:'彼女は勉強している。'},{id:'c',text:'彼女は勉強する。'},{id:'d',text:'彼女は勉強します。'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-tei-2', type: 'fill-in-blank', prompt: 'Complete: テレビを___います。(watching TV)', sentenceTemplate: 'テレビを{{blank}}います。', acceptedAnswers: ['見て'], wordBankOptions: ['見て','見た','見る','見い'], targets: [], difficulty: 1 },
+      { id: 'ex-tei-1', type: 'multiple-choice', prompt: '"She is studying" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'彼女は勉強した。'},{id:'b',text:'彼女は勉強している。'},{id:'c',text:'彼女は勉強する。'},{id:'d',text:'彼女は勉強します。'}], correctChoiceId: 'b', targets: ['grammar-te-iru'], difficulty: 1 },
+      { id: 'ex-tei-2', type: 'fill-in-blank', prompt: 'Complete: テレビを___います。(watching TV)', sentenceTemplate: 'テレビを{{blank}}います。', acceptedAnswers: ['見て'], wordBankOptions: ['見て','見た','見る','見い'], targets: ['grammar-te-iru'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-tei-1', type: 'multiple-choice', prompt: '"He is married" — which is correct?', question: 'Choose.', choices: [{id:'a',text:'彼は結婚する。'},{id:'b',text:'彼は結婚した。'},{id:'c',text:'彼は結婚している。'},{id:'d',text:'彼は結婚します。'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-tei-2', type: 'multiple-choice', prompt: 'Casual form of 食べています?', question: 'Choose.', choices: [{id:'a',text:'食べてる'},{id:'b',text:'食べる'},{id:'c',text:'食べて'},{id:'d',text:'食べた'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-tei-3', type: 'fill-in-blank', prompt: 'Complete: 今、音楽を___います。', sentenceTemplate: '今、音楽を{{blank}}います。', acceptedAnswers: ['聴いて','きいて'], wordBankOptions: ['聴いて','聴いた','聴く','聴い'], targets: [], difficulty: 1 },
+      { id: 'qz-tei-1', type: 'multiple-choice', prompt: '"He is married" — which is correct?', question: 'Choose.', choices: [{id:'a',text:'彼は結婚する。'},{id:'b',text:'彼は結婚した。'},{id:'c',text:'彼は結婚している。'},{id:'d',text:'彼は結婚します。'}], correctChoiceId: 'c', targets: ['grammar-te-iru'], difficulty: 1 },
+      { id: 'qz-tei-2', type: 'multiple-choice', prompt: 'Casual form of 食べています?', question: 'Choose.', choices: [{id:'a',text:'食べてる'},{id:'b',text:'食べる'},{id:'c',text:'食べて'},{id:'d',text:'食べた'}], correctChoiceId: 'a', targets: ['grammar-te-iru'], difficulty: 1 },
+      { id: 'qz-tei-3', type: 'fill-in-blank', prompt: 'Complete: 今、音楽を___います。', sentenceTemplate: '今、音楽を{{blank}}います。', acceptedAnswers: ['聴いて','きいて'], wordBankOptions: ['聴いて','聴いた','聴く','聴い'], targets: ['grammar-te-iru'], difficulty: 1 },
     ],
   },
 
@@ -661,13 +661,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'warning', markdown: '〜たい only expresses **your own** desire in declarative sentences. For a third person\'s desire, use 〜たがっている.' },
     ],
     practiceExercises: [
-      { id: 'ex-tai-1', type: 'multiple-choice', prompt: '"I want to eat sushi" — choose correctly.', question: 'Choose.', choices: [{id:'a',text:'寿司を食べたい。'},{id:'b',text:'寿司を食べます。'},{id:'c',text:'寿司を食べました。'},{id:'d',text:'寿司を食べている。'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-tai-2', type: 'fill-in-blank', prompt: 'Complete: 今日は何も___。(I don\'t want to do anything.)', sentenceTemplate: '今日は何も{{blank}}。', acceptedAnswers: ['したくない','したくないです'], wordBankOptions: ['したくない','したい','したく','したです'], targets: [], difficulty: 1 },
+      { id: 'ex-tai-1', type: 'multiple-choice', prompt: '"I want to eat sushi" — choose correctly.', question: 'Choose.', choices: [{id:'a',text:'寿司を食べたい。'},{id:'b',text:'寿司を食べます。'},{id:'c',text:'寿司を食べました。'},{id:'d',text:'寿司を食べている。'}], correctChoiceId: 'a', targets: ['grammar-tai'], difficulty: 1 },
+      { id: 'ex-tai-2', type: 'fill-in-blank', prompt: 'Complete: 今日は何も___。(I don\'t want to do anything.)', sentenceTemplate: '今日は何も{{blank}}。', acceptedAnswers: ['したくない','したくないです'], wordBankOptions: ['したくない','したい','したく','したです'], targets: ['grammar-tai'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-tai-1', type: 'multiple-choice', prompt: 'ます-stem of 飲む + たい?', question: 'Choose.', choices: [{id:'a',text:'飲たい'},{id:'b',text:'飲みたい'},{id:'c',text:'飲うたい'},{id:'d',text:'飲んたい'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-tai-2', type: 'multiple-choice', prompt: 'Negative of 食べたいです?', question: 'Choose.', choices: [{id:'a',text:'食べたくないです'},{id:'b',text:'食べたません'},{id:'c',text:'食べたないです'},{id:'d',text:'食べたくいです'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-tai-3', type: 'fill-in-blank', prompt: 'Complete: 日本に___たいです。(I want to go to Japan.)', sentenceTemplate: '日本に{{blank}}たいです。', acceptedAnswers: ['行き'], wordBankOptions: ['行き','行く','行って','行い'], targets: [], difficulty: 1 },
+      { id: 'qz-tai-1', type: 'multiple-choice', prompt: 'ます-stem of 飲む + たい?', question: 'Choose.', choices: [{id:'a',text:'飲たい'},{id:'b',text:'飲みたい'},{id:'c',text:'飲うたい'},{id:'d',text:'飲んたい'}], correctChoiceId: 'b', targets: ['grammar-tai'], difficulty: 1 },
+      { id: 'qz-tai-2', type: 'multiple-choice', prompt: 'Negative of 食べたいです?', question: 'Choose.', choices: [{id:'a',text:'食べたくないです'},{id:'b',text:'食べたません'},{id:'c',text:'食べたないです'},{id:'d',text:'食べたくいです'}], correctChoiceId: 'a', targets: ['grammar-tai'], difficulty: 1 },
+      { id: 'qz-tai-3', type: 'fill-in-blank', prompt: 'Complete: 日本に___たいです。(I want to go to Japan.)', sentenceTemplate: '日本に{{blank}}たいです。', acceptedAnswers: ['行き'], wordBankOptions: ['行き','行く','行って','行い'], targets: ['grammar-tai'], difficulty: 1 },
     ],
   },
 
@@ -683,13 +683,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'Negative request: **〜ないでください** = "Please don\'t ~": タバコを吸わないでください (Please don\'t smoke).' },
     ],
     practiceExercises: [
-      { id: 'ex-tk-1', type: 'multiple-choice', prompt: '"Please sit down" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'座ってください。'},{id:'b',text:'座りてください。'},{id:'c',text:'座るください。'},{id:'d',text:'座いてください。'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-tk-2', type: 'fill-in-blank', prompt: '"Please listen" — complete.', sentenceTemplate: '{{blank}}ください。', acceptedAnswers: ['聞いて'], wordBankOptions: ['聞いて','聞くて','聞いた','きいて'], targets: [], difficulty: 1 },
+      { id: 'ex-tk-1', type: 'multiple-choice', prompt: '"Please sit down" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'座ってください。'},{id:'b',text:'座りてください。'},{id:'c',text:'座るください。'},{id:'d',text:'座いてください。'}], correctChoiceId: 'a', targets: ['grammar-te-kudasai'], difficulty: 1 },
+      { id: 'ex-tk-2', type: 'fill-in-blank', prompt: '"Please listen" — complete.', sentenceTemplate: '{{blank}}ください。', acceptedAnswers: ['聞いて'], wordBankOptions: ['聞いて','聞くて','聞いた','きいて'], targets: ['grammar-te-kudasai'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-tk-1', type: 'multiple-choice', prompt: '"Please don\'t run" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'走ってください。'},{id:'b',text:'走らないでください。'},{id:'c',text:'走らてください。'},{id:'d',text:'走りません。'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-tk-2', type: 'multiple-choice', prompt: '"Please speak in Japanese" — correct?', question: 'Choose.', choices: [{id:'a',text:'日本語で話してください。'},{id:'b',text:'日本語を話してください。'},{id:'c',text:'日本語に話してください。'},{id:'d',text:'日本語は話してください。'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'qz-tk-3', type: 'fill-in-blank', prompt: 'Complete: 静かに___ください。(Please be quiet.)', sentenceTemplate: '静かに{{blank}}ください。', acceptedAnswers: ['して'], wordBankOptions: ['して','した','する','し'], targets: [], difficulty: 1 },
+      { id: 'qz-tk-1', type: 'multiple-choice', prompt: '"Please don\'t run" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'走ってください。'},{id:'b',text:'走らないでください。'},{id:'c',text:'走らてください。'},{id:'d',text:'走りません。'}], correctChoiceId: 'b', targets: ['grammar-te-kudasai'], difficulty: 1 },
+      { id: 'qz-tk-2', type: 'multiple-choice', prompt: '"Please speak in Japanese" — correct?', question: 'Choose.', choices: [{id:'a',text:'日本語で話してください。'},{id:'b',text:'日本語を話してください。'},{id:'c',text:'日本語に話してください。'},{id:'d',text:'日本語は話してください。'}], correctChoiceId: 'a', targets: ['grammar-te-kudasai'], difficulty: 1 },
+      { id: 'qz-tk-3', type: 'fill-in-blank', prompt: 'Complete: 静かに___ください。(Please be quiet.)', sentenceTemplate: '静かに{{blank}}ください。', acceptedAnswers: ['して'], wordBankOptions: ['して','した','する','し'], targets: ['grammar-te-kudasai'], difficulty: 1 },
     ],
   },
 
@@ -705,13 +705,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: 'できる alone (without こと) expresses general ability: 料理ができる (can cook / is good at cooking).' },
     ],
     practiceExercises: [
-      { id: 'ex-kd-1', type: 'multiple-choice', prompt: '"I can swim" using ことができる — choose.', question: 'Choose.', choices: [{id:'a',text:'泳ぐことができます。'},{id:'b',text:'泳ぎことができます。'},{id:'c',text:'泳ぐができます。'},{id:'d',text:'泳ぐことします。'}], correctChoiceId: 'a', targets: [], difficulty: 1 },
-      { id: 'ex-kd-2', type: 'fill-in-blank', prompt: '"You cannot take photos here" — negate it.', sentenceTemplate: 'ここでは写真を撮ることが{{blank}}。', acceptedAnswers: ['できません'], wordBankOptions: ['できます','できません','できた','できて'], targets: [], difficulty: 1 },
+      { id: 'ex-kd-1', type: 'multiple-choice', prompt: '"I can swim" using ことができる — choose.', question: 'Choose.', choices: [{id:'a',text:'泳ぐことができます。'},{id:'b',text:'泳ぎことができます。'},{id:'c',text:'泳ぐができます。'},{id:'d',text:'泳ぐことします。'}], correctChoiceId: 'a', targets: ['grammar-koto-ga-dekiru'], difficulty: 1 },
+      { id: 'ex-kd-2', type: 'fill-in-blank', prompt: '"You cannot take photos here" — negate it.', sentenceTemplate: 'ここでは写真を撮ることが{{blank}}。', acceptedAnswers: ['できません'], wordBankOptions: ['できます','できません','できた','できて'], targets: ['grammar-koto-ga-dekiru'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-kd-1', type: 'multiple-choice', prompt: 'What comes before ことができる?', question: 'Choose.', choices: [{id:'a',text:'ます-form'},{id:'b',text:'て-form'},{id:'c',text:'dictionary form'},{id:'d',text:'た-form'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-kd-2', type: 'multiple-choice', prompt: '"Can you speak English?" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'英語を話しますか。'},{id:'b',text:'英語を話すことができますか。'},{id:'c',text:'英語ができますか。'},{id:'d',text:'Both b and c are natural'}], correctChoiceId: 'd', targets: [], difficulty: 2 },
-      { id: 'qz-kd-3', type: 'fill-in-blank', prompt: '"I can read kanji" — complete.', sentenceTemplate: '漢字を読む{{blank}}できます。', acceptedAnswers: ['ことが'], wordBankOptions: ['ことが','ことを','こと','が'], targets: [], difficulty: 1 },
+      { id: 'qz-kd-1', type: 'multiple-choice', prompt: 'What comes before ことができる?', question: 'Choose.', choices: [{id:'a',text:'ます-form'},{id:'b',text:'て-form'},{id:'c',text:'dictionary form'},{id:'d',text:'た-form'}], correctChoiceId: 'c', targets: ['grammar-koto-ga-dekiru'], difficulty: 1 },
+      { id: 'qz-kd-2', type: 'multiple-choice', prompt: '"Can you speak English?" in Japanese?', question: 'Choose.', choices: [{id:'a',text:'英語を話しますか。'},{id:'b',text:'英語を話すことができますか。'},{id:'c',text:'英語ができますか。'},{id:'d',text:'Both b and c are natural'}], correctChoiceId: 'd', targets: ['grammar-koto-ga-dekiru'], difficulty: 2 },
+      { id: 'qz-kd-3', type: 'fill-in-blank', prompt: '"I can read kanji" — complete.', sentenceTemplate: '漢字を読む{{blank}}できます。', acceptedAnswers: ['ことが'], wordBankOptions: ['ことが','ことを','こと','が'], targets: ['grammar-koto-ga-dekiru'], difficulty: 1 },
     ],
   },
 
@@ -727,13 +727,13 @@ export const n5Lessons: Record<string, Lesson> = {
       { type: 'tip', markdown: '一度も〜たことがない = "have never done even once". 何度も〜たことがある = "have done many times".' },
     ],
     practiceExercises: [
-      { id: 'ex-tka-1', type: 'multiple-choice', prompt: '"I have eaten sushi before" — choose.', question: 'Choose.', choices: [{id:'a',text:'寿司を食べました。'},{id:'b',text:'寿司を食べたことがあります。'},{id:'c',text:'寿司を食べています。'},{id:'d',text:'寿司を食べたいです。'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'ex-tka-2', type: 'fill-in-blank', prompt: '"I have never been to America."', sentenceTemplate: 'アメリカに行った{{blank}}ありません。', acceptedAnswers: ['ことが'], wordBankOptions: ['ことが','ことを','こと','が'], targets: [], difficulty: 1 },
+      { id: 'ex-tka-1', type: 'multiple-choice', prompt: '"I have eaten sushi before" — choose.', question: 'Choose.', choices: [{id:'a',text:'寿司を食べました。'},{id:'b',text:'寿司を食べたことがあります。'},{id:'c',text:'寿司を食べています。'},{id:'d',text:'寿司を食べたいです。'}], correctChoiceId: 'b', targets: ['grammar-ta-koto-ga-aru'], difficulty: 1 },
+      { id: 'ex-tka-2', type: 'fill-in-blank', prompt: '"I have never been to America."', sentenceTemplate: 'アメリカに行った{{blank}}ありません。', acceptedAnswers: ['ことが'], wordBankOptions: ['ことが','ことを','こと','が'], targets: ['grammar-ta-koto-ga-aru'], difficulty: 1 },
     ],
     quiz: [
-      { id: 'qz-tka-1', type: 'multiple-choice', prompt: 'What form of the verb goes before ことがある?', question: 'Choose.', choices: [{id:'a',text:'ます-form'},{id:'b',text:'て-form'},{id:'c',text:'た-form'},{id:'d',text:'dictionary form'}], correctChoiceId: 'c', targets: [], difficulty: 1 },
-      { id: 'qz-tka-2', type: 'multiple-choice', prompt: '"Have you ever been to Japan?" — choose.', question: 'Choose.', choices: [{id:'a',text:'日本に行きますか。'},{id:'b',text:'日本に行ったことがありますか。'},{id:'c',text:'日本に行っていますか。'},{id:'d',text:'日本に行きましたか。'}], correctChoiceId: 'b', targets: [], difficulty: 1 },
-      { id: 'qz-tka-3', type: 'fill-in-blank', prompt: 'Complete: 富士山に登った___あります。', sentenceTemplate: '富士山に登った{{blank}}あります。', acceptedAnswers: ['ことが'], wordBankOptions: ['ことが','ことを','こと','が'], targets: [], difficulty: 1 },
+      { id: 'qz-tka-1', type: 'multiple-choice', prompt: 'What form of the verb goes before ことがある?', question: 'Choose.', choices: [{id:'a',text:'ます-form'},{id:'b',text:'て-form'},{id:'c',text:'た-form'},{id:'d',text:'dictionary form'}], correctChoiceId: 'c', targets: ['grammar-ta-koto-ga-aru'], difficulty: 1 },
+      { id: 'qz-tka-2', type: 'multiple-choice', prompt: '"Have you ever been to Japan?" — choose.', question: 'Choose.', choices: [{id:'a',text:'日本に行きますか。'},{id:'b',text:'日本に行ったことがありますか。'},{id:'c',text:'日本に行っていますか。'},{id:'d',text:'日本に行きましたか。'}], correctChoiceId: 'b', targets: ['grammar-ta-koto-ga-aru'], difficulty: 1 },
+      { id: 'qz-tka-3', type: 'fill-in-blank', prompt: 'Complete: 富士山に登った___あります。', sentenceTemplate: '富士山に登った{{blank}}あります。', acceptedAnswers: ['ことが'], wordBankOptions: ['ことが','ことを','こと','が'], targets: ['grammar-ta-koto-ga-aru'], difficulty: 1 },
     ],
   },
 

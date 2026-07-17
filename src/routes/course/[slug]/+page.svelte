@@ -6,12 +6,40 @@
   import { n5Course } from '$lib/data/course/index.js';
   import { markLessonComplete, startLesson, getLessonStatus } from '$lib/stores/courseStore.js';
   import SpeakButton from '$lib/components/SpeakButton.svelte';
+  import { recordAll, type MasteryRef } from '$lib/stores/masteryStore';
   import type { TaleSegment } from '$lib/models/Course.js';
 
   // Rebuild a reading-tale sentence into its written form for TTS. Must match
   // the reconstruction in scripts/generate-tts.mjs so the clip lookup hits.
   function reconstructReading(segments: TaleSegment[]): string {
     return segments.map((s) => (Array.isArray(s) ? s[0] : s)).join('');
+  }
+
+  // ─── Mastery ──────────────────────────────────────────────────────────────
+  // An exercise's `targets` name what it drills, in a mixed id space: grammar
+  // point ids, vocab ids, or the character itself. Map each to a mastery item;
+  // targets naming a lesson (the reading comprehension questions) aren't a
+  // mastery item and are skipped.
+
+  const KANJI_RE = /^[一-鿿]$/;
+  const KANA_RE = /^[ぁ-んァ-ヶー]{1,2}$/;
+
+  function toMasteryRef(target: string): MasteryRef | null {
+    if (target.startsWith('grammar-')) return { kind: 'grammar', id: target };
+    if (target.startsWith('vocab-')) {
+      const ja = n5Course.vocabEntries[target]?.word?.ja;
+      return ja ? { kind: 'word', id: ja } : null;
+    }
+    if (KANJI_RE.test(target)) return { kind: 'kanji', id: target };
+    if (KANA_RE.test(target)) return { kind: 'kana', id: target };
+    return null;
+  }
+
+  function recordExercise(exercise: Exercise, correct: boolean): void {
+    const refs = (exercise.targets ?? [])
+      .map(toMasteryRef)
+      .filter((r): r is MasteryRef => r !== null);
+    recordAll(refs, correct);
   }
   import type {
     Lesson, ContentBlock, Exercise,
@@ -68,6 +96,7 @@
     const correct = checkAnswer(practiceExercise, practiceInput, practiceSelected, practiceAssembled);
     practiceResult = correct ? 'correct' : 'incorrect';
     if (correct) practiceCorrectCount++;
+    recordExercise(practiceExercise, correct);
   }
 
   async function nextPractice() {
@@ -116,6 +145,7 @@
     const correct = checkAnswer(quizExercise, quizInput, quizSelected, quizAssembled);
     quizResult = correct ? 'correct' : 'incorrect';
     if (correct) quizCorrectCount++;
+    recordExercise(quizExercise, correct);
   }
 
   async function nextQuiz() {
