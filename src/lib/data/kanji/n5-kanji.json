@@ -2757,5 +2757,25 @@
         "meaning": "England"
       }
     ]
+  },
+  {
+    "character": "駅",
+    "kun_yomi": [],
+    "on_yomi": [
+      "エキ"
+    ],
+    "meanings": [
+      "station"
+    ],
+    "examples": [
+      "駅 (えき) - train station"
+    ],
+    "words": [
+      {
+        "word": "駅",
+        "reading": "えき",
+        "meaning": "train station"
+      }
+    ]
   }
 ]
