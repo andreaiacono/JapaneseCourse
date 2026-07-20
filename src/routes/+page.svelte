@@ -6,91 +6,116 @@
   <section class="hero">
     <div class="hero-text">
       <h1>Japanese Study</h1>
-      <p class="tagline">Learn hiragana, katakana, and kanji — at your own pace.</p>
+      <p class="tagline">
+        Everything you need to reach JLPT N5 — the characters, the words, and a course that
+        ties them together. Work at your own pace, on any device, online or off.
+      </p>
     </div>
     <div class="hero-chars" aria-hidden="true">
-      <span>あ</span><span>ア</span><span>一</span>
+      <span>あ</span><span>ア</span><span>字</span>
     </div>
   </section>
 
-  <section class="features">
-    <a href="{base}/kana" class="feature-card">
-      <div class="feature-icon">📖</div>
-      <div class="feature-body">
-        <h2>Kana Reference</h2>
-        <p>
-          Browse the complete hiragana and katakana charts — basic, voiced (dakuten), and
-          combination (yōon) characters. Hover over any basic kana to hear its pronunciation.
-        </p>
-      </div>
-      <span class="feature-cta">Open reference →</span>
-    </a>
+  <!-- The learning path -->
+  <section class="path">
+    <div class="path-intro">
+      <h2>How to use this app</h2>
+      <p>
+        Three steps, in order. Learn the characters first, drill them until they stick, then let
+        the course build real Japanese on top. Come back to <a href="{base}/progress">Progress</a>
+        any time to see how far along each step you are.
+      </p>
+    </div>
 
-    <a href="{base}/kana-quiz" class="feature-card">
-      <div class="feature-icon">✏️</div>
-      <div class="feature-body">
-        <h2>Kana Quiz</h2>
-        <p>
-          Test your knowledge of hiragana and katakana. Choose which characters to practise,
-          then answer with multiple choice or by typing the romaji. Scores are tracked live
-          throughout the session.
-        </p>
-      </div>
-      <span class="feature-cta">Start quiz →</span>
-    </a>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Learn the kana</h3>
+          <p>
+            Hiragana and katakana are the two phonetic alphabets — <strong>208 characters</strong>
+            in all. You need them to read anything else here, so start with the reference to learn
+            the shapes, then drill with the quiz until you can read them on sight.
+          </p>
+          <div class="step-links">
+            <a href="{base}/kana">Kana Reference →</a>
+            <a href="{base}/kana-quiz">Kana Quiz →</a>
+          </div>
+        </div>
+      </li>
 
-    <a href="{base}/kanji" class="feature-card">
-      <div class="feature-icon">字</div>
-      <div class="feature-body">
-        <h2>Kanji Reference</h2>
-        <p>
-          Browse all JLPT N5 and N4 kanji in one place. Each entry shows the character,
-          its English meaning, and kun/on readings. Hover to hear the pronunciation.
-        </p>
-      </div>
-      <span class="feature-cta">Open reference →</span>
-    </a>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Build up kanji</h3>
+          <p>
+            The full <strong>294 kanji</strong> of JLPT N5 and N4, each with its meaning, readings,
+            and example words. This is a long track — keep drilling it in the quiz alongside the
+            course rather than trying to finish it first.
+          </p>
+          <div class="step-links">
+            <a href="{base}/kanji">Kanji Reference →</a>
+            <a href="{base}/kanji-quiz">Kanji Quiz →</a>
+          </div>
+        </div>
+      </li>
 
-    <a href="{base}/kanji-quiz" class="feature-card">
-      <div class="feature-icon">漢</div>
-      <div class="feature-body">
-        <h2>Kanji Quiz</h2>
-        <p>
-          Practise JLPT N5 and N4 kanji words. Two quiz types: <em>Reading</em> (see the
-          word, identify its meaning) or <em>Listening</em> (hear the audio, identify its
-          meaning). Multiple choice or typing — your call.
-        </p>
-      </div>
-      <span class="feature-cta">Start quiz →</span>
-    </a>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Follow the course</h3>
+          <p>
+            The structured spine: <strong>35 lessons</strong> across 9 chapters, from the writing
+            systems through grammar, verbs and adjectives. Every lesson has explanations, spoken
+            examples, practice, and a quiz. Grammar and vocabulary are introduced as you go.
+          </p>
+          <div class="step-links">
+            <a href="{base}/course">Start the course →</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-    <a href="{base}/course" class="feature-card feature-card--course">
-      <div class="feature-icon">🎓</div>
-      <div class="feature-body">
-        <h2>Structured Course</h2>
-        <p>
-          Follow a step-by-step N5 curriculum: writing systems, basic grammar, verbs,
-          adjectives, and more. Each lesson has explanations, practice exercises, and a
-          short quiz. Track your XP and daily streak.
-        </p>
-      </div>
-      <span class="feature-cta">Start learning →</span>
-    </a>
+  <!-- References, used on demand -->
+  <section class="refs">
+    <h2>References — dip in whenever you need them</h2>
+    <div class="ref-grid">
+      <a href="{base}/vocab" class="ref-card">
+        <span class="ref-icon">🗂️</span>
+        <span class="ref-title">Vocabulary</span>
+        <span class="ref-desc">135 N5 words with readings, meanings, and spoken examples.</span>
+      </a>
+      <a href="{base}/grammar" class="ref-card">
+        <span class="ref-icon">📐</span>
+        <span class="ref-title">Grammar</span>
+        <span class="ref-desc">25 N5 patterns — formation, usage, and compared forms.</span>
+      </a>
+      <a href="{base}/progress" class="ref-card">
+        <span class="ref-icon">📊</span>
+        <span class="ref-title">Progress</span>
+        <span class="ref-desc">What you've mastered across kana, kanji, grammar and the course.</span>
+      </a>
+      <a href="{base}/settings" class="ref-card">
+        <span class="ref-icon">⚙️</span>
+        <span class="ref-title">Settings</span>
+        <span class="ref-desc">Japanese font, and the voice and speed for spoken audio.</span>
+      </a>
+    </div>
   </section>
 
   <section class="about">
-    <h3>About this app</h3>
     <p>
-      Japanese Study is an offline-capable Progressive Web App (PWA). Once loaded, it works
-      without an internet connection — audio included. Install it to your home screen for
-      quick access.
+      Everything is voiced with neural text-to-speech, so you can hear any character, word or
+      sentence in a male or female voice at a speed you choose. The app is an installable,
+      offline-capable PWA — once loaded it works with no connection, audio included.
     </p>
   </section>
 </div>
 
 <style>
   .home {
-    max-width: 800px;
+    max-width: 820px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -103,20 +128,22 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 2rem 0 1rem;
+    padding: 2rem 0 0.5rem;
   }
 
   .hero-text h1 {
     font-size: 2.2rem;
     font-weight: 800;
-    margin: 0 0 0.4rem;
+    margin: 0 0 0.5rem;
     color: var(--text-dark);
   }
 
   .tagline {
-    font-size: 1.05rem;
-    color: var(--text-muted);
+    font-size: 1.02rem;
+    color: var(--text-secondary);
     margin: 0;
+    line-height: 1.55;
+    max-width: 46ch;
   }
 
   .hero-chars {
@@ -133,20 +160,106 @@
     line-height: 1;
   }
 
-  /* Feature cards */
-  .features {
+  /* Path */
+  .path-intro h2,
+  .refs h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0 0 0.4rem;
+    color: var(--text-dark);
+  }
+
+  .path-intro p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0 0 1.25rem;
+    line-height: 1.55;
+  }
+
+  .path-intro a,
+  .step-links a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .path-intro a:hover {
+    text-decoration: underline;
+  }
+
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .feature-card {
-    display: grid;
-    grid-template-columns: 3rem 1fr auto;
-    grid-template-rows: auto auto;
-    align-items: start;
-    gap: 0 1rem;
+  .step {
+    display: flex;
+    gap: 1.1rem;
     padding: 1.25rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--primary-text);
+    font-weight: 800;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-body {
+    flex: 1;
+  }
+
+  .step-body h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.1rem 0 0.4rem;
+    color: var(--text-dark);
+  }
+
+  .step-body p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.8rem;
+    line-height: 1.6;
+  }
+
+  .step-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .step-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* References */
+  .ref-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .ref-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem 1.15rem;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -155,51 +268,29 @@
     box-shadow: var(--shadow-card);
     transition:
       border-color 0.15s,
-      background 0.15s,
-      box-shadow 0.15s;
+      background 0.15s;
   }
 
-  .feature-card:hover {
+  .ref-card:hover {
     border-color: var(--border-focus);
     background: var(--bg-card-hover);
-    box-shadow: 0 4px 18px rgba(26, 115, 232, 0.12);
   }
 
-  .feature-icon {
-    grid-row: 1 / 3;
-    font-size: 1.9rem;
+  .ref-icon {
+    font-size: 1.4rem;
     line-height: 1;
-    padding-top: 0.1rem;
-    font-family: var(--japanese-font);
   }
 
-  .feature-body {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .feature-body h2 {
-    font-size: 1.1rem;
+  .ref-title {
+    font-size: 0.98rem;
     font-weight: 700;
-    margin: 0 0 0.3rem;
     color: var(--text-dark);
   }
 
-  .feature-body p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin: 0;
-    line-height: 1.55;
-  }
-
-  .feature-cta {
-    grid-column: 3;
-    grid-row: 1;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    white-space: nowrap;
-    align-self: center;
+  .ref-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.45;
   }
 
   /* About */
@@ -207,37 +298,15 @@
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 1.25rem 1.5rem;
+    padding: 1.15rem 1.5rem;
     box-shadow: var(--shadow-card);
   }
 
-  .about h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem;
-    color: var(--text-dark);
-  }
-
   .about p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-secondary);
     margin: 0;
-    line-height: 1.55;
-  }
-
-  .feature-card--course {
-    border-color: #7c3aed33;
-  }
-
-  .feature-card--course:hover {
-    border-color: #7c3aed;
-    background: #f5f3ff;
-    box-shadow: 0 4px 18px rgba(124, 58, 237, 0.12);
-  }
-
-  :global([data-theme='dark']) .feature-card--course:hover {
-    background: #1e1a2e;
-    box-shadow: 0 4px 18px rgba(124, 58, 237, 0.25);
+    line-height: 1.6;
   }
 
   /* Responsive */
@@ -249,15 +318,9 @@
       padding-top: 1rem;
     }
 
-    .feature-card {
-      grid-template-columns: 2.5rem 1fr;
-      grid-template-rows: auto auto auto;
-    }
-
-    .feature-cta {
-      grid-column: 2;
-      grid-row: 2;
-      margin-top: 0.4rem;
+    .step {
+      padding: 1.1rem 1.15rem;
+      gap: 0.85rem;
     }
   }
 </style>
