@@ -144,13 +144,28 @@ export const n5Chapters: Record<string, Chapter> = {
     color: '#5c6bc0',
   },
 
+  'chapter-suggestions-permission': {
+    id: 'chapter-suggestions-permission',
+    slug: 'suggestions-permission',
+    title: 'Suggestions & Permission',
+    description: 'Talk about ranges with 〜から/〜まで, make invitations with 〜ましょう/〜ませんか, and give or refuse permission with 〜てもいい/〜てはいけない.',
+    jlptLevel: 'N5',
+    order: 10,
+    lessons: [
+      'lesson-kara-made',
+      'lesson-invitations',
+      'lesson-permission',
+    ],
+    color: '#00897b',
+  },
+
   'chapter-reading': {
     id: 'chapter-reading',
     slug: 'reading-practice',
     title: 'Reading Practice',
     description: 'Read short tales written entirely in kana and N5 kanji you already know.',
     jlptLevel: 'N5',
-    order: 10,
+    order: 11,
     lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
     color: '#7c4dff',
   },
@@ -172,6 +187,7 @@ export const n5Unit: Unit = {
     'chapter-adjectives',
     'chapter-verbs-past-te',
     'chapter-want-ability',
+    'chapter-suggestions-permission',
     'chapter-reading',
   ],
 };

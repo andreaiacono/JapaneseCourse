@@ -875,4 +875,70 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     relatedPatterns: ['grammar-counters-generic', 'grammar-counter-nin'],
     tags: ['counter', 'objects', 'beginner'],
   },
+
+  'grammar-kara-made': {
+    id: 'grammar-kara-made',
+    title: '〜から・〜まで (from / until)',
+    jlptLevel: 'N5',
+    summary:
+      'から marks a starting point and まで an ending point — of time or of place. They are often used together.',
+    formation: 'Time/Place + から (from)  ·  Time/Place + まで (until / to)',
+    explanation:
+      'から attaches to the start of a range and まで to the end: 九時から五時まで (from nine to five), 東京から大阪まで (from Tokyo to Osaka). Either can be used alone — 三時まで待ちます (I’ll wait until three). Note that から also means "because" after a whole clause, which is a separate use.',
+    usageNotes: [
+      'から = from (start); まで = until / as far as (end). They pair naturally but each works alone.',
+      'Both attach directly to the time or place word, before other particles.',
+      'This から (from) is different from the から that means "because"; that one follows a full clause.',
+    ],
+    examples: [
+      { ja: '銀行は九時から三時までです。', furigana: 'ぎんこうはくじからさんじまでです。', romaji: 'Ginkō wa kuji kara sanji made desu.', en: 'The bank is open from nine to three.' },
+      { ja: '東京から大阪まで行きます。', furigana: 'とうきょうからおおさかまでいきます。', romaji: 'Tōkyō kara Ōsaka made ikimasu.', en: 'I will go from Tokyo to Osaka.' },
+    ],
+    relatedPatterns: ['grammar-ni-location', 'grammar-mashou'],
+    tags: ['particle', 'time', 'place', 'range', 'beginner'],
+  },
+
+  'grammar-mashou': {
+    id: 'grammar-mashou',
+    title: '〜ましょう・〜ませんか (let’s / shall we)',
+    jlptLevel: 'N5',
+    summary:
+      'Attach ましょう to a verb’s polite stem to suggest "let’s ~"; ませんか is a softer, more polite invitation.',
+    formation: 'Verb ます-stem + ましょう / ましょうか / ませんか',
+    explanation:
+      'Drop ます and add ましょう to propose doing something together: 行きましょう (let’s go). ましょうか offers to do something or asks "shall we?": 手伝いましょうか (shall I help?). ませんか is the gentlest invitation, literally "won’t you ~?": 一緒に食べませんか (won’t you eat with me?). All three build on the polite ます-form you already know.',
+    usageNotes: [
+      'ましょう = "let’s"; ましょうか = "shall I / shall we?"; ませんか = a soft invitation.',
+      'They use the same stem as ます: 飲みます → 飲みましょう / 飲みませんか.',
+      '一緒に (together) very often appears with these.',
+    ],
+    examples: [
+      { ja: '一緒に映画を見ましょう。', furigana: 'いっしょにえいがをみましょう。', romaji: 'Issho ni eiga o mimashō.', en: 'Let’s watch a movie together.' },
+      { ja: '週末、公園に行きませんか。', furigana: 'しゅうまつ、こうえんにいきませんか。', romaji: 'Shūmatsu, kōen ni ikimasen ka.', en: 'Won’t you go to the park this weekend?' },
+    ],
+    relatedPatterns: ['grammar-masu-form', 'grammar-kara-made', 'grammar-tai'],
+    tags: ['verb', 'invitation', 'suggestion', 'beginner'],
+  },
+
+  'grammar-temo-ii': {
+    id: 'grammar-temo-ii',
+    title: '〜てもいい・〜てはいけない (may / must not)',
+    jlptLevel: 'N5',
+    summary:
+      'Add もいいです to the て-form to give permission ("you may ~"), and はいけません to forbid ("you must not ~").',
+    formation: 'Verb て-form + もいいです (may)  ·  Verb て-form + はいけません (must not)',
+    explanation:
+      'The て-form plus もいいです grants or asks permission: 写真を撮ってもいいですか (may I take a photo?). The te-form plus はいけません states a prohibition: ここでタバコを吸ってはいけません (you must not smoke here). Both rest on the て-form, so make sure that is solid first. In casual speech はいけない shortens to ちゃだめ.',
+    usageNotes: [
+      '〜てもいいですか is the normal way to ask permission.',
+      '〜てはいけません is a firm prohibition; softer options exist but this is the N5 form.',
+      'Both attach to the て-form: 食べて → 食べてもいい / 食べてはいけない.',
+    ],
+    examples: [
+      { ja: 'ここで写真を撮ってもいいですか。', furigana: 'ここでしゃしんをとってもいいですか。', romaji: 'Koko de shashin o totte mo ii desu ka.', en: 'May I take a photo here?' },
+      { ja: 'ここでタバコを吸ってはいけません。', furigana: 'ここでタバコをすってはいけません。', romaji: 'Koko de tabako o sutte wa ikemasen.', en: 'You must not smoke here.' },
+    ],
+    relatedPatterns: ['grammar-te-form', 'grammar-te-kudasai'],
+    tags: ['verb', 'permission', 'prohibition', 'beginner'],
+  },
 };

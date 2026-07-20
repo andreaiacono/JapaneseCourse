@@ -864,4 +864,105 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // CHAPTER — Suggestions & Permission
+  // ═══════════════════════════════════════════
+
+  'lesson-kara-made': {
+    id: 'lesson-kara-made',
+    slug: 'kara-made',
+    title: '〜から・〜まで',
+    subtitle: 'From and until',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-kara-made'],
+    prerequisites: ['lesson-time'],
+    tags: ['particle', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: '**から** marks where something *starts* and **まで** where it *ends* — in time or in space. They pair up naturally, but each also works on its own.' },
+      { type: 'table', headers: ['Particle', 'Meaning', 'Example'], rows: [
+        ['から', 'from (start)', '九時から (from 9:00)'],
+        ['まで', 'until / to (end)', '五時まで (until 5:00)'],
+        ['から〜まで', 'from … to …', '月曜から金曜まで'],
+      ] },
+      { type: 'tip', markdown: 'Both attach directly to the time or place word. **三時まで待{ま}ちます** = "I’ll wait until three."' },
+      { type: 'warning', markdown: 'This から means "from". A different から, placed after a whole sentence, means **"because"** — don’t confuse them.' },
+      { type: 'example', sentence: { ja: '銀行は九時から三時までです。', furigana: 'ぎんこうはくじからさんじまでです。', romaji: 'Ginkō wa kuji kara sanji made desu.', en: 'The bank is open from nine to three.' } },
+      { type: 'example', sentence: { ja: '東京から大阪まで行きます。', furigana: 'とうきょうからおおさかまでいきます。', romaji: 'Tōkyō kara Ōsaka made ikimasu.', en: 'I will go from Tokyo to Osaka.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-km-1', type: 'multiple-choice', prompt: 'Which particle means "from (a starting point)"?', question: 'Choose.', choices: [{id:'a',text:'まで'},{id:'b',text:'から'},{id:'c',text:'に'},{id:'d',text:'で'}], correctChoiceId: 'b', explanation: 'から = from.', targets: ['grammar-kara-made'], difficulty: 1 },
+      { id: 'ex-km-2', type: 'fill-in-blank', prompt: 'Complete: 五時___待ちます。(I will wait until 5:00)', sentenceTemplate: '五時{{blank}}待ちます。', acceptedAnswers: ['まで'], wordBankOptions: ['まで','から','に','を'], targets: ['grammar-kara-made'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-km-1', type: 'multiple-choice', prompt: 'Which means "until / to (an end point)"?', question: 'Choose.', choices: [{id:'a',text:'から'},{id:'b',text:'まで'},{id:'c',text:'へ'},{id:'d',text:'と'}], correctChoiceId: 'b', targets: ['grammar-kara-made'], difficulty: 1 },
+      { id: 'qz-km-2', type: 'fill-in-blank', prompt: 'Complete: 銀行は九時___三時までです。(from 9:00)', sentenceTemplate: '銀行は九時{{blank}}三時までです。', acceptedAnswers: ['から'], wordBankOptions: ['から','まで','に','で'], targets: ['grammar-kara-made'], difficulty: 2 },
+      { id: 'qz-km-3', type: 'multiple-choice', prompt: 'The other から, placed after a full sentence, means…', question: 'Choose.', choices: [{id:'a',text:'until'},{id:'b',text:'because'},{id:'c',text:'together'},{id:'d',text:'but'}], correctChoiceId: 'b', explanation: 'Clause + から = because.', targets: ['grammar-kara-made'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-invitations': {
+    id: 'lesson-invitations',
+    slug: 'invitations',
+    title: '〜ましょう・〜ませんか',
+    subtitle: 'Let’s and shall we',
+    jlptLevel: 'N5',
+    estimatedMinutes: 13,
+    introduces: ['grammar-mashou'],
+    prerequisites: ['lesson-kara-made', 'lesson-masu-form'],
+    tags: ['verb', 'invitation', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'To suggest doing something together, take the polite **ます-stem** and swap the ending. All three forms build on the ます-form you already know.' },
+      { type: 'table', headers: ['Ending', 'Meaning', 'Example'], rows: [
+        ['〜ましょう', 'let’s ~', '行きましょう (let’s go)'],
+        ['〜ましょうか', 'shall I / shall we?', '手伝{てつだ}いましょうか'],
+        ['〜ませんか', 'won’t you ~? (soft)', '食べませんか'],
+      ] },
+      { type: 'tip', markdown: '**一緒{いっしょ}に** ("together") very often appears with these: 一緒{いっしょ}に行きましょう。' },
+      { type: 'example', sentence: { ja: '一緒に映画を見ましょう。', furigana: 'いっしょにえいがをみましょう。', romaji: 'Issho ni eiga o mimashō.', en: 'Let’s watch a movie together.' } },
+      { type: 'example', sentence: { ja: '週末、公園に行きませんか。', furigana: 'しゅうまつ、こうえんにいきませんか。', romaji: 'Shūmatsu, kōen ni ikimasen ka.', en: 'Won’t you go to the park this weekend?' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-inv-1', type: 'multiple-choice', prompt: 'How do you say "let’s go"?', question: 'Choose.', choices: [{id:'a',text:'行きます'},{id:'b',text:'行きましょう'},{id:'c',text:'行きたい'},{id:'d',text:'行きません'}], correctChoiceId: 'b', explanation: 'ます → ましょう', targets: ['grammar-mashou','vocab-iku'], difficulty: 1 },
+      { id: 'ex-inv-2', type: 'multiple-choice', prompt: 'Which is the softest invitation ("won’t you eat?")?', question: 'Choose.', choices: [{id:'a',text:'食べましょう'},{id:'b',text:'食べます'},{id:'c',text:'食べませんか'},{id:'d',text:'食べました'}], correctChoiceId: 'c', targets: ['grammar-mashou','vocab-taberu'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-inv-1', type: 'multiple-choice', prompt: '見ます → "let’s watch" is…', question: 'Choose.', choices: [{id:'a',text:'見ましょう'},{id:'b',text:'見ませんか'},{id:'c',text:'見たい'},{id:'d',text:'見ています'}], correctChoiceId: 'a', targets: ['grammar-mashou','vocab-miru'], difficulty: 1 },
+      { id: 'qz-inv-2', type: 'multiple-choice', prompt: 'Which word means "together"?', question: 'Choose.', choices: [{id:'a',text:'一緒{いっしょ}に'},{id:'b',text:'一人{ひとり}で'},{id:'c',text:'たぶん'},{id:'d',text:'まだ'}], correctChoiceId: 'a', targets: ['grammar-mashou','vocab-issho'], difficulty: 1 },
+      { id: 'qz-inv-3', type: 'fill-in-blank', prompt: 'Complete: 一緒{いっしょ}にコーヒーを飲み___。(let’s drink coffee)', sentenceTemplate: '一緒{いっしょ}にコーヒーを飲み{{blank}}。', acceptedAnswers: ['ましょう'], wordBankOptions: ['ましょう','ました','ません','たい'], targets: ['grammar-mashou','vocab-nomu'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-permission': {
+    id: 'lesson-permission',
+    slug: 'permission',
+    title: '〜てもいい・〜てはいけない',
+    subtitle: 'May and must not',
+    jlptLevel: 'N5',
+    estimatedMinutes: 14,
+    introduces: ['grammar-temo-ii'],
+    prerequisites: ['lesson-invitations', 'lesson-te-form'],
+    tags: ['verb', 'permission', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'Both patterns build on the **て-form**, so make sure that is solid first. Add one ending to give permission, the other to forbid.' },
+      { type: 'table', headers: ['Pattern', 'Meaning', 'Example'], rows: [
+        ['〜てもいいです', 'you may ~', '食べてもいいです'],
+        ['〜てもいいですか', 'may I ~?', '入{はい}ってもいいですか'],
+        ['〜てはいけません', 'you must not ~', '入{はい}ってはいけません'],
+      ] },
+      { type: 'tip', markdown: 'To ask permission, **〜てもいいですか** is the everyday phrase. In casual speech はいけない shortens to **ちゃだめ**.' },
+      { type: 'example', sentence: { ja: 'ここで写真を撮ってもいいですか。', furigana: 'ここでしゃしんをとってもいいですか。', romaji: 'Koko de shashin o totte mo ii desu ka.', en: 'May I take a photo here?' } },
+      { type: 'example', sentence: { ja: 'ここでタバコを吸ってはいけません。', furigana: 'ここでタバコをすってはいけません。', romaji: 'Koko de tabako o sutte wa ikemasen.', en: 'You must not smoke here.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-perm-1', type: 'multiple-choice', prompt: 'How do you ask "may I eat?"', question: 'Choose.', choices: [{id:'a',text:'食べてもいいですか'},{id:'b',text:'食べてはいけません'},{id:'c',text:'食べましょう'},{id:'d',text:'食べたいです'}], correctChoiceId: 'a', targets: ['grammar-temo-ii','vocab-taberu'], difficulty: 1 },
+      { id: 'ex-perm-2', type: 'multiple-choice', prompt: 'Which means "you must not smoke"?', question: 'Choose.', choices: [{id:'a',text:'吸{す}ってもいいです'},{id:'b',text:'吸{す}ってはいけません'},{id:'c',text:'吸{す}いましょう'},{id:'d',text:'吸{す}いたいです'}], correctChoiceId: 'b', explanation: 'てはいけません = must not.', targets: ['grammar-temo-ii'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-perm-1', type: 'multiple-choice', prompt: '〜てもいいです expresses…', question: 'Choose.', choices: [{id:'a',text:'permission'},{id:'b',text:'prohibition'},{id:'c',text:'a wish'},{id:'d',text:'the past'}], correctChoiceId: 'a', targets: ['grammar-temo-ii'], difficulty: 1 },
+      { id: 'qz-perm-2', type: 'multiple-choice', prompt: 'Both patterns are built from which verb form?', question: 'Choose.', choices: [{id:'a',text:'the て-form'},{id:'b',text:'the ます-stem'},{id:'c',text:'the past た-form'},{id:'d',text:'the dictionary form'}], correctChoiceId: 'a', targets: ['grammar-temo-ii','grammar-te-form'], difficulty: 2 },
+      { id: 'qz-perm-3', type: 'fill-in-blank', prompt: 'Complete: ここで写真を撮{と}って___ですか。(may I take a photo?)', sentenceTemplate: 'ここで写真を撮{と}って{{blank}}ですか。', acceptedAnswers: ['もいい'], wordBankOptions: ['もいい','はいけない','ました','たい'], targets: ['grammar-temo-ii'], difficulty: 2 },
+    ],
+  },
+
 };

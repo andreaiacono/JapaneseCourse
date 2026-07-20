@@ -1671,4 +1671,26 @@ export const n5Vocab: Record<string, VocabEntry> = {
     ],
   },
 
+  'vocab-issho': {
+    id: 'vocab-issho',
+    word: { ja: '一緒に', reading: 'いっしょに', romaji: 'issho ni', en: 'together' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'N5'],
+    exampleSentences: [
+      { ja: '一緒に行きましょう。', furigana: 'いっしょにいきましょう。', romaji: 'Issho ni ikimashō.', en: 'Let’s go together.' },
+    ],
+  },
+
+  'vocab-shuumatsu': {
+    id: 'vocab-shuumatsu',
+    word: { ja: '週末', reading: 'しゅうまつ', romaji: 'shūmatsu', en: 'weekend' },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '週末は忙しいです。', furigana: 'しゅうまつはいそがしいです。', romaji: 'Shūmatsu wa isogashii desu.', en: 'I am busy on the weekend.' },
+    ],
+  },
+
 };
