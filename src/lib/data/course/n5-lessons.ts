@@ -965,4 +965,105 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // CHAPTER — Comparing & Connecting
+  // ═══════════════════════════════════════════
+
+  'lesson-kara-node': {
+    id: 'lesson-kara-node',
+    slug: 'kara-node',
+    title: '〜から・〜ので',
+    subtitle: 'Giving reasons',
+    jlptLevel: 'N5',
+    estimatedMinutes: 13,
+    introduces: ['grammar-kara-node'],
+    prerequisites: ['lesson-masu-form'],
+    tags: ['conjunction', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'To give a reason, put **から** or **ので** after the reason clause. The reason comes first, then the result: *A から B* means "B because A".' },
+      { type: 'table', headers: ['Ending', 'Feel', 'Example'], rows: [
+        ['〜から', 'direct reason', '高いから、買いません'],
+        ['〜ので', 'softer, polite', '忙{いそが}しいので、行きません'],
+      ] },
+      { type: 'tip', markdown: 'な-adjectives and nouns take **なので**: 静{しず}かなので、いいです。 Not だので.' },
+      { type: 'warning', markdown: 'This から means "because" and follows a whole clause. The から that means "from" follows a time or place — don’t mix them up.' },
+      { type: 'example', sentence: { ja: 'このかばんは高いから、買いません。', furigana: 'このかばんはたかいから、かいません。', romaji: 'Kono kaban wa takai kara, kaimasen.', en: 'This bag is expensive, so I won’t buy it.' } },
+      { type: 'example', sentence: { ja: '今日は忙しいので、行きません。', furigana: 'きょうはいそがしいので、いきません。', romaji: 'Kyō wa isogashii node, ikimasen.', en: 'I’m busy today, so I won’t go.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-kn-1', type: 'multiple-choice', prompt: 'Which pair of particles both mean "because"?', question: 'Choose.', choices: [{id:'a',text:'から・ので'},{id:'b',text:'から・まで'},{id:'c',text:'が・けど'},{id:'d',text:'に・で'}], correctChoiceId: 'a', targets: ['grammar-kara-node'], difficulty: 1 },
+      { id: 'ex-kn-2', type: 'fill-in-blank', prompt: 'Complete: 高い___、買いません。(because expensive)', sentenceTemplate: '高い{{blank}}、買いません。', acceptedAnswers: ['から','ので'], wordBankOptions: ['から','まで','が','に'], targets: ['grammar-kara-node'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-kn-1', type: 'multiple-choice', prompt: 'Which is the softer, more polite "because"?', question: 'Choose.', choices: [{id:'a',text:'から'},{id:'b',text:'ので'},{id:'c',text:'けど'},{id:'d',text:'まで'}], correctChoiceId: 'b', targets: ['grammar-kara-node'], difficulty: 1 },
+      { id: 'qz-kn-2', type: 'multiple-choice', prompt: 'In "A から B", which part is the reason?', question: 'Choose.', choices: [{id:'a',text:'A'},{id:'b',text:'B'},{id:'c',text:'neither'},{id:'d',text:'both'}], correctChoiceId: 'a', explanation: 'The reason comes before から.', targets: ['grammar-kara-node'], difficulty: 2 },
+      { id: 'qz-kn-3', type: 'fill-in-blank', prompt: 'Complete: 今日は忙{いそが}しい___、行きません。(because busy)', sentenceTemplate: '今日は忙{いそが}しい{{blank}}、行きません。', acceptedAnswers: ['ので','から'], wordBankOptions: ['ので','まで','けど','に'], targets: ['grammar-kara-node','vocab-isogashii'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-ga-kedo': {
+    id: 'lesson-ga-kedo',
+    slug: 'ga-kedo',
+    title: '〜が・〜けど',
+    subtitle: 'Saying "but"',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-ga-kedo'],
+    prerequisites: ['lesson-kara-node', 'lesson-masu-form'],
+    tags: ['conjunction', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'To join two clauses that contrast, put **が** or **けど** at the end of the first one: "…, but …". They mean the same thing — **が** is neutral, **けど** is more casual.' },
+      { type: 'table', headers: ['Ending', 'Register', 'Example'], rows: [
+        ['〜ですが、', 'neutral / polite', '高いですが、買います'],
+        ['〜けど、', 'casual', '難{むずか}しいけど、面白{おもしろ}い'],
+      ] },
+      { type: 'tip', markdown: 'This が is a conjunction ("but") — not the subject-marking particle が. Context makes the difference clear.' },
+      { type: 'example', sentence: { ja: 'この本は高いですが、買います。', furigana: 'このほんはたかいですが、かいます。', romaji: 'Kono hon wa takai desu ga, kaimasu.', en: 'This book is expensive, but I’ll buy it.' } },
+      { type: 'example', sentence: { ja: '日本語は難しいけど、面白いです。', furigana: 'にほんごはむずかしいけど、おもしろいです。', romaji: 'Nihongo wa muzukashii kedo, omoshiroi desu.', en: 'Japanese is hard, but it’s interesting.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-gk-1', type: 'multiple-choice', prompt: 'Which two words both mean "but"?', question: 'Choose.', choices: [{id:'a',text:'が・けど'},{id:'b',text:'から・ので'},{id:'c',text:'と・や'},{id:'d',text:'は・が'}], correctChoiceId: 'a', targets: ['grammar-ga-kedo'], difficulty: 1 },
+      { id: 'ex-gk-2', type: 'fill-in-blank', prompt: 'Complete: 高いです___、買います。(but I will buy it)', sentenceTemplate: '高いです{{blank}}、買います。', acceptedAnswers: ['が'], wordBankOptions: ['が','から','ので','まで'], targets: ['grammar-ga-kedo'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-gk-1', type: 'multiple-choice', prompt: 'Which is the more casual "but"?', question: 'Choose.', choices: [{id:'a',text:'が'},{id:'b',text:'けど'},{id:'c',text:'ので'},{id:'d',text:'まで'}], correctChoiceId: 'b', targets: ['grammar-ga-kedo'], difficulty: 1 },
+      { id: 'qz-gk-2', type: 'multiple-choice', prompt: 'Which sentence means "It’s hard, but interesting"?', question: 'Choose.', choices: [{id:'a',text:'難{むずか}しいけど、面白{おもしろ}いです'},{id:'b',text:'難{むずか}しいから、面白{おもしろ}いです'},{id:'c',text:'難{むずか}しいので、面白{おもしろ}いです'},{id:'d',text:'難{むずか}しいまで、面白{おもしろ}いです'}], correctChoiceId: 'a', targets: ['grammar-ga-kedo','vocab-muzukashii'], difficulty: 2 },
+      { id: 'qz-gk-3', type: 'fill-in-blank', prompt: 'Complete: この本は高いです___、買います。(but)', sentenceTemplate: 'この本は高いです{{blank}}、買います。', acceptedAnswers: ['が'], wordBankOptions: ['が','から','ので','に'], targets: ['grammar-ga-kedo'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-comparison': {
+    id: 'lesson-comparison',
+    slug: 'comparison',
+    title: '〜より・〜のほうが・一番',
+    subtitle: 'Comparing things',
+    jlptLevel: 'N5',
+    estimatedMinutes: 15,
+    introduces: ['grammar-comparison'],
+    prerequisites: ['lesson-ga-kedo', 'lesson-i-adjectives'],
+    tags: ['comparison', 'adjective', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: '**より** means "than", **のほうが** points to the one that is "more", and **一番{いちばん}** marks the top of a group — "most".' },
+      { type: 'table', headers: ['Pattern', 'Meaning', 'Example'], rows: [
+        ['A は B より [adj]', 'A is more [adj] than B', '東京は大阪{おおさか}より大きい'],
+        ['B より A のほうが [adj]', 'A is the more [adj] one', '車より電車のほうが速{はや}い'],
+        ['A と B と どちらが [adj]?', 'which is more [adj]?', 'コーヒーとお茶とどちらが好き?'],
+        ['〜が 一番{いちばん} [adj]', 'most [adj]', '何が一番{いちばん}好き?'],
+      ] },
+      { type: 'tip', markdown: 'Use **どちら** to ask about two things. For three or more, use 何 or どれ: この中でどれが一番{いちばん}いいですか。' },
+      { type: 'example', sentence: { ja: '東京は大阪より大きいです。', furigana: 'とうきょうはおおさかよりおおきいです。', romaji: 'Tōkyō wa Ōsaka yori ōkii desu.', en: 'Tokyo is bigger than Osaka.' } },
+      { type: 'example', sentence: { ja: 'コーヒーとお茶とどちらが好きですか。', furigana: 'コーヒーとおちゃとどちらがすきですか。', romaji: 'Kōhī to ocha to dochira ga suki desu ka.', en: 'Which do you like, coffee or tea?' } },
+      { type: 'example', sentence: { ja: '何が一番好きですか。', furigana: 'なにがいちばんすきですか。', romaji: 'Nani ga ichiban suki desu ka.', en: 'What do you like the most?' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-cmp-1', type: 'multiple-choice', prompt: 'Which particle means "than"?', question: 'Choose.', choices: [{id:'a',text:'のほうが'},{id:'b',text:'より'},{id:'c',text:'一番{いちばん}'},{id:'d',text:'どちら'}], correctChoiceId: 'b', targets: ['grammar-comparison'], difficulty: 1 },
+      { id: 'ex-cmp-2', type: 'fill-in-blank', prompt: 'Complete: 何が___好きですか。(what do you like most?)', sentenceTemplate: '何が{{blank}}好きですか。', acceptedAnswers: ['一番','いちばん'], wordBankOptions: ['一番','より','のほうが','どちら'], targets: ['grammar-comparison','vocab-ichiban'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-cmp-1', type: 'multiple-choice', prompt: 'Which word means "most / number one"?', question: 'Choose.', choices: [{id:'a',text:'より'},{id:'b',text:'一番{いちばん}'},{id:'c',text:'のほう'},{id:'d',text:'どちら'}], correctChoiceId: 'b', targets: ['grammar-comparison','vocab-ichiban'], difficulty: 1 },
+      { id: 'qz-cmp-2', type: 'multiple-choice', prompt: 'How do you ask "which do you like, A or B"?', question: 'Choose.', choices: [{id:'a',text:'AとBとどちらが好きですか'},{id:'b',text:'AとBと一番{いちばん}好きですか'},{id:'c',text:'AはBより好きですか'},{id:'d',text:'AとBとどれが好きですか'}], correctChoiceId: 'a', targets: ['grammar-comparison','vocab-dochira'], difficulty: 2 },
+      { id: 'qz-cmp-3', type: 'fill-in-blank', prompt: 'Complete: 東京は大阪{おおさか}___大きいです。(bigger than Osaka)', sentenceTemplate: '東京は大阪{おおさか}{{blank}}大きいです。', acceptedAnswers: ['より'], wordBankOptions: ['より','のほうが','一番','から'], targets: ['grammar-comparison'], difficulty: 2 },
+    ],
+  },
+
 };

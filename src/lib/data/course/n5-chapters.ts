@@ -159,13 +159,28 @@ export const n5Chapters: Record<string, Chapter> = {
     color: '#00897b',
   },
 
+  'chapter-comparing-connecting': {
+    id: 'chapter-comparing-connecting',
+    slug: 'comparing-connecting',
+    title: 'Comparing & Connecting',
+    description: 'Give reasons with 〜から/〜ので, contrast with 〜が/〜けど, and compare things with 〜より, 〜のほうが and 一番.',
+    jlptLevel: 'N5',
+    order: 11,
+    lessons: [
+      'lesson-kara-node',
+      'lesson-ga-kedo',
+      'lesson-comparison',
+    ],
+    color: '#c2185b',
+  },
+
   'chapter-reading': {
     id: 'chapter-reading',
     slug: 'reading-practice',
     title: 'Reading Practice',
     description: 'Read short tales written entirely in kana and N5 kanji you already know.',
     jlptLevel: 'N5',
-    order: 11,
+    order: 12,
     lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
     color: '#7c4dff',
   },
@@ -188,6 +203,7 @@ export const n5Unit: Unit = {
     'chapter-verbs-past-te',
     'chapter-want-ability',
     'chapter-suggestions-permission',
+    'chapter-comparing-connecting',
     'chapter-reading',
   ],
 };

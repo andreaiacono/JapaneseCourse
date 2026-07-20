@@ -1693,4 +1693,48 @@ export const n5Vocab: Record<string, VocabEntry> = {
     ],
   },
 
+  'vocab-ichiban': {
+    id: 'vocab-ichiban',
+    word: { ja: '一番', reading: 'いちばん', romaji: 'ichiban', en: 'most; best; number one' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'comparison', 'N5'],
+    exampleSentences: [
+      { ja: '何が一番好きですか。', furigana: 'なにがいちばんすきですか。', romaji: 'Nani ga ichiban suki desu ka.', en: 'What do you like the most?' },
+    ],
+  },
+
+  'vocab-dochira': {
+    id: 'vocab-dochira',
+    word: { ja: 'どちら', reading: 'どちら', romaji: 'dochira', en: 'which (of two); which way' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['question', 'comparison', 'N5'],
+    exampleSentences: [
+      { ja: '犬と猫とどちらが好きですか。', furigana: 'いぬとねことどちらがすきですか。', romaji: 'Inu to neko to dochira ga suki desu ka.', en: 'Which do you like, dogs or cats?' },
+    ],
+  },
+
+  'vocab-muzukashii': {
+    id: 'vocab-muzukashii',
+    word: { ja: '難しい', reading: 'むずかしい', romaji: 'muzukashii', en: 'difficult' },
+    wordClass: 'i-adjective',
+    jlptLevel: 'N5',
+    tags: ['i-adjective', 'N5'],
+    exampleSentences: [
+      { ja: 'この漢字は難しいです。', furigana: 'このかんじはむずかしいです。', romaji: 'Kono kanji wa muzukashii desu.', en: 'This kanji is difficult.' },
+    ],
+  },
+
+  'vocab-isogashii': {
+    id: 'vocab-isogashii',
+    word: { ja: '忙しい', reading: 'いそがしい', romaji: 'isogashii', en: 'busy' },
+    wordClass: 'i-adjective',
+    jlptLevel: 'N5',
+    tags: ['i-adjective', 'N5'],
+    exampleSentences: [
+      { ja: '今日はとても忙しいです。', furigana: 'きょうはとてもいそがしいです。', romaji: 'Kyō wa totemo isogashii desu.', en: 'I am very busy today.' },
+    ],
+  },
+
 };

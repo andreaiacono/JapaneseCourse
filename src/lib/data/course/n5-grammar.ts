@@ -941,4 +941,71 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     relatedPatterns: ['grammar-te-form', 'grammar-te-kudasai'],
     tags: ['verb', 'permission', 'prohibition', 'beginner'],
   },
+
+  'grammar-kara-node': {
+    id: 'grammar-kara-node',
+    title: '〜から・〜ので (because)',
+    jlptLevel: 'N5',
+    summary:
+      'Put から or ので after a clause to give a reason. から is more direct; ので is softer and more polite.',
+    formation: 'Clause + から  ·  Plain clause + ので  (な-adjective / noun + なので)',
+    explanation:
+      'から and ので both mean "because", attached to the end of the reason clause: 高いから、買いません (it’s expensive, so I won’t buy it). から can follow either the polite or plain form and states a reason plainly. ので takes the plain form and sounds gentler and more explanatory — good for excuses and polite requests. With な-adjectives and nouns, ので becomes なので: 静{しず}かなので… . Note this から (because, after a clause) is different from から meaning "from" after a time or place.',
+    usageNotes: [
+      'The reason comes first, then から/ので, then the result: A から B = "B because A".',
+      'ので is softer than から and pairs well with polite requests and excuses.',
+      'な-adjectives and nouns take なので, not だので.',
+    ],
+    examples: [
+      { ja: 'このかばんは高いから、買いません。', furigana: 'このかばんはたかいから、かいません。', romaji: 'Kono kaban wa takai kara, kaimasen.', en: 'This bag is expensive, so I won’t buy it.' },
+      { ja: '今日は忙しいので、行きません。', furigana: 'きょうはいそがしいので、いきません。', romaji: 'Kyō wa isogashii node, ikimasen.', en: 'I’m busy today, so I won’t go.' },
+    ],
+    relatedPatterns: ['grammar-ga-kedo', 'grammar-kara-made'],
+    tags: ['conjunction', 'reason', 'because', 'beginner'],
+  },
+
+  'grammar-ga-kedo': {
+    id: 'grammar-ga-kedo',
+    title: '〜が・〜けど (but)',
+    jlptLevel: 'N5',
+    summary:
+      'Join two clauses with が or けど to show contrast — "…, but …". けど is the more casual of the two.',
+    formation: 'Clause + が, Clause  ·  Clause + けど, Clause',
+    explanation:
+      'が and けど link two clauses where the second contrasts with the first: 高いですが、買います (it’s expensive, but I’ll buy it). が is neutral and works in polite writing and speech; けど (and the fuller けれど / けれども) is more conversational. Both come at the end of the first clause. This が is a conjunction — different from the subject-marking particle が.',
+    usageNotes: [
+      'が / けど attach to the end of the first clause: 〜ですが、〜 / 〜だけど、〜.',
+      'けど is more casual; が is safe in any register.',
+      'Sometimes the second clause is left unsaid as a soft, trailing "but…".',
+    ],
+    examples: [
+      { ja: 'この本は高いですが、買います。', furigana: 'このほんはたかいですが、かいます。', romaji: 'Kono hon wa takai desu ga, kaimasu.', en: 'This book is expensive, but I’ll buy it.' },
+      { ja: '日本語は難しいけど、面白いです。', furigana: 'にほんごはむずかしいけど、おもしろいです。', romaji: 'Nihongo wa muzukashii kedo, omoshiroi desu.', en: 'Japanese is hard, but it’s interesting.' },
+    ],
+    relatedPatterns: ['grammar-kara-node'],
+    tags: ['conjunction', 'contrast', 'but', 'beginner'],
+  },
+
+  'grammar-comparison': {
+    id: 'grammar-comparison',
+    title: '〜より・〜のほうが・一番 (comparison)',
+    jlptLevel: 'N5',
+    summary:
+      'Compare two things with より (than) and のほうが (the … one is more); mark the top of a group with 一番 (most).',
+    formation: 'A は B より [adj]  ·  B より A のほうが [adj]  ·  A と B と どちらが [adj]?  ·  〜が 一番 [adj]',
+    explanation:
+      'より means "than" and attaches to the thing being surpassed: 東京は大阪より大きいです (Tokyo is bigger than Osaka). のほうが highlights the one that is more: 電車のほうが速いです (the train is the faster one). To ask which of two, use AとBとどちらが〜: コーヒーとお茶とどちらが好きですか. For the superlative, 一番 (いちばん) means "most / number one": 何が一番好きですか (what do you like most?).',
+    usageNotes: [
+      'より attaches to the standard being beaten: A は B より [adj] = "A is more [adj] than B".',
+      'どちら asks about two things; use 何 / どれ for three or more.',
+      '一番 before an adjective or verb makes the superlative: 一番高い (the most expensive).',
+    ],
+    examples: [
+      { ja: '東京は大阪より大きいです。', furigana: 'とうきょうはおおさかよりおおきいです。', romaji: 'Tōkyō wa Ōsaka yori ōkii desu.', en: 'Tokyo is bigger than Osaka.' },
+      { ja: 'コーヒーとお茶とどちらが好きですか。', furigana: 'コーヒーとおちゃとどちらがすきですか。', romaji: 'Kōhī to ocha to dochira ga suki desu ka.', en: 'Which do you like, coffee or tea?' },
+      { ja: '何が一番好きですか。', furigana: 'なにがいちばんすきですか。', romaji: 'Nani ga ichiban suki desu ka.', en: 'What do you like the most?' },
+    ],
+    relatedPatterns: ['grammar-i-adjective', 'grammar-ga-suki'],
+    tags: ['comparison', 'adjective', 'superlative', 'beginner'],
+  },
 };
