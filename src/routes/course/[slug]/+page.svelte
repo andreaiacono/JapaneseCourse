@@ -311,7 +311,7 @@
               <div class="block-table-wrapper">
                 <table class="block-table">
                   <thead>
-                    <tr>{#each block.headers as h}<th>{h}</th>{/each}</tr>
+                    <tr>{#each block.headers as h}<th>{@html renderRuby(h)}</th>{/each}</tr>
                   </thead>
                   <tbody>
                     {#each block.rows as row}
@@ -504,7 +504,7 @@
                 {#if practiceResult === 'correct'}
                   ✓ Correct!
                 {:else}
-                  ✗ Incorrect — Correct answer: <strong class="japanese">{getCorrectText(practiceExercise)}</strong>
+                  ✗ Incorrect — Correct answer: <strong class="japanese">{@html renderRuby(getCorrectText(practiceExercise))}</strong>
                 {/if}
                 {#if practiceExercise.explanation}
                   <p class="result-explanation">{@html renderRuby(practiceExercise.explanation)}</p>
@@ -633,7 +633,7 @@
                 {#if quizResult === 'correct'}
                   ✓ Correct!
                 {:else}
-                  ✗ Incorrect — Correct answer: <strong class="japanese">{getCorrectText(quizExercise)}</strong>
+                  ✗ Incorrect — Correct answer: <strong class="japanese">{@html renderRuby(getCorrectText(quizExercise))}</strong>
                 {/if}
                 {#if quizExercise.explanation}
                   <p class="result-explanation">{@html renderRuby(quizExercise.explanation)}</p>

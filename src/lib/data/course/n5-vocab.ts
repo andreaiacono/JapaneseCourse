@@ -1561,4 +1561,114 @@ export const n5Vocab: Record<string, VocabEntry> = {
     ],
   },
 
+  'vocab-hitotsu': {
+    id: 'vocab-hitotsu',
+    word: { ja: '一つ', reading: 'ひとつ', romaji: 'hitotsu', en: 'one (thing)' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'number', 'N5'],
+    exampleSentences: [
+      { ja: 'りんごを一つください。', furigana: 'りんごをひとつください。', romaji: 'Ringo o hitotsu kudasai.', en: 'One apple, please.' },
+    ],
+  },
+
+  'vocab-futatsu': {
+    id: 'vocab-futatsu',
+    word: { ja: '二つ', reading: 'ふたつ', romaji: 'futatsu', en: 'two (things)' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'number', 'N5'],
+    exampleSentences: [
+      { ja: 'パンを二つ買いました。', furigana: 'パンをふたつかいました。', romaji: 'Pan o futatsu kaimashita.', en: 'I bought two pieces of bread.' },
+    ],
+  },
+
+  'vocab-ikutsu': {
+    id: 'vocab-ikutsu',
+    word: { ja: 'いくつ', reading: 'いくつ', romaji: 'ikutsu', en: 'how many; how old' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['counter', 'question', 'N5'],
+    exampleSentences: [
+      { ja: 'みかんはいくつありますか。', furigana: 'みかんはいくつありますか。', romaji: 'Mikan wa ikutsu arimasu ka.', en: 'How many mandarins are there?' },
+    ],
+  },
+
+  'vocab-hitori': {
+    id: 'vocab-hitori',
+    word: { ja: '一人', reading: 'ひとり', romaji: 'hitori', en: 'one person; alone' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '一人で行きます。', furigana: 'ひとりでいきます。', romaji: 'Hitori de ikimasu.', en: 'I will go alone.' },
+    ],
+  },
+
+  'vocab-futari': {
+    id: 'vocab-futari',
+    word: { ja: '二人', reading: 'ふたり', romaji: 'futari', en: 'two people' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '兄が二人います。', furigana: 'あにがふたりいます。', romaji: 'Ani ga futari imasu.', en: 'I have two older brothers.' },
+    ],
+  },
+
+  'vocab-nannin': {
+    id: 'vocab-nannin',
+    word: { ja: '何人', reading: 'なんにん', romaji: 'nannin', en: 'how many people' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['counter', 'people', 'question', 'N5'],
+    exampleSentences: [
+      { ja: '家族は何人ですか。', furigana: 'かぞくはなんにんですか。', romaji: 'Kazoku wa nannin desu ka.', en: 'How many people are in your family?' },
+    ],
+  },
+
+  'vocab-counter-mai': {
+    id: 'vocab-counter-mai',
+    word: { ja: '枚', reading: 'まい', romaji: 'mai', en: 'counter for flat objects' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'objects', 'N5'],
+    exampleSentences: [
+      { ja: '紙を五枚ください。', furigana: 'かみをごまいください。', romaji: 'Kami o gomai kudasai.', en: 'Five sheets of paper, please.' },
+    ],
+  },
+
+  'vocab-counter-hon': {
+    id: 'vocab-counter-hon',
+    word: { ja: '本', reading: 'ほん', romaji: 'hon', en: 'counter for long, thin objects' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'objects', 'N5'],
+    exampleSentences: [
+      { ja: 'ビールを二本ください。', furigana: 'ビールをにほんください。', romaji: 'Bīru o nihon kudasai.', en: 'Two beers, please.' },
+    ],
+  },
+
+  'vocab-counter-hiki': {
+    id: 'vocab-counter-hiki',
+    word: { ja: '匹', reading: 'ひき', romaji: 'hiki', en: 'counter for small animals' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'animals', 'N5'],
+    exampleSentences: [
+      { ja: '猫が三匹います。', furigana: 'ねこがさんびきいます。', romaji: 'Neko ga sanbiki imasu.', en: 'There are three cats.' },
+    ],
+  },
+
+  'vocab-counter-dai': {
+    id: 'vocab-counter-dai',
+    word: { ja: '台', reading: 'だい', romaji: 'dai', en: 'counter for machines and vehicles' },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'machines', 'N5'],
+    exampleSentences: [
+      { ja: '車が一台あります。', furigana: 'くるまがいちだいあります。', romaji: 'Kuruma ga ichidai arimasu.', en: 'There is one car.' },
+    ],
+  },
+
 };

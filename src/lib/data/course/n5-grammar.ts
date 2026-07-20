@@ -809,4 +809,70 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     relatedPatterns: ['grammar-mo-particle', 'grammar-no-possessive', 'grammar-arimasu-imasu'],
     tags: ['particle', 'and', 'with', 'listing', 'comitative', 'beginner'],
   },
+
+  'grammar-counters-generic': {
+    id: 'grammar-counters-generic',
+    title: '〜つ (generic counter)',
+    jlptLevel: 'N5',
+    summary:
+      'The native-Japanese counter 〜つ counts most things when no specific counter fits — ひとつ, ふたつ, みっつ… up to とお (10).',
+    formation: 'ひとつ / ふたつ / みっつ … ここのつ / とお',
+    explanation:
+      'Japanese counts different kinds of thing with different counters, but 〜つ is the safe general-purpose one for objects up to ten. Its readings are irregular and must be memorised: ひとつ (1), ふたつ (2), みっつ (3), よっつ (4), いつつ (5), むっつ (6), ななつ (7), やっつ (8), ここのつ (9), とお (10 — no つ). Beyond ten, switch to the Chinese numbers plus 〜個 (じゅういっこ) or another counter. To ask "how many?" use いくつ.',
+    usageNotes: [
+      'The counter comes after the noun and its particle: りんごを三つ食べました (I ate three apples).',
+      'とお (10) drops the つ and is the only two-syllable form.',
+      'When you do not know the right specific counter, 〜つ is almost always acceptable for objects.',
+    ],
+    examples: [
+      { ja: 'りんごを三つください。', furigana: 'りんごをみっつください。', romaji: 'Ringo o mittsu kudasai.', en: 'Three apples, please.' },
+      { ja: 'いくつありますか。', furigana: 'いくつありますか。', romaji: 'Ikutsu arimasu ka.', en: 'How many are there?' },
+    ],
+    relatedPatterns: ['grammar-counter-nin', 'grammar-counters-objects'],
+    tags: ['counter', 'number', 'beginner'],
+  },
+
+  'grammar-counter-nin': {
+    id: 'grammar-counter-nin',
+    title: '〜人 (counting people)',
+    jlptLevel: 'N5',
+    summary:
+      'People are counted with 〜人 (にん), but "one person" and "two people" are irregular: ひとり and ふたり.',
+    formation: 'Number + 人 (にん)  —  一人 ひとり / 二人 ふたり / 三人 さんにん …',
+    explanation:
+      'From three onward the counter is regular — さんにん, よにん (note よ, not よん), ごにん, and so on. Only 一人 (ひとり) and 二人 (ふたり) are irregular, and they are extremely common. "How many people?" is 何人 (なんにん).',
+    usageNotes: [
+      '一人 ひとり and 二人 ふたり are irregular; memorise them as words.',
+      '4 people is よにん, not よんにん.',
+      '一人で (ひとりで) means "alone / by oneself".',
+    ],
+    examples: [
+      { ja: '学生が三人います。', furigana: 'がくせいがさんにんいます。', romaji: 'Gakusei ga sannin imasu.', en: 'There are three students.' },
+      { ja: '兄が二人います。', furigana: 'あにがふたりいます。', romaji: 'Ani ga futari imasu.', en: 'I have two older brothers.' },
+    ],
+    relatedPatterns: ['grammar-counters-generic', 'grammar-arimasu-imasu'],
+    tags: ['counter', 'people', 'beginner'],
+  },
+
+  'grammar-counters-objects': {
+    id: 'grammar-counters-objects',
+    title: '〜枚・〜本・〜匹・〜台 (object counters)',
+    jlptLevel: 'N5',
+    summary:
+      'Specific counters describe an object’s shape: 〜枚 flat things, 〜本 long things, 〜匹 small animals, 〜台 machines.',
+    formation: 'Number + Counter  —  一枚 / 二本 / 三匹 / 四台',
+    explanation:
+      '〜枚 (まい) counts flat, thin things (paper, shirts, tickets) and is regular. 〜本 (ほん) counts long, thin things (pens, bottles, umbrellas) and changes sound: いっぽん, さんぼん, ろっぽん, じゅっぽん. 〜匹 (ひき) counts small animals and changes too: いっぴき, さんびき, ろっぴき. 〜台 (だい) counts machines and vehicles and is regular. The sound changes on 〜本 and 〜匹 follow the same pattern and are worth learning together.',
+    usageNotes: [
+      '〜本 and 〜匹 change sound after 1, 3, 6, 8, 10 — いっぽん / さんぼん, いっぴき / さんびき.',
+      'The counter follows the noun and its particle: ビールを二本ください.',
+      'Use 〜枚 for shirts and dishes too, not only paper.',
+    ],
+    examples: [
+      { ja: 'ビールを二本ください。', furigana: 'ビールをにほんください。', romaji: 'Bīru o nihon kudasai.', en: 'Two beers, please.' },
+      { ja: '犬が三匹います。', furigana: 'いぬがさんびきいます。', romaji: 'Inu ga sanbiki imasu.', en: 'There are three dogs.' },
+    ],
+    relatedPatterns: ['grammar-counters-generic', 'grammar-counter-nin'],
+    tags: ['counter', 'objects', 'beginner'],
+  },
 };

@@ -52,13 +52,28 @@ export const n5Chapters: Record<string, Chapter> = {
     color: '#f4b400',
   },
 
+  'chapter-counters': {
+    id: 'chapter-counters',
+    slug: 'counters',
+    title: 'Counting Things',
+    description: 'Count objects, people, and animals with the generic 〜つ counter and the shaped counters 〜人, 〜枚, 〜本, 〜匹, 〜台.',
+    jlptLevel: 'N5',
+    order: 4,
+    lessons: [
+      'lesson-counters-tsu',
+      'lesson-counters-nin',
+      'lesson-counters-objects',
+    ],
+    color: '#e8710a',
+  },
+
   'chapter-existence-location': {
     id: 'chapter-existence-location',
     slug: 'existence-location',
     title: 'Existence & Location',
     description: 'Say where things and people are using あります, います, and location particles.',
     jlptLevel: 'N5',
-    order: 4,
+    order: 5,
     lessons: [
       'lesson-arimasu-imasu',
       'lesson-ni-de-location',
@@ -73,7 +88,7 @@ export const n5Chapters: Record<string, Chapter> = {
     title: 'Verbs — Present',
     description: 'Learn verb groups, polite present 〜ます, negative 〜ません, and the object particle を.',
     jlptLevel: 'N5',
-    order: 5,
+    order: 6,
     lessons: [
       'lesson-verb-groups',
       'lesson-masu-form',
@@ -89,7 +104,7 @@ export const n5Chapters: Record<string, Chapter> = {
     title: 'Adjectives',
     description: 'Use い-adjectives, な-adjectives, and their past tense forms.',
     jlptLevel: 'N5',
-    order: 6,
+    order: 7,
     lessons: [
       'lesson-i-adjectives',
       'lesson-na-adjectives',
@@ -104,7 +119,7 @@ export const n5Chapters: Record<string, Chapter> = {
     title: 'Verbs — Past & Te-form',
     description: 'Form past tense 〜た/〜ました, master the て-form, and use 〜ている.',
     jlptLevel: 'N5',
-    order: 7,
+    order: 8,
     lessons: [
       'lesson-ta-form',
       'lesson-te-form',
@@ -119,7 +134,7 @@ export const n5Chapters: Record<string, Chapter> = {
     title: 'Want & Ability',
     description: 'Express wants, requests, ability, and past experience.',
     jlptLevel: 'N5',
-    order: 8,
+    order: 9,
     lessons: [
       'lesson-tai',
       'lesson-te-kudasai',
@@ -135,7 +150,7 @@ export const n5Chapters: Record<string, Chapter> = {
     title: 'Reading Practice',
     description: 'Read short tales written entirely in kana and N5 kanji you already know.',
     jlptLevel: 'N5',
-    order: 9,
+    order: 10,
     lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
     color: '#7c4dff',
   },
@@ -151,6 +166,7 @@ export const n5Unit: Unit = {
     'chapter-writing',
     'chapter-basic-sentences',
     'chapter-numbers-time',
+    'chapter-counters',
     'chapter-existence-location',
     'chapter-verbs-present',
     'chapter-adjectives',

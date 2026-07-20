@@ -737,4 +737,131 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // CHAPTER — Counting Things
+  // ═══════════════════════════════════════════
+
+  'lesson-counters-tsu': {
+    id: 'lesson-counters-tsu',
+    slug: 'counters-tsu',
+    title: 'The Generic Counter 〜つ',
+    subtitle: 'Counting one to ten',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-counters-generic'],
+    prerequisites: ['lesson-numbers'],
+    tags: ['counter', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'Japanese counts different kinds of thing with different words, but **〜つ** is the safe general-purpose counter for objects up to ten. Its readings are irregular, so they have to be memorised — but you will use them constantly.' },
+      { type: 'table', headers: ['Number', 'Counter', 'Reading'], rows: [
+        ['1', '一つ', 'ひとつ'],
+        ['2', '二つ', 'ふたつ'],
+        ['3', '三つ', 'みっつ'],
+        ['4', '四つ', 'よっつ'],
+        ['5', '五つ', 'いつつ'],
+        ['6', '六つ', 'むっつ'],
+        ['7', '七つ', 'ななつ'],
+        ['8', '八つ', 'やっつ'],
+        ['9', '九つ', 'ここのつ'],
+        ['10', '十', 'とお'],
+      ] },
+      { type: 'tip', markdown: '**とお** (10) is the odd one out — it drops the つ entirely. To ask "how many?", use **いくつ**.' },
+      { type: 'warning', markdown: 'Past ten, 〜つ is no longer used. Switch to the Chinese numbers with a counter such as 〜個{こ} (じゅういっこ = 11).' },
+      { type: 'example', sentence: { ja: 'りんごを三つください。', furigana: 'りんごをみっつください。', romaji: 'Ringo o mittsu kudasai.', en: 'Three apples, please.' } },
+      { type: 'example', sentence: { ja: '卵は九つあります。', furigana: 'たまごはここのつあります。', romaji: 'Tamago wa kokonotsu arimasu.', en: 'There are nine eggs.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-ctsu-1', type: 'multiple-choice', prompt: 'How do you read 三つ?', question: 'Choose.', choices: [{id:'a',text:'さんつ'},{id:'b',text:'みつ'},{id:'c',text:'みっつ'},{id:'d',text:'みつつ'}], correctChoiceId: 'c', explanation: '三つ = みっつ', targets: ['grammar-counters-generic'], difficulty: 1 },
+      { id: 'ex-ctsu-2', type: 'fill-in-blank', prompt: 'How do you say "10 (things)"?', sentenceTemplate: '10 = {{blank}}', acceptedAnswers: ['とお'], wordBankOptions: ['とお','じゅうつ','とおつ','とう'], explanation: 'とお drops the つ.', targets: ['grammar-counters-generic'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-ctsu-1', type: 'multiple-choice', prompt: 'Which reading is correct for 四つ?', question: 'Choose.', choices: [{id:'a',text:'よんつ'},{id:'b',text:'よっつ'},{id:'c',text:'しつ'},{id:'d',text:'よつ'}], correctChoiceId: 'b', targets: ['grammar-counters-generic'], difficulty: 1 },
+      { id: 'qz-ctsu-2', type: 'multiple-choice', prompt: 'How do you ask "how many?" with the generic counter?', question: 'Choose.', choices: [{id:'a',text:'いくら'},{id:'b',text:'なんつ'},{id:'c',text:'いくつ'},{id:'d',text:'どれ'}], correctChoiceId: 'c', targets: ['grammar-counters-generic'], difficulty: 1 },
+      { id: 'qz-ctsu-3', type: 'fill-in-blank', prompt: 'Complete: りんごを___ください。(three apples)', sentenceTemplate: 'りんごを{{blank}}ください。', acceptedAnswers: ['三つ','みっつ'], wordBankOptions: ['三つ','三人','三本','三匹'], targets: ['grammar-counters-generic'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-counters-nin': {
+    id: 'lesson-counters-nin',
+    slug: 'counters-nin',
+    title: 'Counting People 〜人',
+    subtitle: 'The irregular ひとり and ふたり',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-counter-nin'],
+    prerequisites: ['lesson-counters-tsu'],
+    tags: ['counter', 'people', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'People are counted with **〜人 (にん)**. From three onward it is completely regular — only **一人** and **二人** are irregular, and they are two of the most common words in the language.' },
+      { type: 'table', headers: ['Number', 'People', 'Reading'], rows: [
+        ['1', '一人', 'ひとり'],
+        ['2', '二人', 'ふたり'],
+        ['3', '三人', 'さんにん'],
+        ['4', '四人', 'よにん'],
+        ['5', '五人', 'ごにん'],
+        ['6', '六人', 'ろくにん'],
+        ['7', '七人', 'ななにん'],
+        ['8', '八人', 'はちにん'],
+        ['9', '九人', 'きゅうにん'],
+        ['10', '十人', 'じゅうにん'],
+      ] },
+      { type: 'warning', markdown: 'Four people is **よにん**, not よんにん — one of the few places 四 is read よ.' },
+      { type: 'tip', markdown: '**一人で (ひとりで)** means "alone / by oneself". To ask "how many people?", use **何人 (なんにん)**.' },
+      { type: 'example', sentence: { ja: '学生が三人います。', furigana: 'がくせいがさんにんいます。', romaji: 'Gakusei ga sannin imasu.', en: 'There are three students.' } },
+      { type: 'example', sentence: { ja: '家族は四人です。', furigana: 'かぞくはよにんです。', romaji: 'Kazoku wa yonin desu.', en: 'There are four people in my family.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-cnin-1', type: 'multiple-choice', prompt: 'How do you read 二人?', question: 'Choose.', choices: [{id:'a',text:'ににん'},{id:'b',text:'ふたり'},{id:'c',text:'にじん'},{id:'d',text:'ふたにん'}], correctChoiceId: 'b', explanation: '二人 = ふたり (irregular)', targets: ['grammar-counter-nin','vocab-futari'], difficulty: 1 },
+      { id: 'ex-cnin-2', type: 'fill-in-blank', prompt: 'How do you say "4 people"?', sentenceTemplate: '4人 = {{blank}}', acceptedAnswers: ['よにん'], wordBankOptions: ['よにん','よんにん','しにん','よんじん'], explanation: '四人 = よにん', targets: ['grammar-counter-nin'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-cnin-1', type: 'multiple-choice', prompt: 'Which is "one person / alone"?', question: 'Choose.', choices: [{id:'a',text:'ひとつ'},{id:'b',text:'いちにん'},{id:'c',text:'ひとり'},{id:'d',text:'ひとりで'}], correctChoiceId: 'c', targets: ['grammar-counter-nin','vocab-hitori'], difficulty: 1 },
+      { id: 'qz-cnin-2', type: 'multiple-choice', prompt: 'How do you ask "how many people?"', question: 'Choose.', choices: [{id:'a',text:'いくつ'},{id:'b',text:'何人'},{id:'c',text:'何本'},{id:'d',text:'いくら'}], correctChoiceId: 'b', explanation: '何人 = なんにん', targets: ['grammar-counter-nin','vocab-nannin'], difficulty: 1 },
+      { id: 'qz-cnin-3', type: 'fill-in-blank', prompt: 'Complete: 学生が___います。(three students)', sentenceTemplate: '学生が{{blank}}います。', acceptedAnswers: ['三人','さんにん'], wordBankOptions: ['三人','三つ','三匹','三枚'], targets: ['grammar-counter-nin'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-counters-objects': {
+    id: 'lesson-counters-objects',
+    slug: 'counters-objects',
+    title: 'Object Counters 〜枚・〜本・〜匹・〜台',
+    subtitle: 'Counting by shape',
+    jlptLevel: 'N5',
+    estimatedMinutes: 15,
+    introduces: ['grammar-counters-objects'],
+    prerequisites: ['lesson-counters-nin'],
+    tags: ['counter', 'objects', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'Specific counters describe an object by its **shape**. Four cover most everyday things:' },
+      { type: 'table', headers: ['Counter', 'Used for', 'Example'], rows: [
+        ['〜枚{まい}', 'flat, thin things', '紙、シャツ、切符{きっぷ}'],
+        ['〜本', 'long, thin things', 'ペン、ビール、傘{かさ}'],
+        ['〜匹{ひき}', 'small animals', '犬、猫{ねこ}、魚'],
+        ['〜台', 'machines & vehicles', '車、テレビ、パソコン'],
+      ] },
+      { type: 'text', markdown: '**〜枚{まい}** and **〜台** are regular. But **〜本** and **〜匹{ひき}** change sound after 1, 3, 6, 8 and 10 — and they change in the same way, so learn them together.' },
+      { type: 'table', headers: ['Number', '〜本 (long)', '〜匹{ひき} (animals)'], rows: [
+        ['1', 'いっぽん', 'いっぴき'],
+        ['2', 'にほん', 'にひき'],
+        ['3', 'さんぼん', 'さんびき'],
+        ['6', 'ろっぽん', 'ろっぴき'],
+        ['8', 'はっぽん', 'はっぴき'],
+        ['10', 'じゅっぽん', 'じゅっぴき'],
+      ] },
+      { type: 'tip', markdown: 'The pattern is the same for both: **1・6・8・10 → small tsu + p** (いっぽん / いっぴき), and **3 → voiced** (さんぼん / さんびき).' },
+      { type: 'example', sentence: { ja: 'ビールを二本ください。', furigana: 'ビールをにほんください。', romaji: 'Bīru o nihon kudasai.', en: 'Two beers, please.' } },
+      { type: 'example', sentence: { ja: '犬が三匹います。', furigana: 'いぬがさんびきいます。', romaji: 'Inu ga sanbiki imasu.', en: 'There are three dogs.' } },
+      { type: 'example', sentence: { ja: '車が一台あります。', furigana: 'くるまがいちだいあります。', romaji: 'Kuruma ga ichidai arimasu.', en: 'There is one car.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-cobj-1', type: 'multiple-choice', prompt: 'Which counter is used for a dog?', question: 'Choose.', choices: [{id:'a',text:'〜枚{まい}'},{id:'b',text:'〜本'},{id:'c',text:'〜匹{ひき}'},{id:'d',text:'〜台'}], correctChoiceId: 'c', explanation: '匹{ひき} counts small animals.', targets: ['grammar-counters-objects','vocab-counter-hiki'], difficulty: 1 },
+      { id: 'ex-cobj-2', type: 'multiple-choice', prompt: 'How do you read 三本?', question: 'Choose.', choices: [{id:'a',text:'さんほん'},{id:'b',text:'さんぼん'},{id:'c',text:'さんぽん'},{id:'d',text:'みほん'}], correctChoiceId: 'b', explanation: '三本 = さんぼん (voiced)', targets: ['grammar-counters-objects','vocab-counter-hon'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-cobj-1', type: 'multiple-choice', prompt: 'Which counter is used for sheets of paper?', question: 'Choose.', choices: [{id:'a',text:'〜枚{まい}'},{id:'b',text:'〜本'},{id:'c',text:'〜匹{ひき}'},{id:'d',text:'〜台'}], correctChoiceId: 'a', targets: ['grammar-counters-objects','vocab-counter-mai'], difficulty: 1 },
+      { id: 'qz-cobj-2', type: 'multiple-choice', prompt: 'How do you read 一本?', question: 'Choose.', choices: [{id:'a',text:'いちほん'},{id:'b',text:'いっぽん'},{id:'c',text:'いっほん'},{id:'d',text:'ひとほん'}], correctChoiceId: 'b', explanation: '一本 = いっぽん', targets: ['grammar-counters-objects','vocab-counter-hon'], difficulty: 2 },
+      { id: 'qz-cobj-3', type: 'fill-in-blank', prompt: 'Complete: ビールを二___ください。(two bottles of beer)', sentenceTemplate: 'ビールを二{{blank}}ください。', acceptedAnswers: ['本','ほん'], wordBankOptions: ['本','枚','匹','台'], targets: ['grammar-counters-objects','vocab-counter-hon'], difficulty: 2 },
+    ],
+  },
+
 };
