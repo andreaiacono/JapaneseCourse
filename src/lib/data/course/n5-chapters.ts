@@ -189,13 +189,28 @@ export const n5Chapters: Record<string, Chapter> = {
     color: '#6d4c41',
   },
 
+  'chapter-particles-questions': {
+    id: 'chapter-particles-questions',
+    slug: 'particles-questions',
+    title: 'Particles & Questions',
+    description: 'Add the direction particle 〜へ and the listing particle 〜や, ask with question words, and colour speech with 〜ね/〜よ.',
+    jlptLevel: 'N5',
+    order: 13,
+    lessons: [
+      'lesson-he-ya',
+      'lesson-question-words',
+      'lesson-ne-yo',
+    ],
+    color: '#3949ab',
+  },
+
   'chapter-reading': {
     id: 'chapter-reading',
     slug: 'reading-practice',
     title: 'Reading Practice',
     description: 'Read short tales written entirely in kana and N5 kanji you already know.',
     jlptLevel: 'N5',
-    order: 13,
+    order: 14,
     lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
     color: '#7c4dff',
   },
@@ -220,6 +235,7 @@ export const n5Unit: Unit = {
     'chapter-suggestions-permission',
     'chapter-comparing-connecting',
     'chapter-time-sequence',
+    'chapter-particles-questions',
     'chapter-reading',
   ],
 };

@@ -1169,4 +1169,108 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // CHAPTER — Particles & Questions
+  // ═══════════════════════════════════════════
+
+  'lesson-he-ya': {
+    id: 'lesson-he-ya',
+    slug: 'he-ya',
+    title: '〜へ・〜や',
+    subtitle: 'Two more particles',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-he', 'grammar-ya'],
+    prerequisites: ['lesson-ni-de-location'],
+    tags: ['particle', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'Two small but common particles: **へ** marks the direction you’re heading, and **や** lists a few examples of something.' },
+      { type: 'table', headers: ['Particle', 'Meaning', 'Example'], rows: [
+        ['へ', 'to / toward (direction)', '学校へ行きます'],
+        ['や', 'and (examples, not all)', '本やペン'],
+      ] },
+      { type: 'tip', markdown: 'As a particle, **へ** is read **"e"**, not "he". And **や** implies "…and others", while **と** means "…and that’s the complete list".' },
+      { type: 'example', sentence: { ja: '学校へ行きます。', furigana: 'がっこうへいきます。', romaji: 'Gakkō e ikimasu.', en: 'I go to school.' } },
+      { type: 'example', sentence: { ja: 'かばんの中に本やペンがあります。', furigana: 'かばんのなかにほんやペンがあります。', romaji: 'Kaban no naka ni hon ya pen ga arimasu.', en: 'There are books, pens, and so on in the bag.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-hy-1', type: 'multiple-choice', prompt: 'As a particle, へ is pronounced…', question: 'Choose.', choices: [{id:'a',text:'"he"'},{id:'b',text:'"e"'},{id:'c',text:'"we"'},{id:'d',text:'"ha"'}], correctChoiceId: 'b', targets: ['grammar-he'], difficulty: 1 },
+      { id: 'ex-hy-2', type: 'multiple-choice', prompt: 'Which particle implies "…and others" (an incomplete list)?', question: 'Choose.', choices: [{id:'a',text:'と'},{id:'b',text:'や'},{id:'c',text:'も'},{id:'d',text:'へ'}], correctChoiceId: 'b', targets: ['grammar-ya'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-hy-1', type: 'fill-in-blank', prompt: 'Complete: 日本___行きます。(go to Japan — direction)', sentenceTemplate: '日本{{blank}}行きます。', acceptedAnswers: ['へ','に'], wordBankOptions: ['へ','を','や','で'], targets: ['grammar-he'], difficulty: 1 },
+      { id: 'qz-hy-2', type: 'fill-in-blank', prompt: 'Complete: 肉___魚を食べます。(meat, fish, and such)', sentenceTemplate: '肉{{blank}}魚を食べます。', acceptedAnswers: ['や'], wordBankOptions: ['や','へ','を','に'], targets: ['grammar-ya','vocab-niku'], difficulty: 2 },
+      { id: 'qz-hy-3', type: 'multiple-choice', prompt: 'Which sentence means "there are books, pens, etc."?', question: 'Choose.', choices: [{id:'a',text:'本やペンがあります'},{id:'b',text:'本とペンがあります'},{id:'c',text:'本へペンがあります'},{id:'d',text:'本もペンがあります'}], correctChoiceId: 'a', targets: ['grammar-ya'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-question-words': {
+    id: 'lesson-question-words',
+    slug: 'question-words',
+    title: 'Question Words',
+    subtitle: 'だれ・なに・どこ・いつ…',
+    jlptLevel: 'N5',
+    estimatedMinutes: 14,
+    introduces: ['grammar-question-words'],
+    prerequisites: ['lesson-he-ya', 'lesson-ka-question'],
+    tags: ['question', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'Japanese doesn’t reorder a sentence to ask a question — it swaps the unknown part for a **question word** and adds か. The question word keeps the same particle the noun would have taken.' },
+      { type: 'table', headers: ['Word', 'Meaning', 'Example'], rows: [
+        ['だれ', 'who', 'だれですか'],
+        ['なに / なん', 'what', '何を食べますか'],
+        ['いつ', 'when', 'いつ来ますか'],
+        ['どこ', 'where', 'どこへ行きますか'],
+        ['どうして', 'why', 'どうしてですか'],
+        ['どう', 'how', 'どうですか'],
+        ['いくら', 'how much', 'いくらですか'],
+        ['どれ', 'which (of 3+)', 'どれですか'],
+      ] },
+      { type: 'tip', markdown: 'The question word takes the same particle as the missing noun: **何を**, **どこへ**, **だれと**. And note: いくつ = "how many"; いくら = "how much (money)".' },
+      { type: 'example', sentence: { ja: 'これはだれの本ですか。', furigana: 'これはだれのほんですか。', romaji: 'Kore wa dare no hon desu ka.', en: 'Whose book is this?' } },
+      { type: 'example', sentence: { ja: 'どこへ行きますか。', furigana: 'どこへいきますか。', romaji: 'Doko e ikimasu ka.', en: 'Where are you going?' } },
+      { type: 'example', sentence: { ja: 'どうして日本語を勉強しますか。', furigana: 'どうしてにほんごをべんきょうしますか。', romaji: 'Dōshite nihongo o benkyō shimasu ka.', en: 'Why do you study Japanese?' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-qw-1', type: 'multiple-choice', prompt: 'Which word means "where"?', question: 'Choose.', choices: [{id:'a',text:'だれ'},{id:'b',text:'いつ'},{id:'c',text:'どこ'},{id:'d',text:'なに'}], correctChoiceId: 'c', targets: ['grammar-question-words','vocab-doko'], difficulty: 1 },
+      { id: 'ex-qw-2', type: 'fill-in-blank', prompt: 'Complete: ___日本へ行きますか。(when)', sentenceTemplate: '{{blank}}日本へ行きますか。', acceptedAnswers: ['いつ'], wordBankOptions: ['いつ','どこ','だれ','どう'], targets: ['grammar-question-words','vocab-itsu'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-qw-1', type: 'multiple-choice', prompt: 'Which word means "why"?', question: 'Choose.', choices: [{id:'a',text:'どう'},{id:'b',text:'どうして'},{id:'c',text:'どれ'},{id:'d',text:'いくら'}], correctChoiceId: 'b', targets: ['grammar-question-words','vocab-doushite'], difficulty: 1 },
+      { id: 'qz-qw-2', type: 'multiple-choice', prompt: 'いくら asks about…', question: 'Choose.', choices: [{id:'a',text:'how much (money)'},{id:'b',text:'how many things'},{id:'c',text:'when'},{id:'d',text:'which one'}], correctChoiceId: 'a', targets: ['grammar-question-words','vocab-ikura'], difficulty: 2 },
+      { id: 'qz-qw-3', type: 'fill-in-blank', prompt: 'Complete: これは___の本ですか。(whose?)', sentenceTemplate: 'これは{{blank}}の本ですか。', acceptedAnswers: ['だれ'], wordBankOptions: ['だれ','どこ','いつ','どれ'], targets: ['grammar-question-words'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-ne-yo': {
+    id: 'lesson-ne-yo',
+    slug: 'ne-yo',
+    title: '〜ね・〜よ',
+    subtitle: 'Sentence-final particles',
+    jlptLevel: 'N5',
+    estimatedMinutes: 11,
+    introduces: ['grammar-ne-yo'],
+    prerequisites: ['lesson-question-words'],
+    tags: ['particle', 'conversation', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'These little particles go at the very end of a sentence and colour it. **ね** seeks agreement; **よ** tells the listener something new.' },
+      { type: 'table', headers: ['Particle', 'Feeling', 'Example'], rows: [
+        ['ね', '…, right? (seeks agreement)', 'いい天気ですね'],
+        ['よ', '…, you know (new info)', '安いですよ'],
+      ] },
+      { type: 'tip', markdown: 'Use **ね** when you expect the listener to agree, and **よ** when you’re telling them something they may not know. Leaving them off isn’t wrong — just flatter.' },
+      { type: 'example', sentence: { ja: '今日はいい天気ですね。', furigana: 'きょうはいいてんきですね。', romaji: 'Kyō wa ii tenki desu ne.', en: 'The weather is nice today, isn’t it?' } },
+      { type: 'example', sentence: { ja: 'この本はとても面白いですよ。', furigana: 'このほんはとてもおもしろいですよ。', romaji: 'Kono hon wa totemo omoshiroi desu yo.', en: 'This book is really interesting, you know.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-ny-1', type: 'multiple-choice', prompt: 'Which particle seeks the listener’s agreement ("…, right?")?', question: 'Choose.', choices: [{id:'a',text:'よ'},{id:'b',text:'ね'},{id:'c',text:'か'},{id:'d',text:'な'}], correctChoiceId: 'b', targets: ['grammar-ne-yo'], difficulty: 1 },
+      { id: 'ex-ny-2', type: 'multiple-choice', prompt: 'Which adds new information ("…, you know")?', question: 'Choose.', choices: [{id:'a',text:'ね'},{id:'b',text:'か'},{id:'c',text:'よ'},{id:'d',text:'の'}], correctChoiceId: 'c', targets: ['grammar-ne-yo'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-ny-1', type: 'fill-in-blank', prompt: 'Complete: いい天気です___。(nice weather, isn’t it?)', sentenceTemplate: 'いい天気です{{blank}}。', acceptedAnswers: ['ね'], wordBankOptions: ['ね','よ','か','を'], targets: ['grammar-ne-yo'], difficulty: 1 },
+      { id: 'qz-ny-2', type: 'fill-in-blank', prompt: 'Complete: この店は安いです___。(it’s cheap, you know)', sentenceTemplate: 'この店は安いです{{blank}}。', acceptedAnswers: ['よ'], wordBankOptions: ['よ','ね','か','の'], targets: ['grammar-ne-yo'], difficulty: 2 },
+      { id: 'qz-ny-3', type: 'multiple-choice', prompt: 'You want the listener to agree the weather is nice. Which fits?', question: 'Choose.', choices: [{id:'a',text:'いい天気ですね'},{id:'b',text:'いい天気ですよ'},{id:'c',text:'いい天気ですか'},{id:'d',text:'いい天気ですが'}], correctChoiceId: 'a', targets: ['grammar-ne-yo'], difficulty: 2 },
+    ],
+  },
+
 };

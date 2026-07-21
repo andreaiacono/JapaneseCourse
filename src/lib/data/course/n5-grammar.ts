@@ -1074,4 +1074,93 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     relatedPatterns: ['grammar-masu-form', 'grammar-te-iru'],
     tags: ['verb', 'time', 'simultaneous', 'beginner'],
   },
+
+  'grammar-he': {
+    id: 'grammar-he',
+    title: '〜へ (direction)',
+    jlptLevel: 'N5',
+    summary:
+      'へ (pronounced "e") marks the direction of movement — where you are heading. It overlaps with に for destinations.',
+    formation: 'Place + へ + movement verb',
+    explanation:
+      'へ attaches to a place and points at the direction of a movement verb: 学校へ行きます (I go to school). For a destination it is almost interchangeable with に — へ leans slightly toward the direction/heading, に toward the arrival point, but at N5 either is fine. Note へ as a particle is read "e", not "he".',
+    usageNotes: [
+      'へ is read "e" when it is a particle, even though it is the kana for "he".',
+      'For destinations, へ and に are usually interchangeable.',
+      'へ is only used with verbs of movement (行く, 来る, 帰る…).',
+    ],
+    examples: [
+      { ja: '学校へ行きます。', furigana: 'がっこうへいきます。', romaji: 'Gakkō e ikimasu.', en: 'I go to school.' },
+      { ja: '友達が日本へ来ました。', furigana: 'ともだちがにほんへきました。', romaji: 'Tomodachi ga Nihon e kimashita.', en: 'My friend came to Japan.' },
+    ],
+    relatedPatterns: ['grammar-ni-location', 'grammar-ya'],
+    tags: ['particle', 'direction', 'movement', 'beginner'],
+  },
+
+  'grammar-ya': {
+    id: 'grammar-ya',
+    title: '〜や (listing examples)',
+    jlptLevel: 'N5',
+    summary:
+      'や lists a few representative items and implies there are more — unlike と, which lists them all.',
+    formation: 'Noun や Noun (や Noun…)',
+    explanation:
+      'や joins nouns as examples, suggesting the list is not complete: かばんの中に本やペンがあります (there’s a book, a pen, and so on, in the bag). Compare と, which gives the full, exhaustive list. や is only for nouns, never clauses.',
+    usageNotes: [
+      'や implies "…and others"; と implies "…and that’s all".',
+      'や joins nouns only, not verbs or clauses.',
+      'It often pairs with など ("etc.") for emphasis: 本やペンなど.',
+    ],
+    examples: [
+      { ja: 'かばんの中に本やペンがあります。', furigana: 'かばんのなかにほんやペンがあります。', romaji: 'Kaban no naka ni hon ya pen ga arimasu.', en: 'There are books, pens, and so on in the bag.' },
+      { ja: '肉や魚を食べます。', furigana: 'にくやさかなをたべます。', romaji: 'Niku ya sakana o tabemasu.', en: 'I eat meat, fish, and the like.' },
+    ],
+    relatedPatterns: ['grammar-to-particle', 'grammar-he'],
+    tags: ['particle', 'listing', 'and', 'beginner'],
+  },
+
+  'grammar-question-words': {
+    id: 'grammar-question-words',
+    title: 'Question words (だれ・なに・どこ…)',
+    jlptLevel: 'N5',
+    summary:
+      'Ask about people, things, places, times and reasons by dropping a question word into a normal ですか / ますか sentence.',
+    formation: 'Question word + particle + ですか / ますか',
+    explanation:
+      'Japanese does not reorder the sentence to ask a question — it swaps the unknown part for a question word and adds か: 何を食べますか (what will you eat?), どこへ行きますか (where are you going?). The main N5 words are だれ (who), 何{なに} (what), いつ (when), どこ (where), どうして (why), どう (how), いくら (how much), どれ (which).',
+    usageNotes: [
+      'The question word takes the same particle the unknown noun would: 何を, どこへ, だれと.',
+      'だれ is the plain "who"; どなた is its polite form.',
+      'いくつ asks "how many" (things); いくら asks "how much" (money).',
+    ],
+    examples: [
+      { ja: 'これはだれの本ですか。', furigana: 'これはだれのほんですか。', romaji: 'Kore wa dare no hon desu ka.', en: 'Whose book is this?' },
+      { ja: 'どこへ行きますか。', furigana: 'どこへいきますか。', romaji: 'Doko e ikimasu ka.', en: 'Where are you going?' },
+      { ja: 'どうして日本語を勉強しますか。', furigana: 'どうしてにほんごをべんきょうしますか。', romaji: 'Dōshite nihongo o benkyō shimasu ka.', en: 'Why do you study Japanese?' },
+    ],
+    relatedPatterns: ['grammar-ka-question', 'grammar-comparison'],
+    tags: ['question', 'question-word', 'beginner'],
+  },
+
+  'grammar-ne-yo': {
+    id: 'grammar-ne-yo',
+    title: '〜ね・〜よ (sentence particles)',
+    jlptLevel: 'N5',
+    summary:
+      'End a sentence with ね to seek agreement ("…, right?") or よ to assert something the listener may not know.',
+    formation: 'Sentence + ね  ·  Sentence + よ',
+    explanation:
+      'ね invites the listener to agree, like a tag question: いい天気ですね (nice weather, isn’t it?). よ adds emphasis or new information the listener didn’t have: この店は安いですよ (this shop is cheap, you know). They soften and colour speech — leaving them off is not wrong, just flatter.',
+    usageNotes: [
+      'ね = "right? / isn’t it?" — you expect agreement.',
+      'よ = "I’m telling you / you know" — new or emphatic information.',
+      'Both go at the very end, after です/ます.',
+    ],
+    examples: [
+      { ja: '今日はいい天気ですね。', furigana: 'きょうはいいてんきですね。', romaji: 'Kyō wa ii tenki desu ne.', en: 'The weather is nice today, isn’t it?' },
+      { ja: 'この本はとても面白いですよ。', furigana: 'このほんはとてもおもしろいですよ。', romaji: 'Kono hon wa totemo omoshiroi desu yo.', en: 'This book is really interesting, you know.' },
+    ],
+    relatedPatterns: ['grammar-ka-question', 'grammar-wa-desu'],
+    tags: ['particle', 'sentence-final', 'conversation', 'beginner'],
+  },
 };

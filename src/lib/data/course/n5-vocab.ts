@@ -1759,4 +1759,59 @@ export const n5Vocab: Record<string, VocabEntry> = {
     ],
   },
 
+  'vocab-itsu': {
+    id: 'vocab-itsu',
+    word: { ja: 'いつ', reading: 'いつ', romaji: 'itsu', en: 'when' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['question', 'N5'],
+    exampleSentences: [
+      { ja: 'いつ日本へ行きますか。', furigana: 'いつにほんへいきますか。', romaji: 'Itsu Nihon e ikimasu ka.', en: 'When are you going to Japan?' },
+    ],
+  },
+
+  'vocab-doko': {
+    id: 'vocab-doko',
+    word: { ja: 'どこ', reading: 'どこ', romaji: 'doko', en: 'where' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['question', 'N5'],
+    exampleSentences: [
+      { ja: 'トイレはどこですか。', furigana: 'トイレはどこですか。', romaji: 'Toire wa doko desu ka.', en: 'Where is the toilet?' },
+    ],
+  },
+
+  'vocab-doushite': {
+    id: 'vocab-doushite',
+    word: { ja: 'どうして', reading: 'どうして', romaji: 'dōshite', en: 'why' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['question', 'N5'],
+    exampleSentences: [
+      { ja: 'どうして遅いですか。', furigana: 'どうしておそいですか。', romaji: 'Dōshite osoi desu ka.', en: 'Why are you late?' },
+    ],
+  },
+
+  'vocab-dore': {
+    id: 'vocab-dore',
+    word: { ja: 'どれ', reading: 'どれ', romaji: 'dore', en: 'which one (of three or more)' },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['question', 'N5'],
+    exampleSentences: [
+      { ja: 'あなたのかばんはどれですか。', furigana: 'あなたのかばんはどれですか。', romaji: 'Anata no kaban wa dore desu ka.', en: 'Which one is your bag?' },
+    ],
+  },
+
+  'vocab-densha': {
+    id: 'vocab-densha',
+    word: { ja: '電車', reading: 'でんしゃ', romaji: 'densha', en: 'train' },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'transport', 'N5'],
+    exampleSentences: [
+      { ja: '電車で学校へ行きます。', furigana: 'でんしゃでがっこうへいきます。', romaji: 'Densha de gakkō e ikimasu.', en: 'I go to school by train.' },
+    ],
+  },
+
 };
