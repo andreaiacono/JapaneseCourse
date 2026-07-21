@@ -1066,4 +1066,107 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // CHAPTER — Time & Sequence
+  // ═══════════════════════════════════════════
+
+  'lesson-toki': {
+    id: 'lesson-toki',
+    slug: 'toki',
+    title: '〜とき',
+    subtitle: 'Saying "when"',
+    jlptLevel: 'N5',
+    estimatedMinutes: 13,
+    introduces: ['grammar-toki'],
+    prerequisites: ['lesson-ta-form'],
+    tags: ['conjunction', 'time', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: '**とき** means "when / at the time of". Put a clause in front of it — in **plain form** — to say when something happens.' },
+      { type: 'table', headers: ['Before とき', 'Connector', 'Example'], rows: [
+        ['Verb (plain)', '— (direct)', '行くとき / 行ったとき'],
+        ['い-adjective', '— (direct)', '若{わか}いとき'],
+        ['な-adjective', '+ な', '暇{ひま}なとき'],
+        ['Noun', '+ の', '子供{こども}のとき'],
+      ] },
+      { type: 'tip', markdown: 'The verb’s tense sets the timing: **dictionary form** = "when doing", **past form** = "when it was done / after".' },
+      { type: 'warning', markdown: 'The clause before とき is always **plain form** — never です or ます.' },
+      { type: 'example', sentence: { ja: '学生のとき、よく音楽を聞きました。', furigana: 'がくせいのとき、よくおんがくをききました。', romaji: 'Gakusei no toki, yoku ongaku o kikimashita.', en: 'When I was a student, I often listened to music.' } },
+      { type: 'example', sentence: { ja: '暇なとき、本を読みます。', furigana: 'ひまなとき、ほんをよみます。', romaji: 'Hima na toki, hon o yomimasu.', en: 'When I’m free, I read books.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-tk-1', type: 'multiple-choice', prompt: 'What form does the clause before とき take?', question: 'Choose.', choices: [{id:'a',text:'plain form'},{id:'b',text:'です/ます form'},{id:'c',text:'て-form'},{id:'d',text:'ます-stem'}], correctChoiceId: 'a', targets: ['grammar-toki'], difficulty: 1 },
+      { id: 'ex-tk-2', type: 'fill-in-blank', prompt: 'Complete: 子供{こども}___とき、公園{こうえん}で遊びました。(when I was a child)', sentenceTemplate: '子供{こども}{{blank}}とき、公園{こうえん}で遊びました。', acceptedAnswers: ['の'], wordBankOptions: ['の','な','だ','に'], explanation: 'Nouns take の before とき.', targets: ['grammar-toki'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-tk-1', type: 'multiple-choice', prompt: 'How does a な-adjective connect to とき?', question: 'Choose.', choices: [{id:'a',text:'+ な (暇{ひま}なとき)'},{id:'b',text:'+ の'},{id:'c',text:'+ だ'},{id:'d',text:'directly'}], correctChoiceId: 'a', targets: ['grammar-toki','vocab-hima'], difficulty: 2 },
+      { id: 'qz-tk-2', type: 'multiple-choice', prompt: '"When I go to Japan" is…', question: 'Choose.', choices: [{id:'a',text:'日本に行くとき'},{id:'b',text:'日本に行きますとき'},{id:'c',text:'日本に行ってとき'},{id:'d',text:'日本に行きとき'}], correctChoiceId: 'a', targets: ['grammar-toki','vocab-iku'], difficulty: 2 },
+      { id: 'qz-tk-3', type: 'fill-in-blank', prompt: 'Complete: 学生___とき、音楽をよく聞きました。(when I was a student)', sentenceTemplate: '学生{{blank}}とき、音楽をよく聞きました。', acceptedAnswers: ['の'], wordBankOptions: ['の','な','に','で'], targets: ['grammar-toki'], difficulty: 1 },
+    ],
+  },
+
+  'lesson-mae-ato': {
+    id: 'lesson-mae-ato',
+    slug: 'mae-ato',
+    title: '〜前に・〜後で',
+    subtitle: 'Before and after',
+    jlptLevel: 'N5',
+    estimatedMinutes: 14,
+    introduces: ['grammar-mae-ato'],
+    prerequisites: ['lesson-toki', 'lesson-ta-form'],
+    tags: ['conjunction', 'time', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: '**前に** ("before") and **後で** ("after") each demand a fixed verb form — and it never changes with the main sentence’s tense.' },
+      { type: 'table', headers: ['Pattern', 'Form before it', 'Example'], rows: [
+        ['〜前に (before)', 'dictionary form', '食べる前に'],
+        ['〜後で (after)', 'past た-form', '食べた後で'],
+        ['Noun + の前に/の後で', 'noun + の', '食事の後で'],
+      ] },
+      { type: 'tip', markdown: 'Watch the forms: **前に** always takes the dictionary form, **後で** always takes the past た-form — even when the whole sentence is in the past.' },
+      { type: 'example', sentence: { ja: '食べる前に、手を洗います。', furigana: 'たべるまえに、てをあらいます。', romaji: 'Taberu mae ni, te o araimasu.', en: 'I wash my hands before eating.' } },
+      { type: 'example', sentence: { ja: '寝る前に、歯を磨きます。', furigana: 'ねるまえに、はをみがきます。', romaji: 'Neru mae ni, ha o migakimasu.', en: 'I brush my teeth before sleeping.' } },
+      { type: 'example', sentence: { ja: '勉強した後で、テレビを見ます。', furigana: 'べんきょうしたあとで、テレビをみます。', romaji: 'Benkyō shita ato de, terebi o mimasu.', en: 'After studying, I watch TV.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-ma-1', type: 'multiple-choice', prompt: 'Which form comes before 前に?', question: 'Choose.', choices: [{id:'a',text:'dictionary form (食べる前に)'},{id:'b',text:'past た-form'},{id:'c',text:'て-form'},{id:'d',text:'ます-stem'}], correctChoiceId: 'a', targets: ['grammar-mae-ato'], difficulty: 1 },
+      { id: 'ex-ma-2', type: 'multiple-choice', prompt: 'Which form comes before 後で?', question: 'Choose.', choices: [{id:'a',text:'dictionary form'},{id:'b',text:'past た-form (食べた後で)'},{id:'c',text:'ない-form'},{id:'d',text:'ます-stem'}], correctChoiceId: 'b', targets: ['grammar-mae-ato'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-ma-1', type: 'multiple-choice', prompt: '"Before eating" is…', question: 'Choose.', choices: [{id:'a',text:'食べる前に'},{id:'b',text:'食べた前に'},{id:'c',text:'食べて前に'},{id:'d',text:'食べ前に'}], correctChoiceId: 'a', targets: ['grammar-mae-ato','vocab-taberu'], difficulty: 1 },
+      { id: 'qz-ma-2', type: 'multiple-choice', prompt: '"After studying" is…', question: 'Choose.', choices: [{id:'a',text:'勉強する後で'},{id:'b',text:'勉強した後で'},{id:'c',text:'勉強して後で'},{id:'d',text:'勉強前に'}], correctChoiceId: 'b', targets: ['grammar-mae-ato'], difficulty: 2 },
+      { id: 'qz-ma-3', type: 'fill-in-blank', prompt: 'Complete: 寝{ね}る___、歯{は}を磨{みが}きます。(before sleeping)', sentenceTemplate: '寝{ね}る{{blank}}、歯{は}を磨{みが}きます。', acceptedAnswers: ['前に','まえに'], wordBankOptions: ['前に','後で','とき','ながら'], targets: ['grammar-mae-ato'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-nagara': {
+    id: 'lesson-nagara',
+    slug: 'nagara',
+    title: '〜ながら',
+    subtitle: 'Doing two things at once',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-nagara'],
+    prerequisites: ['lesson-mae-ato', 'lesson-masu-form'],
+    tags: ['verb', 'time', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: '**ながら** joins two actions happening at the same time. Take the **ます-stem** and add ながら; the main action goes at the end of the sentence.' },
+      { type: 'table', headers: ['Verb', 'ます-stem', '+ ながら'], rows: [
+        ['聞く', '聞き', '聞きながら'],
+        ['見る', '見', '見ながら'],
+        ['歩く', '歩き', '歩きながら'],
+      ] },
+      { type: 'tip', markdown: 'The action at the **end** of the sentence is the main one; the ながら part is the background. Both must have the **same subject**.' },
+      { type: 'example', sentence: { ja: '音楽を聞きながら、勉強します。', furigana: 'おんがくをききながら、べんきょうします。', romaji: 'Ongaku o kikinagara, benkyō shimasu.', en: 'I study while listening to music.' } },
+      { type: 'example', sentence: { ja: 'テレビを見ながら、ご飯を食べます。', furigana: 'テレビをみながら、ごはんをたべます。', romaji: 'Terebi o minagara, gohan o tabemasu.', en: 'I eat while watching TV.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-ng-1', type: 'multiple-choice', prompt: 'Which verb form does ながら attach to?', question: 'Choose.', choices: [{id:'a',text:'the ます-stem (聞きながら)'},{id:'b',text:'the dictionary form'},{id:'c',text:'the て-form'},{id:'d',text:'the past た-form'}], correctChoiceId: 'a', targets: ['grammar-nagara'], difficulty: 1 },
+      { id: 'ex-ng-2', type: 'fill-in-blank', prompt: 'Complete: 音楽を聞き___、勉強します。(while listening to music)', sentenceTemplate: '音楽を聞き{{blank}}、勉強します。', acceptedAnswers: ['ながら'], wordBankOptions: ['ながら','前に','後で','とき'], targets: ['grammar-nagara','vocab-ongaku'], difficulty: 1 },
+    ],
+    quiz: [
+      { id: 'qz-ng-1', type: 'multiple-choice', prompt: 'In an ながら sentence, which is the main action?', question: 'Choose.', choices: [{id:'a',text:'the one at the end of the sentence'},{id:'b',text:'the ながら one'},{id:'c',text:'both equally'},{id:'d',text:'neither'}], correctChoiceId: 'a', targets: ['grammar-nagara'], difficulty: 2 },
+      { id: 'qz-ng-2', type: 'multiple-choice', prompt: '見ます → "while watching" is…', question: 'Choose.', choices: [{id:'a',text:'見ながら'},{id:'b',text:'見るながら'},{id:'c',text:'見てながら'},{id:'d',text:'見たながら'}], correctChoiceId: 'a', targets: ['grammar-nagara','vocab-miru'], difficulty: 1 },
+      { id: 'qz-ng-3', type: 'fill-in-blank', prompt: 'Complete: テレビを見___、ご飯を食べます。(while watching TV)', sentenceTemplate: 'テレビを見{{blank}}、ご飯を食べます。', acceptedAnswers: ['ながら'], wordBankOptions: ['ながら','前に','とき','けど'], targets: ['grammar-nagara','vocab-miru'], difficulty: 2 },
+    ],
+  },
+
 };

@@ -174,13 +174,28 @@ export const n5Chapters: Record<string, Chapter> = {
     color: '#c2185b',
   },
 
+  'chapter-time-sequence': {
+    id: 'chapter-time-sequence',
+    slug: 'time-sequence',
+    title: 'Time & Sequence',
+    description: 'Say when things happen with 〜とき, order events with 〜前に/〜後で, and do two things at once with 〜ながら.',
+    jlptLevel: 'N5',
+    order: 12,
+    lessons: [
+      'lesson-toki',
+      'lesson-mae-ato',
+      'lesson-nagara',
+    ],
+    color: '#6d4c41',
+  },
+
   'chapter-reading': {
     id: 'chapter-reading',
     slug: 'reading-practice',
     title: 'Reading Practice',
     description: 'Read short tales written entirely in kana and N5 kanji you already know.',
     jlptLevel: 'N5',
-    order: 12,
+    order: 13,
     lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
     color: '#7c4dff',
   },
@@ -204,6 +219,7 @@ export const n5Unit: Unit = {
     'chapter-want-ability',
     'chapter-suggestions-permission',
     'chapter-comparing-connecting',
+    'chapter-time-sequence',
     'chapter-reading',
   ],
 };

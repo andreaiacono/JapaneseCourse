@@ -1737,4 +1737,26 @@ export const n5Vocab: Record<string, VocabEntry> = {
     ],
   },
 
+  'vocab-ongaku': {
+    id: 'vocab-ongaku',
+    word: { ja: '音楽', reading: 'おんがく', romaji: 'ongaku', en: 'music' },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'N5'],
+    exampleSentences: [
+      { ja: '音楽を聞きながら勉強します。', furigana: 'おんがくをききながらべんきょうします。', romaji: 'Ongaku o kikinagara benkyō shimasu.', en: 'I study while listening to music.' },
+    ],
+  },
+
+  'vocab-hima': {
+    id: 'vocab-hima',
+    word: { ja: '暇', reading: 'ひま', romaji: 'hima', en: 'free time; leisure' },
+    wordClass: 'na-adjective',
+    jlptLevel: 'N5',
+    tags: ['na-adjective', 'N5'],
+    exampleSentences: [
+      { ja: '暇なとき、本を読みます。', furigana: 'ひまなとき、ほんをよみます。', romaji: 'Hima na toki, hon o yomimasu.', en: 'When I’m free, I read books.' },
+    ],
+  },
+
 };

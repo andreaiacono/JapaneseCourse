@@ -1008,4 +1008,70 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     relatedPatterns: ['grammar-i-adjective', 'grammar-ga-suki'],
     tags: ['comparison', 'adjective', 'superlative', 'beginner'],
   },
+
+  'grammar-toki': {
+    id: 'grammar-toki',
+    title: '〜とき (when)',
+    jlptLevel: 'N5',
+    summary:
+      'とき means "when / at the time of". Put a plain-form clause in front of it to say when something happens.',
+    formation: 'Verb (plain) + とき  ·  い-adj + とき  ·  な-adj + な + とき  ·  Noun + の + とき',
+    explanation:
+      'とき turns a clause into "when …". The word before it takes the plain form: 日本に行くとき (when I go to Japan), 子供{こども}のとき (when I was a child), 暇{ひま}なとき (when I’m free). The tense of the verb before とき sets the timing — dictionary form means "at/around the time of doing", past form means "after having done".',
+    usageNotes: [
+      'The clause before とき is in plain form, never です/ます.',
+      'Nouns take の before とき, な-adjectives take な.',
+      'Dictionary form = "when doing"; past form = "when it was done / after".',
+    ],
+    examples: [
+      { ja: '学生のとき、よく音楽を聞きました。', furigana: 'がくせいのとき、よくおんがくをききました。', romaji: 'Gakusei no toki, yoku ongaku o kikimashita.', en: 'When I was a student, I often listened to music.' },
+      { ja: '暇なとき、本を読みます。', furigana: 'ひまなとき、ほんをよみます。', romaji: 'Hima na toki, hon o yomimasu.', en: 'When I’m free, I read books.' },
+    ],
+    relatedPatterns: ['grammar-mae-ato', 'grammar-ta-form'],
+    tags: ['conjunction', 'time', 'when', 'beginner'],
+  },
+
+  'grammar-mae-ato': {
+    id: 'grammar-mae-ato',
+    title: '〜前に・〜後で (before / after)',
+    jlptLevel: 'N5',
+    summary:
+      'Verb dictionary form + 前に means "before doing"; verb past form + 後で means "after doing".',
+    formation: 'Verb (dict) + 前に (before)  ·  Verb (た) + 後で (after)  ·  Noun + の前に / の後で',
+    explanation:
+      '前に (before) always takes the dictionary form, whatever the tense of the main sentence: 食べる前に手を洗います (I wash my hands before eating). 後で (after) always takes the plain past た-form: ご飯を食べた後で、テレビを見ます (after eating, I watch TV). With nouns, use の: 食事の前に / 授業{じゅぎょう}の後で.',
+    usageNotes: [
+      '前に always follows the dictionary form; 後で always follows the past た-form.',
+      'The form before them does not change with the main sentence’s tense.',
+      'Nouns connect with の: 前に → の前に, 後で → の後で.',
+    ],
+    examples: [
+      { ja: '食べる前に、手を洗います。', furigana: 'たべるまえに、てをあらいます。', romaji: 'Taberu mae ni, te o araimasu.', en: 'I wash my hands before eating.' },
+      { ja: '勉強した後で、テレビを見ます。', furigana: 'べんきょうしたあとで、テレビをみます。', romaji: 'Benkyō shita ato de, terebi o mimasu.', en: 'After studying, I watch TV.' },
+    ],
+    relatedPatterns: ['grammar-toki', 'grammar-ta-form'],
+    tags: ['conjunction', 'time', 'sequence', 'beginner'],
+  },
+
+  'grammar-nagara': {
+    id: 'grammar-nagara',
+    title: '〜ながら (while)',
+    jlptLevel: 'N5',
+    summary:
+      'Attach ながら to a verb’s ます-stem to do two things at once — "while doing X, do Y".',
+    formation: 'Verb ます-stem + ながら + main clause',
+    explanation:
+      'ながら joins two actions done at the same time by the same person. Take the ます-stem and add ながら; the main action goes at the end: 音楽を聞きながら勉強します (I study while listening to music). The ながら clause is the background action, and the sentence-final verb is the main one. Both must share the same subject.',
+    usageNotes: [
+      'Use the ます-stem: 聞きます → 聞きながら, 見ます → 見ながら.',
+      'The main action is the one at the end of the sentence.',
+      'Both actions must have the same subject.',
+    ],
+    examples: [
+      { ja: '音楽を聞きながら、勉強します。', furigana: 'おんがくをききながら、べんきょうします。', romaji: 'Ongaku o kikinagara, benkyō shimasu.', en: 'I study while listening to music.' },
+      { ja: 'テレビを見ながら、ご飯を食べます。', furigana: 'テレビをみながら、ごはんをたべます。', romaji: 'Terebi o minagara, gohan o tabemasu.', en: 'I eat while watching TV.' },
+    ],
+    relatedPatterns: ['grammar-masu-form', 'grammar-te-iru'],
+    tags: ['verb', 'time', 'simultaneous', 'beginner'],
+  },
 };
