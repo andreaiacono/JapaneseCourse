@@ -1273,4 +1273,107 @@ export const n5Lessons: Record<string, Lesson> = {
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // CHAPTER — Wants, Guesses & Degree
+  // ═══════════════════════════════════════════
+
+  'lesson-hoshii-naide': {
+    id: 'lesson-hoshii-naide',
+    slug: 'hoshii-naide',
+    title: '〜がほしい・〜ないでください',
+    subtitle: 'Wanting and asking',
+    jlptLevel: 'N5',
+    estimatedMinutes: 13,
+    introduces: ['grammar-hoshii', 'grammar-naide-kudasai'],
+    prerequisites: ['lesson-tai', 'lesson-te-kudasai'],
+    tags: ['adjective', 'verb', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'Two ways to say what you want: **〜がほしい** for wanting a *thing*, and **〜ないでください** for politely asking someone *not* to do something.' },
+      { type: 'table', headers: ['Pattern', 'Meaning', 'Example'], rows: [
+        ['Noun が ほしい', 'want (a thing)', 'カメラがほしいです'],
+        ['Verb (たい)', 'want to (do)', '水が飲みたいです'],
+        ['Verb ない + でください', 'please don’t', '吸{す}わないでください'],
+      ] },
+      { type: 'tip', markdown: 'The wanted thing takes **が**, not を: 水がほしい. Remember **ほしい** is for things, **〜たい** is for actions.' },
+      { type: 'example', sentence: { ja: '新しいカメラがほしいです。', furigana: 'あたらしいカメラがほしいです。', romaji: 'Atarashii kamera ga hoshii desu.', en: 'I want a new camera.' } },
+      { type: 'example', sentence: { ja: 'ここでタバコを吸わないでください。', furigana: 'ここでタバコをすわないでください。', romaji: 'Koko de tabako o suwanai de kudasai.', en: 'Please don’t smoke here.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-hn-1', type: 'multiple-choice', prompt: 'Which particle marks the thing you want with ほしい?', question: 'Choose.', choices: [{id:'a',text:'を'},{id:'b',text:'が'},{id:'c',text:'に'},{id:'d',text:'へ'}], correctChoiceId: 'b', explanation: 'The wanted thing takes が.', targets: ['grammar-hoshii'], difficulty: 1 },
+      { id: 'ex-hn-2', type: 'fill-in-blank', prompt: 'Complete: 写真を撮{と}ら___ください。(please don’t take photos)', sentenceTemplate: '写真を撮{と}ら{{blank}}ください。', acceptedAnswers: ['ないで'], wordBankOptions: ['ないで','ないと','なくて','ながら'], targets: ['grammar-naide-kudasai'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-hn-1', type: 'multiple-choice', prompt: 'How do you say "I want money"?', question: 'Choose.', choices: [{id:'a',text:'お金がほしいです'},{id:'b',text:'お金をほしいです'},{id:'c',text:'お金がしたいです'},{id:'d',text:'お金にほしいです'}], correctChoiceId: 'a', targets: ['grammar-hoshii','vocab-okane'], difficulty: 1 },
+      { id: 'qz-hn-2', type: 'multiple-choice', prompt: 'ほしい is used for…', question: 'Choose.', choices: [{id:'a',text:'wanting a thing'},{id:'b',text:'wanting to do an action'},{id:'c',text:'giving a command'},{id:'d',text:'making a guess'}], correctChoiceId: 'a', targets: ['grammar-hoshii'], difficulty: 2 },
+      { id: 'qz-hn-3', type: 'fill-in-blank', prompt: 'Complete: ここでタバコを吸{す}わ___ください。(please don’t smoke)', sentenceTemplate: 'ここでタバコを吸{す}わ{{blank}}ください。', acceptedAnswers: ['ないで'], wordBankOptions: ['ないで','ないと','ながら','たいで'], targets: ['grammar-naide-kudasai'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-deshou-mada': {
+    id: 'lesson-deshou-mada',
+    slug: 'deshou-mada',
+    title: '〜でしょう・まだ・もう',
+    subtitle: 'Guessing and timing',
+    jlptLevel: 'N5',
+    estimatedMinutes: 14,
+    introduces: ['grammar-deshou', 'grammar-mada-mou'],
+    prerequisites: ['lesson-hoshii-naide', 'lesson-ta-form'],
+    tags: ['expression', 'adverb', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: '**でしょう** turns a statement into a guess ("probably"). **もう** and **まだ** handle "already" and "still" — and both flip meaning with a negative verb.' },
+      { type: 'table', headers: ['Word', 'With affirmative', 'With negative'], rows: [
+        ['もう', 'already (もう食べました)', 'not anymore (もう食べません)'],
+        ['まだ', 'still (まだ食べています)', 'not yet (まだ食べていません)'],
+      ] },
+      { type: 'tip', markdown: '**でしょう** attaches to plain forms, nouns and adjectives with no だ: 雨でしょう, 高いでしょう. "Have you eaten yet?" → もう食べました or, if not, まだです。' },
+      { type: 'example', sentence: { ja: '明日は雨でしょう。', furigana: 'あしたはあめでしょう。', romaji: 'Ashita wa ame deshō.', en: 'It will probably rain tomorrow.' } },
+      { type: 'example', sentence: { ja: 'もう昼ご飯を食べました。', furigana: 'もうひるごはんをたべました。', romaji: 'Mō hirugohan o tabemashita.', en: 'I already ate lunch.' } },
+      { type: 'example', sentence: { ja: 'まだ宿題をしていません。', furigana: 'まだしゅくだいをしていません。', romaji: 'Mada shukudai o shite imasen.', en: 'I haven’t done my homework yet.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-dm-1', type: 'multiple-choice', prompt: 'What does でしょう express?', question: 'Choose.', choices: [{id:'a',text:'a command'},{id:'b',text:'a guess ("probably")'},{id:'c',text:'a wish'},{id:'d',text:'the past'}], correctChoiceId: 'b', targets: ['grammar-deshou'], difficulty: 1 },
+      { id: 'ex-dm-2', type: 'multiple-choice', prompt: '"I already ate" is…', question: 'Choose.', choices: [{id:'a',text:'まだ食べました'},{id:'b',text:'もう食べました'},{id:'c',text:'もう食べません'},{id:'d',text:'まだ食べています'}], correctChoiceId: 'b', targets: ['grammar-mada-mou','vocab-mou'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-dm-1', type: 'fill-in-blank', prompt: 'Complete: 明日は雨___。(it will probably rain)', sentenceTemplate: '明日は雨{{blank}}。', acceptedAnswers: ['でしょう'], wordBankOptions: ['でしょう','でした','ですか','ましょう'], targets: ['grammar-deshou'], difficulty: 1 },
+      { id: 'qz-dm-2', type: 'multiple-choice', prompt: '"I haven’t eaten yet" is…', question: 'Choose.', choices: [{id:'a',text:'まだ食べていません'},{id:'b',text:'もう食べました'},{id:'c',text:'まだ食べました'},{id:'d',text:'もう食べません'}], correctChoiceId: 'a', targets: ['grammar-mada-mou','vocab-mada'], difficulty: 2 },
+      { id: 'qz-dm-3', type: 'multiple-choice', prompt: 'もう + a negative verb (もう食べません) means…', question: 'Choose.', choices: [{id:'a',text:'not anymore'},{id:'b',text:'not yet'},{id:'c',text:'already'},{id:'d',text:'still'}], correctChoiceId: 'a', targets: ['grammar-mada-mou'], difficulty: 2 },
+    ],
+  },
+
+  'lesson-adverbs': {
+    id: 'lesson-adverbs',
+    slug: 'adverbs',
+    title: 'よく・ときどき・あまり・ぜんぜん',
+    subtitle: 'How often, how much',
+    jlptLevel: 'N5',
+    estimatedMinutes: 12,
+    introduces: ['grammar-adverbs'],
+    prerequisites: ['lesson-deshou-mada', 'lesson-masen-form'],
+    tags: ['adverb', 'N5'],
+    contentBlocks: [
+      { type: 'text', markdown: 'These adverbs go right before the verb and say **how often** something happens — a scale from "often" all the way down to "never".' },
+      { type: 'table', headers: ['Adverb', 'Meaning', 'Verb'], rows: [
+        ['よく', 'often', 'affirmative'],
+        ['ときどき', 'sometimes', 'affirmative'],
+        ['たまに', 'occasionally', 'affirmative'],
+        ['あまり', 'not much / not often', 'negative'],
+        ['ぜんぜん', 'not at all', 'negative'],
+      ] },
+      { type: 'warning', markdown: '**あまり** and **ぜんぜん** must be paired with a **negative** verb: あまり見ません, ぜんぜん飲みません.' },
+      { type: 'example', sentence: { ja: 'よく映画を見ます。', furigana: 'よくえいがをみます。', romaji: 'Yoku eiga o mimasu.', en: 'I often watch movies.' } },
+      { type: 'example', sentence: { ja: 'あまりテレビを見ません。', furigana: 'あまりテレビをみません。', romaji: 'Amari terebi o mimasen.', en: 'I don’t watch TV much.' } },
+      { type: 'example', sentence: { ja: 'お酒はぜんぜん飲みません。', furigana: 'おさけはぜんぜんのみません。', romaji: 'Osake wa zenzen nomimasen.', en: 'I don’t drink alcohol at all.' } },
+    ],
+    practiceExercises: [
+      { id: 'ex-av-1', type: 'multiple-choice', prompt: 'Which adverb means "often"?', question: 'Choose.', choices: [{id:'a',text:'あまり'},{id:'b',text:'よく'},{id:'c',text:'ぜんぜん'},{id:'d',text:'たまに'}], correctChoiceId: 'b', targets: ['grammar-adverbs','vocab-yoku'], difficulty: 1 },
+      { id: 'ex-av-2', type: 'multiple-choice', prompt: 'あまり and ぜんぜん must go with what kind of verb?', question: 'Choose.', choices: [{id:'a',text:'a negative verb'},{id:'b',text:'a past verb'},{id:'c',text:'a て-form verb'},{id:'d',text:'any verb'}], correctChoiceId: 'a', targets: ['grammar-adverbs'], difficulty: 2 },
+    ],
+    quiz: [
+      { id: 'qz-av-1', type: 'multiple-choice', prompt: 'Which means "not at all"?', question: 'Choose.', choices: [{id:'a',text:'あまり'},{id:'b',text:'ぜんぜん'},{id:'c',text:'ときどき'},{id:'d',text:'よく'}], correctChoiceId: 'b', targets: ['grammar-adverbs','vocab-zenzen'], difficulty: 1 },
+      { id: 'qz-av-2', type: 'fill-in-blank', prompt: 'Complete: ___テレビを見ません。(don’t watch much)', sentenceTemplate: '{{blank}}テレビを見ません。', acceptedAnswers: ['あまり'], wordBankOptions: ['あまり','よく','ときどき','たまに'], targets: ['grammar-adverbs','vocab-amari'], difficulty: 2 },
+      { id: 'qz-av-3', type: 'multiple-choice', prompt: 'Which sentence is correct?', question: 'Choose.', choices: [{id:'a',text:'ぜんぜん飲みません'},{id:'b',text:'ぜんぜん飲みます'},{id:'c',text:'あまり飲みます'},{id:'d',text:'よく飲みません'}], correctChoiceId: 'a', explanation: 'ぜんぜん needs a negative verb.', targets: ['grammar-adverbs'], difficulty: 2 },
+    ],
+  },
+
 };

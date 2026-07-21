@@ -204,13 +204,28 @@ export const n5Chapters: Record<string, Chapter> = {
     color: '#3949ab',
   },
 
+  'chapter-wants-guesses': {
+    id: 'chapter-wants-guesses',
+    slug: 'wants-guesses',
+    title: 'Wants, Guesses & Degree',
+    description: 'Want things with 〜がほしい, ask politely not to with 〜ないでください, guess with 〜でしょう, and say how often with よく/ときどき/あまり/ぜんぜん.',
+    jlptLevel: 'N5',
+    order: 14,
+    lessons: [
+      'lesson-hoshii-naide',
+      'lesson-deshou-mada',
+      'lesson-adverbs',
+    ],
+    color: '#00838f',
+  },
+
   'chapter-reading': {
     id: 'chapter-reading',
     slug: 'reading-practice',
     title: 'Reading Practice',
     description: 'Read short tales written entirely in kana and N5 kanji you already know.',
     jlptLevel: 'N5',
-    order: 14,
+    order: 15,
     lessons: ['reading-pochi', 'reading-morning', 'reading-shopping'],
     color: '#7c4dff',
   },
@@ -236,6 +251,7 @@ export const n5Unit: Unit = {
     'chapter-comparing-connecting',
     'chapter-time-sequence',
     'chapter-particles-questions',
+    'chapter-wants-guesses',
     'chapter-reading',
   ],
 };

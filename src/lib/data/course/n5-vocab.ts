@@ -1814,4 +1814,81 @@ export const n5Vocab: Record<string, VocabEntry> = {
     ],
   },
 
+  'vocab-hoshii': {
+    id: 'vocab-hoshii',
+    word: { ja: 'ほしい', reading: 'ほしい', romaji: 'hoshii', en: 'want (a thing); desired' },
+    wordClass: 'i-adjective',
+    jlptLevel: 'N5',
+    tags: ['i-adjective', 'desire', 'N5'],
+    exampleSentences: [
+      { ja: '新しいカメラがほしいです。', furigana: 'あたらしいカメラがほしいです。', romaji: 'Atarashii kamera ga hoshii desu.', en: 'I want a new camera.' },
+    ],
+  },
+
+  'vocab-yoku': {
+    id: 'vocab-yoku',
+    word: { ja: 'よく', reading: 'よく', romaji: 'yoku', en: 'often; well' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'frequency', 'N5'],
+    exampleSentences: [
+      { ja: 'よく映画を見ます。', furigana: 'よくえいがをみます。', romaji: 'Yoku eiga o mimasu.', en: 'I often watch movies.' },
+    ],
+  },
+
+  'vocab-tokidoki': {
+    id: 'vocab-tokidoki',
+    word: { ja: 'ときどき', reading: 'ときどき', romaji: 'tokidoki', en: 'sometimes' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'frequency', 'N5'],
+    exampleSentences: [
+      { ja: 'ときどき音楽を聞きます。', furigana: 'ときどきおんがくをききます。', romaji: 'Tokidoki ongaku o kikimasu.', en: 'I sometimes listen to music.' },
+    ],
+  },
+
+  'vocab-amari': {
+    id: 'vocab-amari',
+    word: { ja: 'あまり', reading: 'あまり', romaji: 'amari', en: '(not) much / (not) often — with a negative' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'degree', 'N5'],
+    exampleSentences: [
+      { ja: 'あまりテレビを見ません。', furigana: 'あまりテレビをみません。', romaji: 'Amari terebi o mimasen.', en: 'I don’t watch TV much.' },
+    ],
+  },
+
+  'vocab-zenzen': {
+    id: 'vocab-zenzen',
+    word: { ja: 'ぜんぜん', reading: 'ぜんぜん', romaji: 'zenzen', en: '(not) at all — with a negative' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'degree', 'N5'],
+    exampleSentences: [
+      { ja: 'お酒はぜんぜん飲みません。', furigana: 'おさけはぜんぜんのみません。', romaji: 'Osake wa zenzen nomimasen.', en: 'I don’t drink alcohol at all.' },
+    ],
+  },
+
+  'vocab-tabun': {
+    id: 'vocab-tabun',
+    word: { ja: 'たぶん', reading: 'たぶん', romaji: 'tabun', en: 'probably; maybe' },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'N5'],
+    exampleSentences: [
+      { ja: 'たぶん明日は雨でしょう。', furigana: 'たぶんあしたはあめでしょう。', romaji: 'Tabun ashita wa ame deshō.', en: 'It will probably rain tomorrow.' },
+    ],
+  },
+
+  'vocab-okane': {
+    id: 'vocab-okane',
+    word: { ja: 'お金', reading: 'おかね', romaji: 'okane', en: 'money' },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'N5'],
+    exampleSentences: [
+      { ja: 'お金がほしいです。', furigana: 'おかねがほしいです。', romaji: 'Okane ga hoshii desu.', en: 'I want money.' },
+    ],
+  },
+
 };

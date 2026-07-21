@@ -1163,4 +1163,115 @@ export const n5Grammar: Record<string, GrammarPoint> = {
     relatedPatterns: ['grammar-ka-question', 'grammar-wa-desu'],
     tags: ['particle', 'sentence-final', 'conversation', 'beginner'],
   },
+
+  'grammar-hoshii': {
+    id: 'grammar-hoshii',
+    title: '〜がほしい (want a thing)',
+    jlptLevel: 'N5',
+    summary:
+      'Noun + が + ほしい says you want a thing — the noun counterpart of 〜たい, which is for wanting to do.',
+    formation: 'Noun + が + ほしい(です)  ·  negative: ほしくない(です)',
+    explanation:
+      'ほしい is an い-adjective meaning "wanted / desired". The thing you want is marked with が: 新しいカメラがほしいです (I want a new camera). It conjugates like any い-adjective — negative ほしくない, past ほしかった. Use 〜たい for wanting to *do* an action, ほしい for wanting to *have* a thing.',
+    usageNotes: [
+      'The wanted thing takes が, not を: 水がほしい.',
+      'ほしい is for things; 〜たい is for actions (水が飲みたい).',
+      'Talking about a third person’s desire uses ほしがっている, which is beyond N5.',
+    ],
+    examples: [
+      { ja: '新しいカメラがほしいです。', furigana: 'あたらしいカメラがほしいです。', romaji: 'Atarashii kamera ga hoshii desu.', en: 'I want a new camera.' },
+      { ja: '今、何がほしいですか。', furigana: 'いま、なにがほしいですか。', romaji: 'Ima, nani ga hoshii desu ka.', en: 'What do you want right now?' },
+    ],
+    relatedPatterns: ['grammar-tai', 'grammar-ga-suki'],
+    tags: ['adjective', 'desire', 'want', 'beginner'],
+  },
+
+  'grammar-naide-kudasai': {
+    id: 'grammar-naide-kudasai',
+    title: '〜ないでください (please don’t)',
+    jlptLevel: 'N5',
+    summary:
+      'Add でください to a verb’s ない-form to ask someone politely not to do something — the negative of 〜てください.',
+    formation: 'Verb ない-form + でください',
+    explanation:
+      'Take the plain negative (ない-form) and add でください: ここで写真を撮らないでください (please don’t take photos here). It is the mirror of 〜てください (please do). The verb keeps its ない ending — 食べない → 食べないでください, 吸わない → 吸わないでください.',
+    usageNotes: [
+      'Built on the plain negative ない-form, not the dictionary form.',
+      'It is the polite negative request, paired with 〜てください for the positive.',
+      'Stronger prohibition uses 〜てはいけません.',
+    ],
+    examples: [
+      { ja: 'ここでタバコを吸わないでください。', furigana: 'ここでタバコをすわないでください。', romaji: 'Koko de tabako o suwanai de kudasai.', en: 'Please don’t smoke here.' },
+      { ja: '写真を撮らないでください。', furigana: 'しゃしんをとらないでください。', romaji: 'Shashin o toranai de kudasai.', en: 'Please don’t take photos.' },
+    ],
+    relatedPatterns: ['grammar-te-kudasai', 'grammar-temo-ii'],
+    tags: ['verb', 'request', 'negative', 'beginner'],
+  },
+
+  'grammar-deshou': {
+    id: 'grammar-deshou',
+    title: '〜でしょう (probably)',
+    jlptLevel: 'N5',
+    summary:
+      'でしょう expresses a guess — "probably / most likely". It’s the tentative form of です.',
+    formation: 'Plain form / noun / adjective + でしょう',
+    explanation:
+      'でしょう follows a plain-form clause, a noun, or an adjective to mark it as a guess rather than a fact: 明日は雨でしょう (it will probably rain tomorrow). With a rising intonation it softens a statement into "…right?". な-adjectives and nouns attach directly (元気でしょう), い-adjectives keep their form (高いでしょう).',
+    usageNotes: [
+      'でしょう = a prediction or guess, softer and less certain than です.',
+      'Nouns and な-adjectives attach with no だ: 雨でしょう, not 雨だでしょう.',
+      'With rising intonation it seeks agreement, like a gentle ね.',
+    ],
+    examples: [
+      { ja: '明日は雨でしょう。', furigana: 'あしたはあめでしょう。', romaji: 'Ashita wa ame deshō.', en: 'It will probably rain tomorrow.' },
+      { ja: 'あの店は高いでしょう。', furigana: 'あのみせはたかいでしょう。', romaji: 'Ano mise wa takai deshō.', en: 'That shop is probably expensive.' },
+    ],
+    relatedPatterns: ['grammar-wa-desu', 'grammar-ne-yo'],
+    tags: ['expression', 'probability', 'guess', 'beginner'],
+  },
+
+  'grammar-mada-mou': {
+    id: 'grammar-mada-mou',
+    title: 'まだ・もう (still / already)',
+    jlptLevel: 'N5',
+    summary:
+      'もう means "already" (or "no longer" with a negative); まだ means "still" (or "not yet" with a negative).',
+    formation: 'もう + verb  ·  まだ + verb  ·  (negatives flip the meaning)',
+    explanation:
+      'もう with an affirmative verb means "already": もう食べました (I already ate). もう with a negative means "not anymore": もう食べません. まだ with an affirmative means "still": まだ食べています. まだ with a negative — usually 〜ていません — means "not yet": まだ食べていません. The clean answer to "have you eaten yet?" is either もう食べました or まだです.',
+    usageNotes: [
+      'もう + affirmative = already; もう + negative = not anymore.',
+      'まだ + affirmative = still; まだ + negative (ていません) = not yet.',
+      '"Not yet" is most often まだ〜ていません, or just まだです.',
+    ],
+    examples: [
+      { ja: 'もう昼ご飯を食べました。', furigana: 'もうひるごはんをたべました。', romaji: 'Mō hirugohan o tabemashita.', en: 'I already ate lunch.' },
+      { ja: 'まだ宿題をしていません。', furigana: 'まだしゅくだいをしていません。', romaji: 'Mada shukudai o shite imasen.', en: 'I haven’t done my homework yet.' },
+    ],
+    relatedPatterns: ['grammar-te-iru', 'grammar-ta-form'],
+    tags: ['adverb', 'time', 'aspect', 'beginner'],
+  },
+
+  'grammar-adverbs': {
+    id: 'grammar-adverbs',
+    title: 'よく・ときどき・あまり・ぜんぜん (frequency & degree)',
+    jlptLevel: 'N5',
+    summary:
+      'A scale of frequency adverbs from "often" to "never", with あまり and ぜんぜん taking a negative verb.',
+    formation: 'Adverb + verb  (あまり / ぜんぜん require a negative verb)',
+    explanation:
+      'These adverbs sit before the verb and say how often. From most to least: よく (often), ときどき (sometimes), たまに (occasionally). The bottom of the scale needs a negative verb: あまり〜ない (not much / not often) and ぜんぜん〜ない (not at all). よくテレビを見ます (I often watch TV); あまりテレビを見ません (I don’t watch TV much).',
+    usageNotes: [
+      'あまり and ぜんぜん must be paired with a negative verb.',
+      'ぜんぜん is stronger than あまり — "not at all" vs "not much".',
+      'The adverb normally comes right before the verb it modifies.',
+    ],
+    examples: [
+      { ja: 'よく映画を見ます。', furigana: 'よくえいがをみます。', romaji: 'Yoku eiga o mimasu.', en: 'I often watch movies.' },
+      { ja: 'あまりテレビを見ません。', furigana: 'あまりテレビをみません。', romaji: 'Amari terebi o mimasen.', en: 'I don’t watch TV much.' },
+      { ja: 'お酒はぜんぜん飲みません。', furigana: 'おさけはぜんぜんのみません。', romaji: 'Osake wa zenzen nomimasen.', en: 'I don’t drink alcohol at all.' },
+    ],
+    relatedPatterns: ['grammar-masu-form', 'grammar-masen-form'],
+    tags: ['adverb', 'frequency', 'degree', 'beginner'],
+  },
 };
