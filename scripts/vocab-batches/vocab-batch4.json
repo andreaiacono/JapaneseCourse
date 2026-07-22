@@ -1,0 +1,956 @@
+[
+ [
+  "座る",
+  "すわる",
+  "verb-u",
+  "verb",
+  "椅子に座ります。",
+  "I sit on the chair.",
+  "to sit"
+ ],
+ [
+  "泳ぐ",
+  "およぐ",
+  "verb-u",
+  "verb",
+  "海で泳ぎます。",
+  "I swim in the sea.",
+  "to swim"
+ ],
+ [
+  "作る",
+  "つくる",
+  "verb-u",
+  "verb",
+  "ケーキを作ります。",
+  "I make a cake.",
+  "to make"
+ ],
+ [
+  "覚える",
+  "おぼえる",
+  "verb-ru",
+  "verb",
+  "新しい言葉を覚えます。",
+  "I memorize new words.",
+  "to memorize; to learn"
+ ],
+ [
+  "忘れる",
+  "わすれる",
+  "verb-ru",
+  "verb",
+  "名前を忘れました。",
+  "I forgot the name.",
+  "to forget"
+ ],
+ [
+  "呼ぶ",
+  "よぶ",
+  "verb-u",
+  "verb",
+  "友達を呼びます。",
+  "I call my friend.",
+  "to call"
+ ],
+ [
+  "押す",
+  "おす",
+  "verb-u",
+  "verb",
+  "ボタンを押します。",
+  "I press the button.",
+  "to push; to press"
+ ],
+ [
+  "消す",
+  "けす",
+  "verb-u",
+  "verb",
+  "電気を消します。",
+  "I turn off the light.",
+  "to turn off; to erase"
+ ],
+ [
+  "曲がる",
+  "まがる",
+  "verb-u",
+  "verb",
+  "次の角を曲がります。",
+  "I turn at the next corner.",
+  "to turn"
+ ],
+ [
+  "渡る",
+  "わたる",
+  "verb-u",
+  "verb",
+  "道を渡ります。",
+  "I cross the road.",
+  "to cross"
+ ],
+ [
+  "降りる",
+  "おりる",
+  "verb-ru",
+  "verb",
+  "次の駅で降ります。",
+  "I get off at the next station.",
+  "to get off; to descend"
+ ],
+ [
+  "出す",
+  "だす",
+  "verb-u",
+  "verb",
+  "手紙を出します。",
+  "I send a letter.",
+  "to take out; to send"
+ ],
+ [
+  "入れる",
+  "いれる",
+  "verb-ru",
+  "verb",
+  "かばんに入れます。",
+  "I put it in my bag.",
+  "to put in"
+ ],
+ [
+  "置く",
+  "おく",
+  "verb-u",
+  "verb",
+  "机の上に置きます。",
+  "I put it on the desk.",
+  "to put; to place"
+ ],
+ [
+  "取る",
+  "とる",
+  "verb-u",
+  "verb",
+  "塩を取ってください。",
+  "Please pass the salt.",
+  "to take"
+ ],
+ [
+  "返す",
+  "かえす",
+  "verb-u",
+  "verb",
+  "本を返します。",
+  "I return the book.",
+  "to return something"
+ ],
+ [
+  "払う",
+  "はらう",
+  "verb-u",
+  "verb",
+  "お金を払います。",
+  "I pay the money.",
+  "to pay"
+ ],
+ [
+  "探す",
+  "さがす",
+  "verb-u",
+  "verb",
+  "かぎを探しています。",
+  "I'm looking for my key.",
+  "to look for"
+ ],
+ [
+  "選ぶ",
+  "えらぶ",
+  "verb-u",
+  "verb",
+  "好きな色を選びます。",
+  "I choose my favourite colour.",
+  "to choose"
+ ],
+ [
+  "決める",
+  "きめる",
+  "verb-ru",
+  "verb",
+  "日を決めましょう。",
+  "Let's decide the day.",
+  "to decide"
+ ],
+ [
+  "手伝う",
+  "てつだう",
+  "verb-u",
+  "verb",
+  "仕事を手伝います。",
+  "I help with the work.",
+  "to help"
+ ],
+ [
+  "困る",
+  "こまる",
+  "verb-u",
+  "verb",
+  "お金がなくて困ります。",
+  "I'm troubled because I have no money.",
+  "to be troubled"
+ ],
+ [
+  "疲れる",
+  "つかれる",
+  "verb-ru",
+  "verb",
+  "今日はとても疲れました。",
+  "I got very tired.",
+  "to get tired"
+ ],
+ [
+  "泣く",
+  "なく",
+  "verb-u",
+  "verb",
+  "赤ちゃんが泣いています。",
+  "The baby is crying.",
+  "to cry"
+ ],
+ [
+  "笑う",
+  "わらう",
+  "verb-u",
+  "verb",
+  "みんなで笑いました。",
+  "We all laughed.",
+  "to laugh"
+ ],
+ [
+  "怒る",
+  "おこる",
+  "verb-u",
+  "verb",
+  "父が怒りました。",
+  "My father got angry.",
+  "to get angry"
+ ],
+ [
+  "続ける",
+  "つづける",
+  "verb-ru",
+  "verb",
+  "勉強を続けます。",
+  "I continue studying.",
+  "to continue"
+ ],
+ [
+  "生まれる",
+  "うまれる",
+  "verb-ru",
+  "verb",
+  "日本で生まれました。",
+  "I was born in Japan.",
+  "to be born"
+ ],
+ [
+  "なる",
+  "なる",
+  "verb-u",
+  "verb",
+  "医者になりたいです。",
+  "I want to become a doctor.",
+  "to become"
+ ],
+ [
+  "登る",
+  "のぼる",
+  "verb-u",
+  "verb",
+  "山に登ります。",
+  "I climb the mountain.",
+  "to climb"
+ ],
+ [
+  "着く",
+  "つく",
+  "verb-u",
+  "verb",
+  "駅に着きました。",
+  "I arrived at the station.",
+  "to arrive"
+ ],
+ [
+  "熱い",
+  "あつい",
+  "i-adjective",
+  "adjective",
+  "このお茶は熱いです。",
+  "This tea is hot.",
+  "hot (to touch)"
+ ],
+ [
+  "冷たい",
+  "つめたい",
+  "i-adjective",
+  "adjective",
+  "冷たい水を飲みます。",
+  "I drink cold water.",
+  "cold (to touch)"
+ ],
+ [
+  "温かい",
+  "あたたかい",
+  "i-adjective",
+  "adjective",
+  "温かいスープです。",
+  "It's warm soup.",
+  "warm"
+ ],
+ [
+  "涼しい",
+  "すずしい",
+  "i-adjective",
+  "adjective",
+  "秋は涼しいです。",
+  "Autumn is cool.",
+  "cool"
+ ],
+ [
+  "甘い",
+  "あまい",
+  "i-adjective",
+  "adjective",
+  "このケーキは甘いです。",
+  "This cake is sweet.",
+  "sweet"
+ ],
+ [
+  "辛い",
+  "からい",
+  "i-adjective",
+  "adjective",
+  "この料理は辛いです。",
+  "This dish is spicy.",
+  "spicy; hot"
+ ],
+ [
+  "おいしい",
+  "おいしい",
+  "i-adjective",
+  "adjective",
+  "このパンはおいしいです。",
+  "This bread is delicious.",
+  "delicious"
+ ],
+ [
+  "汚い",
+  "きたない",
+  "i-adjective",
+  "adjective",
+  "部屋が汚いです。",
+  "The room is dirty.",
+  "dirty"
+ ],
+ [
+  "痛い",
+  "いたい",
+  "i-adjective",
+  "adjective",
+  "頭が痛いです。",
+  "My head hurts.",
+  "painful"
+ ],
+ [
+  "眠い",
+  "ねむい",
+  "i-adjective",
+  "adjective",
+  "とても眠いです。",
+  "I'm very sleepy.",
+  "sleepy"
+ ],
+ [
+  "細い",
+  "ほそい",
+  "i-adjective",
+  "adjective",
+  "細い道を歩きます。",
+  "I walk along a narrow road.",
+  "thin; narrow"
+ ],
+ [
+  "丸い",
+  "まるい",
+  "i-adjective",
+  "adjective",
+  "丸いテーブルです。",
+  "It's a round table.",
+  "round"
+ ],
+ [
+  "若い",
+  "わかい",
+  "i-adjective",
+  "adjective",
+  "彼は若いです。",
+  "He is young.",
+  "young"
+ ],
+ [
+  "遅い",
+  "おそい",
+  "i-adjective",
+  "adjective",
+  "電車が遅いです。",
+  "The train is slow.",
+  "slow; late"
+ ],
+ [
+  "速い",
+  "はやい",
+  "i-adjective",
+  "adjective",
+  "この車は速いです。",
+  "This car is fast.",
+  "fast"
+ ],
+ [
+  "楽しい",
+  "たのしい",
+  "i-adjective",
+  "adjective",
+  "旅行は楽しいです。",
+  "Travel is fun.",
+  "fun; enjoyable"
+ ],
+ [
+  "寂しい",
+  "さびしい",
+  "i-adjective",
+  "adjective",
+  "一人で寂しいです。",
+  "I'm lonely by myself.",
+  "lonely"
+ ],
+ [
+  "きれい",
+  "きれい",
+  "na-adjective",
+  "adjective",
+  "部屋がきれいです。",
+  "The room is clean.",
+  "pretty; clean"
+ ],
+ [
+  "静か",
+  "しずか",
+  "na-adjective",
+  "adjective",
+  "図書館は静かです。",
+  "The library is quiet.",
+  "quiet"
+ ],
+ [
+  "大変",
+  "たいへん",
+  "na-adjective",
+  "adjective",
+  "仕事が大変です。",
+  "The work is tough.",
+  "tough; serious"
+ ],
+ [
+  "簡単",
+  "かんたん",
+  "na-adjective",
+  "adjective",
+  "この問題は簡単です。",
+  "This problem is easy.",
+  "easy; simple"
+ ],
+ [
+  "親切",
+  "しんせつ",
+  "na-adjective",
+  "adjective",
+  "店員は親切です。",
+  "The shop assistant is kind.",
+  "kind"
+ ],
+ [
+  "大丈夫",
+  "だいじょうぶ",
+  "na-adjective",
+  "adjective",
+  "もう大丈夫です。",
+  "It's all right now.",
+  "all right; okay"
+ ],
+ [
+  "自由",
+  "じゆう",
+  "na-adjective",
+  "adjective",
+  "自由な時間がほしいです。",
+  "I want free time.",
+  "free; freedom"
+ ],
+ [
+  "安全",
+  "あんぜん",
+  "na-adjective",
+  "adjective",
+  "ここは安全です。",
+  "It's safe here.",
+  "safe"
+ ],
+ [
+  "危険",
+  "きけん",
+  "na-adjective",
+  "adjective",
+  "その道は危険です。",
+  "That road is dangerous.",
+  "dangerous"
+ ],
+ [
+  "必要",
+  "ひつよう",
+  "na-adjective",
+  "adjective",
+  "お金が必要です。",
+  "Money is necessary.",
+  "necessary"
+ ],
+ [
+  "丁寧",
+  "ていねい",
+  "na-adjective",
+  "adjective",
+  "丁寧に書きます。",
+  "I write carefully.",
+  "polite; careful"
+ ],
+ [
+  "熱",
+  "ねつ",
+  "noun",
+  "health",
+  "熱があります。",
+  "I have a fever.",
+  "fever"
+ ],
+ [
+  "風邪",
+  "かぜ",
+  "noun",
+  "health",
+  "風邪をひきました。",
+  "I caught a cold.",
+  "a cold"
+ ],
+ [
+  "怪我",
+  "けが",
+  "noun",
+  "health",
+  "足に怪我をしました。",
+  "I injured my leg.",
+  "injury"
+ ],
+ [
+  "台所",
+  "だいどころ",
+  "noun",
+  "house",
+  "台所で料理します。",
+  "I cook in the kitchen.",
+  "kitchen"
+ ],
+ [
+  "トイレ",
+  "トイレ",
+  "noun",
+  "house",
+  "トイレはあそこです。",
+  "The toilet is over there.",
+  "toilet"
+ ],
+ [
+  "玄関",
+  "げんかん",
+  "noun",
+  "house",
+  "玄関で靴を脱ぎます。",
+  "I take off my shoes at the entrance.",
+  "entrance hall"
+ ],
+ [
+  "庭",
+  "にわ",
+  "noun",
+  "house",
+  "庭に花があります。",
+  "There are flowers in the garden.",
+  "garden"
+ ],
+ [
+  "階段",
+  "かいだん",
+  "noun",
+  "house",
+  "階段を上がります。",
+  "I go up the stairs.",
+  "stairs"
+ ],
+ [
+  "靴",
+  "くつ",
+  "noun",
+  "clothes",
+  "新しい靴を買いました。",
+  "I bought new shoes.",
+  "shoes"
+ ],
+ [
+  "帽子",
+  "ぼうし",
+  "noun",
+  "clothes",
+  "帽子をかぶります。",
+  "I put on a hat.",
+  "hat"
+ ],
+ [
+  "眼鏡",
+  "めがね",
+  "noun",
+  "clothes",
+  "眼鏡をかけます。",
+  "I wear glasses.",
+  "glasses"
+ ],
+ [
+  "今朝",
+  "けさ",
+  "noun",
+  "time",
+  "今朝、早く起きました。",
+  "I got up early this morning.",
+  "this morning"
+ ],
+ [
+  "毎晩",
+  "まいばん",
+  "noun",
+  "time",
+  "毎晩、本を読みます。",
+  "I read a book every night.",
+  "every night"
+ ],
+ [
+  "さっき",
+  "さっき",
+  "adverb",
+  "time",
+  "さっき着きました。",
+  "I arrived a moment ago.",
+  "a moment ago"
+ ],
+ [
+  "これから",
+  "これから",
+  "adverb",
+  "time",
+  "これから出かけます。",
+  "I'm going out from now.",
+  "from now on"
+ ],
+ [
+  "最初",
+  "さいしょ",
+  "noun",
+  "time",
+  "最初に名前を書きます。",
+  "First, write your name.",
+  "first; beginning"
+ ],
+ [
+  "最後",
+  "さいご",
+  "noun",
+  "time",
+  "最後まで頑張ります。",
+  "I'll do my best to the end.",
+  "last; end"
+ ],
+ [
+  "将来",
+  "しょうらい",
+  "noun",
+  "time",
+  "将来、先生になりたいです。",
+  "I want to be a teacher in the future.",
+  "the future"
+ ],
+ [
+  "切符",
+  "きっぷ",
+  "noun",
+  "travel",
+  "切符を買います。",
+  "I buy a ticket.",
+  "ticket"
+ ],
+ [
+  "荷物",
+  "にもつ",
+  "noun",
+  "travel",
+  "荷物が重いです。",
+  "The luggage is heavy.",
+  "luggage"
+ ],
+ [
+  "予約",
+  "よやく",
+  "noun",
+  "travel",
+  "ホテルを予約します。",
+  "I reserve a hotel.",
+  "reservation"
+ ],
+ [
+  "地下鉄",
+  "ちかてつ",
+  "noun",
+  "travel",
+  "地下鉄で行きます。",
+  "I go by subway.",
+  "subway"
+ ],
+ [
+  "エレベーター",
+  "エレベーター",
+  "noun",
+  "object",
+  "エレベーターに乗ります。",
+  "I take the elevator.",
+  "elevator"
+ ],
+ [
+  "シャワー",
+  "シャワー",
+  "noun",
+  "object",
+  "毎朝シャワーを浴びます。",
+  "I take a shower every morning.",
+  "shower"
+ ],
+ [
+  "カーテン",
+  "カーテン",
+  "noun",
+  "object",
+  "カーテンを開けます。",
+  "I open the curtains.",
+  "curtain"
+ ],
+ [
+  "コート",
+  "コート",
+  "noun",
+  "clothes",
+  "コートを着ます。",
+  "I wear a coat.",
+  "coat"
+ ],
+ [
+  "セーター",
+  "セーター",
+  "noun",
+  "clothes",
+  "セーターが暖かいです。",
+  "The sweater is warm.",
+  "sweater"
+ ],
+ [
+  "ボタン",
+  "ボタン",
+  "noun",
+  "object",
+  "ボタンを押してください。",
+  "Please press the button.",
+  "button"
+ ],
+ [
+  "コンビニ",
+  "コンビニ",
+  "noun",
+  "place",
+  "コンビニで買います。",
+  "I buy it at the convenience store.",
+  "convenience store"
+ ],
+ [
+  "カード",
+  "カード",
+  "noun",
+  "object",
+  "カードで払います。",
+  "I pay by card.",
+  "card"
+ ],
+ [
+  "メール",
+  "メール",
+  "noun",
+  "object",
+  "メールを送ります。",
+  "I send an email.",
+  "email"
+ ],
+ [
+  "アルバイト",
+  "アルバイト",
+  "noun",
+  "work",
+  "アルバイトをしています。",
+  "I work part-time.",
+  "part-time job"
+ ],
+ [
+  "プレゼント",
+  "プレゼント",
+  "noun",
+  "object",
+  "プレゼントをもらいました。",
+  "I received a present.",
+  "present; gift"
+ ],
+ [
+  "タオル",
+  "タオル",
+  "noun",
+  "object",
+  "タオルを使います。",
+  "I use a towel.",
+  "towel"
+ ],
+ [
+  "コピー",
+  "コピー",
+  "noun",
+  "object",
+  "コピーを取ります。",
+  "I make a copy.",
+  "copy"
+ ],
+ [
+  "どうぞ",
+  "どうぞ",
+  "expression",
+  "basic",
+  "どうぞ、座ってください。",
+  "Please, have a seat.",
+  "please; go ahead"
+ ],
+ [
+  "どうも",
+  "どうも",
+  "expression",
+  "basic",
+  "どうも、ありがとう。",
+  "Thanks a lot.",
+  "thanks; very"
+ ],
+ [
+  "もしもし",
+  "もしもし",
+  "expression",
+  "basic",
+  "もしもし、田中です。",
+  "Hello, this is Tanaka.",
+  "hello (on the phone)"
+ ],
+ [
+  "そう",
+  "そう",
+  "expression",
+  "basic",
+  "そうですね。",
+  "That's right.",
+  "so; that way"
+ ],
+ [
+  "もっと",
+  "もっと",
+  "adverb",
+  "quantity",
+  "もっと勉強します。",
+  "I'll study more.",
+  "more"
+ ],
+ [
+  "だんだん",
+  "だんだん",
+  "adverb",
+  "time",
+  "だんだん暖かくなります。",
+  "It's gradually getting warmer.",
+  "gradually"
+ ],
+ [
+  "たいてい",
+  "たいてい",
+  "adverb",
+  "time",
+  "たいてい七時に起きます。",
+  "I usually get up at seven.",
+  "usually"
+ ],
+ [
+  "回",
+  "かい",
+  "counter",
+  "counter",
+  "一回だけ行きました。",
+  "I went only once.",
+  "counter for times"
+ ],
+ [
+  "歳",
+  "さい",
+  "counter",
+  "counter",
+  "弟は九歳です。",
+  "My younger brother is nine years old.",
+  "counter for age"
+ ],
+ [
+  "冊",
+  "さつ",
+  "counter",
+  "counter",
+  "本を三冊買いました。",
+  "I bought three books.",
+  "counter for books"
+ ],
+ [
+  "個",
+  "こ",
+  "counter",
+  "counter",
+  "りんごを五個ください。",
+  "Five apples, please.",
+  "counter for small objects"
+ ],
+ [
+  "杯",
+  "はい",
+  "counter",
+  "counter",
+  "お茶を一杯ください。",
+  "One cup of tea, please.",
+  "counter for cupfuls"
+ ]
+]

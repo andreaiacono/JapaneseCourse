@@ -1,0 +1,1424 @@
+[
+ [
+  "降る",
+  "ふる",
+  "verb-u",
+  "weather",
+  "雨が降っています。",
+  "It is raining.",
+  "to fall (rain/snow)"
+ ],
+ [
+  "晴れる",
+  "はれる",
+  "verb-ru",
+  "weather",
+  "明日は晴れるでしょう。",
+  "It will probably be sunny tomorrow.",
+  "to clear up"
+ ],
+ [
+  "曇る",
+  "くもる",
+  "verb-u",
+  "weather",
+  "空が曇りました。",
+  "The sky clouded over.",
+  "to become cloudy"
+ ],
+ [
+  "吹く",
+  "ふく",
+  "verb-u",
+  "weather",
+  "風が吹いています。",
+  "The wind is blowing.",
+  "to blow"
+ ],
+ [
+  "咲く",
+  "さく",
+  "verb-u",
+  "nature",
+  "花が咲きました。",
+  "The flowers bloomed.",
+  "to bloom"
+ ],
+ [
+  "雪",
+  "ゆき",
+  "noun",
+  "weather",
+  "雪が降っています。",
+  "It is snowing.",
+  "snow"
+ ],
+ [
+  "雲",
+  "くも",
+  "noun",
+  "weather",
+  "雲が白いです。",
+  "The clouds are white.",
+  "cloud"
+ ],
+ [
+  "星",
+  "ほし",
+  "noun",
+  "nature",
+  "星がきれいです。",
+  "The stars are beautiful.",
+  "star"
+ ],
+ [
+  "空気",
+  "くうき",
+  "noun",
+  "nature",
+  "空気がきれいです。",
+  "The air is clean.",
+  "air"
+ ],
+ [
+  "石",
+  "いし",
+  "noun",
+  "nature",
+  "石を拾いました。",
+  "I picked up a stone.",
+  "stone"
+ ],
+ [
+  "島",
+  "しま",
+  "noun",
+  "nature",
+  "小さい島に行きます。",
+  "I go to a small island.",
+  "island"
+ ],
+ [
+  "湖",
+  "みずうみ",
+  "noun",
+  "nature",
+  "湖で泳ぎます。",
+  "I swim in the lake.",
+  "lake"
+ ],
+ [
+  "草",
+  "くさ",
+  "noun",
+  "nature",
+  "庭の草を切ります。",
+  "I cut the grass in the garden.",
+  "grass"
+ ],
+ [
+  "葉",
+  "は",
+  "noun",
+  "nature",
+  "葉が赤くなりました。",
+  "The leaves turned red.",
+  "leaf"
+ ],
+ [
+  "色",
+  "いろ",
+  "noun",
+  "color",
+  "好きな色は青です。",
+  "My favourite colour is blue.",
+  "colour"
+ ],
+ [
+  "青",
+  "あお",
+  "noun",
+  "color",
+  "青が好きです。",
+  "I like blue.",
+  "blue"
+ ],
+ [
+  "赤",
+  "あか",
+  "noun",
+  "color",
+  "赤のペンを使います。",
+  "I use a red pen.",
+  "red"
+ ],
+ [
+  "白",
+  "しろ",
+  "noun",
+  "color",
+  "白のシャツを買います。",
+  "I buy a white shirt.",
+  "white"
+ ],
+ [
+  "黒",
+  "くろ",
+  "noun",
+  "color",
+  "黒のかばんです。",
+  "It's a black bag.",
+  "black"
+ ],
+ [
+  "黄色",
+  "きいろ",
+  "noun",
+  "color",
+  "黄色の花です。",
+  "It's a yellow flower.",
+  "yellow"
+ ],
+ [
+  "緑",
+  "みどり",
+  "noun",
+  "color",
+  "緑が多い町です。",
+  "It's a town with lots of greenery.",
+  "green"
+ ],
+ [
+  "妻",
+  "つま",
+  "noun",
+  "family",
+  "妻と旅行します。",
+  "I travel with my wife.",
+  "wife"
+ ],
+ [
+  "夫",
+  "おっと",
+  "noun",
+  "family",
+  "夫は医者です。",
+  "My husband is a doctor.",
+  "husband"
+ ],
+ [
+  "息子",
+  "むすこ",
+  "noun",
+  "family",
+  "息子は学生です。",
+  "My son is a student.",
+  "son"
+ ],
+ [
+  "娘",
+  "むすめ",
+  "noun",
+  "family",
+  "娘は五歳です。",
+  "My daughter is five years old.",
+  "daughter"
+ ],
+ [
+  "祖父",
+  "そふ",
+  "noun",
+  "family",
+  "祖父は元気です。",
+  "My grandfather is well.",
+  "grandfather"
+ ],
+ [
+  "祖母",
+  "そぼ",
+  "noun",
+  "family",
+  "祖母に会いました。",
+  "I met my grandmother.",
+  "grandmother"
+ ],
+ [
+  "奥さん",
+  "おくさん",
+  "noun",
+  "family",
+  "奥さんは先生です。",
+  "His wife is a teacher.",
+  "(someone else's) wife"
+ ],
+ [
+  "皆さん",
+  "みなさん",
+  "noun",
+  "people",
+  "皆さん、おはようございます。",
+  "Good morning, everyone.",
+  "everyone (polite)"
+ ],
+ [
+  "自分",
+  "じぶん",
+  "noun",
+  "people",
+  "自分で作りました。",
+  "I made it myself.",
+  "oneself"
+ ],
+ [
+  "生徒",
+  "せいと",
+  "noun",
+  "people",
+  "生徒が三十人います。",
+  "There are thirty students.",
+  "pupil; student"
+ ],
+ [
+  "塩",
+  "しお",
+  "noun",
+  "food",
+  "塩を入れます。",
+  "I add salt.",
+  "salt"
+ ],
+ [
+  "砂糖",
+  "さとう",
+  "noun",
+  "food",
+  "砂糖は甘いです。",
+  "Sugar is sweet.",
+  "sugar"
+ ],
+ [
+  "米",
+  "こめ",
+  "noun",
+  "food",
+  "米を買います。",
+  "I buy rice.",
+  "rice (uncooked)"
+ ],
+ [
+  "弁当",
+  "べんとう",
+  "noun",
+  "food",
+  "弁当を持って行きます。",
+  "I take a lunchbox with me.",
+  "boxed lunch"
+ ],
+ [
+  "お菓子",
+  "おかし",
+  "noun",
+  "food",
+  "お菓子が好きです。",
+  "I like sweets.",
+  "sweets; snacks"
+ ],
+ [
+  "食べ物",
+  "たべもの",
+  "noun",
+  "food",
+  "好きな食べ物は何ですか。",
+  "What is your favourite food?",
+  "food"
+ ],
+ [
+  "昼ご飯",
+  "ひるごはん",
+  "noun",
+  "food",
+  "昼ご飯を食べました。",
+  "I ate lunch.",
+  "lunch"
+ ],
+ [
+  "晩ご飯",
+  "ばんごはん",
+  "noun",
+  "food",
+  "晩ご飯を作ります。",
+  "I make dinner.",
+  "dinner"
+ ],
+ [
+  "お腹",
+  "おなか",
+  "noun",
+  "body",
+  "お腹がすきました。",
+  "I'm hungry.",
+  "stomach; belly"
+ ],
+ [
+  "背",
+  "せ",
+  "noun",
+  "body",
+  "背が高いです。",
+  "He is tall.",
+  "height; back"
+ ],
+ [
+  "腕",
+  "うで",
+  "noun",
+  "body",
+  "腕が痛いです。",
+  "My arm hurts.",
+  "arm"
+ ],
+ [
+  "味",
+  "あじ",
+  "noun",
+  "food",
+  "味がいいです。",
+  "The taste is good.",
+  "taste"
+ ],
+ [
+  "話",
+  "はなし",
+  "noun",
+  "basic",
+  "面白い話を聞きました。",
+  "I heard an interesting story.",
+  "story; talk"
+ ],
+ [
+  "物",
+  "もの",
+  "noun",
+  "basic",
+  "大切な物です。",
+  "It's an important thing.",
+  "thing (object)"
+ ],
+ [
+  "事",
+  "こと",
+  "noun",
+  "basic",
+  "大事な事を話します。",
+  "I'll talk about an important matter.",
+  "thing (matter)"
+ ],
+ [
+  "意見",
+  "いけん",
+  "noun",
+  "basic",
+  "意見を言います。",
+  "I state my opinion.",
+  "opinion"
+ ],
+ [
+  "約束",
+  "やくそく",
+  "noun",
+  "basic",
+  "約束を守ります。",
+  "I keep my promise.",
+  "promise"
+ ],
+ [
+  "経験",
+  "けいけん",
+  "noun",
+  "basic",
+  "いい経験でした。",
+  "It was a good experience.",
+  "experience"
+ ],
+ [
+  "趣味",
+  "しゅみ",
+  "noun",
+  "hobby",
+  "趣味は音楽です。",
+  "My hobby is music.",
+  "hobby"
+ ],
+ [
+  "夢",
+  "ゆめ",
+  "noun",
+  "basic",
+  "いい夢を見ました。",
+  "I had a good dream.",
+  "dream"
+ ],
+ [
+  "教科書",
+  "きょうかしょ",
+  "noun",
+  "study",
+  "教科書を開きます。",
+  "I open the textbook.",
+  "textbook"
+ ],
+ [
+  "消しゴム",
+  "けしゴム",
+  "noun",
+  "study",
+  "消しゴムを貸してください。",
+  "Please lend me an eraser.",
+  "eraser"
+ ],
+ [
+  "休み",
+  "やすみ",
+  "noun",
+  "time",
+  "明日は休みです。",
+  "Tomorrow is a day off.",
+  "holiday; rest"
+ ],
+ [
+  "秒",
+  "びょう",
+  "noun",
+  "time",
+  "三十秒待ちます。",
+  "I wait thirty seconds.",
+  "second (time)"
+ ],
+ [
+  "週間",
+  "しゅうかん",
+  "noun",
+  "time",
+  "二週間かかります。",
+  "It takes two weeks.",
+  "week (counter)"
+ ],
+ [
+  "今度",
+  "こんど",
+  "noun",
+  "time",
+  "今度、一緒に行きましょう。",
+  "Let's go together next time.",
+  "next time"
+ ],
+ [
+  "昼",
+  "ひる",
+  "noun",
+  "time",
+  "昼に食べます。",
+  "I eat at noon.",
+  "noon; daytime"
+ ],
+ [
+  "特に",
+  "とくに",
+  "adverb",
+  "basic",
+  "特に問題はありません。",
+  "There is no particular problem.",
+  "especially"
+ ],
+ [
+  "本当に",
+  "ほんとうに",
+  "adverb",
+  "basic",
+  "本当にありがとう。",
+  "Thank you really.",
+  "really"
+ ],
+ [
+  "本当",
+  "ほんとう",
+  "noun",
+  "basic",
+  "それは本当ですか。",
+  "Is that true?",
+  "truth; real"
+ ],
+ [
+  "例えば",
+  "たとえば",
+  "adverb",
+  "basic",
+  "例えば、りんごです。",
+  "For example, an apple.",
+  "for example"
+ ],
+ [
+  "大体",
+  "だいたい",
+  "adverb",
+  "quantity",
+  "大体分かりました。",
+  "I understood roughly.",
+  "roughly; mostly"
+ ],
+ [
+  "ほとんど",
+  "ほとんど",
+  "adverb",
+  "quantity",
+  "ほとんど終わりました。",
+  "It's almost finished.",
+  "almost; hardly"
+ ],
+ [
+  "ずっと",
+  "ずっと",
+  "adverb",
+  "time",
+  "ずっと待っていました。",
+  "I was waiting the whole time.",
+  "the whole time; far more"
+ ],
+ [
+  "きっと",
+  "きっと",
+  "adverb",
+  "basic",
+  "きっと来ます。",
+  "He will surely come.",
+  "surely"
+ ],
+ [
+  "必ず",
+  "かならず",
+  "adverb",
+  "basic",
+  "必ず行きます。",
+  "I will definitely go.",
+  "without fail"
+ ],
+ [
+  "別々",
+  "べつべつ",
+  "na-adjective",
+  "basic",
+  "別々に払います。",
+  "We'll pay separately.",
+  "separate"
+ ],
+ [
+  "普通",
+  "ふつう",
+  "noun",
+  "basic",
+  "普通の日です。",
+  "It's an ordinary day.",
+  "ordinary; usual"
+ ],
+ [
+  "一緒",
+  "いっしょ",
+  "noun",
+  "basic",
+  "一緒に帰りましょう。",
+  "Let's go home together.",
+  "together"
+ ],
+ [
+  "掃除",
+  "そうじ",
+  "verb-irregular",
+  "house",
+  "部屋を掃除します。",
+  "I clean the room.",
+  "cleaning"
+ ],
+ [
+  "洗濯",
+  "せんたく",
+  "verb-irregular",
+  "house",
+  "洗濯をしました。",
+  "I did the laundry.",
+  "laundry"
+ ],
+ [
+  "準備",
+  "じゅんび",
+  "verb-irregular",
+  "basic",
+  "旅行の準備をします。",
+  "I prepare for the trip.",
+  "preparation"
+ ],
+ [
+  "用意",
+  "ようい",
+  "verb-irregular",
+  "basic",
+  "朝ご飯を用意します。",
+  "I prepare breakfast.",
+  "preparation"
+ ],
+ [
+  "心配",
+  "しんぱい",
+  "verb-irregular",
+  "feeling",
+  "心配しないでください。",
+  "Please don't worry.",
+  "worry"
+ ],
+ [
+  "案内",
+  "あんない",
+  "verb-irregular",
+  "travel",
+  "町を案内します。",
+  "I'll show you around the town.",
+  "guidance"
+ ],
+ [
+  "相談",
+  "そうだん",
+  "verb-irregular",
+  "basic",
+  "先生に相談します。",
+  "I consult the teacher.",
+  "consultation"
+ ],
+ [
+  "招待",
+  "しょうたい",
+  "verb-irregular",
+  "basic",
+  "友達を招待します。",
+  "I invite my friend.",
+  "invitation"
+ ],
+ [
+  "卒業",
+  "そつぎょう",
+  "verb-irregular",
+  "study",
+  "大学を卒業しました。",
+  "I graduated from university.",
+  "graduation"
+ ],
+ [
+  "入学",
+  "にゅうがく",
+  "verb-irregular",
+  "study",
+  "四月に入学します。",
+  "I enter school in April.",
+  "school entrance"
+ ],
+ [
+  "かかる",
+  "かかる",
+  "verb-u",
+  "verb",
+  "一時間かかります。",
+  "It takes one hour.",
+  "to take (time/money)"
+ ],
+ [
+  "かける",
+  "かける",
+  "verb-ru",
+  "verb",
+  "電話をかけます。",
+  "I make a phone call.",
+  "to hang; to make (a call)"
+ ],
+ [
+  "つける",
+  "つける",
+  "verb-ru",
+  "verb",
+  "電気をつけます。",
+  "I turn on the light.",
+  "to turn on; to attach"
+ ],
+ [
+  "並ぶ",
+  "ならぶ",
+  "verb-u",
+  "verb",
+  "店の前に並びます。",
+  "I line up in front of the shop.",
+  "to line up"
+ ],
+ [
+  "落ちる",
+  "おちる",
+  "verb-ru",
+  "verb",
+  "財布が落ちました。",
+  "My wallet fell.",
+  "to fall"
+ ],
+ [
+  "拾う",
+  "ひろう",
+  "verb-u",
+  "verb",
+  "ごみを拾います。",
+  "I pick up rubbish.",
+  "to pick up"
+ ],
+ [
+  "触る",
+  "さわる",
+  "verb-u",
+  "verb",
+  "触らないでください。",
+  "Please don't touch.",
+  "to touch"
+ ],
+ [
+  "調べる",
+  "しらべる",
+  "verb-ru",
+  "verb",
+  "意味を調べます。",
+  "I look up the meaning.",
+  "to look up; to investigate"
+ ],
+ [
+  "比べる",
+  "くらべる",
+  "verb-ru",
+  "verb",
+  "二つを比べます。",
+  "I compare the two.",
+  "to compare"
+ ],
+ [
+  "変わる",
+  "かわる",
+  "verb-u",
+  "verb",
+  "天気が変わりました。",
+  "The weather changed.",
+  "to change (intransitive)"
+ ],
+ [
+  "変える",
+  "かえる",
+  "verb-ru",
+  "verb",
+  "計画を変えます。",
+  "I change the plan.",
+  "to change (transitive)"
+ ],
+ [
+  "続く",
+  "つづく",
+  "verb-u",
+  "verb",
+  "雨が続きます。",
+  "The rain continues.",
+  "to continue (intransitive)"
+ ],
+ [
+  "止める",
+  "とめる",
+  "verb-ru",
+  "verb",
+  "車を止めます。",
+  "I stop the car.",
+  "to stop (transitive)"
+ ],
+ [
+  "届く",
+  "とどく",
+  "verb-u",
+  "verb",
+  "手紙が届きました。",
+  "The letter arrived.",
+  "to reach; to arrive"
+ ],
+ [
+  "集まる",
+  "あつまる",
+  "verb-u",
+  "verb",
+  "駅に集まります。",
+  "We gather at the station.",
+  "to gather (intransitive)"
+ ],
+ [
+  "増える",
+  "ふえる",
+  "verb-ru",
+  "verb",
+  "人が増えました。",
+  "The number of people increased.",
+  "to increase"
+ ],
+ [
+  "直す",
+  "なおす",
+  "verb-u",
+  "verb",
+  "時計を直します。",
+  "I fix the watch.",
+  "to fix; to correct"
+ ],
+ [
+  "壊れる",
+  "こわれる",
+  "verb-ru",
+  "verb",
+  "パソコンが壊れました。",
+  "The computer broke.",
+  "to break (intransitive)"
+ ],
+ [
+  "財布",
+  "さいふ",
+  "noun",
+  "object",
+  "財布をなくしました。",
+  "I lost my wallet.",
+  "wallet"
+ ],
+ [
+  "鍵",
+  "かぎ",
+  "noun",
+  "object",
+  "鍵を忘れました。",
+  "I forgot the key.",
+  "key"
+ ],
+ [
+  "傘",
+  "かさ",
+  "noun",
+  "object",
+  "傘を持って行きます。",
+  "I take an umbrella.",
+  "umbrella"
+ ],
+ [
+  "時計",
+  "とけい",
+  "noun",
+  "object",
+  "時計を見ます。",
+  "I look at the clock.",
+  "clock; watch"
+ ],
+ [
+  "電池",
+  "でんち",
+  "noun",
+  "object",
+  "電池を買います。",
+  "I buy batteries.",
+  "battery"
+ ],
+ [
+  "手紙",
+  "てがみ",
+  "noun",
+  "object",
+  "手紙を書きます。",
+  "I write a letter.",
+  "letter"
+ ],
+ [
+  "封筒",
+  "ふうとう",
+  "noun",
+  "object",
+  "封筒に入れます。",
+  "I put it in an envelope.",
+  "envelope"
+ ],
+ [
+  "切手",
+  "きって",
+  "noun",
+  "object",
+  "切手をはります。",
+  "I stick on a stamp.",
+  "postage stamp"
+ ],
+ [
+  "雑誌",
+  "ざっし",
+  "noun",
+  "object",
+  "雑誌を読みます。",
+  "I read a magazine.",
+  "magazine"
+ ],
+ [
+  "茶碗",
+  "ちゃわん",
+  "noun",
+  "object",
+  "茶碗でご飯を食べます。",
+  "I eat rice from a bowl.",
+  "rice bowl"
+ ],
+ [
+  "箸",
+  "はし",
+  "noun",
+  "object",
+  "箸で食べます。",
+  "I eat with chopsticks.",
+  "chopsticks"
+ ],
+ [
+  "皿",
+  "さら",
+  "noun",
+  "object",
+  "皿を洗います。",
+  "I wash the dishes.",
+  "plate; dish"
+ ],
+ [
+  "橋",
+  "はし",
+  "noun",
+  "place",
+  "橋を渡ります。",
+  "I cross the bridge.",
+  "bridge"
+ ],
+ [
+  "角",
+  "かど",
+  "noun",
+  "place",
+  "角を曲がってください。",
+  "Please turn at the corner.",
+  "corner"
+ ],
+ [
+  "隣",
+  "となり",
+  "noun",
+  "position",
+  "隣に座ります。",
+  "I sit next to you.",
+  "next door; beside"
+ ],
+ [
+  "近く",
+  "ちかく",
+  "noun",
+  "position",
+  "駅の近くに住んでいます。",
+  "I live near the station.",
+  "nearby"
+ ],
+ [
+  "奥",
+  "おく",
+  "noun",
+  "position",
+  "店の奥にあります。",
+  "It's at the back of the shop.",
+  "inner part; back"
+ ],
+ [
+  "真ん中",
+  "まんなか",
+  "noun",
+  "position",
+  "部屋の真ん中に置きます。",
+  "I put it in the middle of the room.",
+  "the middle"
+ ],
+ [
+  "横",
+  "よこ",
+  "noun",
+  "position",
+  "横に置いてください。",
+  "Please put it beside.",
+  "side"
+ ],
+ [
+  "向こう",
+  "むこう",
+  "noun",
+  "position",
+  "向こうに山が見えます。",
+  "I can see a mountain over there.",
+  "over there; beyond"
+ ],
+ [
+  "屋上",
+  "おくじょう",
+  "noun",
+  "place",
+  "屋上から町が見えます。",
+  "You can see the town from the roof.",
+  "rooftop"
+ ],
+ [
+  "交番",
+  "こうばん",
+  "noun",
+  "place",
+  "交番で道を聞きます。",
+  "I ask for directions at the police box.",
+  "police box"
+ ],
+ [
+  "郵便局",
+  "ゆうびんきょく",
+  "noun",
+  "place",
+  "郵便局へ行きます。",
+  "I go to the post office.",
+  "post office"
+ ],
+ [
+  "映画館",
+  "えいがかん",
+  "noun",
+  "place",
+  "映画館で映画を見ます。",
+  "I watch a movie at the cinema.",
+  "cinema"
+ ],
+ [
+  "公園",
+  "こうえん",
+  "noun",
+  "place",
+  "公園で遊びます。",
+  "I play in the park.",
+  "park"
+ ],
+ [
+  "喫茶店",
+  "きっさてん",
+  "noun",
+  "place",
+  "喫茶店でコーヒーを飲みます。",
+  "I drink coffee at the coffee shop.",
+  "coffee shop"
+ ],
+ [
+  "八百屋",
+  "やおや",
+  "noun",
+  "place",
+  "八百屋で野菜を買います。",
+  "I buy vegetables at the greengrocer.",
+  "greengrocer"
+ ],
+ [
+  "何か",
+  "なにか",
+  "expression",
+  "question",
+  "何か食べますか。",
+  "Will you eat something?",
+  "something"
+ ],
+ [
+  "誰か",
+  "だれか",
+  "expression",
+  "question",
+  "誰かいますか。",
+  "Is anyone there?",
+  "someone"
+ ],
+ [
+  "どこか",
+  "どこか",
+  "expression",
+  "question",
+  "どこかへ行きましょう。",
+  "Let's go somewhere.",
+  "somewhere"
+ ],
+ [
+  "何も",
+  "なにも",
+  "expression",
+  "question",
+  "何もありません。",
+  "There is nothing.",
+  "nothing (with negative)"
+ ],
+ [
+  "誰も",
+  "だれも",
+  "expression",
+  "question",
+  "誰も来ませんでした。",
+  "Nobody came.",
+  "nobody (with negative)"
+ ],
+ [
+  "いくつか",
+  "いくつか",
+  "expression",
+  "question",
+  "いくつか質問があります。",
+  "I have several questions.",
+  "several"
+ ],
+ [
+  "方",
+  "かた",
+  "noun",
+  "people",
+  "あの方は先生です。",
+  "That person is a teacher.",
+  "person (polite)"
+ ],
+ [
+  "君",
+  "きみ",
+  "noun",
+  "people",
+  "君はどう思いますか。",
+  "What do you think?",
+  "you (familiar)"
+ ],
+ [
+  "僕",
+  "ぼく",
+  "noun",
+  "people",
+  "僕は学生です。",
+  "I am a student.",
+  "I (male, casual)"
+ ],
+ [
+  "社会",
+  "しゃかい",
+  "noun",
+  "basic",
+  "社会の勉強をします。",
+  "I study social studies.",
+  "society"
+ ],
+ [
+  "文化",
+  "ぶんか",
+  "noun",
+  "basic",
+  "日本の文化が好きです。",
+  "I like Japanese culture.",
+  "culture"
+ ],
+ [
+  "歴史",
+  "れきし",
+  "noun",
+  "study",
+  "歴史の本を読みます。",
+  "I read a history book.",
+  "history"
+ ],
+ [
+  "数学",
+  "すうがく",
+  "noun",
+  "study",
+  "数学が得意です。",
+  "I'm good at maths.",
+  "mathematics"
+ ],
+ [
+  "科学",
+  "かがく",
+  "noun",
+  "study",
+  "科学に興味があります。",
+  "I'm interested in science.",
+  "science"
+ ],
+ [
+  "音楽会",
+  "おんがくかい",
+  "noun",
+  "hobby",
+  "音楽会に行きます。",
+  "I go to a concert.",
+  "concert"
+ ],
+ [
+  "絵",
+  "え",
+  "noun",
+  "hobby",
+  "絵をかきます。",
+  "I draw a picture.",
+  "picture; drawing"
+ ],
+ [
+  "字",
+  "じ",
+  "noun",
+  "study",
+  "字がきれいです。",
+  "Your handwriting is neat.",
+  "character; handwriting"
+ ],
+ [
+  "紅茶",
+  "こうちゃ",
+  "noun",
+  "food",
+  "紅茶を飲みます。",
+  "I drink black tea.",
+  "black tea"
+ ],
+ [
+  "牛乳",
+  "ぎゅうにゅう",
+  "noun",
+  "food",
+  "牛乳を買います。",
+  "I buy milk.",
+  "milk"
+ ],
+ [
+  "果物屋",
+  "くだものや",
+  "noun",
+  "place",
+  "果物屋でりんごを買います。",
+  "I buy apples at the fruit shop.",
+  "fruit shop"
+ ],
+ [
+  "料理人",
+  "りょうりにん",
+  "noun",
+  "work",
+  "料理人になりたいです。",
+  "I want to become a cook.",
+  "cook"
+ ],
+ [
+  "会社員",
+  "かいしゃいん",
+  "noun",
+  "work",
+  "父は会社員です。",
+  "My father is an office worker.",
+  "office worker"
+ ],
+ [
+  "運転手",
+  "うんてんしゅ",
+  "noun",
+  "work",
+  "バスの運転手です。",
+  "He is a bus driver.",
+  "driver"
+ ],
+ [
+  "警察",
+  "けいさつ",
+  "noun",
+  "work",
+  "警察に電話します。",
+  "I call the police.",
+  "police"
+ ],
+ [
+  "歯医者",
+  "はいしゃ",
+  "noun",
+  "work",
+  "歯医者へ行きます。",
+  "I go to the dentist.",
+  "dentist"
+ ],
+ [
+  "受付",
+  "うけつけ",
+  "noun",
+  "place",
+  "受付で聞いてください。",
+  "Please ask at the reception.",
+  "reception"
+ ],
+ [
+  "席",
+  "せき",
+  "noun",
+  "place",
+  "席に座ってください。",
+  "Please take a seat.",
+  "seat"
+ ],
+ [
+  "会話",
+  "かいわ",
+  "noun",
+  "study",
+  "会話の練習をします。",
+  "I practise conversation.",
+  "conversation"
+ ],
+ [
+  "発音",
+  "はつおん",
+  "noun",
+  "study",
+  "発音が難しいです。",
+  "The pronunciation is difficult.",
+  "pronunciation"
+ ],
+ [
+  "翻訳",
+  "ほんやく",
+  "noun",
+  "study",
+  "翻訳をします。",
+  "I do translation.",
+  "translation"
+ ],
+ [
+  "以外",
+  "いがい",
+  "noun",
+  "basic",
+  "私以外はみんな来ました。",
+  "Everyone except me came.",
+  "except; other than"
+ ],
+ [
+  "場合",
+  "ばあい",
+  "noun",
+  "basic",
+  "その場合は電話してください。",
+  "In that case, please call.",
+  "case; situation"
+ ],
+ [
+  "理解",
+  "りかい",
+  "noun",
+  "study",
+  "理解しました。",
+  "I understood.",
+  "understanding"
+ ]
+]
