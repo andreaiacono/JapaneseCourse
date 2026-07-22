@@ -3292,4 +3292,1976 @@ export const n5Vocab: Record<string, VocabEntry> = {
       { ja: 'コートを着ます。', furigana: 'コートをきます。', en: "I put on a coat." },
     ],
   },
+
+  'vocab-ichigatsu': {
+    id: 'vocab-ichigatsu',
+    word: { ja: '一月', reading: 'いちがつ', romaji: 'ichigatsu', en: "January" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '一月は寒いです。', furigana: 'いちがつはさむいです。', en: "January is cold." },
+    ],
+  },
+  'vocab-shigatsu': {
+    id: 'vocab-shigatsu',
+    word: { ja: '四月', reading: 'しがつ', romaji: 'shigatsu', en: "April" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '四月に学校が始まります。', furigana: 'しがつにがっこうがはじまります。', en: "School starts in April." },
+    ],
+  },
+  'vocab-gogatsu': {
+    id: 'vocab-gogatsu',
+    word: { ja: '五月', reading: 'ごがつ', romaji: 'gogatsu', en: "May" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '五月に旅行します。', furigana: 'ごがつにりょこうします。', en: "I'll travel in May." },
+    ],
+  },
+  'vocab-rokugatsu': {
+    id: 'vocab-rokugatsu',
+    word: { ja: '六月', reading: 'ろくがつ', romaji: 'rokugatsu', en: "June" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '六月は雨が多いです。', furigana: 'ろくがつはあめがおおいです。', en: "There is a lot of rain in June." },
+    ],
+  },
+  'vocab-shichigatsu': {
+    id: 'vocab-shichigatsu',
+    word: { ja: '七月', reading: 'しちがつ', romaji: 'shichigatsu', en: "July" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '七月は暑いです。', furigana: 'しちがつはあついです。', en: "July is hot." },
+    ],
+  },
+  'vocab-hachigatsu': {
+    id: 'vocab-hachigatsu',
+    word: { ja: '八月', reading: 'はちがつ', romaji: 'hachigatsu', en: "August" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '八月に海へ行きます。', furigana: 'はちがつにうみへいきます。', en: "I go to the sea in August." },
+    ],
+  },
+  'vocab-kugatsu': {
+    id: 'vocab-kugatsu',
+    word: { ja: '九月', reading: 'くがつ', romaji: 'kugatsu', en: "September" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '九月に帰ります。', furigana: 'くがつにかえります。', en: "I'll return in September." },
+    ],
+  },
+  'vocab-juugatsu': {
+    id: 'vocab-juugatsu',
+    word: { ja: '十月', reading: 'じゅうがつ', romaji: 'juugatsu', en: "October" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '十月は涼しいです。', furigana: 'じゅうがつはすずしいです。', en: "October is cool." },
+    ],
+  },
+  'vocab-konya': {
+    id: 'vocab-konya',
+    word: { ja: '今夜', reading: 'こんや', romaji: 'konya', en: "tonight" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '今夜は家にいます。', furigana: 'こんやはいえにいます。', en: "I'll be at home tonight." },
+    ],
+  },
+  'vocab-sakunen': {
+    id: 'vocab-sakunen',
+    word: { ja: '昨年', reading: 'さくねん', romaji: 'sakunen', en: "last year" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '昨年、日本へ行きました。', furigana: 'さくねん、にほんへいきました。', en: "I went to Japan last year." },
+    ],
+  },
+  'vocab-maitoshi': {
+    id: 'vocab-maitoshi',
+    word: { ja: '毎年', reading: 'まいとし', romaji: 'maitoshi', en: "every year" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '毎年、山に登ります。', furigana: 'まいとし、やまにのぼります。', en: "I climb mountains every year." },
+    ],
+  },
+  'vocab-maishuu': {
+    id: 'vocab-maishuu',
+    word: { ja: '毎週', reading: 'まいしゅう', romaji: 'maishuu', en: "every week" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '毎週、映画を見ます。', furigana: 'まいしゅう、えいがをみます。', en: "I watch a movie every week." },
+    ],
+  },
+  'vocab-kyuujitsu': {
+    id: 'vocab-kyuujitsu',
+    word: { ja: '休日', reading: 'きゅうじつ', romaji: 'kyuujitsu', en: "holiday" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '休日はゆっくり休みます。', furigana: 'きゅうじつはゆっくりやすみます。', en: "I rest on holidays." },
+    ],
+  },
+  'vocab-jidai': {
+    id: 'vocab-jidai',
+    word: { ja: '時代', reading: 'じだい', romaji: 'jidai', en: "era" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '古い時代の話です。', furigana: 'ふるいじだいのはなしです。', en: "It's a story from an old era." },
+    ],
+  },
+  'vocab-saikin': {
+    id: 'vocab-saikin',
+    word: { ja: '最近', reading: 'さいきん', romaji: 'saikin', en: "recently" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '最近、忙しいです。', furigana: 'さいきん、いそがしいです。', en: "I've been busy recently." },
+    ],
+  },
+  'vocab-ichido': {
+    id: 'vocab-ichido',
+    word: { ja: '一度', reading: 'いちど', romaji: 'ichido', en: "once" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: '一度、京都へ行きました。', furigana: 'いちど、きょうとへいきました。', en: "I went to Kyoto once." },
+    ],
+  },
+  'vocab-hanbun': {
+    id: 'vocab-hanbun',
+    word: { ja: '半分', reading: 'はんぶん', romaji: 'hanbun', en: "half" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'time', 'N5'],
+    exampleSentences: [
+      { ja: 'ケーキを半分食べました。', furigana: 'ケーキをはんぶんたべました。', en: "I ate half the cake." },
+    ],
+  },
+  'vocab-juu': {
+    id: 'vocab-juu',
+    word: { ja: '十', reading: 'じゅう', romaji: 'juu', en: "ten" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'number', 'N5'],
+    exampleSentences: [
+      { ja: '十まで数えます。', furigana: 'じゅうまでかぞえます。', en: "I count to ten." },
+    ],
+  },
+  'vocab-sen': {
+    id: 'vocab-sen',
+    word: { ja: '千', reading: 'せん', romaji: 'sen', en: "thousand" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'number', 'N5'],
+    exampleSentences: [
+      { ja: '千円を払います。', furigana: 'せんえんをはらいます。', en: "I pay a thousand yen." },
+    ],
+  },
+  'vocab-ichiman': {
+    id: 'vocab-ichiman',
+    word: { ja: '一万', reading: 'いちまん', romaji: 'ichiman', en: "ten thousand" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'number', 'N5'],
+    exampleSentences: [
+      { ja: '一万円あります。', furigana: 'いちまんえんあります。', en: "I have ten thousand yen." },
+    ],
+  },
+  'vocab-mittsu': {
+    id: 'vocab-mittsu',
+    word: { ja: '三つ', reading: 'みっつ', romaji: 'mittsu', en: "three" },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'number', 'N5'],
+    exampleSentences: [
+      { ja: 'りんごを三つ買います。', furigana: 'りんごをみっつかいます。', en: "I'll buy three apples." },
+    ],
+  },
+  'vocab-yottsu': {
+    id: 'vocab-yottsu',
+    word: { ja: '四つ', reading: 'よっつ', romaji: 'yottsu', en: "four" },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'number', 'N5'],
+    exampleSentences: [
+      { ja: 'みかんが四つあります。', furigana: 'みかんがよっつあります。', en: "There are four mandarins." },
+    ],
+  },
+  'vocab-itsutsu': {
+    id: 'vocab-itsutsu',
+    word: { ja: '五つ', reading: 'いつつ', romaji: 'itsutsu', en: "five" },
+    wordClass: 'counter',
+    jlptLevel: 'N5',
+    tags: ['counter', 'number', 'N5'],
+    exampleSentences: [
+      { ja: '五つください。', furigana: 'いつつください。', en: "Five, please." },
+    ],
+  },
+  'vocab-higashi': {
+    id: 'vocab-higashi',
+    word: { ja: '東', reading: 'ひがし', romaji: 'higashi', en: "east" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '東に山があります。', furigana: 'ひがしにやまがあります。', en: "There is a mountain to the east." },
+    ],
+  },
+  'vocab-nishi': {
+    id: 'vocab-nishi',
+    word: { ja: '西', reading: 'にし', romaji: 'nishi', en: "west" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '西へ歩きます。', furigana: 'にしへあるきます。', en: "I walk west." },
+    ],
+  },
+  'vocab-minami': {
+    id: 'vocab-minami',
+    word: { ja: '南', reading: 'みなみ', romaji: 'minami', en: "south" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '南は暖かいです。', furigana: 'みなみはあたたかいです。', en: "The south is warm." },
+    ],
+  },
+  'vocab-kita': {
+    id: 'vocab-kita',
+    word: { ja: '北', reading: 'きた', romaji: 'kita', en: "north" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '北は寒いです。', furigana: 'きたはさむいです。', en: "The north is cold." },
+    ],
+  },
+  'vocab-iriguchi': {
+    id: 'vocab-iriguchi',
+    word: { ja: '入口', reading: 'いりぐち', romaji: 'iriguchi', en: "entrance" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '入口はどこですか。', furigana: 'いりぐちはどこですか。', en: "Where is the entrance?" },
+    ],
+  },
+  'vocab-deguchi': {
+    id: 'vocab-deguchi',
+    word: { ja: '出口', reading: 'でぐち', romaji: 'deguchi', en: "exit" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '出口を探しています。', furigana: 'でぐちをさがしています。', en: "I'm looking for the exit." },
+    ],
+  },
+  'vocab-saki': {
+    id: 'vocab-saki',
+    word: { ja: '先', reading: 'さき', romaji: 'saki', en: "ahead" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '先に行ってください。', furigana: 'さきにいってください。', en: "Please go ahead." },
+    ],
+  },
+  'vocab-ijou': {
+    id: 'vocab-ijou',
+    word: { ja: '以上', reading: 'いじょう', romaji: 'ijou', en: "more than" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'position', 'N5'],
+    exampleSentences: [
+      { ja: '三時間以上待ちました。', furigana: 'さんじかんいじょうまちました。', en: "I waited more than three hours." },
+    ],
+  },
+  'vocab-nihon': {
+    id: 'vocab-nihon',
+    word: { ja: '日本', reading: 'にほん', romaji: 'nihon', en: "Japan" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '日本に住んでいます。', furigana: 'にほんにすんでいます。', en: "I live in Japan." },
+    ],
+  },
+  'vocab-toukyou': {
+    id: 'vocab-toukyou',
+    word: { ja: '東京', reading: 'とうきょう', romaji: 'toukyou', en: "Tokyo" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '東京は人が多いです。', furigana: 'とうきょうはひとがおおいです。', en: "Tokyo has many people." },
+    ],
+  },
+  'vocab-kyouto': {
+    id: 'vocab-kyouto',
+    word: { ja: '京都', reading: 'きょうと', romaji: 'kyouto', en: "Kyoto" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '京都は古い町です。', furigana: 'きょうとはふるいまちです。', en: "Kyoto is an old city." },
+    ],
+  },
+  'vocab-hokkaidou': {
+    id: 'vocab-hokkaidou',
+    word: { ja: '北海道', reading: 'ほっかいどう', romaji: 'hokkaidou', en: "Hokkaido" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '北海道は冬が長いです。', furigana: 'ほっかいどうはふゆがながいです。', en: "Hokkaido has a long winter." },
+    ],
+  },
+  'vocab-fujisan': {
+    id: 'vocab-fujisan',
+    word: { ja: '富士山', reading: 'ふじさん', romaji: 'fujisan', en: "Mt. Fuji" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '富士山に登りたいです。', furigana: 'ふじさんにのぼりたいです。', en: "I want to climb Mt. Fuji." },
+    ],
+  },
+  'vocab-chuugoku': {
+    id: 'vocab-chuugoku',
+    word: { ja: '中国', reading: 'ちゅうごく', romaji: 'chuugoku', en: "China" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '中国語を習っています。', furigana: 'ちゅうごくごをならっています。', en: "I'm learning Chinese." },
+    ],
+  },
+  'vocab-gaikoku': {
+    id: 'vocab-gaikoku',
+    word: { ja: '外国', reading: 'がいこく', romaji: 'gaikoku', en: "foreign country" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '外国へ行きたいです。', furigana: 'がいこくへいきたいです。', en: "I want to go abroad." },
+    ],
+  },
+  'vocab-kaigai': {
+    id: 'vocab-kaigai',
+    word: { ja: '海外', reading: 'かいがい', romaji: 'kaigai', en: "overseas" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '海外で働きたいです。', furigana: 'かいがいではたらきたいです。', en: "I want to work overseas." },
+    ],
+  },
+  'vocab-jinja': {
+    id: 'vocab-jinja',
+    word: { ja: '神社', reading: 'じんじゃ', romaji: 'jinja', en: "shrine" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '神社でお参りします。', furigana: 'じんじゃでおまいりします。', en: "I pray at the shrine." },
+    ],
+  },
+  'vocab-koujou': {
+    id: 'vocab-koujou',
+    word: { ja: '工場', reading: 'こうじょう', romaji: 'koujou', en: "factory" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '父は工場で働いています。', furigana: 'ちちはこうじょうではたらいています。', en: "My father works at a factory." },
+    ],
+  },
+  'vocab-kyoushitsu': {
+    id: 'vocab-kyoushitsu',
+    word: { ja: '教室', reading: 'きょうしつ', romaji: 'kyoushitsu', en: "classroom" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '教室で勉強します。', furigana: 'きょうしつでべんきょうします。', en: "I study in the classroom." },
+    ],
+  },
+  'vocab-shougakkou': {
+    id: 'vocab-shougakkou',
+    word: { ja: '小学校', reading: 'しょうがっこう', romaji: 'shougakkou', en: "elementary school" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '小学校の先生です。', furigana: 'しょうがっこうのせんせいです。', en: "I'm an elementary school teacher." },
+    ],
+  },
+  'vocab-daigakuin': {
+    id: 'vocab-daigakuin',
+    word: { ja: '大学院', reading: 'だいがくいん', romaji: 'daigakuin', en: "graduate school" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '大学院で研究します。', furigana: 'だいがくいんでけんきゅうします。', en: "I do research at graduate school." },
+    ],
+  },
+  'vocab-ichiba': {
+    id: 'vocab-ichiba',
+    word: { ja: '市場', reading: 'いちば', romaji: 'ichiba', en: "market" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '市場で野菜を買います。', furigana: 'しじょうでやさいをかいます。', en: "I buy vegetables at the market." },
+    ],
+  },
+  'vocab-tatemono': {
+    id: 'vocab-tatemono',
+    word: { ja: '建物', reading: 'たてもの', romaji: 'tatemono', en: "building" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'あの建物は新しいです。', furigana: 'あのたてものはあたらしいです。', en: "That building is new." },
+    ],
+  },
+  'vocab-ken': {
+    id: 'vocab-ken',
+    word: { ja: '県', reading: 'けん', romaji: 'ken', en: "prefecture" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'となりの県に住んでいます。', furigana: 'となりのけんにすんでいます。', en: "I live in the next prefecture." },
+    ],
+  },
+  'vocab-ku': {
+    id: 'vocab-ku',
+    word: { ja: '区', reading: 'く', romaji: 'ku', en: "ward" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'この区は静かです。', furigana: 'このくはしずかです。', en: "This ward is quiet." },
+    ],
+  },
+  'vocab-mon': {
+    id: 'vocab-mon',
+    word: { ja: '門', reading: 'もん', romaji: 'mon', en: "gate" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: '門の前で待ちます。', furigana: 'もんのまえでまちます。', en: "I'll wait in front of the gate." },
+    ],
+  },
+  'vocab-ike': {
+    id: 'vocab-ike',
+    word: { ja: '池', reading: 'いけ', romaji: 'ike', en: "pond" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '池に魚がいます。', furigana: 'いけにさかながいます。', en: "There are fish in the pond." },
+    ],
+  },
+  'vocab-hayashi': {
+    id: 'vocab-hayashi',
+    word: { ja: '林', reading: 'はやし', romaji: 'hayashi', en: "woods" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '林を歩きます。', furigana: 'はやしをあるきます。', en: "I walk through the woods." },
+    ],
+  },
+  'vocab-mori': {
+    id: 'vocab-mori',
+    word: { ja: '森', reading: 'もり', romaji: 'mori', en: "forest" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '森は静かです。', furigana: 'もりはしずかです。', en: "The forest is quiet." },
+    ],
+  },
+  'vocab-mura': {
+    id: 'vocab-mura',
+    word: { ja: '村', reading: 'むら', romaji: 'mura', en: "village" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '小さい村に住んでいます。', furigana: 'ちいさいむらにすんでいます。', en: "I live in a small village." },
+    ],
+  },
+  'vocab-taiyou': {
+    id: 'vocab-taiyou',
+    word: { ja: '太陽', reading: 'たいよう', romaji: 'taiyou', en: "sun" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '太陽が出ました。', furigana: 'たいようがでました。', en: "The sun came out." },
+    ],
+  },
+  'vocab-hikari': {
+    id: 'vocab-hikari',
+    word: { ja: '光', reading: 'ひかり', romaji: 'hikari', en: "light" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '光が明るいです。', furigana: 'ひかりがあかるいです。', en: "The light is bright." },
+    ],
+  },
+  'vocab-oto': {
+    id: 'vocab-oto',
+    word: { ja: '音', reading: 'おと', romaji: 'oto', en: "sound" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '大きい音がしました。', furigana: 'おおきいおとがしました。', en: "There was a loud sound." },
+    ],
+  },
+  'vocab-taifuu': {
+    id: 'vocab-taifuu',
+    word: { ja: '台風', reading: 'たいふう', romaji: 'taifuu', en: "typhoon" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '台風が来ます。', furigana: 'たいふうがきます。', en: "A typhoon is coming." },
+    ],
+  },
+  'vocab-denki': {
+    id: 'vocab-denki',
+    word: { ja: '電気', reading: 'でんき', romaji: 'denki', en: "electricity" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '電気をつけてください。', furigana: 'でんきをつけてください。', en: "Please turn on the light." },
+    ],
+  },
+  'vocab-ushi': {
+    id: 'vocab-ushi',
+    word: { ja: '牛', reading: 'うし', romaji: 'ushi', en: "cow" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '牛がいます。', furigana: 'うしがいます。', en: "There is a cow." },
+    ],
+  },
+  'vocab-tori': {
+    id: 'vocab-tori',
+    word: { ja: '鳥', reading: 'とり', romaji: 'tori', en: "bird" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'nature', 'N5'],
+    exampleSentences: [
+      { ja: '鳥が鳴いています。', furigana: 'とりがないています。', en: "A bird is singing." },
+    ],
+  },
+  'vocab-toriniku': {
+    id: 'vocab-toriniku',
+    word: { ja: '鳥肉', reading: 'とりにく', romaji: 'toriniku', en: "chicken meat" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'food', 'N5'],
+    exampleSentences: [
+      { ja: '鳥肉を食べます。', furigana: 'とりにくをたべます。', en: "I eat chicken." },
+    ],
+  },
+  'vocab-furo': {
+    id: 'vocab-furo',
+    word: { ja: '風呂', reading: 'ふろ', romaji: 'furo', en: "bath" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '毎晩、風呂に入ります。', furigana: 'まいばん、ふろにはいります。', en: "I take a bath every night." },
+    ],
+  },
+  'vocab-kokuban': {
+    id: 'vocab-kokuban',
+    word: { ja: '黒板', reading: 'こくばん', romaji: 'kokuban', en: "blackboard" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '黒板に字を書きます。', furigana: 'こくばんにじをかきます。', en: "I write on the blackboard." },
+    ],
+  },
+  'vocab-ito': {
+    id: 'vocab-ito',
+    word: { ja: '糸', reading: 'いと', romaji: 'ito', en: "thread" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '糸で服を作ります。', furigana: 'いとでふくをつくります。', en: "I make clothes with thread." },
+    ],
+  },
+  'vocab-youfuku': {
+    id: 'vocab-youfuku',
+    word: { ja: '洋服', reading: 'ようふく', romaji: 'youfuku', en: "Western clothes" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '洋服を買いました。', furigana: 'ようふくをかいました。', en: "I bought Western clothes." },
+    ],
+  },
+  'vocab-shinamono': {
+    id: 'vocab-shinamono',
+    word: { ja: '品物', reading: 'しなもの', romaji: 'shinamono', en: "goods" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'この品物は高いです。', furigana: 'このしなものはたかいです。', en: "This item is expensive." },
+    ],
+  },
+  'vocab-yuubin': {
+    id: 'vocab-yuubin',
+    word: { ja: '郵便', reading: 'ゆうびん', romaji: 'yuubin', en: "mail" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '郵便が来ました。', furigana: 'ゆうびんがきました。', en: "The mail arrived." },
+    ],
+  },
+  'vocab-ryoukin': {
+    id: 'vocab-ryoukin',
+    word: { ja: '料金', reading: 'りょうきん', romaji: 'ryoukin', en: "fee" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: '料金はいくらですか。', furigana: 'りょうきんはいくらですか。', en: "How much is the fee?" },
+    ],
+  },
+  'vocab-moji': {
+    id: 'vocab-moji',
+    word: { ja: '文字', reading: 'もじ', romaji: 'moji', en: "letter" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '小さい文字は読めません。', furigana: 'ちいさいもじはよめません。', en: "I can't read small letters." },
+    ],
+  },
+  'vocab-kotae': {
+    id: 'vocab-kotae',
+    word: { ja: '答え', reading: 'こたえ', romaji: 'kotae', en: "answer" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '答えを教えてください。', furigana: 'こたえをおしえてください。', en: "Please tell me the answer." },
+    ],
+  },
+  'vocab-setsumei': {
+    id: 'vocab-setsumei',
+    word: { ja: '説明', reading: 'せつめい', romaji: 'setsumei', en: "explanation" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '説明をお願いします。', furigana: 'せつめいをおねがいします。', en: "Please give me an explanation." },
+    ],
+  },
+  'vocab-renshuu': {
+    id: 'vocab-renshuu',
+    word: { ja: '練習', reading: 'れんしゅう', romaji: 'renshuu', en: "practice" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '毎日練習します。', furigana: 'まいにちれんしゅうします。', en: "I practice every day." },
+    ],
+  },
+  'vocab-keisan': {
+    id: 'vocab-keisan',
+    word: { ja: '計算', reading: 'けいさん', romaji: 'keisan', en: "calculation" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '計算が苦手です。', furigana: 'けいさんがにがてです。', en: "I'm bad at calculation." },
+    ],
+  },
+  'vocab-kenkyuu': {
+    id: 'vocab-kenkyuu',
+    word: { ja: '研究', reading: 'けんきゅう', romaji: 'kenkyuu', en: "research" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '大学で研究しています。', furigana: 'だいがくでけんきゅうしています。', en: "I do research at university." },
+    ],
+  },
+  'vocab-chuui': {
+    id: 'vocab-chuui',
+    word: { ja: '注意', reading: 'ちゅうい', romaji: 'chuui', en: "attention" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '注意してください。', furigana: 'ちゅういしてください。', en: "Please be careful." },
+    ],
+  },
+  'vocab-keikaku': {
+    id: 'vocab-keikaku',
+    word: { ja: '計画', reading: 'けいかく', romaji: 'keikaku', en: "plan" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '旅行の計画を立てます。', furigana: 'りょこうのけいかくをたてます。', en: "I make a travel plan." },
+    ],
+  },
+  'vocab-riyuu': {
+    id: 'vocab-riyuu',
+    word: { ja: '理由', reading: 'りゆう', romaji: 'riyuu', en: "reason" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '理由を教えてください。', furigana: 'りゆうをおしえてください。', en: "Please tell me the reason." },
+    ],
+  },
+  'vocab-benkyou': {
+    id: 'vocab-benkyou',
+    word: { ja: '勉強', reading: 'べんきょう', romaji: 'benkyou', en: "study" },
+    wordClass: 'verb-irregular',
+    jlptLevel: 'N5',
+    tags: ['verb-irregular', 'study', 'N5'],
+    exampleSentences: [
+      { ja: '毎日日本語を勉強します。', furigana: 'まいにちにほんごをべんきょうします。', en: "I study Japanese every day." },
+    ],
+  },
+  'vocab-undou': {
+    id: 'vocab-undou',
+    word: { ja: '運動', reading: 'うんどう', romaji: 'undou', en: "exercise" },
+    wordClass: 'verb-irregular',
+    jlptLevel: 'N5',
+    tags: ['verb-irregular', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '毎朝運動します。', furigana: 'まいあさうんどうします。', en: "I exercise every morning." },
+    ],
+  },
+  'vocab-ryokou': {
+    id: 'vocab-ryokou',
+    word: { ja: '旅行', reading: 'りょこう', romaji: 'ryokou', en: "travel" },
+    wordClass: 'verb-irregular',
+    jlptLevel: 'N5',
+    tags: ['verb-irregular', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '来月旅行します。', furigana: 'らいげつりょこうします。', en: "I'll travel next month." },
+    ],
+  },
+  'vocab-sanpo': {
+    id: 'vocab-sanpo',
+    word: { ja: '散歩', reading: 'さんぽ', romaji: 'sanpo', en: "stroll" },
+    wordClass: 'verb-irregular',
+    jlptLevel: 'N5',
+    tags: ['verb-irregular', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '公園を散歩します。', furigana: 'こうえんをさんぽします。', en: "I take a walk in the park." },
+    ],
+  },
+  'vocab-shigoto': {
+    id: 'vocab-shigoto',
+    word: { ja: '仕事', reading: 'しごと', romaji: 'shigoto', en: "work" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'work', 'N5'],
+    exampleSentences: [
+      { ja: '仕事が忙しいです。', furigana: 'しごとがいそがしいです。', en: "Work is busy." },
+    ],
+  },
+  'vocab-youji': {
+    id: 'vocab-youji',
+    word: { ja: '用事', reading: 'ようじ', romaji: 'youji', en: "errand" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'work', 'N5'],
+    exampleSentences: [
+      { ja: '用事があります。', furigana: 'ようじがあります。', en: "I have an errand." },
+    ],
+  },
+  'vocab-shachou': {
+    id: 'vocab-shachou',
+    word: { ja: '社長', reading: 'しゃちょう', romaji: 'shachou', en: "company president" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'work', 'N5'],
+    exampleSentences: [
+      { ja: '社長に会いました。', furigana: 'しゃちょうにあいました。', en: "I met the company president." },
+    ],
+  },
+  'vocab-isha': {
+    id: 'vocab-isha',
+    word: { ja: '医者', reading: 'いしゃ', romaji: 'isha', en: "doctor" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'work', 'N5'],
+    exampleSentences: [
+      { ja: '医者になりたいです。', furigana: 'いしゃになりたいです。', en: "I want to become a doctor." },
+    ],
+  },
+  'vocab-shuppatsu': {
+    id: 'vocab-shuppatsu',
+    word: { ja: '出発', reading: 'しゅっぱつ', romaji: 'shuppatsu', en: "departure" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'travel', 'N5'],
+    exampleSentences: [
+      { ja: '出発は八時です。', furigana: 'しゅっぱつははちじです。', en: "Departure is at eight." },
+    ],
+  },
+  'vocab-touchaku': {
+    id: 'vocab-touchaku',
+    word: { ja: '到着', reading: 'とうちゃく', romaji: 'touchaku', en: "arrival" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'travel', 'N5'],
+    exampleSentences: [
+      { ja: '到着が遅れました。', furigana: 'とうちゃくがおくれました。', en: "The arrival was delayed." },
+    ],
+  },
+  'vocab-kyuukou': {
+    id: 'vocab-kyuukou',
+    word: { ja: '急行', reading: 'きゅうこう', romaji: 'kyuukou', en: "express train" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'travel', 'N5'],
+    exampleSentences: [
+      { ja: '急行に乗ります。', furigana: 'きゅうこうにのります。', en: "I take the express train." },
+    ],
+  },
+  'vocab-byouki': {
+    id: 'vocab-byouki',
+    word: { ja: '病気', reading: 'びょうき', romaji: 'byouki', en: "illness" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'health', 'N5'],
+    exampleSentences: [
+      { ja: '病気になりました。', furigana: 'びょうきになりました。', en: "I got sick." },
+    ],
+  },
+  'vocab-kimochi': {
+    id: 'vocab-kimochi',
+    word: { ja: '気持ち', reading: 'きもち', romaji: 'kimochi', en: "feeling" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'feeling', 'N5'],
+    exampleSentences: [
+      { ja: 'いい気持ちです。', furigana: 'いいきもちです。', en: "It feels good." },
+    ],
+  },
+  'vocab-koe': {
+    id: 'vocab-koe',
+    word: { ja: '声', reading: 'こえ', romaji: 'koe', en: "voice" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'feeling', 'N5'],
+    exampleSentences: [
+      { ja: '声が大きいです。', furigana: 'こえがおおきいです。', en: "Your voice is loud." },
+    ],
+  },
+  'vocab-uta': {
+    id: 'vocab-uta',
+    word: { ja: '歌', reading: 'うた', romaji: 'uta', en: "song" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'music', 'N5'],
+    exampleSentences: [
+      { ja: '歌が好きです。', furigana: 'うたがすきです。', en: "I like songs." },
+    ],
+  },
+  'vocab-chikara': {
+    id: 'vocab-chikara',
+    word: { ja: '力', reading: 'ちから', romaji: 'chikara', en: "power" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'body', 'N5'],
+    exampleSentences: [
+      { ja: '力が強いです。', furigana: 'ちからがつよいです。', en: "He is strong." },
+    ],
+  },
+  'vocab-nihonjin': {
+    id: 'vocab-nihonjin',
+    word: { ja: '日本人', reading: 'にほんじん', romaji: 'nihonjin', en: "Japanese person" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '彼は日本人です。', furigana: 'かれはにほんじんです。', en: "He is Japanese." },
+    ],
+  },
+  'vocab-josei': {
+    id: 'vocab-josei',
+    word: { ja: '女性', reading: 'じょせい', romaji: 'josei', en: "female" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '女性の店員に聞きました。', furigana: 'じょせいのてんいんにききました。', en: "I asked a female shop assistant." },
+    ],
+  },
+  'vocab-dansei': {
+    id: 'vocab-dansei',
+    word: { ja: '男性', reading: 'だんせい', romaji: 'dansei', en: "male" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '男性が来ました。', furigana: 'だんせいがきました。', en: "A man came." },
+    ],
+  },
+  'vocab-shujin': {
+    id: 'vocab-shujin',
+    word: { ja: '主人', reading: 'しゅじん', romaji: 'shujin', en: "husband/master" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '主人は会社員です。', furigana: 'しゅじんはかいしゃいんです。', en: "My husband is an office worker." },
+    ],
+  },
+  'vocab-shimai': {
+    id: 'vocab-shimai',
+    word: { ja: '姉妹', reading: 'しまい', romaji: 'shimai', en: "sisters" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '姉妹が二人います。', furigana: 'しまいがふたりいます。', en: "I have two sisters." },
+    ],
+  },
+  'vocab-myouji': {
+    id: 'vocab-myouji',
+    word: { ja: '名字', reading: 'みょうじ', romaji: 'myouji', en: "surname" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '名字は田中です。', furigana: 'みょうじはたなかです。', en: "My surname is Tanaka." },
+    ],
+  },
+  'vocab-sewa': {
+    id: 'vocab-sewa',
+    word: { ja: '世話', reading: 'せわ', romaji: 'sewa', en: "care" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: '犬の世話をします。', furigana: 'いぬのせわをします。', en: "I take care of the dog." },
+    ],
+  },
+  'vocab-orei': {
+    id: 'vocab-orei',
+    word: { ja: 'お礼', reading: 'おれい', romaji: 'orei', en: "thanks" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'people', 'N5'],
+    exampleSentences: [
+      { ja: 'お礼を言います。', furigana: 'おれいをいいます。', en: "I say thank you." },
+    ],
+  },
+  'vocab-zenbu': {
+    id: 'vocab-zenbu',
+    word: { ja: '全部', reading: 'ぜんぶ', romaji: 'zenbu', en: "all" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'quantity', 'N5'],
+    exampleSentences: [
+      { ja: '全部食べました。', furigana: 'ぜんぶたべました。', en: "I ate everything." },
+    ],
+  },
+  'vocab-sukoshi': {
+    id: 'vocab-sukoshi',
+    word: { ja: '少し', reading: 'すこし', romaji: 'sukoshi', en: "a little" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'quantity', 'N5'],
+    exampleSentences: [
+      { ja: '少し休みます。', furigana: 'すこしやすみます。', en: "I'll rest a little." },
+    ],
+  },
+  'vocab-ondo': {
+    id: 'vocab-ondo',
+    word: { ja: '温度', reading: 'おんど', romaji: 'ondo', en: "temperature" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'quantity', 'N5'],
+    exampleSentences: [
+      { ja: '温度が高いです。', furigana: 'おんどがたかいです。', en: "The temperature is high." },
+    ],
+  },
+  'vocab-futoi': {
+    id: 'vocab-futoi',
+    word: { ja: '太い', reading: 'ふとい', romaji: 'futoi', en: "thick" },
+    wordClass: 'i-adjective',
+    jlptLevel: 'N5',
+    tags: ['i-adjective', 'adjective', 'N5'],
+    exampleSentences: [
+      { ja: '太い木があります。', furigana: 'ふといきがあります。', en: "There is a thick tree." },
+    ],
+  },
+  'vocab-hikui': {
+    id: 'vocab-hikui',
+    word: { ja: '低い', reading: 'ひくい', romaji: 'hikui', en: "low" },
+    wordClass: 'i-adjective',
+    jlptLevel: 'N5',
+    tags: ['i-adjective', 'adjective', 'N5'],
+    exampleSentences: [
+      { ja: '低い山に登ります。', furigana: 'ひくいやまにのぼります。', en: "I climb a low mountain." },
+    ],
+  },
+  'vocab-tokubetsu': {
+    id: 'vocab-tokubetsu',
+    word: { ja: '特別', reading: 'とくべつ', romaji: 'tokubetsu', en: "special" },
+    wordClass: 'na-adjective',
+    jlptLevel: 'N5',
+    tags: ['na-adjective', 'adjective', 'N5'],
+    exampleSentences: [
+      { ja: '今日は特別な日です。', furigana: 'きょうはとくべつなひです。', en: "Today is a special day." },
+    ],
+  },
+  'vocab-juuyou': {
+    id: 'vocab-juuyou',
+    word: { ja: '重要', reading: 'じゅうよう', romaji: 'juuyou', en: "important" },
+    wordClass: 'na-adjective',
+    jlptLevel: 'N5',
+    tags: ['na-adjective', 'adjective', 'N5'],
+    exampleSentences: [
+      { ja: '重要な話があります。', furigana: 'じゅうようなはなしがあります。', en: "I have something important to discuss." },
+    ],
+  },
+  'vocab-fuben': {
+    id: 'vocab-fuben',
+    word: { ja: '不便', reading: 'ふべん', romaji: 'fuben', en: "inconvenient" },
+    wordClass: 'na-adjective',
+    jlptLevel: 'N5',
+    tags: ['na-adjective', 'adjective', 'N5'],
+    exampleSentences: [
+      { ja: 'この町は不便です。', furigana: 'このまちはふべんです。', en: "This town is inconvenient." },
+    ],
+  },
+  'vocab-miseru': {
+    id: 'vocab-miseru',
+    word: { ja: '見せる', reading: 'みせる', romaji: 'miseru', en: "to show" },
+    wordClass: 'verb-ru',
+    jlptLevel: 'N5',
+    tags: ['verb-ru', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '写真を見せます。', furigana: 'しゃしんをみせます。', en: "I'll show you a photo." },
+    ],
+  },
+  'vocab-uru': {
+    id: 'vocab-uru',
+    word: { ja: '売る', reading: 'うる', romaji: 'uru', en: "to sell" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '店で野菜を売ります。', furigana: 'みせでやさいをうります。', en: "They sell vegetables at the shop." },
+    ],
+  },
+  'vocab-kiru-2': {
+    id: 'vocab-kiru-2',
+    word: { ja: '切る', reading: 'きる', romaji: 'kiru', en: "to cut" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '紙を切ります。', furigana: 'かみをきります。', en: "I cut the paper." },
+    ],
+  },
+  'vocab-ugoku': {
+    id: 'vocab-ugoku',
+    word: { ja: '動く', reading: 'うごく', romaji: 'ugoku', en: "to move" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '車が動きません。', furigana: 'くるまがうごきません。', en: "The car doesn't move." },
+    ],
+  },
+  'vocab-isogu': {
+    id: 'vocab-isogu',
+    word: { ja: '急ぐ', reading: 'いそぐ', romaji: 'isogu', en: "to hurry" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '急いでください。', furigana: 'いそいでください。', en: "Please hurry." },
+    ],
+  },
+  'vocab-tomaru': {
+    id: 'vocab-tomaru',
+    word: { ja: '止まる', reading: 'とまる', romaji: 'tomaru', en: "to stop" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '電車が止まりました。', furigana: 'でんしゃがとまりました。', en: "The train stopped." },
+    ],
+  },
+  'vocab-hajimaru': {
+    id: 'vocab-hajimaru',
+    word: { ja: '始まる', reading: 'はじまる', romaji: 'hajimaru', en: "to start" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '授業が始まります。', furigana: 'じゅぎょうがはじまります。', en: "The class is starting." },
+    ],
+  },
+  'vocab-shinu': {
+    id: 'vocab-shinu',
+    word: { ja: '死ぬ', reading: 'しぬ', romaji: 'shinu', en: "to die" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '花が死にました。', furigana: 'はながしにました。', en: "The flower died." },
+    ],
+  },
+  'vocab-tooru': {
+    id: 'vocab-tooru',
+    word: { ja: '通る', reading: 'とおる', romaji: 'tooru', en: "to pass" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: 'この道を通ります。', furigana: 'このみちをとおります。', en: "I pass along this road." },
+    ],
+  },
+  'vocab-kayou': {
+    id: 'vocab-kayou',
+    word: { ja: '通う', reading: 'かよう', romaji: 'kayou', en: "to commute" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '大学に通っています。', furigana: 'だいがくにかよっています。', en: "I commute to university." },
+    ],
+  },
+  'vocab-hakobu': {
+    id: 'vocab-hakobu',
+    word: { ja: '運ぶ', reading: 'はこぶ', romaji: 'hakobu', en: "to carry" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '荷物を運びます。', furigana: 'にもつをはこびます。', en: "I carry the luggage." },
+    ],
+  },
+  'vocab-hiraku': {
+    id: 'vocab-hiraku',
+    word: { ja: '開く', reading: 'ひらく', romaji: 'hiraku', en: "to open" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '本を開きます。', furigana: 'ほんをひらきます。', en: "I open the book." },
+    ],
+  },
+  'vocab-shimaru': {
+    id: 'vocab-shimaru',
+    word: { ja: '閉まる', reading: 'しまる', romaji: 'shimaru', en: "to be closed" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '店が閉まりました。', furigana: 'みせがしまりました。', en: "The shop closed." },
+    ],
+  },
+  'vocab-hiku': {
+    id: 'vocab-hiku',
+    word: { ja: '引く', reading: 'ひく', romaji: 'hiku', en: "to pull" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: 'ドアを引きます。', furigana: 'ドアをひきます。', en: "I pull the door." },
+    ],
+  },
+  'vocab-mawaru': {
+    id: 'vocab-mawaru',
+    word: { ja: '回る', reading: 'まわる', romaji: 'mawaru', en: "to turn" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '町を回ります。', furigana: 'まちをまわります。', en: "I go around the town." },
+    ],
+  },
+  'vocab-susumu': {
+    id: 'vocab-susumu',
+    word: { ja: '進む', reading: 'すすむ', romaji: 'susumu', en: "to advance" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '前に進みます。', furigana: 'まえにすすみます。', en: "I move forward." },
+    ],
+  },
+  'vocab-au-2': {
+    id: 'vocab-au-2',
+    word: { ja: '合う', reading: 'あう', romaji: 'au', en: "to match" },
+    wordClass: 'verb-u',
+    jlptLevel: 'N5',
+    tags: ['verb-u', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: 'この服は合います。', furigana: 'このふくはあいます。', en: "These clothes fit." },
+    ],
+  },
+  'vocab-tateru': {
+    id: 'vocab-tateru',
+    word: { ja: '建てる', reading: 'たてる', romaji: 'tateru', en: "to build" },
+    wordClass: 'verb-ru',
+    jlptLevel: 'N5',
+    tags: ['verb-ru', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '家を建てます。', furigana: 'いえをたてます。', en: "I build a house." },
+    ],
+  },
+  'vocab-atsumeru': {
+    id: 'vocab-atsumeru',
+    word: { ja: '集める', reading: 'あつめる', romaji: 'atsumeru', en: "to collect" },
+    wordClass: 'verb-ru',
+    jlptLevel: 'N5',
+    tags: ['verb-ru', 'verb', 'N5'],
+    exampleSentences: [
+      { ja: '切手を集めています。', furigana: 'きってをあつめています。', en: "I collect stamps." },
+    ],
+  },
+
+  'vocab-konnichiha': {
+    id: 'vocab-konnichiha',
+    word: { ja: 'こんにちは', reading: 'こんにちは', romaji: 'konnichiha', en: "hello; good afternoon" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'こんにちは、田中さん。', furigana: 'こんにちは、たなかさん。', en: "Hello, Mr. Tanaka." },
+    ],
+  },
+  'vocab-ohayougozaimasu': {
+    id: 'vocab-ohayougozaimasu',
+    word: { ja: 'おはようございます', reading: 'おはようございます', romaji: 'ohayougozaimasu', en: "good morning (polite)" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'おはようございます、先生。', furigana: 'おはようございます、せんせい。', en: "Good morning, teacher." },
+    ],
+  },
+  'vocab-konbanha': {
+    id: 'vocab-konbanha',
+    word: { ja: 'こんばんは', reading: 'こんばんは', romaji: 'konbanha', en: "good evening" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'こんばんは、いい夜ですね。', furigana: 'こんばんは、いいよるですね。', en: "Good evening, it's a nice night." },
+    ],
+  },
+  'vocab-sayounara': {
+    id: 'vocab-sayounara',
+    word: { ja: 'さようなら', reading: 'さようなら', romaji: 'sayounara', en: "goodbye" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'さようなら、また明日。', furigana: 'さようなら、またあした。', en: "Goodbye, see you tomorrow." },
+    ],
+  },
+  'vocab-oyasuminasai': {
+    id: 'vocab-oyasuminasai',
+    word: { ja: 'おやすみなさい', reading: 'おやすみなさい', romaji: 'oyasuminasai', en: "good night" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'おやすみなさい、また明日。', furigana: 'おやすみなさい、またあした。', en: "Good night, see you tomorrow." },
+    ],
+  },
+  'vocab-arigatou': {
+    id: 'vocab-arigatou',
+    word: { ja: 'ありがとう', reading: 'ありがとう', romaji: 'arigatou', en: "thank you" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'ありがとう、うれしいです。', furigana: 'ありがとう、うれしいです。', en: "Thank you, I'm happy." },
+    ],
+  },
+  'vocab-sumimasen': {
+    id: 'vocab-sumimasen',
+    word: { ja: 'すみません', reading: 'すみません', romaji: 'sumimasen', en: "excuse me; sorry" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'すみません、駅はどこですか。', furigana: 'すみません、えきはどこですか。', en: "Excuse me, where is the station?" },
+    ],
+  },
+  'vocab-hajimemashite': {
+    id: 'vocab-hajimemashite',
+    word: { ja: 'はじめまして', reading: 'はじめまして', romaji: 'hajimemashite', en: "nice to meet you" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'はじめまして、山田です。', furigana: 'はじめまして、やまだです。', en: "Nice to meet you, I'm Yamada." },
+    ],
+  },
+  'vocab-itadakimasu': {
+    id: 'vocab-itadakimasu',
+    word: { ja: 'いただきます', reading: 'いただきます', romaji: 'itadakimasu', en: "said before eating" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'いただきます、おいしそうです。', furigana: 'いただきます、おいしそうです。', en: "Let's eat, it looks delicious." },
+    ],
+  },
+  'vocab-gochisousama': {
+    id: 'vocab-gochisousama',
+    word: { ja: 'ごちそうさま', reading: 'ごちそうさま', romaji: 'gochisousama', en: "said after eating" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'greeting', 'N5'],
+    exampleSentences: [
+      { ja: 'ごちそうさま、おいしかったです。', furigana: 'ごちそうさま、おいしかったです。', en: "Thank you for the meal, it was delicious." },
+    ],
+  },
+  'vocab-hai': {
+    id: 'vocab-hai',
+    word: { ja: 'はい', reading: 'はい', romaji: 'hai', en: "yes" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'はい、そうです。', furigana: 'はい、そうです。', en: "Yes, that's right." },
+    ],
+  },
+  'vocab-iie': {
+    id: 'vocab-iie',
+    word: { ja: 'いいえ', reading: 'いいえ', romaji: 'iie', en: "no" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'いいえ、違います。', furigana: 'いいえ、ちがいます。', en: "No, that's wrong." },
+    ],
+  },
+  'vocab-koko': {
+    id: 'vocab-koko',
+    word: { ja: 'ここ', reading: 'ここ', romaji: 'koko', en: "here" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'ここは静かです。', furigana: 'ここはしずかです。', en: "It's quiet here." },
+    ],
+  },
+  'vocab-soko': {
+    id: 'vocab-soko',
+    word: { ja: 'そこ', reading: 'そこ', romaji: 'soko', en: "there" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'そこに置いてください。', furigana: 'そこにおいてください。', en: "Please put it there." },
+    ],
+  },
+  'vocab-asoko': {
+    id: 'vocab-asoko',
+    word: { ja: 'あそこ', reading: 'あそこ', romaji: 'asoko', en: "over there" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'あそこに駅があります。', furigana: 'あそこにえきがあります。', en: "There is a station over there." },
+    ],
+  },
+  'vocab-kono': {
+    id: 'vocab-kono',
+    word: { ja: 'この', reading: 'この', romaji: 'kono', en: "this (+ noun)" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'この本は面白いです。', furigana: 'このほんはおもしろいです。', en: "This book is interesting." },
+    ],
+  },
+  'vocab-sono': {
+    id: 'vocab-sono',
+    word: { ja: 'その', reading: 'その', romaji: 'sono', en: "that (+ noun)" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'その店は安いです。', furigana: 'そのみせはやすいです。', en: "That shop is cheap." },
+    ],
+  },
+  'vocab-ano': {
+    id: 'vocab-ano',
+    word: { ja: 'あの', reading: 'あの', romaji: 'ano', en: "that over there (+ noun)" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'あの人は先生です。', furigana: 'あのひとはせんせいです。', en: "That person is a teacher." },
+    ],
+  },
+  'vocab-dono': {
+    id: 'vocab-dono',
+    word: { ja: 'どの', reading: 'どの', romaji: 'dono', en: "which (+ noun)" },
+    wordClass: 'expression',
+    jlptLevel: 'N5',
+    tags: ['expression', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'どの電車に乗りますか。', furigana: 'どのでんしゃにのりますか。', en: "Which train do you take?" },
+    ],
+  },
+  'vocab-minna': {
+    id: 'vocab-minna',
+    word: { ja: 'みんな', reading: 'みんな', romaji: 'minna', en: "everyone; all" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: 'みんなで食べましょう。', furigana: 'みんなでたべましょう。', en: "Let's eat together." },
+    ],
+  },
+  'vocab-takusan': {
+    id: 'vocab-takusan',
+    word: { ja: 'たくさん', reading: 'たくさん', romaji: 'takusan', en: "a lot; many" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'quantity', 'N5'],
+    exampleSentences: [
+      { ja: '本がたくさんあります。', furigana: 'ほんがたくさんあります。', en: "There are many books." },
+    ],
+  },
+  'vocab-chotto': {
+    id: 'vocab-chotto',
+    word: { ja: 'ちょっと', reading: 'ちょっと', romaji: 'chotto', en: "a little; a moment" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'quantity', 'N5'],
+    exampleSentences: [
+      { ja: 'ちょっと待ってください。', furigana: 'ちょっとまってください。', en: "Please wait a moment." },
+    ],
+  },
+  'vocab-totemo': {
+    id: 'vocab-totemo',
+    word: { ja: 'とても', reading: 'とても', romaji: 'totemo', en: "very" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'quantity', 'N5'],
+    exampleSentences: [
+      { ja: 'とても面白いです。', furigana: 'とてもおもしろいです。', en: "It's very interesting." },
+    ],
+  },
+  'vocab-mata': {
+    id: 'vocab-mata',
+    word: { ja: 'また', reading: 'また', romaji: 'mata', en: "again" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'time', 'N5'],
+    exampleSentences: [
+      { ja: 'また会いましょう。', furigana: 'またあいましょう。', en: "Let's meet again." },
+    ],
+  },
+  'vocab-sugu': {
+    id: 'vocab-sugu',
+    word: { ja: 'すぐ', reading: 'すぐ', romaji: 'sugu', en: "immediately" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'time', 'N5'],
+    exampleSentences: [
+      { ja: 'すぐ行きます。', furigana: 'すぐいきます。', en: "I'll go right away." },
+    ],
+  },
+  'vocab-yukkuri': {
+    id: 'vocab-yukkuri',
+    word: { ja: 'ゆっくり', reading: 'ゆっくり', romaji: 'yukkuri', en: "slowly" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'time', 'N5'],
+    exampleSentences: [
+      { ja: 'ゆっくり歩きます。', furigana: 'ゆっくりあるきます。', en: "I walk slowly." },
+    ],
+  },
+  'vocab-itsumo': {
+    id: 'vocab-itsumo',
+    word: { ja: 'いつも', reading: 'いつも', romaji: 'itsumo', en: "always" },
+    wordClass: 'adverb',
+    jlptLevel: 'N5',
+    tags: ['adverb', 'time', 'N5'],
+    exampleSentences: [
+      { ja: 'いつも早く起きます。', furigana: 'いつもはやくおきます。', en: "I always get up early." },
+    ],
+  },
+  'vocab-soshite': {
+    id: 'vocab-soshite',
+    word: { ja: 'そして', reading: 'そして', romaji: 'soshite', en: "and then" },
+    wordClass: 'conjunction',
+    jlptLevel: 'N5',
+    tags: ['conjunction', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: '朝ご飯を食べて、そして学校へ行きます。', furigana: 'あさごはんをたべて、そしてがっこうへいきます。', en: "I eat breakfast, and then go to school." },
+    ],
+  },
+  'vocab-demo': {
+    id: 'vocab-demo',
+    word: { ja: 'でも', reading: 'でも', romaji: 'demo', en: "but" },
+    wordClass: 'conjunction',
+    jlptLevel: 'N5',
+    tags: ['conjunction', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: '高いです。でも、買います。', furigana: 'たかいです。でも、かいます。', en: "It's expensive. But I'll buy it." },
+    ],
+  },
+  'vocab-dakara': {
+    id: 'vocab-dakara',
+    word: { ja: 'だから', reading: 'だから', romaji: 'dakara', en: "so; therefore" },
+    wordClass: 'conjunction',
+    jlptLevel: 'N5',
+    tags: ['conjunction', 'basic', 'N5'],
+    exampleSentences: [
+      { ja: '雨です。だから、行きません。', furigana: 'あめです。だから、いきません。', en: "It's raining. So I won't go." },
+    ],
+  },
+  'vocab-terebi': {
+    id: 'vocab-terebi',
+    word: { ja: 'テレビ', reading: 'テレビ', romaji: 'terebi', en: "television" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'テレビを見ます。', furigana: 'テレビをみます。', en: "I watch TV." },
+    ],
+  },
+  'vocab-rajio': {
+    id: 'vocab-rajio',
+    word: { ja: 'ラジオ', reading: 'ラジオ', romaji: 'rajio', en: "radio" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'ラジオを聞きます。', furigana: 'ラジオをききます。', en: "I listen to the radio." },
+    ],
+  },
+  'vocab-kamera': {
+    id: 'vocab-kamera',
+    word: { ja: 'カメラ', reading: 'カメラ', romaji: 'kamera', en: "camera" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'カメラで写真を撮ります。', furigana: 'カメラでしゃしんをとります。', en: "I take photos with a camera." },
+    ],
+  },
+  'vocab-pasokon': {
+    id: 'vocab-pasokon',
+    word: { ja: 'パソコン', reading: 'パソコン', romaji: 'pasokon', en: "personal computer" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'パソコンで仕事をします。', furigana: 'パソコンでしごとをします。', en: "I work on a computer." },
+    ],
+  },
+  'vocab-teeburu': {
+    id: 'vocab-teeburu',
+    word: { ja: 'テーブル', reading: 'テーブル', romaji: 'teeburu', en: "table" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'テーブルの上にあります。', furigana: 'テーブルのうえにあります。', en: "It's on the table." },
+    ],
+  },
+  'vocab-beddo': {
+    id: 'vocab-beddo',
+    word: { ja: 'ベッド', reading: 'ベッド', romaji: 'beddo', en: "bed" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'ベッドで寝ます。', furigana: 'ベッドでねます。', en: "I sleep in a bed." },
+    ],
+  },
+  'vocab-nooto': {
+    id: 'vocab-nooto',
+    word: { ja: 'ノート', reading: 'ノート', romaji: 'nooto', en: "notebook" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'ノートに書きます。', furigana: 'ノートにかきます。', en: "I write in a notebook." },
+    ],
+  },
+  'vocab-boorupen': {
+    id: 'vocab-boorupen',
+    word: { ja: 'ボールペン', reading: 'ボールペン', romaji: 'boorupen', en: "ballpoint pen" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'ボールペンを貸してください。', furigana: 'ボールペンをかしてください。', en: "Please lend me a ballpoint pen." },
+    ],
+  },
+  'vocab-pen': {
+    id: 'vocab-pen',
+    word: { ja: 'ペン', reading: 'ペン', romaji: 'pen', en: "pen" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'ペンで書きます。', furigana: 'ペンでかきます。', en: "I write with a pen." },
+    ],
+  },
+  'vocab-karendaa': {
+    id: 'vocab-karendaa',
+    word: { ja: 'カレンダー', reading: 'カレンダー', romaji: 'karendaa', en: "calendar" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'カレンダーを見ます。', furigana: 'カレンダーをみます。', en: "I look at the calendar." },
+    ],
+  },
+  'vocab-naifu': {
+    id: 'vocab-naifu',
+    word: { ja: 'ナイフ', reading: 'ナイフ', romaji: 'naifu', en: "knife" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'ナイフで切ります。', furigana: 'ナイフできります。', en: "I cut it with a knife." },
+    ],
+  },
+  'vocab-fuku-2': {
+    id: 'vocab-fuku-2',
+    word: { ja: 'フォーク', reading: 'フォーク', romaji: 'fuぉぉku', en: "fork" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'フォークで食べます。', furigana: 'フォークでたべます。', en: "I eat with a fork." },
+    ],
+  },
+  'vocab-supuun': {
+    id: 'vocab-supuun',
+    word: { ja: 'スプーン', reading: 'スプーン', romaji: 'supuun', en: "spoon" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'スプーンを使います。', furigana: 'スプーンをつかいます。', en: "I use a spoon." },
+    ],
+  },
+  'vocab-koppu': {
+    id: 'vocab-koppu',
+    word: { ja: 'コップ', reading: 'コップ', romaji: 'koppu', en: "glass; cup" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'object', 'N5'],
+    exampleSentences: [
+      { ja: 'コップに水を入れます。', furigana: 'コップにみずをいれます。', en: "I pour water into the glass." },
+    ],
+  },
+  'vocab-shatsu': {
+    id: 'vocab-shatsu',
+    word: { ja: 'シャツ', reading: 'シャツ', romaji: 'shatsu', en: "shirt" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'clothes', 'N5'],
+    exampleSentences: [
+      { ja: '白いシャツを着ます。', furigana: 'しろいシャツをきます。', en: "I wear a white shirt." },
+    ],
+  },
+  'vocab-zubon': {
+    id: 'vocab-zubon',
+    word: { ja: 'ズボン', reading: 'ズボン', romaji: 'zubon', en: "trousers" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'clothes', 'N5'],
+    exampleSentences: [
+      { ja: '新しいズボンを買いました。', furigana: 'あたらしいズボンをかいました。', en: "I bought new trousers." },
+    ],
+  },
+  'vocab-sukaato': {
+    id: 'vocab-sukaato',
+    word: { ja: 'スカート', reading: 'スカート', romaji: 'sukaato', en: "skirt" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'clothes', 'N5'],
+    exampleSentences: [
+      { ja: 'スカートが短いです。', furigana: 'スカートがみじかいです。', en: "The skirt is short." },
+    ],
+  },
+  'vocab-nekutai': {
+    id: 'vocab-nekutai',
+    word: { ja: 'ネクタイ', reading: 'ネクタイ', romaji: 'nekutai', en: "necktie" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'clothes', 'N5'],
+    exampleSentences: [
+      { ja: 'ネクタイをします。', furigana: 'ネクタイをします。', en: "I wear a tie." },
+    ],
+  },
+  'vocab-poketto': {
+    id: 'vocab-poketto',
+    word: { ja: 'ポケット', reading: 'ポケット', romaji: 'poketto', en: "pocket" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'clothes', 'N5'],
+    exampleSentences: [
+      { ja: 'ポケットに入れます。', furigana: 'ポケットにいれます。', en: "I put it in my pocket." },
+    ],
+  },
+  'vocab-resutoran': {
+    id: 'vocab-resutoran',
+    word: { ja: 'レストラン', reading: 'レストラン', romaji: 'resutoran', en: "restaurant" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'レストランで食べます。', furigana: 'レストランでたべます。', en: "I eat at a restaurant." },
+    ],
+  },
+  'vocab-depaato': {
+    id: 'vocab-depaato',
+    word: { ja: 'デパート', reading: 'デパート', romaji: 'depaato', en: "department store" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'デパートで買い物します。', furigana: 'デパートでかいものします。', en: "I shop at a department store." },
+    ],
+  },
+  'vocab-hoteru': {
+    id: 'vocab-hoteru',
+    word: { ja: 'ホテル', reading: 'ホテル', romaji: 'hoteru', en: "hotel" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'ホテルに泊まります。', furigana: 'ホテルにとまります。', en: "I stay at a hotel." },
+    ],
+  },
+  'vocab-apaato': {
+    id: 'vocab-apaato',
+    word: { ja: 'アパート', reading: 'アパート', romaji: 'apaato', en: "apartment" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'アパートに住んでいます。', furigana: 'アパートにすんでいます。', en: "I live in an apartment." },
+    ],
+  },
+  'vocab-puuru': {
+    id: 'vocab-puuru',
+    word: { ja: 'プール', reading: 'プール', romaji: 'puuru', en: "swimming pool" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'place', 'N5'],
+    exampleSentences: [
+      { ja: 'プールで泳ぎます。', furigana: 'プールでおよぎます。', en: "I swim in the pool." },
+    ],
+  },
+  'vocab-basu': {
+    id: 'vocab-basu',
+    word: { ja: 'バス', reading: 'バス', romaji: 'basu', en: "bus" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'transport', 'N5'],
+    exampleSentences: [
+      { ja: 'バスで行きます。', furigana: 'バスでいきます。', en: "I go by bus." },
+    ],
+  },
+  'vocab-takushii': {
+    id: 'vocab-takushii',
+    word: { ja: 'タクシー', reading: 'タクシー', romaji: 'takushii', en: "taxi" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'transport', 'N5'],
+    exampleSentences: [
+      { ja: 'タクシーに乗ります。', furigana: 'タクシーにのります。', en: "I take a taxi." },
+    ],
+  },
+  'vocab-miruku': {
+    id: 'vocab-miruku',
+    word: { ja: 'ミルク', reading: 'ミルク', romaji: 'miruku', en: "milk" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'food', 'N5'],
+    exampleSentences: [
+      { ja: 'ミルクを飲みます。', furigana: 'ミルクをのみます。', en: "I drink milk." },
+    ],
+  },
+  'vocab-juusu': {
+    id: 'vocab-juusu',
+    word: { ja: 'ジュース', reading: 'ジュース', romaji: 'juusu', en: "juice" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'food', 'N5'],
+    exampleSentences: [
+      { ja: 'ジュースが好きです。', furigana: 'ジュースがすきです。', en: "I like juice." },
+    ],
+  },
+  'vocab-keeki': {
+    id: 'vocab-keeki',
+    word: { ja: 'ケーキ', reading: 'ケーキ', romaji: 'keeki', en: "cake" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'food', 'N5'],
+    exampleSentences: [
+      { ja: 'ケーキを食べます。', furigana: 'ケーキをたべます。', en: "I eat cake." },
+    ],
+  },
+  'vocab-sarada': {
+    id: 'vocab-sarada',
+    word: { ja: 'サラダ', reading: 'サラダ', romaji: 'sarada', en: "salad" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'food', 'N5'],
+    exampleSentences: [
+      { ja: 'サラダを作ります。', furigana: 'サラダをつくります。', en: "I make a salad." },
+    ],
+  },
+  'vocab-bataa': {
+    id: 'vocab-bataa',
+    word: { ja: 'バター', reading: 'バター', romaji: 'bataa', en: "butter" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'food', 'N5'],
+    exampleSentences: [
+      { ja: 'パンにバターをつけます。', furigana: 'パンにバターをつけます。', en: "I put butter on bread." },
+    ],
+  },
+  'vocab-supootsu': {
+    id: 'vocab-supootsu',
+    word: { ja: 'スポーツ', reading: 'スポーツ', romaji: 'supootsu', en: "sport" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'hobby', 'N5'],
+    exampleSentences: [
+      { ja: 'スポーツが好きです。', furigana: 'スポーツがすきです。', en: "I like sports." },
+    ],
+  },
+  'vocab-sakkaa': {
+    id: 'vocab-sakkaa',
+    word: { ja: 'サッカー', reading: 'サッカー', romaji: 'sakkaa', en: "soccer" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'hobby', 'N5'],
+    exampleSentences: [
+      { ja: 'サッカーをします。', furigana: 'サッカーをします。', en: "I play soccer." },
+    ],
+  },
+  'vocab-tenisu': {
+    id: 'vocab-tenisu',
+    word: { ja: 'テニス', reading: 'テニス', romaji: 'tenisu', en: "tennis" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'hobby', 'N5'],
+    exampleSentences: [
+      { ja: 'テニスを習っています。', furigana: 'テニスをならっています。', en: "I'm learning tennis." },
+    ],
+  },
+  'vocab-gitaa': {
+    id: 'vocab-gitaa',
+    word: { ja: 'ギター', reading: 'ギター', romaji: 'gitaa', en: "guitar" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'hobby', 'N5'],
+    exampleSentences: [
+      { ja: 'ギターを弾きます。', furigana: 'ギターをはじきます。', en: "I play the guitar." },
+    ],
+  },
+  'vocab-piano': {
+    id: 'vocab-piano',
+    word: { ja: 'ピアノ', reading: 'ピアノ', romaji: 'piano', en: "piano" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'hobby', 'N5'],
+    exampleSentences: [
+      { ja: 'ピアノが上手です。', furigana: 'ピアノがじょうずです。', en: "She is good at piano." },
+    ],
+  },
+  'vocab-nyuusu': {
+    id: 'vocab-nyuusu',
+    word: { ja: 'ニュース', reading: 'ニュース', romaji: 'nyuusu', en: "news" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: 'ニュースを見ます。', furigana: 'ニュースをみます。', en: "I watch the news." },
+    ],
+  },
+  'vocab-kurasu': {
+    id: 'vocab-kurasu',
+    word: { ja: 'クラス', reading: 'クラス', romaji: 'kurasu', en: "class" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: 'クラスに二十人います。', furigana: 'クラスににじゅうにんいます。', en: "There are twenty people in the class." },
+    ],
+  },
+  'vocab-peeji': {
+    id: 'vocab-peeji',
+    word: { ja: 'ページ', reading: 'ページ', romaji: 'peeji', en: "page" },
+    wordClass: 'noun',
+    jlptLevel: 'N5',
+    tags: ['noun', 'study', 'N5'],
+    exampleSentences: [
+      { ja: 'ページを開いてください。', furigana: 'ページをひらいてください。', en: "Please open the page." },
+    ],
+  },
 };
